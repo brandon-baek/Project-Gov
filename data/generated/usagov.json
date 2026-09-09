@@ -1,0 +1,34 @@
+{
+  "source": "usagov",
+  "startedAt": "2026-09-04T17:16:11.853Z",
+  "finishedAt": "2026-09-04T17:16:17.610Z",
+  "nodes": [
+    {
+      "id": "source:crawl:ff68c5d579ee4fd5",
+      "kind": "source",
+      "label": "Find and contact elected officials",
+      "description": "Use USAGov’s Contact Your Elected Officials tool to get contact information for your members of Congress, the president, and state and local officials.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-04",
+        "sourceUrl": "https://www.usa.gov/elected-officials",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Federal elected officials",
+          "State and territorial elected officials",
+          "Local elected officials",
+          "Have a question?"
+        ]
+      }
+    }
+  ],
+  "edges": [],
+  "warnings": [],
+  "metadata": {
+    "discoveredUrls": 1,
+    "indexedPages": 1,
+    "appliedDelayMs": 10000
+  }
+}

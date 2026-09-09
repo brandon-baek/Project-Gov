@@ -1,0 +1,37 @@
+name: Refresh government source index
+
+on:
+  schedule:
+    - cron: "23 6 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Refresh machine-indexed data
+        run: npm run ingest
+        env:
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+          GOVGUIDE_CRAWL_LIMIT: 40
+          GOVGUIDE_USER_AGENT: GovGuide/1.0 (scheduled source review)
+      - name: Check curated sources
+        run: npm run check:sources
+      - uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "data: refresh government source index"
+          branch: automation/source-refresh
+          delete-branch: true
+          title: "Review government source refresh"
+          body: "Automated source refresh. Review changed content and health checks before promoting any machine-indexed record into a verified journey."

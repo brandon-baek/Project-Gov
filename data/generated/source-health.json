@@ -1,0 +1,367 @@
+{
+  "checkedAt": "2026-09-08T17:15:18.890Z",
+  "total": 45,
+  "healthy": 38,
+  "results": [
+    {
+      "url": "https://www.usa.gov/lost-stolen-passport",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/lost-stolen-passport",
+      "checkedAt": "2026-09-08T17:14:40.197Z",
+      "latencyMs": 196
+    },
+    {
+      "url": "https://travel.state.gov/content/travel/en/passports/have-passport/lost-stolen.html",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://travel.state.gov/content/travel/en/passports/have-passport/lost-stolen.html",
+      "checkedAt": "2026-09-08T17:14:40.284Z",
+      "latencyMs": 232
+    },
+    {
+      "url": "https://travel.state.gov/content/travel/en/passports/how-apply/processing-times.html",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://travel.state.gov/content/travel/en/passports/how-apply/processing-times.html",
+      "checkedAt": "2026-09-08T17:14:40.289Z",
+      "latencyMs": 236
+    },
+    {
+      "url": "https://travel.state.gov/content/travel/en/passports.html",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://travel.state.gov/content/travel/en/passports.html",
+      "checkedAt": "2026-09-08T17:14:40.283Z",
+      "latencyMs": 229
+    },
+    {
+      "url": "https://www.usa.gov/passport",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/passport",
+      "checkedAt": "2026-09-08T17:14:40.191Z",
+      "latencyMs": 137
+    },
+    {
+      "url": "https://www.ssa.gov/number-card/replace-card",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ssa.gov/number-card/replace-card",
+      "checkedAt": "2026-09-08T17:14:40.385Z",
+      "latencyMs": 96
+    },
+    {
+      "url": "https://www.usa.gov/social-security-card",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/social-security-card",
+      "checkedAt": "2026-09-08T17:14:40.352Z",
+      "latencyMs": 61
+    },
+    {
+      "url": "https://www.identitytheft.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.identitytheft.gov/",
+      "checkedAt": "2026-09-08T17:14:40.384Z",
+      "latencyMs": 92
+    },
+    {
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/",
+      "checkedAt": "2026-09-08T17:14:40.603Z",
+      "latencyMs": 310
+    },
+    {
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/",
+      "checkedAt": "2026-09-08T17:14:40.417Z",
+      "latencyMs": 124
+    },
+    {
+      "url": "https://edd.ca.gov/en/unemployment/filing_a_claim/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://edd.ca.gov/en/unemployment/",
+      "checkedAt": "2026-09-08T17:14:40.904Z",
+      "latencyMs": 301
+    },
+    {
+      "url": "https://edd.ca.gov/en/unemployment/certify/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://edd.ca.gov/en/unemployment/step-5-certify-for-benefits",
+      "checkedAt": "2026-09-08T17:14:40.980Z",
+      "latencyMs": 375
+    },
+    {
+      "url": "https://www.cdss.ca.gov/calfresh",
+      "ok": false,
+      "status": 0,
+      "error": "The operation was aborted due to timeout",
+      "checkedAt": "2026-09-08T17:14:55.610Z",
+      "latencyMs": 15004
+    },
+    {
+      "url": "https://benefitscal.com/",
+      "ok": false,
+      "status": 403,
+      "finalUrl": "https://benefitscal.com/",
+      "checkedAt": "2026-09-08T17:14:40.903Z",
+      "latencyMs": 296
+    },
+    {
+      "url": "https://www.dhcs.ca.gov/services/medi-cal/Pages/ApplyforMedi-Cal.aspx",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.dhcs.ca.gov/services/medi-cal/Pages/ApplyforMedi-Cal.aspx",
+      "checkedAt": "2026-09-08T17:14:40.808Z",
+      "latencyMs": 200
+    },
+    {
+      "url": "https://calosba.ca.gov/for-small-businesses-and-non-profits/set-up-your-business-in-california/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://calosba.ca.gov/for-small-businesses-and-non-profits/set-up-your-business-in-california/",
+      "checkedAt": "2026-09-08T17:14:56.266Z",
+      "latencyMs": 656
+    },
+    {
+      "url": "https://bizfileonline.sos.ca.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://bizfileonline.sos.ca.gov/",
+      "checkedAt": "2026-09-08T17:14:55.778Z",
+      "latencyMs": 165
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/businesses/employer-identification-number",
+      "checkedAt": "2026-09-08T17:14:56.176Z",
+      "latencyMs": 562
+    },
+    {
+      "url": "https://www.ftb.ca.gov/file/business/index.html",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ftb.ca.gov/file/business/index.html",
+      "checkedAt": "2026-09-08T17:14:55.856Z",
+      "latencyMs": 241
+    },
+    {
+      "url": "https://www.calgold.ca.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.calgold.ca.gov/",
+      "checkedAt": "2026-09-08T17:14:56.047Z",
+      "latencyMs": 431
+    },
+    {
+      "url": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Vital-Records.aspx",
+      "ok": false,
+      "status": 0,
+      "error": "fetch failed",
+      "checkedAt": "2026-09-08T17:14:56.449Z",
+      "latencyMs": 182
+    },
+    {
+      "url": "https://www.sos.ca.gov/elections/voter-registration",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.sos.ca.gov/elections/voter-registration",
+      "checkedAt": "2026-09-08T17:14:56.447Z",
+      "latencyMs": 178
+    },
+    {
+      "url": "https://registertovote.ca.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://registertovote.ca.gov/",
+      "checkedAt": "2026-09-08T17:14:56.685Z",
+      "latencyMs": 416
+    },
+    {
+      "url": "https://voterstatus.sos.ca.gov/EN/Authenticate",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://voterstatus.sos.ca.gov/EN/Authenticate",
+      "checkedAt": "2026-09-08T17:14:56.772Z",
+      "latencyMs": 502
+    },
+    {
+      "url": "https://www.irs.gov/filing/individuals/how-to-file",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/filing/individuals/how-to-file",
+      "checkedAt": "2026-09-08T17:14:56.527Z",
+      "latencyMs": 254
+    },
+    {
+      "url": "https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/e-file-do-your-taxes-for-free",
+      "checkedAt": "2026-09-08T17:14:57.041Z",
+      "latencyMs": 269
+    },
+    {
+      "url": "https://www.irs.gov/individuals/understanding-your-irs-notice-or-letter",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/individuals/understanding-your-irs-notice-or-letter",
+      "checkedAt": "2026-09-08T17:14:56.937Z",
+      "latencyMs": 162
+    },
+    {
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+      "checkedAt": "2026-09-08T17:14:56.881Z",
+      "latencyMs": 105
+    },
+    {
+      "url": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://studentaid.gov/h/apply-for-aid/fafsa",
+      "checkedAt": "2026-09-08T17:14:57.040Z",
+      "latencyMs": 262
+    },
+    {
+      "url": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up",
+      "checkedAt": "2026-09-08T17:14:57.087Z",
+      "latencyMs": 307
+    },
+    {
+      "url": "https://www.ssa.gov/medicare/sign-up",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ssa.gov/medicare/sign-up",
+      "checkedAt": "2026-09-08T17:14:57.265Z",
+      "latencyMs": 178
+    },
+    {
+      "url": "https://www.usa.gov/where-report-scams",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/where-report-scams",
+      "checkedAt": "2026-09-08T17:14:57.142Z",
+      "latencyMs": 53
+    },
+    {
+      "url": "https://reportfraud.ftc.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://reportfraud.ftc.gov/",
+      "checkedAt": "2026-09-08T17:14:57.383Z",
+      "latencyMs": 293
+    },
+    {
+      "url": "https://www.ic3.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ic3.gov/",
+      "checkedAt": "2026-09-08T17:14:57.583Z",
+      "latencyMs": 492
+    },
+    {
+      "url": "https://www.disasterassistance.gov/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.disasterassistance.gov/",
+      "checkedAt": "2026-09-08T17:14:57.209Z",
+      "latencyMs": 118
+    },
+    {
+      "url": "https://www.fema.gov/assistance/individual",
+      "ok": false,
+      "status": 503,
+      "finalUrl": "https://www.fema.gov/assistance/individual",
+      "checkedAt": "2026-09-08T17:15:18.348Z",
+      "latencyMs": 20765
+    },
+    {
+      "url": "https://www.uscis.gov/i-90",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.uscis.gov/i-90",
+      "checkedAt": "2026-09-08T17:14:57.681Z",
+      "latencyMs": 97
+    },
+    {
+      "url": "https://www.usa.gov/renew-green-card",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/renew-green-card",
+      "checkedAt": "2026-09-08T17:14:57.665Z",
+      "latencyMs": 80
+    },
+    {
+      "url": "https://www.va.gov/disability/how-to-file-claim/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.va.gov/disability/how-to-file-claim/",
+      "checkedAt": "2026-09-08T17:14:58.161Z",
+      "latencyMs": 575
+    },
+    {
+      "url": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+      "checkedAt": "2026-09-08T17:14:58.162Z",
+      "latencyMs": 574
+    },
+    {
+      "url": "https://www.ssa.gov/retirement",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ssa.gov/retirement",
+      "checkedAt": "2026-09-08T17:15:18.582Z",
+      "latencyMs": 234
+    },
+    {
+      "url": "https://www.ssa.gov/apply",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.ssa.gov/apply",
+      "checkedAt": "2026-09-08T17:15:18.583Z",
+      "latencyMs": 233
+    },
+    {
+      "url": "https://www.usa.gov/change-address",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/change-address",
+      "checkedAt": "2026-09-08T17:15:18.455Z",
+      "latencyMs": 104
+    },
+    {
+      "url": "https://moversguide.usps.com/",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://moversguide.usps.com/",
+      "checkedAt": "2026-09-08T17:15:18.890Z",
+      "latencyMs": 538
+    },
+    {
+      "url": "https://www.usa.gov/benefit-finder",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.usa.gov/benefit-finder",
+      "checkedAt": "2026-09-08T17:15:18.455Z",
+      "latencyMs": 101
+    }
+  ]
+}

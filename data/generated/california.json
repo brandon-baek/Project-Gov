@@ -1,0 +1,46 @@
+{
+  "source": "california",
+  "startedAt": "2026-09-04T17:16:17.610Z",
+  "finishedAt": "2026-09-04T17:16:19.275Z",
+  "nodes": [
+    {
+      "id": "source:crawl:46e9fb7109b842be",
+      "kind": "source",
+      "label": "Find government services and information",
+      "description": "Discover places to visit and learn about California's various regions and lively cities.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-04",
+        "sourceUrl": "https://www.ca.gov/",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Popular services",
+          "Real ID/license",
+          "Birth certificates",
+          "Check your refund",
+          "Traffic tickets",
+          "Business license",
+          "Seller’s permit",
+          "Popular topics",
+          "DMV/Auto",
+          "Personal records",
+          "Businesses",
+          "Jobs and unemployment",
+          "Social services",
+          "Taxes",
+          "California highlights",
+          "Places to visit"
+        ]
+      }
+    }
+  ],
+  "edges": [],
+  "warnings": [],
+  "metadata": {
+    "discoveredUrls": 1,
+    "indexedPages": 1,
+    "appliedDelayMs": 0
+  }
+}

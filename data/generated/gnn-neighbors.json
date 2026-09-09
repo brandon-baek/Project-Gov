@@ -1,0 +1,221 @@
+{
+  "model": "two-layer-graphsage-link-discovery",
+  "implementation": "numpy-manual-backprop",
+  "seed": 41,
+  "trainingLoss": 0.347227,
+  "inputGraph": "data/generated/graph.json",
+  "nodeCount": 170,
+  "policy": "Suggestions never enter the verified graph without human review.",
+  "suggestions": [
+    {
+      "from": "journey-calfresh",
+      "to": "journey-ca-birth-certificate",
+      "relation": "related-to",
+      "score": 0.6945,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ss-card",
+      "to": "journey-social-security-retirement",
+      "relation": "related-to",
+      "score": 0.55468,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-vote",
+      "to": "journey-usps-address",
+      "relation": "related-to",
+      "score": 0.46026,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-medi-cal",
+      "to": "journey-irs-notice",
+      "relation": "related-to",
+      "score": 0.44897,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-calfresh",
+      "to": "journey-medi-cal",
+      "relation": "related-to",
+      "score": 0.42676,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-lost",
+      "to": "journey-report-fraud",
+      "relation": "related-to",
+      "score": 0.41575,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-license",
+      "to": "journey-ca-real-id",
+      "relation": "related-to",
+      "score": 0.37016,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-medi-cal",
+      "to": "journey-ca-birth-certificate",
+      "relation": "related-to",
+      "score": 0.36117,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-business",
+      "to": "journey-federal-benefits",
+      "relation": "related-to",
+      "score": 0.33702,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-lost",
+      "to": "journey-passport-apply",
+      "relation": "related-to",
+      "score": 0.31708,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-real-id",
+      "to": "journey-report-fraud",
+      "relation": "related-to",
+      "score": 0.24529,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-apply",
+      "to": "journey-social-security-retirement",
+      "relation": "related-to",
+      "score": 0.23392,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-irs-notice",
+      "to": "journey-social-security-retirement",
+      "relation": "related-to",
+      "score": 0.2193,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-calfresh",
+      "to": "journey-ein",
+      "relation": "related-to",
+      "score": 0.17998,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ein",
+      "to": "journey-federal-benefits",
+      "relation": "related-to",
+      "score": 0.17165,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-report-fraud",
+      "to": "journey-federal-benefits",
+      "relation": "related-to",
+      "score": 0.16476,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ein",
+      "to": "journey-fafsa",
+      "relation": "related-to",
+      "score": 0.15451,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-birth-certificate",
+      "to": "journey-ein",
+      "relation": "related-to",
+      "score": 0.15394,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-medicare",
+      "to": "journey-usps-address",
+      "relation": "related-to",
+      "score": 0.15159,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-apply",
+      "to": "journey-ca-unemployment",
+      "relation": "related-to",
+      "score": 0.13433,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-irs-notice",
+      "to": "journey-federal-benefits",
+      "relation": "related-to",
+      "score": 0.13249,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-real-id",
+      "to": "journey-fafsa",
+      "relation": "related-to",
+      "score": 0.12738,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-birth-certificate",
+      "to": "journey-federal-benefits",
+      "relation": "related-to",
+      "score": 0.12475,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-lost",
+      "to": "journey-ca-license",
+      "relation": "related-to",
+      "score": 0.12042,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-medi-cal",
+      "to": "journey-fafsa",
+      "relation": "related-to",
+      "score": 0.10678,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-apply",
+      "to": "journey-ca-birth-certificate",
+      "relation": "related-to",
+      "score": 0.10264,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-passport-apply",
+      "to": "journey-ca-real-id",
+      "relation": "related-to",
+      "score": 0.10161,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-irs-notice",
+      "to": "journey-report-fraud",
+      "relation": "related-to",
+      "score": 0.09375,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-medicare",
+      "to": "journey-federal-benefits",
+      "relation": "related-to",
+      "score": 0.084,
+      "status": "human-review-required"
+    },
+    {
+      "from": "journey-ca-birth-certificate",
+      "to": "journey-usps-address",
+      "relation": "related-to",
+      "score": 0.08043,
+      "status": "human-review-required"
+    }
+  ]
+}
