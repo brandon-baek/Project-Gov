@@ -1,114 +1,10 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-08T17:04:48.910Z",
   "nodes": [
     {
-      "id": "journey-passport-lost",
-      "kind": "journey",
-      "label": "Replace a lost or stolen passport",
-      "description": "Report the passport so it can be invalidated, then use the correct replacement process for where you are.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "U.S. citizens"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-lost-passport",
-          "source:state-lost-passport",
-          "source:state-processing"
-        ],
-        "tags": [
-          "lost passport",
-          "stolen passport",
-          "passport missing",
-          "replace passport",
-          "DS-64",
-          "DS-11"
-        ]
-      }
-    },
-    {
-      "id": "journey-passport-lost:step:report",
-      "kind": "step",
-      "label": "Report the passport",
-      "description": "Report it online, by phone, or by mailing Form DS-64. Once reported, the passport is invalid and cannot be used if found.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "U.S. citizens"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-lost-passport",
-          "source:state-lost-passport"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-passport-lost:step:location",
-      "kind": "step",
-      "label": "Use the route for your location",
-      "description": "Inside the U.S., replacement generally uses Form DS-11 in person. Outside the U.S., contact the nearest U.S. embassy or consulate.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "U.S. citizens"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-lost-passport",
-          "source:state-lost-passport"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-passport-lost:step:timing",
-      "kind": "step",
-      "label": "Check current processing guidance",
-      "description": "Processing options and timing can change. Confirm them on the State Department site before making travel plans.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "U.S. citizens"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:state-processing"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:usa-lost-passport",
-      "kind": "source",
-      "label": "Replace your lost or stolen U.S. passport",
-      "description": "Official source published by USA.gov.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.usa.gov/lost-stolen-passport",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov"
-        ]
-      }
-    },
-    {
-      "id": "agency:usa-gov",
+      "id": "agency:california-counties",
       "kind": "agency",
-      "label": "USA.gov",
+      "label": "California counties",
       "description": "Government publisher or official service.",
       "params": {
         "audience": [],
@@ -118,19 +14,222 @@
       }
     },
     {
-      "id": "source:state-lost-passport",
-      "kind": "source",
-      "label": "Lost or Stolen Passports",
-      "description": "Official source published by U.S. Department of State.",
+      "id": "agency:california-department-of-health-care-services",
+      "kind": "agency",
+      "label": "California Department of Health Care Services",
+      "description": "Government publisher or official service.",
       "params": {
         "audience": [],
         "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://travel.state.gov/content/travel/en/passports/have-passport/lost-stolen.html",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-department-of-public-health",
+      "kind": "agency",
+      "label": "California Department of Public Health",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-department-of-social-services",
+      "kind": "agency",
+      "label": "California Department of Social Services",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-dmv",
+      "kind": "agency",
+      "label": "California DMV",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-employment-development-department",
+      "kind": "agency",
+      "label": "California Employment Development Department",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-franchise-tax-board",
+      "kind": "agency",
+      "label": "California Franchise Tax Board",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-office-of-the-small-business-advocate",
+      "kind": "agency",
+      "label": "California Office of the Small Business Advocate",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:california-secretary-of-state",
+      "kind": "agency",
+      "label": "California Secretary of State",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:centers-for-medicare-medicaid-services",
+      "kind": "agency",
+      "label": "Centers for Medicare & Medicaid Services",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:crawl:usa-gov",
+      "kind": "agency",
+      "label": "USA.gov",
+      "description": "Publisher for usagov discovery records.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
         "sourceIds": [],
         "tags": [
-          "U.S. Department of State"
-        ]
+          "usagov"
+        ],
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "agency:federal-bureau-of-investigation",
+      "kind": "agency",
+      "label": "Federal Bureau of Investigation",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:federal-emergency-management-agency",
+      "kind": "agency",
+      "label": "Federal Emergency Management Agency",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:federal-student-aid",
+      "kind": "agency",
+      "label": "Federal Student Aid",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:federal-trade-commission",
+      "kind": "agency",
+      "label": "Federal Trade Commission",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:internal-revenue-service",
+      "kind": "agency",
+      "label": "Internal Revenue Service",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:social-security-administration",
+      "kind": "agency",
+      "label": "Social Security Administration",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:state-of-california",
+      "kind": "agency",
+      "label": "State of California",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:u-s-citizenship-and-immigration-services",
+      "kind": "agency",
+      "label": "U.S. Citizenship and Immigration Services",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
       }
     },
     {
@@ -146,19 +245,1594 @@
       }
     },
     {
-      "id": "source:state-processing",
-      "kind": "source",
-      "label": "Passport Processing Times",
-      "description": "Official source published by U.S. Department of State.",
+      "id": "agency:u-s-department-of-veterans-affairs",
+      "kind": "agency",
+      "label": "U.S. Department of Veterans Affairs",
+      "description": "Government publisher or official service.",
       "params": {
         "audience": [],
         "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://travel.state.gov/content/travel/en/passports/how-apply/processing-times.html",
         "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:u-s-postal-service",
+      "kind": "agency",
+      "label": "U.S. Postal Service",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "agency:usa-gov",
+      "kind": "agency",
+      "label": "USA.gov",
+      "description": "Government publisher or official service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "sourceIds": [],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-birth-certificate",
+      "kind": "journey",
+      "label": "Get a California birth certificate",
+      "description": "Identify the correct vital records office, choose an authorized or informational copy, and submit the required identity statement.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "People born in California",
+          "Eligible requesters"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdph-vital"
+        ],
         "tags": [
-          "U.S. Department of State"
+          "birth certificate",
+          "vital record",
+          "proof of birth",
+          "California birth record"
         ]
+      }
+    },
+    {
+      "id": "journey-ca-birth-certificate:step:copy",
+      "kind": "step",
+      "label": "Choose the copy type",
+      "description": "Authorized copies can be used to establish identity; informational copies cannot. Eligibility rules apply to authorized copies.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "People born in California",
+          "Eligible requesters"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdph-vital"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-birth-certificate:step:office",
+      "kind": "step",
+      "label": "Choose the correct office",
+      "description": "California Department of Public Health and county recorder offices handle copies. The best route can depend on the event date and county.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "People born in California",
+          "Eligible requesters"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdph-vital"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-birth-certificate:step:submit",
+      "kind": "step",
+      "label": "Submit the application and identity statement",
+      "description": "Use the current state or county form and follow notarization and payment instructions for your chosen submission method.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "People born in California",
+          "Eligible requesters"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdph-vital"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-business",
+      "kind": "journey",
+      "label": "Start and register a business in California",
+      "description": "Choose a business structure, register where required, handle tax accounts, and check local permits.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "California business owners"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ca-business",
+          "source:sos-biz",
+          "source:irs-ein",
+          "source:ftb-start",
+          "source:calgold"
+        ],
+        "tags": [
+          "start business",
+          "California LLC",
+          "register company",
+          "business license",
+          "form a corporation",
+          "sole proprietor"
+        ]
+      }
+    },
+    {
+      "id": "journey-ca-business:step:permits",
+      "kind": "step",
+      "label": "Check licenses and local permits",
+      "description": "Use CalGold and your city or county to identify permits and registrations for your location and activity.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "California business owners"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:calgold"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-business:step:plan",
+      "kind": "step",
+      "label": "Choose a structure and name",
+      "description": "Compare legal and tax implications before filing. Check name availability and any naming rules for the structure you choose.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "California business owners"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ca-business",
+          "source:sos-biz"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-business:step:register",
+      "kind": "step",
+      "label": "Register the entity if required",
+      "description": "Corporations, LLCs, and limited partnerships generally file with the Secretary of State. Other structures may use county filings.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "California business owners"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:sos-biz"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-business:step:tax",
+      "kind": "step",
+      "label": "Set up tax accounts",
+      "description": "Check whether you need a federal EIN and register for applicable California tax programs.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "California business owners"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-ein",
+          "source:ftb-start"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-license",
+      "kind": "journey",
+      "label": "Get or replace a California driver\u2019s license",
+      "description": "Use the California DMV route for a first license, renewal, or replacement and bring the documents listed for that transaction.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Driving and transportation",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-license"
+        ],
+        "tags": [
+          "lost license",
+          "California driver license",
+          "DMV license",
+          "renew drivers license",
+          "replace drivers license"
+        ]
+      }
+    },
+    {
+      "id": "journey-ca-license:step:finish",
+      "kind": "step",
+      "label": "Finish online or at a DMV office",
+      "description": "Some transactions can be completed online. Others require an appointment, documents, photo, test, or in-person identity verification.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Driving and transportation",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-license"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-license:step:prepare",
+      "kind": "step",
+      "label": "Complete the application and document check",
+      "description": "Use the DMV checklist for the exact transaction before visiting an office or paying online.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Driving and transportation",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-license"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-license:step:transaction",
+      "kind": "step",
+      "label": "Choose your transaction",
+      "description": "The DMV uses different routes for a first license, renewal, replacement, name change, and REAL ID upgrade.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Driving and transportation",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-license"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-real-id",
+      "kind": "journey",
+      "label": "Get a California REAL ID",
+      "description": "Apply through the California DMV, upload or gather the required documents, and complete identity verification in person.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-real-id"
+        ],
+        "tags": [
+          "REAL ID",
+          "California real id",
+          "federal compliant ID",
+          "DMV real ID"
+        ]
+      }
+    },
+    {
+      "id": "journey-ca-real-id:step:check",
+      "kind": "step",
+      "label": "Decide whether you need a REAL ID",
+      "description": "A passport or another federally accepted document may meet your federal identification need. Check the official guidance before applying.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-real-id"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-real-id:step:documents",
+      "kind": "step",
+      "label": "Gather the required documents",
+      "description": "Use the DMV checklist for proof of identity, Social Security number, and California residency. Requirements depend on your documents and name history.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-real-id"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-real-id:step:visit",
+      "kind": "step",
+      "label": "Complete the DMV visit",
+      "description": "Start the application online when available, then bring the required originals to a DMV office for verification.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dmv-real-id"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-unemployment",
+      "kind": "journey",
+      "label": "Apply for California unemployment benefits",
+      "description": "Review eligibility, create or use myEDD, file a claim, and keep certifying for benefits while the claim is active.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California workers"
+        ],
+        "category": "Jobs and unemployment",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:edd-file",
+          "source:edd-certify"
+        ],
+        "tags": [
+          "lost my job",
+          "unemployment",
+          "EDD",
+          "laid off",
+          "unemployment insurance",
+          "UI claim"
+        ]
+      }
+    },
+    {
+      "id": "journey-ca-unemployment:step:certify",
+      "kind": "step",
+      "label": "Certify for benefits",
+      "description": "Continue certifying for each period requested and report work or earnings accurately while the claim is active.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California workers"
+        ],
+        "category": "Jobs and unemployment",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:edd-certify"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-unemployment:step:claim",
+      "kind": "step",
+      "label": "File the claim",
+      "description": "Use UI Online through myEDD or another method listed by EDD. Save confirmations and respond to follow-up requests.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California workers"
+        ],
+        "category": "Jobs and unemployment",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:edd-file"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-unemployment:step:eligibility",
+      "kind": "step",
+      "label": "Review basic eligibility",
+      "description": "EDD evaluates work history, earnings, availability for work, and the reason you are no longer working.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California workers"
+        ],
+        "category": "Jobs and unemployment",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:edd-file"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-unemployment:step:information",
+      "kind": "step",
+      "label": "Gather employment information",
+      "description": "Prepare identity, contact, and recent employer information using EDD's current checklist.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California workers"
+        ],
+        "category": "Jobs and unemployment",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:edd-file"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-vote",
+      "kind": "journey",
+      "label": "Register to vote in California",
+      "description": "Check eligibility, register or update your record, and confirm your status through the Secretary of State.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "Eligible California residents"
+        ],
+        "category": "Voting and civic life",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:sos-vote",
+          "source:register-vote",
+          "source:voter-status"
+        ],
+        "tags": [
+          "register to vote",
+          "voter registration",
+          "change party",
+          "change voting address",
+          "California election"
+        ]
+      }
+    },
+    {
+      "id": "journey-ca-vote:step:confirm",
+      "kind": "step",
+      "label": "Check your voter status",
+      "description": "Use the state voter status tool or contact your county elections office to confirm your record and election information.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "Eligible California residents"
+        ],
+        "category": "Voting and civic life",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:voter-status"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-vote:step:eligibility",
+      "kind": "step",
+      "label": "Check eligibility",
+      "description": "Review California\u2019s citizenship, residency, age, and status requirements before submitting a registration.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "Eligible California residents"
+        ],
+        "category": "Voting and civic life",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:sos-vote"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ca-vote:step:register",
+      "kind": "step",
+      "label": "Register or update your record",
+      "description": "Use the official online registration system or another state-approved method. Re-register after relevant name, address, or party changes.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "Eligible California residents"
+        ],
+        "category": "Voting and civic life",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:register-vote",
+          "source:sos-vote"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-calfresh",
+      "kind": "journey",
+      "label": "Apply for CalFresh food benefits",
+      "description": "Submit a CalFresh application, complete the county interview, and provide requested verification.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California households"
+        ],
+        "category": "Food and household support",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdss-calfresh",
+          "source:benefitscal"
+        ],
+        "tags": [
+          "food stamps",
+          "CalFresh",
+          "SNAP California",
+          "food assistance",
+          "EBT"
+        ]
+      }
+    },
+    {
+      "id": "journey-calfresh:step:apply",
+      "kind": "step",
+      "label": "Submit an application",
+      "description": "Apply online through BenefitsCal or use a method offered by your county. You can begin with basic contact information and complete the rest as directed.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California households"
+        ],
+        "category": "Food and household support",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdss-calfresh",
+          "source:benefitscal"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-calfresh:step:interview",
+      "kind": "step",
+      "label": "Complete the county interview",
+      "description": "Your county will contact you for an interview and explain what verification is needed for your household.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California households"
+        ],
+        "category": "Food and household support",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdss-calfresh"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-calfresh:step:respond",
+      "kind": "step",
+      "label": "Provide requested verification",
+      "description": "Submit only the documents your county requests, watch for notices, and use the appeal information on a notice if you disagree with a decision.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California households"
+        ],
+        "category": "Food and household support",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:cdss-calfresh"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-disaster",
+      "kind": "journey",
+      "label": "Apply for federal disaster assistance",
+      "description": "Confirm that your area and loss qualify for an open disaster program, document damage, and apply through DisasterAssistance.gov.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People affected by a federally declared disaster"
+        ],
+        "category": "Emergencies and disasters",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:disaster-gov",
+          "source:fema-individual"
+        ],
+        "tags": [
+          "disaster aid",
+          "FEMA help",
+          "wildfire assistance",
+          "flood assistance",
+          "DisasterAssistance",
+          "storm damage"
+        ]
+      }
+    },
+    {
+      "id": "journey-disaster:step:apply",
+      "kind": "step",
+      "label": "Apply and save the registration number",
+      "description": "Apply through DisasterAssistance.gov or another FEMA-approved channel, then respond to inspection or document requests.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People affected by a federally declared disaster"
+        ],
+        "category": "Emergencies and disasters",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:disaster-gov",
+          "source:fema-individual"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-disaster:step:check",
+      "kind": "step",
+      "label": "Check the declared disaster and available help",
+      "description": "Use DisasterAssistance.gov to see whether assistance is available for your location and situation.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People affected by a federally declared disaster"
+        ],
+        "category": "Emergencies and disasters",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:disaster-gov",
+          "source:fema-individual"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-disaster:step:document",
+      "kind": "step",
+      "label": "Document damage and contact insurance",
+      "description": "Photograph damage when safe, keep receipts, and notify your insurer. FEMA may ask about insurance coverage and decisions.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People affected by a federally declared disaster"
+        ],
+        "category": "Emergencies and disasters",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:fema-individual"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-disaster:step:safety",
+      "kind": "step",
+      "label": "Address immediate safety needs",
+      "description": "Follow local emergency instructions first. Government assistance applications do not replace emergency response or insurance notification.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People affected by a federally declared disaster"
+        ],
+        "category": "Emergencies and disasters",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:fema-individual"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ein",
+      "kind": "journey",
+      "label": "Get an Employer Identification Number",
+      "description": "Confirm that your organization needs an EIN, form the entity first when applicable, and apply directly with the IRS.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Business owners",
+          "Organizations"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-get-ein"
+        ],
+        "tags": [
+          "EIN",
+          "employer ID",
+          "tax ID for business",
+          "federal tax number",
+          "SS-4"
+        ]
+      }
+    },
+    {
+      "id": "journey-ein:step:apply",
+      "kind": "step",
+      "label": "Apply directly with the IRS",
+      "description": "Use an official IRS application method. The IRS does not charge for an EIN.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Business owners",
+          "Organizations"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-get-ein"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ein:step:form",
+      "kind": "step",
+      "label": "Form the legal entity first",
+      "description": "If you are creating an LLC, corporation, partnership, or exempt organization, complete the state formation step before requesting the EIN.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Business owners",
+          "Organizations"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-get-ein"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ein:step:need",
+      "kind": "step",
+      "label": "Confirm that you need an EIN",
+      "description": "The IRS explains when a business or organization needs an EIN and when a responsible party may apply.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Business owners",
+          "Organizations"
+        ],
+        "category": "Business",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-get-ein"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-fafsa",
+      "kind": "journey",
+      "label": "Apply for federal student aid with the FAFSA form",
+      "description": "Create the required StudentAid.gov accounts, gather financial information, submit the FAFSA form, and review school requests.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Students",
+          "Contributors to a student\u2019s FAFSA form"
+        ],
+        "category": "Education",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:studentaid-fafsa"
+        ],
+        "tags": [
+          "FAFSA",
+          "college financial aid",
+          "student aid",
+          "Pell grant",
+          "pay for college"
+        ]
+      }
+    },
+    {
+      "id": "journey-fafsa:step:account",
+      "kind": "step",
+      "label": "Create the required StudentAid.gov accounts",
+      "description": "The student and any required contributors need their own accounts. Do not share credentials.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Students",
+          "Contributors to a student\u2019s FAFSA form"
+        ],
+        "category": "Education",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:studentaid-fafsa"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-fafsa:step:follow",
+      "kind": "step",
+      "label": "Review the summary and school follow-up",
+      "description": "Correct errors if needed and respond to verification or financial aid requests from each school.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Students",
+          "Contributors to a student\u2019s FAFSA form"
+        ],
+        "category": "Education",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:studentaid-fafsa"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-fafsa:step:prepare",
+      "kind": "step",
+      "label": "Gather the requested information",
+      "description": "Use the current FAFSA checklist for identity, tax, financial, and school information. Contributor requirements depend on the student\u2019s situation.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Students",
+          "Contributors to a student\u2019s FAFSA form"
+        ],
+        "category": "Education",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:studentaid-fafsa"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-fafsa:step:submit",
+      "kind": "step",
+      "label": "Complete and submit the FAFSA form",
+      "description": "Review every section, obtain required contributor consent and signatures, and save the submission confirmation.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Students",
+          "Contributors to a student\u2019s FAFSA form"
+        ],
+        "category": "Education",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:studentaid-fafsa"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-benefits",
+      "kind": "journey",
+      "label": "Find government benefits you may qualify for",
+      "description": "Use the official Benefit Finder to identify possible programs, then verify eligibility and apply with the agency that runs each program.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "People seeking government assistance"
+        ],
+        "category": "Benefits",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:benefit-finder"
+        ],
+        "tags": [
+          "benefits",
+          "government assistance",
+          "help paying bills",
+          "Benefit Finder",
+          "what aid can I get",
+          "financial help"
+        ]
+      }
+    },
+    {
+      "id": "journey-federal-benefits:step:apply",
+      "kind": "step",
+      "label": "Apply with the responsible agency",
+      "description": "Use the application link and contact information on the official program page. Keep application confirmations and notices.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "People seeking government assistance"
+        ],
+        "category": "Benefits",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:benefit-finder"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-benefits:step:finder",
+      "kind": "step",
+      "label": "Answer the Benefit Finder questions",
+      "description": "USA.gov uses your answers to suggest federal and state programs that may fit. You can skip questions you do not want to answer.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "People seeking government assistance"
+        ],
+        "category": "Benefits",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:benefit-finder"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-benefits:step:review",
+      "kind": "step",
+      "label": "Review each suggested program",
+      "description": "A suggestion is not an eligibility decision. Open the official program page and check location, income, age, household, or status rules.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "People seeking government assistance"
+        ],
+        "category": "Benefits",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:benefit-finder"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-taxes",
+      "kind": "journey",
+      "label": "File a federal tax return",
+      "description": "Determine whether you need to file, gather tax records, choose an IRS-supported filing option, and keep confirmation.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Individual taxpayers"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-file",
+          "source:irs-free"
+        ],
+        "tags": [
+          "file taxes",
+          "tax return",
+          "income tax",
+          "1040",
+          "IRS filing",
+          "free file"
+        ]
+      }
+    },
+    {
+      "id": "journey-federal-taxes:step:confirm",
+      "kind": "step",
+      "label": "Save proof of filing",
+      "description": "Keep the accepted-return confirmation and a copy of the return. Use IRS tools for refund or account follow-up.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Individual taxpayers"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-file"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-taxes:step:method",
+      "kind": "step",
+      "label": "Choose a filing method",
+      "description": "Use an IRS online filing option, approved software or preparer, or paper forms. Eligibility for free services varies.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Individual taxpayers"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-file",
+          "source:irs-free"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-taxes:step:records",
+      "kind": "step",
+      "label": "Gather tax records",
+      "description": "Collect income statements, deduction or credit records, identity information, and prior-year information required by your chosen filing method.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Individual taxpayers"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-file"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-federal-taxes:step:requirement",
+      "kind": "step",
+      "label": "Check whether you need to file",
+      "description": "Use the IRS filing requirement guidance for your income, filing status, age, and other circumstances.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Individual taxpayers"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-file"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-green-card",
+      "kind": "journey",
+      "label": "Renew or replace a Green Card",
+      "description": "Confirm that Form I-90 is the correct route, prepare the required evidence, and file through USCIS.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Lawful permanent residents",
+          "Conditional permanent residents with limited I-90 situations"
+        ],
+        "category": "Immigration and citizenship",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:uscis-i90",
+          "source:usa-green-card"
+        ],
+        "tags": [
+          "renew green card",
+          "lost green card",
+          "replace permanent resident card",
+          "I-90",
+          "expired green card"
+        ]
+      }
+    },
+    {
+      "id": "journey-green-card:step:evidence",
+      "kind": "step",
+      "label": "Gather evidence for your filing reason",
+      "description": "Use the current USCIS instructions for the copy, identity, or biographic evidence that applies to your situation.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Lawful permanent residents",
+          "Conditional permanent residents with limited I-90 situations"
+        ],
+        "category": "Immigration and citizenship",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:uscis-i90"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-green-card:step:file",
+      "kind": "step",
+      "label": "File with USCIS and track the receipt",
+      "description": "Use the filing method USCIS allows for your situation. Keep the receipt notice and attend any biometrics appointment requested.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Lawful permanent residents",
+          "Conditional permanent residents with limited I-90 situations"
+        ],
+        "category": "Immigration and citizenship",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:uscis-i90"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-green-card:step:route",
+      "kind": "step",
+      "label": "Confirm that Form I-90 is the right route",
+      "description": "USCIS lists the reasons that use Form I-90. Some conditional-resident situations require a different petition.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Lawful permanent residents",
+          "Conditional permanent residents with limited I-90 situations"
+        ],
+        "category": "Immigration and citizenship",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:uscis-i90",
+          "source:usa-green-card"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-identity-theft",
+      "kind": "journey",
+      "label": "Report and recover from identity theft",
+      "description": "Create an official recovery plan, secure affected accounts, and keep records as you complete each step.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Identity theft victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:identity-theft-gov"
+        ],
+        "tags": [
+          "identity stolen",
+          "identity theft",
+          "someone used my SSN",
+          "fraud account",
+          "credit fraud"
+        ]
+      }
+    },
+    {
+      "id": "journey-identity-theft:step:accounts",
+      "kind": "step",
+      "label": "Contact affected companies",
+      "description": "Use the recovery plan to close or secure fraudulent accounts and keep confirmation numbers and correspondence.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Identity theft victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:identity-theft-gov"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-identity-theft:step:credit",
+      "kind": "step",
+      "label": "Protect your credit files",
+      "description": "Follow the official plan for fraud alerts, credit freezes, and reviewing credit reports when those steps fit your situation.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Identity theft victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:identity-theft-gov"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-identity-theft:step:plan",
+      "kind": "step",
+      "label": "Create an IdentityTheft.gov recovery plan",
+      "description": "Report what happened to the Federal Trade Commission and use the personalized checklist it generates.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Identity theft victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:identity-theft-gov"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-identity-theft:step:records",
+      "kind": "step",
+      "label": "Keep an incident file",
+      "description": "Save the FTC report, dates, names, letters, and proof of each action. A police report may be useful in some situations.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Identity theft victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:identity-theft-gov"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-irs-notice",
+      "kind": "journey",
+      "label": "Respond to an IRS notice or letter",
+      "description": "Read the notice carefully, compare it with your records, and respond by the method and date printed on that specific notice.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Taxpayers who received an IRS notice"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-notice"
+        ],
+        "tags": [
+          "IRS letter",
+          "tax notice",
+          "IRS mail",
+          "CP notice",
+          "owe IRS",
+          "audit letter"
+        ]
+      }
+    },
+    {
+      "id": "journey-irs-notice:step:compare",
+      "kind": "step",
+      "label": "Compare the notice with your records",
+      "description": "Check the tax year, amounts, and issue against your filed return and supporting documents before responding.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Taxpayers who received an IRS notice"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-notice"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-irs-notice:step:read",
+      "kind": "step",
+      "label": "Identify what the notice asks",
+      "description": "Use the notice number and explanation printed on the letter. A notice may request information, explain a change, or require payment or a response.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Taxpayers who received an IRS notice"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-notice"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-irs-notice:step:respond",
+      "kind": "step",
+      "label": "Follow the notice-specific instructions",
+      "description": "Respond using the address, phone number, online tool, and date printed on the notice. Keep copies of everything you send.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Taxpayers who received an IRS notice"
+        ],
+        "category": "Taxes",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:irs-notice"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-medi-cal",
+      "kind": "journey",
+      "label": "Apply for Medi-Cal",
+      "description": "Choose an official application channel, submit household information, and respond to county requests or notices.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dhcs-apply"
+        ],
+        "tags": [
+          "Medi-Cal",
+          "California Medicaid",
+          "health insurance help",
+          "medical coverage",
+          "low income health insurance"
+        ]
+      }
+    },
+    {
+      "id": "journey-medi-cal:step:follow-up",
+      "kind": "step",
+      "label": "Respond to county notices",
+      "description": "Watch for requests for documents or a decision notice, and use the contact or appeal instructions printed on the notice when needed.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dhcs-apply"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-medi-cal:step:route",
+      "kind": "step",
+      "label": "Choose an application route",
+      "description": "Apply online, through Covered California, or through your county using the current options listed by the Department of Health Care Services.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dhcs-apply"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-medi-cal:step:submit",
+      "kind": "step",
+      "label": "Submit household information",
+      "description": "Provide the requested information about household members, income, and existing coverage. The exact verification depends on your situation.",
+      "params": {
+        "jurisdiction": "california",
+        "audience": [
+          "California residents"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:dhcs-apply"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-medicare",
+      "kind": "journey",
+      "label": "Sign up for Medicare",
+      "description": "Check whether enrollment is automatic, identify your enrollment period, and use Social Security\u2019s application route when action is required.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People approaching Medicare eligibility",
+          "Some people with disabilities"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:medicare-signup",
+          "source:ssa-medicare"
+        ],
+        "tags": [
+          "Medicare",
+          "turning 65",
+          "health insurance 65",
+          "Medicare Part A",
+          "Medicare Part B"
+        ]
+      }
+    },
+    {
+      "id": "journey-medicare:step:apply",
+      "kind": "step",
+      "label": "Apply through Social Security if needed",
+      "description": "Social Security handles Medicare enrollment applications. Medicare.gov explains coverage choices after enrollment.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People approaching Medicare eligibility",
+          "Some people with disabilities"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-medicare",
+          "source:medicare-signup"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-medicare:step:automatic",
+      "kind": "step",
+      "label": "Check whether enrollment is automatic",
+      "description": "Some people receiving Social Security benefits are enrolled automatically; others must sign up.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People approaching Medicare eligibility",
+          "Some people with disabilities"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:medicare-signup",
+          "source:ssa-medicare"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-medicare:step:period",
+      "kind": "step",
+      "label": "Identify the enrollment period that applies",
+      "description": "The timing and possible consequences of delaying Part B depend on your coverage and circumstances. Use the official enrollment guidance.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People approaching Medicare eligibility",
+          "Some people with disabilities"
+        ],
+        "category": "Health care",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:medicare-signup"
+        ],
+        "tags": []
       }
     },
     {
@@ -247,1992 +1921,88 @@
       }
     },
     {
-      "id": "source:state-passports",
-      "kind": "source",
-      "label": "U.S. Passports",
-      "description": "Official source published by U.S. Department of State.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://travel.state.gov/content/travel/en/passports.html",
-        "sourceIds": [],
-        "tags": [
-          "U.S. Department of State"
-        ]
-      }
-    },
-    {
-      "id": "source:usa-passports",
-      "kind": "source",
-      "label": "How to apply for or renew a U.S. passport",
-      "description": "Official source published by USA.gov.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.usa.gov/passport",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov"
-        ]
-      }
-    },
-    {
-      "id": "journey-ss-card",
+      "id": "journey-passport-lost",
       "kind": "journey",
-      "label": "Replace a Social Security card",
-      "description": "Check whether you can request a replacement online; otherwise prepare the documents Social Security requires.",
+      "label": "Replace a lost or stolen passport",
+      "description": "Report the passport so it can be invalidated, then use the correct replacement process for where you are.",
       "params": {
         "jurisdiction": "federal",
         "audience": [
-          "People with a Social Security number"
+          "U.S. citizens"
         ],
         "category": "Documents and identity",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:ssa-replace",
-          "source:usa-ss-card",
-          "source:identity-theft-gov"
+          "source:usa-lost-passport",
+          "source:state-lost-passport",
+          "source:state-processing"
         ],
         "tags": [
-          "lost social security card",
-          "replace ssn card",
-          "new social security card",
-          "SS card"
+          "lost passport",
+          "stolen passport",
+          "passport missing",
+          "replace passport",
+          "DS-64",
+          "DS-11"
         ]
       }
     },
     {
-      "id": "journey-ss-card:step:online",
+      "id": "journey-passport-lost:step:location",
       "kind": "step",
-      "label": "Check online eligibility",
-      "description": "Social Security offers an online replacement option for many people. Availability depends on your situation and state-issued identification.",
+      "label": "Use the route for your location",
+      "description": "Inside the U.S., replacement generally uses Form DS-11 in person. Outside the U.S., contact the nearest U.S. embassy or consulate.",
       "params": {
         "jurisdiction": "federal",
         "audience": [
-          "People with a Social Security number"
+          "U.S. citizens"
         ],
         "category": "Documents and identity",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:ssa-replace"
+          "source:usa-lost-passport",
+          "source:state-lost-passport"
         ],
         "tags": []
       }
     },
     {
-      "id": "journey-ss-card:step:documents",
+      "id": "journey-passport-lost:step:report",
       "kind": "step",
-      "label": "Prepare original identity documents if needed",
-      "description": "If you cannot complete the request online, use Social Security's document checklist and application route. Do not mail documents until the official instructions tell you to.",
+      "label": "Report the passport",
+      "description": "Report it online, by phone, or by mailing Form DS-64. Once reported, the passport is invalid and cannot be used if found.",
       "params": {
         "jurisdiction": "federal",
         "audience": [
-          "People with a Social Security number"
+          "U.S. citizens"
         ],
         "category": "Documents and identity",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:ssa-replace",
-          "source:usa-ss-card"
+          "source:usa-lost-passport",
+          "source:state-lost-passport"
         ],
         "tags": []
       }
     },
     {
-      "id": "journey-ss-card:step:protect",
+      "id": "journey-passport-lost:step:timing",
       "kind": "step",
-      "label": "Respond to identity theft separately",
-      "description": "A missing card does not always require a fraud report, but suspicious use of your number should be handled through IdentityTheft.gov.",
+      "label": "Check current processing guidance",
+      "description": "Processing options and timing can change. Confirm them on the State Department site before making travel plans.",
       "params": {
         "jurisdiction": "federal",
         "audience": [
-          "People with a Social Security number"
+          "U.S. citizens"
         ],
         "category": "Documents and identity",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:identity-theft-gov"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:ssa-replace",
-      "kind": "source",
-      "label": "Replace Social Security card",
-      "description": "Official source published by Social Security Administration.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.ssa.gov/number-card/replace-card",
-        "sourceIds": [],
-        "tags": [
-          "Social Security Administration"
-        ]
-      }
-    },
-    {
-      "id": "agency:social-security-administration",
-      "kind": "agency",
-      "label": "Social Security Administration",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:usa-ss-card",
-      "kind": "source",
-      "label": "Replace Social Security card",
-      "description": "Official source published by USA.gov.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.usa.gov/social-security-card",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov"
-        ]
-      }
-    },
-    {
-      "id": "source:identity-theft-gov",
-      "kind": "source",
-      "label": "Report identity theft and get a recovery plan",
-      "description": "Official source published by Federal Trade Commission.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.identitytheft.gov/",
-        "sourceIds": [],
-        "tags": [
-          "Federal Trade Commission"
-        ]
-      }
-    },
-    {
-      "id": "agency:federal-trade-commission",
-      "kind": "agency",
-      "label": "Federal Trade Commission",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-license",
-      "kind": "journey",
-      "label": "Get or replace a California driver’s license",
-      "description": "Use the California DMV route for a first license, renewal, or replacement and bring the documents listed for that transaction.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Driving and transportation",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-license"
-        ],
-        "tags": [
-          "lost license",
-          "California driver license",
-          "DMV license",
-          "renew drivers license",
-          "replace drivers license"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-license:step:transaction",
-      "kind": "step",
-      "label": "Choose your transaction",
-      "description": "The DMV uses different routes for a first license, renewal, replacement, name change, and REAL ID upgrade.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Driving and transportation",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-license"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-license:step:prepare",
-      "kind": "step",
-      "label": "Complete the application and document check",
-      "description": "Use the DMV checklist for the exact transaction before visiting an office or paying online.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Driving and transportation",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-license"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-license:step:finish",
-      "kind": "step",
-      "label": "Finish online or at a DMV office",
-      "description": "Some transactions can be completed online. Others require an appointment, documents, photo, test, or in-person identity verification.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Driving and transportation",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-license"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:dmv-license",
-      "kind": "source",
-      "label": "Driver’s Licenses and Identification Cards",
-      "description": "Official source published by California DMV.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/",
-        "sourceIds": [],
-        "tags": [
-          "California DMV"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-dmv",
-      "kind": "agency",
-      "label": "California DMV",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-real-id",
-      "kind": "journey",
-      "label": "Get a California REAL ID",
-      "description": "Apply through the California DMV, upload or gather the required documents, and complete identity verification in person.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-real-id"
-        ],
-        "tags": [
-          "REAL ID",
-          "California real id",
-          "federal compliant ID",
-          "DMV real ID"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-real-id:step:check",
-      "kind": "step",
-      "label": "Decide whether you need a REAL ID",
-      "description": "A passport or another federally accepted document may meet your federal identification need. Check the official guidance before applying.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-real-id"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-real-id:step:documents",
-      "kind": "step",
-      "label": "Gather the required documents",
-      "description": "Use the DMV checklist for proof of identity, Social Security number, and California residency. Requirements depend on your documents and name history.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-real-id"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-real-id:step:visit",
-      "kind": "step",
-      "label": "Complete the DMV visit",
-      "description": "Start the application online when available, then bring the required originals to a DMV office for verification.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dmv-real-id"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:dmv-real-id",
-      "kind": "source",
-      "label": "REAL ID",
-      "description": "Official source published by California DMV.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/",
-        "sourceIds": [],
-        "tags": [
-          "California DMV"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-unemployment",
-      "kind": "journey",
-      "label": "Apply for California unemployment benefits",
-      "description": "Review eligibility, create or use myEDD, file a claim, and keep certifying for benefits while the claim is active.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California workers"
-        ],
-        "category": "Jobs and unemployment",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:edd-file",
-          "source:edd-certify"
-        ],
-        "tags": [
-          "lost my job",
-          "unemployment",
-          "EDD",
-          "laid off",
-          "unemployment insurance",
-          "UI claim"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-unemployment:step:eligibility",
-      "kind": "step",
-      "label": "Review basic eligibility",
-      "description": "EDD evaluates work history, earnings, availability for work, and the reason you are no longer working.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California workers"
-        ],
-        "category": "Jobs and unemployment",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:edd-file"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-unemployment:step:information",
-      "kind": "step",
-      "label": "Gather employment information",
-      "description": "Prepare identity, contact, and recent employer information using EDD's current checklist.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California workers"
-        ],
-        "category": "Jobs and unemployment",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:edd-file"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-unemployment:step:claim",
-      "kind": "step",
-      "label": "File the claim",
-      "description": "Use UI Online through myEDD or another method listed by EDD. Save confirmations and respond to follow-up requests.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California workers"
-        ],
-        "category": "Jobs and unemployment",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:edd-file"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-unemployment:step:certify",
-      "kind": "step",
-      "label": "Certify for benefits",
-      "description": "Continue certifying for each period requested and report work or earnings accurately while the claim is active.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California workers"
-        ],
-        "category": "Jobs and unemployment",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:edd-certify"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:edd-file",
-      "kind": "source",
-      "label": "Filing an Unemployment Claim",
-      "description": "Official source published by California Employment Development Department.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://edd.ca.gov/en/unemployment/filing_a_claim/",
-        "sourceIds": [],
-        "tags": [
-          "California Employment Development Department"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-employment-development-department",
-      "kind": "agency",
-      "label": "California Employment Development Department",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:edd-certify",
-      "kind": "source",
-      "label": "Certify for Benefits",
-      "description": "Official source published by California Employment Development Department.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://edd.ca.gov/en/unemployment/certify/",
-        "sourceIds": [],
-        "tags": [
-          "California Employment Development Department"
-        ]
-      }
-    },
-    {
-      "id": "journey-calfresh",
-      "kind": "journey",
-      "label": "Apply for CalFresh food benefits",
-      "description": "Submit a CalFresh application, complete the county interview, and provide requested verification.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California households"
-        ],
-        "category": "Food and household support",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdss-calfresh",
-          "source:benefitscal"
-        ],
-        "tags": [
-          "food stamps",
-          "CalFresh",
-          "SNAP California",
-          "food assistance",
-          "EBT"
-        ]
-      }
-    },
-    {
-      "id": "journey-calfresh:step:apply",
-      "kind": "step",
-      "label": "Submit an application",
-      "description": "Apply online through BenefitsCal or use a method offered by your county. You can begin with basic contact information and complete the rest as directed.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California households"
-        ],
-        "category": "Food and household support",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdss-calfresh",
-          "source:benefitscal"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-calfresh:step:interview",
-      "kind": "step",
-      "label": "Complete the county interview",
-      "description": "Your county will contact you for an interview and explain what verification is needed for your household.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California households"
-        ],
-        "category": "Food and household support",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdss-calfresh"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-calfresh:step:respond",
-      "kind": "step",
-      "label": "Provide requested verification",
-      "description": "Submit only the documents your county requests, watch for notices, and use the appeal information on a notice if you disagree with a decision.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California households"
-        ],
-        "category": "Food and household support",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdss-calfresh"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:cdss-calfresh",
-      "kind": "source",
-      "label": "CalFresh",
-      "description": "Official source published by California Department of Social Services.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.cdss.ca.gov/calfresh",
-        "sourceIds": [],
-        "tags": [
-          "California Department of Social Services"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-department-of-social-services",
-      "kind": "agency",
-      "label": "California Department of Social Services",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:benefitscal",
-      "kind": "source",
-      "label": "BenefitsCal",
-      "description": "Official source published by California counties.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://benefitscal.com/",
-        "sourceIds": [],
-        "tags": [
-          "California counties"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-counties",
-      "kind": "agency",
-      "label": "California counties",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-medi-cal",
-      "kind": "journey",
-      "label": "Apply for Medi-Cal",
-      "description": "Choose an official application channel, submit household information, and respond to county requests or notices.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dhcs-apply"
-        ],
-        "tags": [
-          "Medi-Cal",
-          "California Medicaid",
-          "health insurance help",
-          "medical coverage",
-          "low income health insurance"
-        ]
-      }
-    },
-    {
-      "id": "journey-medi-cal:step:route",
-      "kind": "step",
-      "label": "Choose an application route",
-      "description": "Apply online, through Covered California, or through your county using the current options listed by the Department of Health Care Services.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dhcs-apply"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-medi-cal:step:submit",
-      "kind": "step",
-      "label": "Submit household information",
-      "description": "Provide the requested information about household members, income, and existing coverage. The exact verification depends on your situation.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dhcs-apply"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-medi-cal:step:follow-up",
-      "kind": "step",
-      "label": "Respond to county notices",
-      "description": "Watch for requests for documents or a decision notice, and use the contact or appeal instructions printed on the notice when needed.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "California residents"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:dhcs-apply"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:dhcs-apply",
-      "kind": "source",
-      "label": "Apply for Medi-Cal",
-      "description": "Official source published by California Department of Health Care Services.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.dhcs.ca.gov/services/medi-cal/Pages/ApplyforMedi-Cal.aspx",
-        "sourceIds": [],
-        "tags": [
-          "California Department of Health Care Services"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-department-of-health-care-services",
-      "kind": "agency",
-      "label": "California Department of Health Care Services",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-business",
-      "kind": "journey",
-      "label": "Start and register a business in California",
-      "description": "Choose a business structure, register where required, handle tax accounts, and check local permits.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "California business owners"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ca-business",
-          "source:sos-biz",
-          "source:irs-ein",
-          "source:ftb-start",
-          "source:calgold"
-        ],
-        "tags": [
-          "start business",
-          "California LLC",
-          "register company",
-          "business license",
-          "form a corporation",
-          "sole proprietor"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-business:step:plan",
-      "kind": "step",
-      "label": "Choose a structure and name",
-      "description": "Compare legal and tax implications before filing. Check name availability and any naming rules for the structure you choose.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "California business owners"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ca-business",
-          "source:sos-biz"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-business:step:register",
-      "kind": "step",
-      "label": "Register the entity if required",
-      "description": "Corporations, LLCs, and limited partnerships generally file with the Secretary of State. Other structures may use county filings.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "California business owners"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:sos-biz"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-business:step:tax",
-      "kind": "step",
-      "label": "Set up tax accounts",
-      "description": "Check whether you need a federal EIN and register for applicable California tax programs.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "California business owners"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-ein",
-          "source:ftb-start"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-business:step:permits",
-      "kind": "step",
-      "label": "Check licenses and local permits",
-      "description": "Use CalGold and your city or county to identify permits and registrations for your location and activity.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "California business owners"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:calgold"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:ca-business",
-      "kind": "source",
-      "label": "Set Up Your Business in California",
-      "description": "Official source published by California Office of the Small Business Advocate.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://calosba.ca.gov/for-small-businesses-and-non-profits/set-up-your-business-in-california/",
-        "sourceIds": [],
-        "tags": [
-          "California Office of the Small Business Advocate"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-office-of-the-small-business-advocate",
-      "kind": "agency",
-      "label": "California Office of the Small Business Advocate",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:sos-biz",
-      "kind": "source",
-      "label": "bizfile Online",
-      "description": "Official source published by California Secretary of State.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://bizfileonline.sos.ca.gov/",
-        "sourceIds": [],
-        "tags": [
-          "California Secretary of State"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-secretary-of-state",
-      "kind": "agency",
-      "label": "California Secretary of State",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:irs-ein",
-      "kind": "source",
-      "label": "Employer Identification Number",
-      "description": "Official source published by Internal Revenue Service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
-        "sourceIds": [],
-        "tags": [
-          "Internal Revenue Service"
-        ]
-      }
-    },
-    {
-      "id": "agency:internal-revenue-service",
-      "kind": "agency",
-      "label": "Internal Revenue Service",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:ftb-start",
-      "kind": "source",
-      "label": "Business filing information",
-      "description": "Official source published by California Franchise Tax Board.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.ftb.ca.gov/file/business/index.html",
-        "sourceIds": [],
-        "tags": [
-          "California Franchise Tax Board"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-franchise-tax-board",
-      "kind": "agency",
-      "label": "California Franchise Tax Board",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:calgold",
-      "kind": "source",
-      "label": "CalGold Permit Assistance",
-      "description": "Official source published by State of California.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.calgold.ca.gov/",
-        "sourceIds": [],
-        "tags": [
-          "State of California"
-        ]
-      }
-    },
-    {
-      "id": "agency:state-of-california",
-      "kind": "agency",
-      "label": "State of California",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-birth-certificate",
-      "kind": "journey",
-      "label": "Get a California birth certificate",
-      "description": "Identify the correct vital records office, choose an authorized or informational copy, and submit the required identity statement.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "People born in California",
-          "Eligible requesters"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdph-vital"
-        ],
-        "tags": [
-          "birth certificate",
-          "vital record",
-          "proof of birth",
-          "California birth record"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-birth-certificate:step:office",
-      "kind": "step",
-      "label": "Choose the correct office",
-      "description": "California Department of Public Health and county recorder offices handle copies. The best route can depend on the event date and county.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "People born in California",
-          "Eligible requesters"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdph-vital"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-birth-certificate:step:copy",
-      "kind": "step",
-      "label": "Choose the copy type",
-      "description": "Authorized copies can be used to establish identity; informational copies cannot. Eligibility rules apply to authorized copies.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "People born in California",
-          "Eligible requesters"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdph-vital"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-birth-certificate:step:submit",
-      "kind": "step",
-      "label": "Submit the application and identity statement",
-      "description": "Use the current state or county form and follow notarization and payment instructions for your chosen submission method.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "People born in California",
-          "Eligible requesters"
-        ],
-        "category": "Documents and identity",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:cdph-vital"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:cdph-vital",
-      "kind": "source",
-      "label": "Vital Records",
-      "description": "Official source published by California Department of Public Health.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Vital-Records.aspx",
-        "sourceIds": [],
-        "tags": [
-          "California Department of Public Health"
-        ]
-      }
-    },
-    {
-      "id": "agency:california-department-of-public-health",
-      "kind": "agency",
-      "label": "California Department of Public Health",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-vote",
-      "kind": "journey",
-      "label": "Register to vote in California",
-      "description": "Check eligibility, register or update your record, and confirm your status through the Secretary of State.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "Eligible California residents"
-        ],
-        "category": "Voting and civic life",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:sos-vote",
-          "source:register-vote",
-          "source:voter-status"
-        ],
-        "tags": [
-          "register to vote",
-          "voter registration",
-          "change party",
-          "change voting address",
-          "California election"
-        ]
-      }
-    },
-    {
-      "id": "journey-ca-vote:step:eligibility",
-      "kind": "step",
-      "label": "Check eligibility",
-      "description": "Review California’s citizenship, residency, age, and status requirements before submitting a registration.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "Eligible California residents"
-        ],
-        "category": "Voting and civic life",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:sos-vote"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-vote:step:register",
-      "kind": "step",
-      "label": "Register or update your record",
-      "description": "Use the official online registration system or another state-approved method. Re-register after relevant name, address, or party changes.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "Eligible California residents"
-        ],
-        "category": "Voting and civic life",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:register-vote",
-          "source:sos-vote"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ca-vote:step:confirm",
-      "kind": "step",
-      "label": "Check your voter status",
-      "description": "Use the state voter status tool or contact your county elections office to confirm your record and election information.",
-      "params": {
-        "jurisdiction": "california",
-        "audience": [
-          "Eligible California residents"
-        ],
-        "category": "Voting and civic life",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:voter-status"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:sos-vote",
-      "kind": "source",
-      "label": "Voter Registration",
-      "description": "Official source published by California Secretary of State.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.sos.ca.gov/elections/voter-registration",
-        "sourceIds": [],
-        "tags": [
-          "California Secretary of State"
-        ]
-      }
-    },
-    {
-      "id": "source:register-vote",
-      "kind": "source",
-      "label": "California Online Voter Registration",
-      "description": "Official source published by California Secretary of State.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://registertovote.ca.gov/",
-        "sourceIds": [],
-        "tags": [
-          "California Secretary of State"
-        ]
-      }
-    },
-    {
-      "id": "source:voter-status",
-      "kind": "source",
-      "label": "My Voter Status",
-      "description": "Official source published by California Secretary of State.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://voterstatus.sos.ca.gov/EN/Authenticate",
-        "sourceIds": [],
-        "tags": [
-          "California Secretary of State"
-        ]
-      }
-    },
-    {
-      "id": "journey-federal-taxes",
-      "kind": "journey",
-      "label": "File a federal tax return",
-      "description": "Determine whether you need to file, gather tax records, choose an IRS-supported filing option, and keep confirmation.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Individual taxpayers"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-file",
-          "source:irs-free"
-        ],
-        "tags": [
-          "file taxes",
-          "tax return",
-          "income tax",
-          "1040",
-          "IRS filing",
-          "free file"
-        ]
-      }
-    },
-    {
-      "id": "journey-federal-taxes:step:requirement",
-      "kind": "step",
-      "label": "Check whether you need to file",
-      "description": "Use the IRS filing requirement guidance for your income, filing status, age, and other circumstances.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Individual taxpayers"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-file"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-federal-taxes:step:records",
-      "kind": "step",
-      "label": "Gather tax records",
-      "description": "Collect income statements, deduction or credit records, identity information, and prior-year information required by your chosen filing method.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Individual taxpayers"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-file"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-federal-taxes:step:method",
-      "kind": "step",
-      "label": "Choose a filing method",
-      "description": "Use an IRS online filing option, approved software or preparer, or paper forms. Eligibility for free services varies.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Individual taxpayers"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-file",
-          "source:irs-free"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-federal-taxes:step:confirm",
-      "kind": "step",
-      "label": "Save proof of filing",
-      "description": "Keep the accepted-return confirmation and a copy of the return. Use IRS tools for refund or account follow-up.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Individual taxpayers"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-file"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:irs-file",
-      "kind": "source",
-      "label": "How to File",
-      "description": "Official source published by Internal Revenue Service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.irs.gov/filing/individuals/how-to-file",
-        "sourceIds": [],
-        "tags": [
-          "Internal Revenue Service"
-        ]
-      }
-    },
-    {
-      "id": "source:irs-free",
-      "kind": "source",
-      "label": "IRS Free File",
-      "description": "Official source published by Internal Revenue Service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free",
-        "sourceIds": [],
-        "tags": [
-          "Internal Revenue Service"
-        ]
-      }
-    },
-    {
-      "id": "journey-irs-notice",
-      "kind": "journey",
-      "label": "Respond to an IRS notice or letter",
-      "description": "Read the notice carefully, compare it with your records, and respond by the method and date printed on that specific notice.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Taxpayers who received an IRS notice"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-notice"
-        ],
-        "tags": [
-          "IRS letter",
-          "tax notice",
-          "IRS mail",
-          "CP notice",
-          "owe IRS",
-          "audit letter"
-        ]
-      }
-    },
-    {
-      "id": "journey-irs-notice:step:read",
-      "kind": "step",
-      "label": "Identify what the notice asks",
-      "description": "Use the notice number and explanation printed on the letter. A notice may request information, explain a change, or require payment or a response.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Taxpayers who received an IRS notice"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-notice"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-irs-notice:step:compare",
-      "kind": "step",
-      "label": "Compare the notice with your records",
-      "description": "Check the tax year, amounts, and issue against your filed return and supporting documents before responding.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Taxpayers who received an IRS notice"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-notice"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-irs-notice:step:respond",
-      "kind": "step",
-      "label": "Follow the notice-specific instructions",
-      "description": "Respond using the address, phone number, online tool, and date printed on the notice. Keep copies of everything you send.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Taxpayers who received an IRS notice"
-        ],
-        "category": "Taxes",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-notice"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:irs-notice",
-      "kind": "source",
-      "label": "Understanding Your IRS Notice or Letter",
-      "description": "Official source published by Internal Revenue Service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.irs.gov/individuals/understanding-your-irs-notice-or-letter",
-        "sourceIds": [],
-        "tags": [
-          "Internal Revenue Service"
-        ]
-      }
-    },
-    {
-      "id": "journey-ein",
-      "kind": "journey",
-      "label": "Get an Employer Identification Number",
-      "description": "Confirm that your organization needs an EIN, form the entity first when applicable, and apply directly with the IRS.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Business owners",
-          "Organizations"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-get-ein"
-        ],
-        "tags": [
-          "EIN",
-          "employer ID",
-          "tax ID for business",
-          "federal tax number",
-          "SS-4"
-        ]
-      }
-    },
-    {
-      "id": "journey-ein:step:need",
-      "kind": "step",
-      "label": "Confirm that you need an EIN",
-      "description": "The IRS explains when a business or organization needs an EIN and when a responsible party may apply.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Business owners",
-          "Organizations"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-get-ein"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ein:step:form",
-      "kind": "step",
-      "label": "Form the legal entity first",
-      "description": "If you are creating an LLC, corporation, partnership, or exempt organization, complete the state formation step before requesting the EIN.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Business owners",
-          "Organizations"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-get-ein"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-ein:step:apply",
-      "kind": "step",
-      "label": "Apply directly with the IRS",
-      "description": "Use an official IRS application method. The IRS does not charge for an EIN.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Business owners",
-          "Organizations"
-        ],
-        "category": "Business",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:irs-get-ein"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:irs-get-ein",
-      "kind": "source",
-      "label": "Get an Employer Identification Number",
-      "description": "Official source published by Internal Revenue Service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
-        "sourceIds": [],
-        "tags": [
-          "Internal Revenue Service"
-        ]
-      }
-    },
-    {
-      "id": "journey-fafsa",
-      "kind": "journey",
-      "label": "Apply for federal student aid with the FAFSA form",
-      "description": "Create the required StudentAid.gov accounts, gather financial information, submit the FAFSA form, and review school requests.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Students",
-          "Contributors to a student’s FAFSA form"
-        ],
-        "category": "Education",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:studentaid-fafsa"
-        ],
-        "tags": [
-          "FAFSA",
-          "college financial aid",
-          "student aid",
-          "Pell grant",
-          "pay for college"
-        ]
-      }
-    },
-    {
-      "id": "journey-fafsa:step:account",
-      "kind": "step",
-      "label": "Create the required StudentAid.gov accounts",
-      "description": "The student and any required contributors need their own accounts. Do not share credentials.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Students",
-          "Contributors to a student’s FAFSA form"
-        ],
-        "category": "Education",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:studentaid-fafsa"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-fafsa:step:prepare",
-      "kind": "step",
-      "label": "Gather the requested information",
-      "description": "Use the current FAFSA checklist for identity, tax, financial, and school information. Contributor requirements depend on the student’s situation.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Students",
-          "Contributors to a student’s FAFSA form"
-        ],
-        "category": "Education",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:studentaid-fafsa"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-fafsa:step:submit",
-      "kind": "step",
-      "label": "Complete and submit the FAFSA form",
-      "description": "Review every section, obtain required contributor consent and signatures, and save the submission confirmation.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Students",
-          "Contributors to a student’s FAFSA form"
-        ],
-        "category": "Education",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:studentaid-fafsa"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-fafsa:step:follow",
-      "kind": "step",
-      "label": "Review the summary and school follow-up",
-      "description": "Correct errors if needed and respond to verification or financial aid requests from each school.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Students",
-          "Contributors to a student’s FAFSA form"
-        ],
-        "category": "Education",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:studentaid-fafsa"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:studentaid-fafsa",
-      "kind": "source",
-      "label": "FAFSA Application",
-      "description": "Official source published by Federal Student Aid.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://studentaid.gov/h/apply-for-aid/fafsa",
-        "sourceIds": [],
-        "tags": [
-          "Federal Student Aid"
-        ]
-      }
-    },
-    {
-      "id": "agency:federal-student-aid",
-      "kind": "agency",
-      "label": "Federal Student Aid",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-medicare",
-      "kind": "journey",
-      "label": "Sign up for Medicare",
-      "description": "Check whether enrollment is automatic, identify your enrollment period, and use Social Security’s application route when action is required.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People approaching Medicare eligibility",
-          "Some people with disabilities"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:medicare-signup",
-          "source:ssa-medicare"
-        ],
-        "tags": [
-          "Medicare",
-          "turning 65",
-          "health insurance 65",
-          "Medicare Part A",
-          "Medicare Part B"
-        ]
-      }
-    },
-    {
-      "id": "journey-medicare:step:automatic",
-      "kind": "step",
-      "label": "Check whether enrollment is automatic",
-      "description": "Some people receiving Social Security benefits are enrolled automatically; others must sign up.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People approaching Medicare eligibility",
-          "Some people with disabilities"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:medicare-signup",
-          "source:ssa-medicare"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-medicare:step:period",
-      "kind": "step",
-      "label": "Identify the enrollment period that applies",
-      "description": "The timing and possible consequences of delaying Part B depend on your coverage and circumstances. Use the official enrollment guidance.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People approaching Medicare eligibility",
-          "Some people with disabilities"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:medicare-signup"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-medicare:step:apply",
-      "kind": "step",
-      "label": "Apply through Social Security if needed",
-      "description": "Social Security handles Medicare enrollment applications. Medicare.gov explains coverage choices after enrollment.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People approaching Medicare eligibility",
-          "Some people with disabilities"
-        ],
-        "category": "Health care",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ssa-medicare",
-          "source:medicare-signup"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:medicare-signup",
-      "kind": "source",
-      "label": "Sign up for Medicare",
-      "description": "Official source published by Centers for Medicare & Medicaid Services.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up",
-        "sourceIds": [],
-        "tags": [
-          "Centers for Medicare & Medicaid Services"
-        ]
-      }
-    },
-    {
-      "id": "agency:centers-for-medicare-medicaid-services",
-      "kind": "agency",
-      "label": "Centers for Medicare & Medicaid Services",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:ssa-medicare",
-      "kind": "source",
-      "label": "Sign up for Medicare",
-      "description": "Official source published by Social Security Administration.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.ssa.gov/medicare/sign-up",
-        "sourceIds": [],
-        "tags": [
-          "Social Security Administration"
-        ]
-      }
-    },
-    {
-      "id": "journey-identity-theft",
-      "kind": "journey",
-      "label": "Report and recover from identity theft",
-      "description": "Create an official recovery plan, secure affected accounts, and keep records as you complete each step.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Identity theft victims"
-        ],
-        "category": "Scams and safety",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:identity-theft-gov"
-        ],
-        "tags": [
-          "identity stolen",
-          "identity theft",
-          "someone used my SSN",
-          "fraud account",
-          "credit fraud"
-        ]
-      }
-    },
-    {
-      "id": "journey-identity-theft:step:plan",
-      "kind": "step",
-      "label": "Create an IdentityTheft.gov recovery plan",
-      "description": "Report what happened to the Federal Trade Commission and use the personalized checklist it generates.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Identity theft victims"
-        ],
-        "category": "Scams and safety",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:identity-theft-gov"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-identity-theft:step:accounts",
-      "kind": "step",
-      "label": "Contact affected companies",
-      "description": "Use the recovery plan to close or secure fraudulent accounts and keep confirmation numbers and correspondence.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Identity theft victims"
-        ],
-        "category": "Scams and safety",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:identity-theft-gov"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-identity-theft:step:credit",
-      "kind": "step",
-      "label": "Protect your credit files",
-      "description": "Follow the official plan for fraud alerts, credit freezes, and reviewing credit reports when those steps fit your situation.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Identity theft victims"
-        ],
-        "category": "Scams and safety",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:identity-theft-gov"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-identity-theft:step:records",
-      "kind": "step",
-      "label": "Keep an incident file",
-      "description": "Save the FTC report, dates, names, letters, and proof of each action. A police report may be useful in some situations.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Identity theft victims"
-        ],
-        "category": "Scams and safety",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:identity-theft-gov"
+          "source:state-processing"
         ],
         "tags": []
       }
@@ -2267,6 +2037,48 @@
       }
     },
     {
+      "id": "journey-report-fraud:step:evidence",
+      "kind": "step",
+      "label": "Preserve evidence",
+      "description": "Save messages, receipts, account records, URLs, and report confirmation numbers. Do not upload sensitive information except to the official system that asks for it.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "Consumers",
+          "Fraud victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:usa-report-scams"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-report-fraud:step:route",
+      "kind": "step",
+      "label": "Choose the correct report",
+      "description": "Use USA.gov\u2019s router for the scam type. General consumer fraud can be reported to the FTC; internet crime may also belong with the FBI\u2019s IC3.",
+      "params": {
+        "jurisdiction": "federal-and-state",
+        "audience": [
+          "Consumers",
+          "Fraud victims"
+        ],
+        "category": "Scams and safety",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:usa-report-scams",
+          "source:ftc-report",
+          "source:ic3"
+        ],
+        "tags": []
+      }
+    },
+    {
       "id": "journey-report-fraud:step:secure",
       "kind": "step",
       "label": "Stop contact and secure affected accounts",
@@ -2288,386 +2100,254 @@
       }
     },
     {
-      "id": "journey-report-fraud:step:route",
+      "id": "journey-social-security-retirement",
+      "kind": "journey",
+      "label": "Apply for Social Security retirement benefits",
+      "description": "Review how timing affects your benefit, gather account and banking information, and apply through Social Security.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Workers approaching retirement"
+        ],
+        "category": "Retirement",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-retirement",
+          "source:ssa-apply"
+        ],
+        "tags": [
+          "Social Security retirement",
+          "retirement benefits",
+          "claim social security",
+          "retire",
+          "SSA retirement"
+        ]
+      }
+    },
+    {
+      "id": "journey-social-security-retirement:step:apply",
       "kind": "step",
-      "label": "Choose the correct report",
-      "description": "Use USA.gov’s router for the scam type. General consumer fraud can be reported to the FTC; internet crime may also belong with the FBI’s IC3.",
+      "label": "Apply through Social Security",
+      "description": "Apply online when eligible or use the phone or appointment options Social Security provides. Save the confirmation and respond to document requests.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Workers approaching retirement"
+        ],
+        "category": "Retirement",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-apply"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-social-security-retirement:step:prepare",
+      "kind": "step",
+      "label": "Gather application information",
+      "description": "Prepare identity, work, family, and direct-deposit information using Social Security\u2019s application checklist.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Workers approaching retirement"
+        ],
+        "category": "Retirement",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-apply"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-social-security-retirement:step:timing",
+      "kind": "step",
+      "label": "Review when to start benefits",
+      "description": "Your claiming age affects the monthly amount. Use Social Security\u2019s estimates and official retirement guidance before choosing a start date.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Workers approaching retirement"
+        ],
+        "category": "Retirement",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-retirement"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ss-card",
+      "kind": "journey",
+      "label": "Replace a Social Security card",
+      "description": "Check whether you can request a replacement online; otherwise prepare the documents Social Security requires.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People with a Social Security number"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-replace",
+          "source:usa-ss-card",
+          "source:identity-theft-gov"
+        ],
+        "tags": [
+          "lost social security card",
+          "replace ssn card",
+          "new social security card",
+          "SS card"
+        ]
+      }
+    },
+    {
+      "id": "journey-ss-card:step:documents",
+      "kind": "step",
+      "label": "Prepare original identity documents if needed",
+      "description": "If you cannot complete the request online, use Social Security's document checklist and application route. Do not mail documents until the official instructions tell you to.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People with a Social Security number"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-replace",
+          "source:usa-ss-card"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ss-card:step:online",
+      "kind": "step",
+      "label": "Check online eligibility",
+      "description": "Social Security offers an online replacement option for many people. Availability depends on your situation and state-issued identification.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People with a Social Security number"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:ssa-replace"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-ss-card:step:protect",
+      "kind": "step",
+      "label": "Respond to identity theft separately",
+      "description": "A missing card does not always require a fraud report, but suspicious use of your number should be handled through IdentityTheft.gov.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "People with a Social Security number"
+        ],
+        "category": "Documents and identity",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:identity-theft-gov"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-usps-address",
+      "kind": "journey",
+      "label": "Change your mailing address",
+      "description": "Submit an official USPS change of address, then update high-priority government records separately.",
       "params": {
         "jurisdiction": "federal-and-state",
         "audience": [
-          "Consumers",
-          "Fraud victims"
+          "People moving within the United States"
         ],
-        "category": "Scams and safety",
+        "category": "Moving and addresses",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:usa-report-scams",
-          "source:ftc-report",
-          "source:ic3"
+          "source:usa-address",
+          "source:usps-move"
         ],
-        "tags": []
+        "tags": [
+          "change address",
+          "moved",
+          "forward mail",
+          "USPS address",
+          "update government address"
+        ]
       }
     },
     {
-      "id": "journey-report-fraud:step:evidence",
+      "id": "journey-usps-address:step:agencies",
       "kind": "step",
-      "label": "Preserve evidence",
-      "description": "Save messages, receipts, account records, URLs, and report confirmation numbers. Do not upload sensitive information except to the official system that asks for it.",
+      "label": "Update government agencies separately",
+      "description": "Mail forwarding does not change your address with IRS, Social Security, immigration, DMV, voter registration, or benefits programs.",
       "params": {
         "jurisdiction": "federal-and-state",
         "audience": [
-          "Consumers",
-          "Fraud victims"
+          "People moving within the United States"
         ],
-        "category": "Scams and safety",
+        "category": "Moving and addresses",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:usa-report-scams"
+          "source:usa-address"
         ],
         "tags": []
       }
     },
     {
-      "id": "source:usa-report-scams",
-      "kind": "source",
-      "label": "Where to report scams",
-      "description": "Official source published by USA.gov.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.usa.gov/where-report-scams",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov"
-        ]
-      }
-    },
-    {
-      "id": "source:ftc-report",
-      "kind": "source",
-      "label": "ReportFraud.ftc.gov",
-      "description": "Official source published by Federal Trade Commission.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://reportfraud.ftc.gov/",
-        "sourceIds": [],
-        "tags": [
-          "Federal Trade Commission"
-        ]
-      }
-    },
-    {
-      "id": "source:ic3",
-      "kind": "source",
-      "label": "Internet Crime Complaint Center",
-      "description": "Official source published by Federal Bureau of Investigation.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.ic3.gov/",
-        "sourceIds": [],
-        "tags": [
-          "Federal Bureau of Investigation"
-        ]
-      }
-    },
-    {
-      "id": "agency:federal-bureau-of-investigation",
-      "kind": "agency",
-      "label": "Federal Bureau of Investigation",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-disaster",
-      "kind": "journey",
-      "label": "Apply for federal disaster assistance",
-      "description": "Confirm that your area and loss qualify for an open disaster program, document damage, and apply through DisasterAssistance.gov.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People affected by a federally declared disaster"
-        ],
-        "category": "Emergencies and disasters",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:disaster-gov",
-          "source:fema-individual"
-        ],
-        "tags": [
-          "disaster aid",
-          "FEMA help",
-          "wildfire assistance",
-          "flood assistance",
-          "DisasterAssistance",
-          "storm damage"
-        ]
-      }
-    },
-    {
-      "id": "journey-disaster:step:safety",
+      "id": "journey-usps-address:step:records",
       "kind": "step",
-      "label": "Address immediate safety needs",
-      "description": "Follow local emergency instructions first. Government assistance applications do not replace emergency response or insurance notification.",
+      "label": "Keep confirmations and monitor mail",
+      "description": "Save each confirmation and check old and new mail channels for time-sensitive notices during the transition.",
       "params": {
-        "jurisdiction": "federal",
+        "jurisdiction": "federal-and-state",
         "audience": [
-          "People affected by a federally declared disaster"
+          "People moving within the United States"
         ],
-        "category": "Emergencies and disasters",
+        "category": "Moving and addresses",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:fema-individual"
+          "source:usa-address"
         ],
         "tags": []
       }
     },
     {
-      "id": "journey-disaster:step:check",
+      "id": "journey-usps-address:step:usps",
       "kind": "step",
-      "label": "Check the declared disaster and available help",
-      "description": "Use DisasterAssistance.gov to see whether assistance is available for your location and situation.",
+      "label": "Set up mail forwarding with USPS",
+      "description": "Use the official USPS change-of-address site or a Post Office. Avoid look-alike sites that charge unnecessary fees.",
       "params": {
-        "jurisdiction": "federal",
+        "jurisdiction": "federal-and-state",
         "audience": [
-          "People affected by a federally declared disaster"
+          "People moving within the United States"
         ],
-        "category": "Emergencies and disasters",
+        "category": "Moving and addresses",
         "status": "verified",
         "reviewedAt": "2026-09-03",
         "sourceIds": [
-          "source:disaster-gov",
-          "source:fema-individual"
+          "source:usa-address",
+          "source:usps-move"
         ],
         "tags": []
-      }
-    },
-    {
-      "id": "journey-disaster:step:document",
-      "kind": "step",
-      "label": "Document damage and contact insurance",
-      "description": "Photograph damage when safe, keep receipts, and notify your insurer. FEMA may ask about insurance coverage and decisions.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People affected by a federally declared disaster"
-        ],
-        "category": "Emergencies and disasters",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:fema-individual"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-disaster:step:apply",
-      "kind": "step",
-      "label": "Apply and save the registration number",
-      "description": "Apply through DisasterAssistance.gov or another FEMA-approved channel, then respond to inspection or document requests.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "People affected by a federally declared disaster"
-        ],
-        "category": "Emergencies and disasters",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:disaster-gov",
-          "source:fema-individual"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:disaster-gov",
-      "kind": "source",
-      "label": "DisasterAssistance.gov",
-      "description": "Official source published by Federal Emergency Management Agency.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.disasterassistance.gov/",
-        "sourceIds": [],
-        "tags": [
-          "Federal Emergency Management Agency"
-        ]
-      }
-    },
-    {
-      "id": "agency:federal-emergency-management-agency",
-      "kind": "agency",
-      "label": "Federal Emergency Management Agency",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:fema-individual",
-      "kind": "source",
-      "label": "Individual Assistance",
-      "description": "Official source published by Federal Emergency Management Agency.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.fema.gov/assistance/individual",
-        "sourceIds": [],
-        "tags": [
-          "Federal Emergency Management Agency"
-        ]
-      }
-    },
-    {
-      "id": "journey-green-card",
-      "kind": "journey",
-      "label": "Renew or replace a Green Card",
-      "description": "Confirm that Form I-90 is the correct route, prepare the required evidence, and file through USCIS.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Lawful permanent residents",
-          "Conditional permanent residents with limited I-90 situations"
-        ],
-        "category": "Immigration and citizenship",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:uscis-i90",
-          "source:usa-green-card"
-        ],
-        "tags": [
-          "renew green card",
-          "lost green card",
-          "replace permanent resident card",
-          "I-90",
-          "expired green card"
-        ]
-      }
-    },
-    {
-      "id": "journey-green-card:step:route",
-      "kind": "step",
-      "label": "Confirm that Form I-90 is the right route",
-      "description": "USCIS lists the reasons that use Form I-90. Some conditional-resident situations require a different petition.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Lawful permanent residents",
-          "Conditional permanent residents with limited I-90 situations"
-        ],
-        "category": "Immigration and citizenship",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:uscis-i90",
-          "source:usa-green-card"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-green-card:step:evidence",
-      "kind": "step",
-      "label": "Gather evidence for your filing reason",
-      "description": "Use the current USCIS instructions for the copy, identity, or biographic evidence that applies to your situation.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Lawful permanent residents",
-          "Conditional permanent residents with limited I-90 situations"
-        ],
-        "category": "Immigration and citizenship",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:uscis-i90"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-green-card:step:file",
-      "kind": "step",
-      "label": "File with USCIS and track the receipt",
-      "description": "Use the filing method USCIS allows for your situation. Keep the receipt notice and attend any biometrics appointment requested.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Lawful permanent residents",
-          "Conditional permanent residents with limited I-90 situations"
-        ],
-        "category": "Immigration and citizenship",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:uscis-i90"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:uscis-i90",
-      "kind": "source",
-      "label": "Application to Replace Permanent Resident Card (Green Card)",
-      "description": "Official source published by U.S. Citizenship and Immigration Services.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.uscis.gov/i-90",
-        "sourceIds": [],
-        "tags": [
-          "U.S. Citizenship and Immigration Services"
-        ]
-      }
-    },
-    {
-      "id": "agency:u-s-citizenship-and-immigration-services",
-      "kind": "agency",
-      "label": "U.S. Citizenship and Immigration Services",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:usa-green-card",
-      "kind": "source",
-      "label": "Renew or replace your Permanent Resident Card",
-      "description": "Official source published by USA.gov.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.usa.gov/renew-green-card",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov"
-        ]
       }
     },
     {
@@ -2698,26 +2378,6 @@
       }
     },
     {
-      "id": "journey-va-disability:step:route",
-      "kind": "step",
-      "label": "Confirm the claim type",
-      "description": "VA explains original, increased, secondary, and other disability claim routes. Choose the one that matches what changed or what you are claiming.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Veterans",
-          "Eligible service members"
-        ],
-        "category": "Veterans",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:va-file"
-        ],
-        "tags": []
-      }
-    },
-    {
       "id": "journey-va-disability:step:evidence",
       "kind": "step",
       "label": "Gather supporting evidence",
@@ -2733,6 +2393,26 @@
         "reviewedAt": "2026-09-03",
         "sourceIds": [
           "source:va-evidence"
+        ],
+        "tags": []
+      }
+    },
+    {
+      "id": "journey-va-disability:step:route",
+      "kind": "step",
+      "label": "Confirm the claim type",
+      "description": "VA explains original, increased, secondary, and other disability claim routes. Choose the one that matches what changed or what you are claiming.",
+      "params": {
+        "jurisdiction": "federal",
+        "audience": [
+          "Veterans",
+          "Eligible service members"
+        ],
+        "category": "Veterans",
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceIds": [
+          "source:va-file"
         ],
         "tags": []
       }
@@ -2778,145 +2458,707 @@
       }
     },
     {
-      "id": "source:va-file",
+      "id": "source:benefit-finder",
       "kind": "source",
-      "label": "How to file a VA disability claim",
-      "description": "Official source published by U.S. Department of Veterans Affairs.",
+      "label": "Government benefits finder",
+      "description": "Official source published by USA.gov.",
       "params": {
         "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.va.gov/disability/how-to-file-claim/",
+        "sourceUrl": "https://www.usa.gov/benefit-finder",
         "sourceIds": [],
         "tags": [
-          "U.S. Department of Veterans Affairs"
+          "USA.gov"
         ]
       }
     },
     {
-      "id": "agency:u-s-department-of-veterans-affairs",
-      "kind": "agency",
-      "label": "U.S. Department of Veterans Affairs",
-      "description": "Government publisher or official service.",
-      "params": {
-        "audience": [],
-        "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:va-evidence",
+      "id": "source:benefitscal",
       "kind": "source",
-      "label": "Evidence needed for your disability claim",
-      "description": "Official source published by U.S. Department of Veterans Affairs.",
+      "label": "BenefitsCal",
+      "description": "Official source published by California counties.",
       "params": {
         "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "sourceUrl": "https://benefitscal.com/",
         "sourceIds": [],
         "tags": [
-          "U.S. Department of Veterans Affairs"
+          "California counties"
         ]
       }
     },
     {
-      "id": "journey-social-security-retirement",
-      "kind": "journey",
-      "label": "Apply for Social Security retirement benefits",
-      "description": "Review how timing affects your benefit, gather account and banking information, and apply through Social Security.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Workers approaching retirement"
-        ],
-        "category": "Retirement",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ssa-retirement",
-          "source:ssa-apply"
-        ],
-        "tags": [
-          "Social Security retirement",
-          "retirement benefits",
-          "claim social security",
-          "retire",
-          "SSA retirement"
-        ]
-      }
-    },
-    {
-      "id": "journey-social-security-retirement:step:timing",
-      "kind": "step",
-      "label": "Review when to start benefits",
-      "description": "Your claiming age affects the monthly amount. Use Social Security’s estimates and official retirement guidance before choosing a start date.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Workers approaching retirement"
-        ],
-        "category": "Retirement",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ssa-retirement"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-social-security-retirement:step:prepare",
-      "kind": "step",
-      "label": "Gather application information",
-      "description": "Prepare identity, work, family, and direct-deposit information using Social Security’s application checklist.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Workers approaching retirement"
-        ],
-        "category": "Retirement",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ssa-apply"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-social-security-retirement:step:apply",
-      "kind": "step",
-      "label": "Apply through Social Security",
-      "description": "Apply online when eligible or use the phone or appointment options Social Security provides. Save the confirmation and respond to document requests.",
-      "params": {
-        "jurisdiction": "federal",
-        "audience": [
-          "Workers approaching retirement"
-        ],
-        "category": "Retirement",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:ssa-apply"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:ssa-retirement",
+      "id": "source:ca-business",
       "kind": "source",
-      "label": "Retirement Benefits",
-      "description": "Official source published by Social Security Administration.",
+      "label": "Set Up Your Business in California",
+      "description": "Official source published by California Office of the Small Business Advocate.",
       "params": {
         "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.ssa.gov/retirement",
+        "sourceUrl": "https://calosba.ca.gov/for-small-businesses-and-non-profits/set-up-your-business-in-california/",
         "sourceIds": [],
         "tags": [
-          "Social Security Administration"
+          "California Office of the Small Business Advocate"
+        ]
+      }
+    },
+    {
+      "id": "source:calgold",
+      "kind": "source",
+      "label": "CalGold Permit Assistance",
+      "description": "Official source published by State of California.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.calgold.ca.gov/",
+        "sourceIds": [],
+        "tags": [
+          "State of California"
+        ]
+      }
+    },
+    {
+      "id": "source:cdph-vital",
+      "kind": "source",
+      "label": "Vital Records",
+      "description": "Official source published by California Department of Public Health.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.cdph.ca.gov/Programs/CHSI/Pages/Vital-Records.aspx",
+        "sourceIds": [],
+        "tags": [
+          "California Department of Public Health"
+        ]
+      }
+    },
+    {
+      "id": "source:cdss-calfresh",
+      "kind": "source",
+      "label": "CalFresh",
+      "description": "Official source published by California Department of Social Services.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.cdss.ca.gov/calfresh",
+        "sourceIds": [],
+        "tags": [
+          "California Department of Social Services"
+        ]
+      }
+    },
+    {
+      "id": "source:crawl:041eba8851678b96",
+      "kind": "source",
+      "label": "Transitioning to adulthood",
+      "description": "Turning 18? Get ready for adulting. Learn to register to vote, get financial aid, register for selective service, find a job, get a passport, and pay taxes.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/adulthood",
+        "contentHash": "69844989d7e3c69ae38754fc0cb01fe12cd4600204e2f5430ddb4cc00cc98787",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How to register to vote",
+          "Register for Selective Service (the draft)",
+          "Financial aid and student loans",
+          "How to find jobs and free training",
+          "Requirements to join the U.S. military",
+          "How to file your federal income tax return",
+          "Apply for a new adult passport",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:59.983369+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"f4e4dda80550d397a7670124199a83b5\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:04 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:0c29c4cc6c9f089c",
+      "kind": "source",
+      "label": "Administration for Children and Families (ACF)",
+      "description": "The Administration for Children and Families (ACF) funds state, territory, local, and tribal organizations to provide family assistance (welfare), child support, child care, Head Start, child welfare, and other programs relating to children and families.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/agencies/administration-for-children-and-families",
+        "contentHash": "5f6b0890e7683fc96244ac61c4d3af6caa268a5adde8418688e9820477a85066",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Website",
+          "Contact",
+          "Find an office near you",
+          "Main address"
+        ],
+        "retrievedAt": "2026-09-09T17:03:09.941189+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"d32be6b28f2618f8d9b32db6cbe439d2\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:35e5acb1a878dfa5",
+      "kind": "source",
+      "label": "Absentee voting and voting by mail",
+      "description": "Learn how to get an absentee ballot if you live in the U.S., live abroad, or are in the military. Find out how to cast your vote, and meet voting deadlines.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/absentee-voting",
+        "contentHash": "747eb4edc118c2697125e635384e13ead0712c69e2e8c1124c37e0942c1b5b68",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "What is the difference between absentee voting and vote-by-mail?",
+          "Absentee voting",
+          "Vote-by-mail",
+          "How to vote absentee or by mail if you live in the U.S.",
+          "How to vote absentee if you are in the military or outside of the U.S.",
+          "You received an absentee or vote-by-mail ballot but want to vote in person on Election Day",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:19.949420+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"e1b2d55f9f58d274d1e9551f516f532d\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:6ee042badb1472b2",
+      "kind": "source",
+      "label": "Administration for Community Living (ACL)",
+      "description": "The Administration for Community Living (ACL) supports the needs of the aging and disability populations, and improves access health care and long-term services.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/agencies/administration-for-community-living",
+        "contentHash": "396a5d09f4c97dc08522d30e346be9b786a4930f68cbbe5814bd40f074a960da",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Website",
+          "Contact",
+          "Phone number",
+          "Main address"
+        ],
+        "retrievedAt": "2026-09-09T17:03:19.981237+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"5885250e980b89bca974cc57c0dcf18f\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:04 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:7d4f7c6c21bd1fbe",
+      "kind": "source",
+      "label": "About USAGov",
+      "description": "Learn about USAGov, which creates and organizes timely, needed government information and services and makes them accessible anytime and anywhere.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/about",
+        "contentHash": "245e527694ecb38f01e59eef7a8c5f9e6680e65ab6232247292520165b8c92e2",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Most popular",
+          "USAGov's mission and history",
+          "Products and programs",
+          "Partner with USAGov",
+          "Website policies and notices",
+          "USAGov website data",
+          "Contact us"
+        ],
+        "retrievedAt": "2026-09-09T17:02:00.146373+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"0e09e27eaf5ebd8b7ace4899192fa6d6\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:9addad72aa1238ac",
+      "kind": "source",
+      "label": "The U.S. and its government",
+      "description": "Get facts about the U.S., its laws, history, and statistics. Buy government property. Learn about the president and how to contact elected officials and federal agencies.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/about-the-us",
+        "contentHash": "6f7b596360a2d164d8fd4073266a57adfc397c359880049a4247760d62c1c8dd",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Most popular",
+          "Buying from the U.S. government",
+          "U.S. facts and figures",
+          "A-Z index of U.S. government departments and agencies",
+          "State and local governments",
+          "Branches of the U.S. government",
+          "Find and contact elected officials",
+          "Federal laws and regulations",
+          "Federally recognized Indian tribes and resources for Native Americans",
+          "Federal, state, territory, county, and municipal courts"
+        ],
+        "retrievedAt": "2026-09-09T17:02:09.946368+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"5616a13d0e3e76cb4509d34b6dfa027e\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:be5b50530f9e3641",
+      "kind": "source",
+      "label": "Accessibility policy",
+      "description": "Learn about USA.gov's accessibility policy, and find tools to help you access government information. Check that your computer or device works with USA.gov.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/accessibility",
+        "contentHash": "0e89c3d444ce6b5104273c499b5fd1d3f0a2de23cef86d88e2e4728e24c1de3c",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "USA.gov accessibility policy",
+          "Will my computer work with USA.gov?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:29.899685+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"323d0104afd9e7925684bfa2a576713d\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:bec07dfe9eacab0d",
+      "kind": "source",
+      "label": "Adjustment of status: Get a Green Card if you are in the United States",
+      "description": "Find out if you are eligible to change your visa to a Green Card, and how to apply. Use the USCIS fee calculator to find out how much it will cost.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/adjustment-of-status",
+        "contentHash": "b7f92ef17669c00b7e0438a2f2140eb87c746373d7f1953d8854c55998deebac",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How adjustment of status works",
+          "Find out the cost of getting a Green Card",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:49.958183+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"df08f0d0fd9c4f97f9b6b1cc1927ce0e\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:04 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:c028434ca280f5e5",
+      "kind": "source",
+      "label": "Making government services easier to find",
+      "description": "Find government benefits, services, agencies, and information at USA.gov. Contact elected officials. Learn about passports, Social Security, taxes, and more.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/",
+        "contentHash": "be7a8829d20d8875d57f36a9301f3eb4daa6612cfbfc4bf55b89d69b7b1294a9",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How do I ...",
+          "Government benefits and financial assistance",
+          "All topics and services",
+          "Voting and elections",
+          "The U.S. and its government",
+          "Complaints",
+          "Disability services",
+          "Disasters and emergencies",
+          "Education",
+          "Government benefits",
+          "Health",
+          "Housing help",
+          "Immigration and U.S. citizenship",
+          "Innovation",
+          "Jobs, labor laws, and unemployment",
+          "Laws and legal issues",
+          "Military and veterans",
+          "Money and credit",
+          "Scams and fraud",
+          "Small business"
+        ],
+        "retrievedAt": "2026-09-09T17:01:49.894640+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"4cafb362e45cdce6ae5da6eef6be916d\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:12 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:crawl:c2fde9b2790169ce",
+      "kind": "source",
+      "label": "USA.gov accessibility policy",
+      "description": "Learn about USA.gov's commitment to accessibility and find tools to help you access government information and services.",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/accessibility-policy",
+        "contentHash": "2af00d2005dd32418813ab691466056d61cd969c8bc6df7d8813dac368241732",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How USA.gov manages accessibility",
+          "Report a problem",
+          "Where to find accessibility tools",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:40.154778+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"ec1e1d3e7f900484e9e75c625e77ab76\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT",
+        "connector": "usagov"
+      }
+    },
+    {
+      "id": "source:dhcs-apply",
+      "kind": "source",
+      "label": "Apply for Medi-Cal",
+      "description": "Official source published by California Department of Health Care Services.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.dhcs.ca.gov/services/medi-cal/Pages/ApplyforMedi-Cal.aspx",
+        "sourceIds": [],
+        "tags": [
+          "California Department of Health Care Services"
+        ]
+      }
+    },
+    {
+      "id": "source:disaster-gov",
+      "kind": "source",
+      "label": "DisasterAssistance.gov",
+      "description": "Official source published by Federal Emergency Management Agency.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.disasterassistance.gov/",
+        "sourceIds": [],
+        "tags": [
+          "Federal Emergency Management Agency"
+        ]
+      }
+    },
+    {
+      "id": "source:dmv-license",
+      "kind": "source",
+      "label": "Driver\u2019s Licenses and Identification Cards",
+      "description": "Official source published by California DMV.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/",
+        "sourceIds": [],
+        "tags": [
+          "California DMV"
+        ]
+      }
+    },
+    {
+      "id": "source:dmv-real-id",
+      "kind": "source",
+      "label": "REAL ID",
+      "description": "Official source published by California DMV.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/real-id/",
+        "sourceIds": [],
+        "tags": [
+          "California DMV"
+        ]
+      }
+    },
+    {
+      "id": "source:edd-certify",
+      "kind": "source",
+      "label": "Certify for Benefits",
+      "description": "Official source published by California Employment Development Department.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://edd.ca.gov/en/unemployment/certify/",
+        "sourceIds": [],
+        "tags": [
+          "California Employment Development Department"
+        ]
+      }
+    },
+    {
+      "id": "source:edd-file",
+      "kind": "source",
+      "label": "Filing an Unemployment Claim",
+      "description": "Official source published by California Employment Development Department.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://edd.ca.gov/en/unemployment/filing_a_claim/",
+        "sourceIds": [],
+        "tags": [
+          "California Employment Development Department"
+        ]
+      }
+    },
+    {
+      "id": "source:fema-individual",
+      "kind": "source",
+      "label": "Individual Assistance",
+      "description": "Official source published by Federal Emergency Management Agency.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.fema.gov/assistance/individual",
+        "sourceIds": [],
+        "tags": [
+          "Federal Emergency Management Agency"
+        ]
+      }
+    },
+    {
+      "id": "source:ftb-start",
+      "kind": "source",
+      "label": "Business filing information",
+      "description": "Official source published by California Franchise Tax Board.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.ftb.ca.gov/file/business/index.html",
+        "sourceIds": [],
+        "tags": [
+          "California Franchise Tax Board"
+        ]
+      }
+    },
+    {
+      "id": "source:ftc-report",
+      "kind": "source",
+      "label": "ReportFraud.ftc.gov",
+      "description": "Official source published by Federal Trade Commission.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://reportfraud.ftc.gov/",
+        "sourceIds": [],
+        "tags": [
+          "Federal Trade Commission"
+        ]
+      }
+    },
+    {
+      "id": "source:ic3",
+      "kind": "source",
+      "label": "Internet Crime Complaint Center",
+      "description": "Official source published by Federal Bureau of Investigation.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.ic3.gov/",
+        "sourceIds": [],
+        "tags": [
+          "Federal Bureau of Investigation"
+        ]
+      }
+    },
+    {
+      "id": "source:identity-theft-gov",
+      "kind": "source",
+      "label": "Report identity theft and get a recovery plan",
+      "description": "Official source published by Federal Trade Commission.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.identitytheft.gov/",
+        "sourceIds": [],
+        "tags": [
+          "Federal Trade Commission"
+        ]
+      }
+    },
+    {
+      "id": "source:irs-ein",
+      "kind": "source",
+      "label": "Employer Identification Number",
+      "description": "Official source published by Internal Revenue Service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/employer-id-numbers",
+        "sourceIds": [],
+        "tags": [
+          "Internal Revenue Service"
+        ]
+      }
+    },
+    {
+      "id": "source:irs-file",
+      "kind": "source",
+      "label": "How to File",
+      "description": "Official source published by Internal Revenue Service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.irs.gov/filing/individuals/how-to-file",
+        "sourceIds": [],
+        "tags": [
+          "Internal Revenue Service"
+        ]
+      }
+    },
+    {
+      "id": "source:irs-free",
+      "kind": "source",
+      "label": "IRS Free File",
+      "description": "Official source published by Internal Revenue Service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.irs.gov/filing/irs-free-file-do-your-taxes-for-free",
+        "sourceIds": [],
+        "tags": [
+          "Internal Revenue Service"
+        ]
+      }
+    },
+    {
+      "id": "source:irs-get-ein",
+      "kind": "source",
+      "label": "Get an Employer Identification Number",
+      "description": "Official source published by Internal Revenue Service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.irs.gov/businesses/small-businesses-self-employed/get-an-employer-identification-number",
+        "sourceIds": [],
+        "tags": [
+          "Internal Revenue Service"
+        ]
+      }
+    },
+    {
+      "id": "source:irs-notice",
+      "kind": "source",
+      "label": "Understanding Your IRS Notice or Letter",
+      "description": "Official source published by Internal Revenue Service.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.irs.gov/individuals/understanding-your-irs-notice-or-letter",
+        "sourceIds": [],
+        "tags": [
+          "Internal Revenue Service"
+        ]
+      }
+    },
+    {
+      "id": "source:medicare-signup",
+      "kind": "source",
+      "label": "Sign up for Medicare",
+      "description": "Official source published by Centers for Medicare & Medicaid Services.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.medicare.gov/basics/get-started-with-medicare/sign-up",
+        "sourceIds": [],
+        "tags": [
+          "Centers for Medicare & Medicaid Services"
+        ]
+      }
+    },
+    {
+      "id": "source:register-vote",
+      "kind": "source",
+      "label": "California Online Voter Registration",
+      "description": "Official source published by California Secretary of State.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://registertovote.ca.gov/",
+        "sourceIds": [],
+        "tags": [
+          "California Secretary of State"
+        ]
+      }
+    },
+    {
+      "id": "source:sos-biz",
+      "kind": "source",
+      "label": "bizfile Online",
+      "description": "Official source published by California Secretary of State.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://bizfileonline.sos.ca.gov/",
+        "sourceIds": [],
+        "tags": [
+          "California Secretary of State"
+        ]
+      }
+    },
+    {
+      "id": "source:sos-vote",
+      "kind": "source",
+      "label": "Voter Registration",
+      "description": "Official source published by California Secretary of State.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.sos.ca.gov/elections/voter-registration",
+        "sourceIds": [],
+        "tags": [
+          "California Secretary of State"
         ]
       }
     },
@@ -2937,87 +3179,115 @@
       }
     },
     {
-      "id": "journey-usps-address",
-      "kind": "journey",
-      "label": "Change your mailing address",
-      "description": "Submit an official USPS change of address, then update high-priority government records separately.",
+      "id": "source:ssa-medicare",
+      "kind": "source",
+      "label": "Sign up for Medicare",
+      "description": "Official source published by Social Security Administration.",
       "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People moving within the United States"
-        ],
-        "category": "Moving and addresses",
+        "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-address",
-          "source:usps-move"
-        ],
+        "sourceUrl": "https://www.ssa.gov/medicare/sign-up",
+        "sourceIds": [],
         "tags": [
-          "change address",
-          "moved",
-          "forward mail",
-          "USPS address",
-          "update government address"
+          "Social Security Administration"
         ]
       }
     },
     {
-      "id": "journey-usps-address:step:usps",
-      "kind": "step",
-      "label": "Set up mail forwarding with USPS",
-      "description": "Use the official USPS change-of-address site or a Post Office. Avoid look-alike sites that charge unnecessary fees.",
+      "id": "source:ssa-replace",
+      "kind": "source",
+      "label": "Replace Social Security card",
+      "description": "Official source published by Social Security Administration.",
       "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People moving within the United States"
-        ],
-        "category": "Moving and addresses",
+        "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-address",
-          "source:usps-move"
-        ],
-        "tags": []
+        "sourceUrl": "https://www.ssa.gov/number-card/replace-card",
+        "sourceIds": [],
+        "tags": [
+          "Social Security Administration"
+        ]
       }
     },
     {
-      "id": "journey-usps-address:step:agencies",
-      "kind": "step",
-      "label": "Update government agencies separately",
-      "description": "Mail forwarding does not change your address with IRS, Social Security, immigration, DMV, voter registration, or benefits programs.",
+      "id": "source:ssa-retirement",
+      "kind": "source",
+      "label": "Retirement Benefits",
+      "description": "Official source published by Social Security Administration.",
       "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People moving within the United States"
-        ],
-        "category": "Moving and addresses",
+        "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-address"
-        ],
-        "tags": []
+        "sourceUrl": "https://www.ssa.gov/retirement",
+        "sourceIds": [],
+        "tags": [
+          "Social Security Administration"
+        ]
       }
     },
     {
-      "id": "journey-usps-address:step:records",
-      "kind": "step",
-      "label": "Keep confirmations and monitor mail",
-      "description": "Save each confirmation and check old and new mail channels for time-sensitive notices during the transition.",
+      "id": "source:state-lost-passport",
+      "kind": "source",
+      "label": "Lost or Stolen Passports",
+      "description": "Official source published by U.S. Department of State.",
       "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People moving within the United States"
-        ],
-        "category": "Moving and addresses",
+        "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:usa-address"
-        ],
-        "tags": []
+        "sourceUrl": "https://travel.state.gov/content/travel/en/passports/have-passport/lost-stolen.html",
+        "sourceIds": [],
+        "tags": [
+          "U.S. Department of State"
+        ]
+      }
+    },
+    {
+      "id": "source:state-passports",
+      "kind": "source",
+      "label": "U.S. Passports",
+      "description": "Official source published by U.S. Department of State.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://travel.state.gov/content/travel/en/passports.html",
+        "sourceIds": [],
+        "tags": [
+          "U.S. Department of State"
+        ]
+      }
+    },
+    {
+      "id": "source:state-processing",
+      "kind": "source",
+      "label": "Passport Processing Times",
+      "description": "Official source published by U.S. Department of State.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://travel.state.gov/content/travel/en/passports/how-apply/processing-times.html",
+        "sourceIds": [],
+        "tags": [
+          "U.S. Department of State"
+        ]
+      }
+    },
+    {
+      "id": "source:studentaid-fafsa",
+      "kind": "source",
+      "label": "FAFSA Application",
+      "description": "Official source published by Federal Student Aid.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://studentaid.gov/h/apply-for-aid/fafsa",
+        "sourceIds": [],
+        "tags": [
+          "Federal Student Aid"
+        ]
       }
     },
     {
@@ -3033,6 +3303,102 @@
         "sourceIds": [],
         "tags": [
           "USA.gov"
+        ]
+      }
+    },
+    {
+      "id": "source:usa-green-card",
+      "kind": "source",
+      "label": "Renew or replace your Permanent Resident Card",
+      "description": "Official source published by USA.gov.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.usa.gov/renew-green-card",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov"
+        ]
+      }
+    },
+    {
+      "id": "source:usa-lost-passport",
+      "kind": "source",
+      "label": "Replace your lost or stolen U.S. passport",
+      "description": "Official source published by USA.gov.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.usa.gov/lost-stolen-passport",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov"
+        ]
+      }
+    },
+    {
+      "id": "source:usa-passports",
+      "kind": "source",
+      "label": "How to apply for or renew a U.S. passport",
+      "description": "Official source published by USA.gov.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.usa.gov/passport",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov"
+        ]
+      }
+    },
+    {
+      "id": "source:usa-report-scams",
+      "kind": "source",
+      "label": "Where to report scams",
+      "description": "Official source published by USA.gov.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.usa.gov/where-report-scams",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov"
+        ]
+      }
+    },
+    {
+      "id": "source:usa-ss-card",
+      "kind": "source",
+      "label": "Replace Social Security card",
+      "description": "Official source published by USA.gov.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.usa.gov/social-security-card",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov"
+        ]
+      }
+    },
+    {
+      "id": "source:uscis-i90",
+      "kind": "source",
+      "label": "Application to Replace Permanent Resident Card (Green Card)",
+      "description": "Official source published by U.S. Citizenship and Immigration Services.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://www.uscis.gov/i-90",
+        "sourceIds": [],
+        "tags": [
+          "U.S. Citizenship and Immigration Services"
         ]
       }
     },
@@ -3053,113 +3419,50 @@
       }
     },
     {
-      "id": "agency:u-s-postal-service",
-      "kind": "agency",
-      "label": "U.S. Postal Service",
-      "description": "Government publisher or official service.",
+      "id": "source:va-evidence",
+      "kind": "source",
+      "label": "Evidence needed for your disability claim",
+      "description": "Official source published by U.S. Department of Veterans Affairs.",
       "params": {
         "audience": [],
         "status": "verified",
-        "sourceIds": [],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-federal-benefits",
-      "kind": "journey",
-      "label": "Find government benefits you may qualify for",
-      "description": "Use the official Benefit Finder to identify possible programs, then verify eligibility and apply with the agency that runs each program.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People seeking government assistance"
-        ],
-        "category": "Benefits",
-        "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:benefit-finder"
-        ],
+        "sourceUrl": "https://www.va.gov/disability/how-to-file-claim/evidence-needed/",
+        "sourceIds": [],
         "tags": [
-          "benefits",
-          "government assistance",
-          "help paying bills",
-          "Benefit Finder",
-          "what aid can I get",
-          "financial help"
+          "U.S. Department of Veterans Affairs"
         ]
       }
     },
     {
-      "id": "journey-federal-benefits:step:finder",
-      "kind": "step",
-      "label": "Answer the Benefit Finder questions",
-      "description": "USA.gov uses your answers to suggest federal and state programs that may fit. You can skip questions you do not want to answer.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People seeking government assistance"
-        ],
-        "category": "Benefits",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:benefit-finder"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-federal-benefits:step:review",
-      "kind": "step",
-      "label": "Review each suggested program",
-      "description": "A suggestion is not an eligibility decision. Open the official program page and check location, income, age, household, or status rules.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People seeking government assistance"
-        ],
-        "category": "Benefits",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:benefit-finder"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "journey-federal-benefits:step:apply",
-      "kind": "step",
-      "label": "Apply with the responsible agency",
-      "description": "Use the application link and contact information on the official program page. Keep application confirmations and notices.",
-      "params": {
-        "jurisdiction": "federal-and-state",
-        "audience": [
-          "People seeking government assistance"
-        ],
-        "category": "Benefits",
-        "status": "verified",
-        "reviewedAt": "2026-09-03",
-        "sourceIds": [
-          "source:benefit-finder"
-        ],
-        "tags": []
-      }
-    },
-    {
-      "id": "source:benefit-finder",
+      "id": "source:va-file",
       "kind": "source",
-      "label": "Government benefits finder",
-      "description": "Official source published by USA.gov.",
+      "label": "How to file a VA disability claim",
+      "description": "Official source published by U.S. Department of Veterans Affairs.",
       "params": {
         "audience": [],
         "status": "verified",
         "reviewedAt": "2026-09-03",
-        "sourceUrl": "https://www.usa.gov/benefit-finder",
+        "sourceUrl": "https://www.va.gov/disability/how-to-file-claim/",
         "sourceIds": [],
         "tags": [
-          "USA.gov"
+          "U.S. Department of Veterans Affairs"
+        ]
+      }
+    },
+    {
+      "id": "source:voter-status",
+      "kind": "source",
+      "label": "My Voter Status",
+      "description": "Official source published by California Secretary of State.",
+      "params": {
+        "audience": [],
+        "status": "verified",
+        "reviewedAt": "2026-09-03",
+        "sourceUrl": "https://voterstatus.sos.ca.gov/EN/Authenticate",
+        "sourceIds": [],
+        "tags": [
+          "California Secretary of State"
         ]
       }
     }
@@ -3353,11 +3656,6 @@
     {
       "from": "source:usa-ss-card",
       "to": "agency:usa-gov",
-      "relation": "published-by"
-    },
-    {
-      "from": "source:identity-theft-gov",
-      "to": "agency:federal-trade-commission",
       "relation": "published-by"
     },
     {
@@ -4683,7 +4981,56 @@
       "from": "source:benefit-finder",
       "to": "agency:usa-gov",
       "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:c028434ca280f5e5",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:7d4f7c6c21bd1fbe",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:9addad72aa1238ac",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:35e5acb1a878dfa5",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:be5b50530f9e3641",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:c2fde9b2790169ce",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:bec07dfe9eacab0d",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:041eba8851678b96",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:0c29c4cc6c9f089c",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
+    },
+    {
+      "from": "source:crawl:6ee042badb1472b2",
+      "to": "agency:crawl:usa-gov",
+      "relation": "published-by"
     }
-  ],
-  "runs": []
+  ]
 }

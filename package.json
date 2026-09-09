@@ -9,13 +9,14 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "ingest": "tsx scripts/ingest.ts",
+    "ingest": "python3 -m pipeline.run --source all",
     "graph:export": "tsx scripts/export-graph.ts",
     "gnn:train": "python3 ml/train_gnn.py",
     "db:seed": "tsx scripts/seed-database.ts",
     "db:stats": "tsx scripts/database-stats.ts",
-    "ingest:usa": "tsx scripts/ingest.ts --source=usagov",
-    "ingest:sam": "tsx scripts/ingest.ts --source=sam",
+    "ingest:usa": "python3 -m pipeline.run --source usagov",
+    "ingest:california": "python3 -m pipeline.run --source california",
+    "ingest:sam": "python3 -m pipeline.run --source sam",
     "check:sources": "tsx scripts/check-sources.ts"
   },
   "dependencies": {

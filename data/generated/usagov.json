@@ -1,34 +1,426 @@
 {
-  "source": "usagov",
-  "startedAt": "2026-09-04T17:16:11.853Z",
-  "finishedAt": "2026-09-04T17:16:17.610Z",
+  "connector": "usagov",
+  "started_at": "2026-09-09T17:01:49.568368+00:00",
+  "finished_at": "2026-09-09T17:03:19.982565+00:00",
   "nodes": [
     {
-      "id": "source:crawl:ff68c5d579ee4fd5",
+      "id": "source:crawl:c028434ca280f5e5",
       "kind": "source",
-      "label": "Find and contact elected officials",
-      "description": "Use USAGov’s Contact Your Elected Officials tool to get contact information for your members of Congress, the president, and state and local officials.",
+      "label": "Making government services easier to find",
+      "description": "Find government benefits, services, agencies, and information at USA.gov. Contact elected officials. Learn about passports, Social Security, taxes, and more.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-04",
-        "sourceUrl": "https://www.usa.gov/elected-officials",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/",
+        "contentHash": "be7a8829d20d8875d57f36a9301f3eb4daa6612cfbfc4bf55b89d69b7b1294a9",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "Federal elected officials",
-          "State and territorial elected officials",
-          "Local elected officials",
+          "How do I ...",
+          "Government benefits and financial assistance",
+          "All topics and services",
+          "Voting and elections",
+          "The U.S. and its government",
+          "Complaints",
+          "Disability services",
+          "Disasters and emergencies",
+          "Education",
+          "Government benefits",
+          "Health",
+          "Housing help",
+          "Immigration and U.S. citizenship",
+          "Innovation",
+          "Jobs, labor laws, and unemployment",
+          "Laws and legal issues",
+          "Military and veterans",
+          "Money and credit",
+          "Scams and fraud",
+          "Small business"
+        ],
+        "retrievedAt": "2026-09-09T17:01:49.894640+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"4cafb362e45cdce6ae5da6eef6be916d\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:12 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:7d4f7c6c21bd1fbe",
+      "kind": "source",
+      "label": "About USAGov",
+      "description": "Learn about USAGov, which creates and organizes timely, needed government information and services and makes them accessible anytime and anywhere.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/about",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/about",
+        "contentHash": "245e527694ecb38f01e59eef7a8c5f9e6680e65ab6232247292520165b8c92e2",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Most popular",
+          "USAGov's mission and history",
+          "Products and programs",
+          "Partner with USAGov",
+          "Website policies and notices",
+          "USAGov website data",
+          "Contact us"
+        ],
+        "retrievedAt": "2026-09-09T17:02:00.146373+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"0e09e27eaf5ebd8b7ace4899192fa6d6\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:9addad72aa1238ac",
+      "kind": "source",
+      "label": "The U.S. and its government",
+      "description": "Get facts about the U.S., its laws, history, and statistics. Buy government property. Learn about the president and how to contact elected officials and federal agencies.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/about-the-us",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/about-the-us",
+        "contentHash": "6f7b596360a2d164d8fd4073266a57adfc397c359880049a4247760d62c1c8dd",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Most popular",
+          "Buying from the U.S. government",
+          "U.S. facts and figures",
+          "A-Z index of U.S. government departments and agencies",
+          "State and local governments",
+          "Branches of the U.S. government",
+          "Find and contact elected officials",
+          "Federal laws and regulations",
+          "Federally recognized Indian tribes and resources for Native Americans",
+          "Federal, state, territory, county, and municipal courts"
+        ],
+        "retrievedAt": "2026-09-09T17:02:09.946368+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"5616a13d0e3e76cb4509d34b6dfa027e\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:35e5acb1a878dfa5",
+      "kind": "source",
+      "label": "Absentee voting and voting by mail",
+      "description": "Learn how to get an absentee ballot if you live in the U.S., live abroad, or are in the military. Find out how to cast your vote, and meet voting deadlines.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/absentee-voting",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/absentee-voting",
+        "contentHash": "747eb4edc118c2697125e635384e13ead0712c69e2e8c1124c37e0942c1b5b68",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "What is the difference between absentee voting and vote-by-mail?",
+          "Absentee voting",
+          "Vote-by-mail",
+          "How to vote absentee or by mail if you live in the U.S.",
+          "How to vote absentee if you are in the military or outside of the U.S.",
+          "You received an absentee or vote-by-mail ballot but want to vote in person on Election Day",
           "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:19.949420+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"e1b2d55f9f58d274d1e9551f516f532d\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:be5b50530f9e3641",
+      "kind": "source",
+      "label": "Accessibility policy",
+      "description": "Learn about USA.gov's accessibility policy, and find tools to help you access government information. Check that your computer or device works with USA.gov.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/accessibility",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/accessibility",
+        "contentHash": "0e89c3d444ce6b5104273c499b5fd1d3f0a2de23cef86d88e2e4728e24c1de3c",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "USA.gov accessibility policy",
+          "Will my computer work with USA.gov?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:29.899685+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"323d0104afd9e7925684bfa2a576713d\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:c2fde9b2790169ce",
+      "kind": "source",
+      "label": "USA.gov accessibility policy",
+      "description": "Learn about USA.gov's commitment to accessibility and find tools to help you access government information and services.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/accessibility-policy",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/accessibility-policy",
+        "contentHash": "2af00d2005dd32418813ab691466056d61cd969c8bc6df7d8813dac368241732",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How USA.gov manages accessibility",
+          "Report a problem",
+          "Where to find accessibility tools",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:40.154778+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"ec1e1d3e7f900484e9e75c625e77ab76\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:bec07dfe9eacab0d",
+      "kind": "source",
+      "label": "Adjustment of status: Get a Green Card if you are in the United States",
+      "description": "Find out if you are eligible to change your visa to a Green Card, and how to apply. Use the USCIS fee calculator to find out how much it will cost.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/adjustment-of-status",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/adjustment-of-status",
+        "contentHash": "b7f92ef17669c00b7e0438a2f2140eb87c746373d7f1953d8854c55998deebac",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How adjustment of status works",
+          "Find out the cost of getting a Green Card",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:49.958183+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"df08f0d0fd9c4f97f9b6b1cc1927ce0e\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:04 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:041eba8851678b96",
+      "kind": "source",
+      "label": "Transitioning to adulthood",
+      "description": "Turning 18? Get ready for adulting. Learn to register to vote, get financial aid, register for selective service, find a job, get a passport, and pay taxes.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/adulthood",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/adulthood",
+        "contentHash": "69844989d7e3c69ae38754fc0cb01fe12cd4600204e2f5430ddb4cc00cc98787",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How to register to vote",
+          "Register for Selective Service (the draft)",
+          "Financial aid and student loans",
+          "How to find jobs and free training",
+          "Requirements to join the U.S. military",
+          "How to file your federal income tax return",
+          "Apply for a new adult passport",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-09-09T17:02:59.983369+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"f4e4dda80550d397a7670124199a83b5\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:04 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:0c29c4cc6c9f089c",
+      "kind": "source",
+      "label": "Administration for Children and Families (ACF)",
+      "description": "The Administration for Children and Families (ACF) funds state, territory, local, and tribal organizations to provide family assistance (welfare), child support, child care, Head Start, child welfare, and other programs relating to children and families.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/agencies/administration-for-children-and-families",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/agencies/administration-for-children-and-families",
+        "contentHash": "5f6b0890e7683fc96244ac61c4d3af6caa268a5adde8418688e9820477a85066",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Website",
+          "Contact",
+          "Find an office near you",
+          "Main address"
+        ],
+        "retrievedAt": "2026-09-09T17:03:09.941189+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"d32be6b28f2618f8d9b32db6cbe439d2\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:03 GMT"
+      }
+    },
+    {
+      "id": "source:crawl:6ee042badb1472b2",
+      "kind": "source",
+      "label": "Administration for Community Living (ACL)",
+      "description": "The Administration for Community Living (ACL) supports the needs of the aging and disability populations, and improves access health care and long-term services.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-09",
+      "source_url": "https://www.usa.gov/agencies/administration-for-community-living",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-09",
+        "sourceUrl": "https://www.usa.gov/agencies/administration-for-community-living",
+        "contentHash": "396a5d09f4c97dc08522d30e346be9b786a4930f68cbbe5814bd40f074a960da",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Website",
+          "Contact",
+          "Phone number",
+          "Main address"
+        ],
+        "retrievedAt": "2026-09-09T17:03:19.981237+00:00",
+        "httpStatus": 200,
+        "etag": "W/\"5885250e980b89bca974cc57c0dcf18f\"",
+        "lastModified": "Wed, 09 Sep 2026 15:56:04 GMT"
+      }
+    },
+    {
+      "id": "agency:crawl:usa-gov",
+      "kind": "agency",
+      "label": "USA.gov",
+      "description": "Publisher for usagov discovery records.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": null,
+      "source_url": null,
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "sourceIds": [],
+        "tags": [
+          "usagov"
         ]
       }
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "source": "source:crawl:c028434ca280f5e5",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:7d4f7c6c21bd1fbe",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:9addad72aa1238ac",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:35e5acb1a878dfa5",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:be5b50530f9e3641",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:c2fde9b2790169ce",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:bec07dfe9eacab0d",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:041eba8851678b96",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:0c29c4cc6c9f089c",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:6ee042badb1472b2",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    }
+  ],
   "warnings": [],
   "metadata": {
-    "discoveredUrls": 1,
-    "indexedPages": 1,
-    "appliedDelayMs": 10000
+    "sitemapsRead": 1,
+    "urlsDiscovered": 1533,
+    "urlsEligible": 10,
+    "pagesIndexed": 10,
+    "requestDelaySeconds": 10.0,
+    "workers": 4
   }
 }

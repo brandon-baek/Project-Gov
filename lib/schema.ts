@@ -56,6 +56,10 @@ export const graphNodeSchema = z.object({
     reviewedAt: z.string().optional(),
     sourceUrl: z.string().url().optional(),
     contentHash: z.string().optional(),
+    retrievedAt: z.string().optional(),
+    httpStatus: z.number().int().optional(),
+    etag: z.string().optional(),
+    lastModified: z.string().optional(),
     sourceIds: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([])
   })

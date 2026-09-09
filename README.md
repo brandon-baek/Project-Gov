@@ -8,18 +8,20 @@ GovGuide turns a plain-language government task into an ordered, source-linked p
 - 170 verified graph nodes and 277 typed edges
 - SQLite database with migrations, foreign keys, integrity checks, FTS5 search, source snapshots, ingestion runs, and GNN review tables
 - deterministic intent retrieval with an optional OpenAI structured-output classifier
-- USA.gov and CA.gov sitemap crawlers that respect robots rules and crawl delays
-- SAM.gov Assistance Listings connector with incremental, key-gated access
+- Python USA.gov and CA.gov sitemap crawlers with robots enforcement, bounded workers, retries, rate limiting, size limits, content hashing, and failure reports
+- paginated Python SAM.gov Assistance Listings API connector with retry and key-gated access
+- automatic crawler-to-SQLite ingestion with source snapshots and run history
 - twice-monthly source refresh workflow that opens a review pull request
 - experimental two-layer GraphSAGE link-discovery model
 - responsive guide browser, source views, graph explorer, skeleton state, privacy guard, error boundary, and 404 page
 
 ## Run locally
 
-Requirements: Node.js 22 or newer and Python 3 with NumPy for the optional GNN step.
+Requirements: Node.js 22 or newer and Python 3.11+.
 
 ```bash
 npm install
+python3 -m pip install -r pipeline/requirements.txt
 npm run graph:export
 npm run gnn:train
 npm run db:seed
@@ -81,11 +83,18 @@ SELECT relation, COUNT(*) FROM graph_edges GROUP BY relation;
 
 ## Crawling and refresh
 
-The sitemap crawlers use an explicit user agent, remain on their configured government origin, honor `robots.txt`, and apply the greater of the configured delay and the site’s crawl delay. Indexed pages enter the graph with `machine-indexed` status.
+All acquisition and ETL code lives in `pipeline/`. The sitemap crawlers use an explicit user agent, remain on their configured government origin, enforce `robots.txt`, retry temporary failures, rate-limit requests, reject oversized/non-HTML responses, and hash normalized content. The runner writes every discovered record directly into `graph_nodes`, `sources`, `graph_edges`, `source_snapshots`, and `ingestion_runs`, then exports the updated graph JSON. Indexed pages enter the database automatically with `machine-indexed` status.
+
+```bash
+python3 -m pipeline.run --source all
+python3 -m pipeline.run --source usagov --limit 100
+python3 -m pipeline.run --source california --limit 100
+SAM_API_KEY=... python3 -m pipeline.run --source sam --limit 500
+```
+
+The frontend and API remain TypeScript because Next.js is a TypeScript web framework. Crawling, normalization, database ingestion, and graph/ML processing are Python so the data system can be read and run independently of the interface.
 
 SAM.gov’s current Assistance Listings API requires a personal API key. Store it as the `SAM_API_KEY` repository secret for the scheduled workflow. Do not put it in source control.
-
-The ready-to-enable GitHub Actions definition is in `automation/data-refresh.workflow.yml`. Move it to `.github/workflows/data-refresh.yml` when the repository credential has GitHub's `workflow` scope.
 
 ## GNN policy
 

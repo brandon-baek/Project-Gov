@@ -20,8 +20,10 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Refresh machine-indexed data
-        run: npm run ingest
+      - name: Install Python crawler dependencies
+        run: python -m pip install -r pipeline/requirements.txt
+      - name: Crawl and populate SQLite
+        run: python -m pipeline.run --source all
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
           GOVGUIDE_CRAWL_LIMIT: 40
@@ -34,4 +36,4 @@ jobs:
           branch: automation/source-refresh
           delete-branch: true
           title: "Review government source refresh"
-          body: "Automated source refresh. Review changed content and health checks before promoting any machine-indexed record into a verified journey."
+          body: "Automated Python crawl and SQLite refresh. Machine-indexed records are already stored in SQL; review status controls whether they can support public guidance."
