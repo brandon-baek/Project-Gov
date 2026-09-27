@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Vercel's Next.js adapter handles deployment output itself. Keeping
+  // standalone enabled there triggers a Next.js 16.3 build-finalization bug.
+  output: process.env.VERCEL ? undefined : "standalone",
   serverExternalPackages: ["better-sqlite3"],
   outputFileTracingIncludes: {
     "/api/chat": ["./database/migrations/**/*", "./data/govguide.db"]

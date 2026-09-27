@@ -11,7 +11,7 @@ GovGuide turns a plain-language government task into an ordered, source-linked p
 - Python USA.gov and CA.gov sitemap crawlers with robots enforcement, bounded workers, retries, rate limiting, size limits, content hashing, and failure reports
 - paginated Python SAM.gov Assistance Listings API connector with retry and key-gated access
 - automatic crawler-to-SQLite ingestion with source snapshots and run history
-- twice-monthly source refresh workflow that opens a review pull request
+- twice-monthly automated source refresh and deployment; crawled records remain machine-indexed until reviewed
 - experimental two-layer GraphSAGE link-discovery model
 - responsive guide browser, source views, graph explorer, skeleton state, privacy guard, error boundary, and 404 page
 
@@ -67,6 +67,14 @@ The default database is `data/govguide.db`. The migration in `database/migration
 - `gnn_suggestions` with pending, accepted, or rejected review state
 
 Set `GOVGUIDE_DB_PATH` to use a different file. The schema uses conservative SQL types and constraints so a later PostgreSQL migration is straightforward.
+
+## Autonomous refresh and deployment
+
+The GitHub Actions workflow in `.github/workflows/data-refresh.yml` runs on the 1st and 15th of each month, or can be started with **Actions → GovGuide data refresh → Run workflow**. It restores the reviewed journeys, crawls USA.gov and California government sitemaps, checks the curated official links, validates the SQLite file, and builds with the same Vercel configuration used in production. SAM.gov ingestion is included when the optional `SAM_API_KEY` repository secret is present.
+
+After every check succeeds, the workflow commits only `data/govguide.db` and generated source-index reports to `main`. Keep the GitHub repository connected to the Vercel project with `main` as its production branch; Vercel then deploys the refreshed read-only database snapshot. No hosted database or Vercel API token is needed. On Vercel, the SQLite connection opens read-only because function filesystems are not durable storage.
+
+Crawler output stays marked `machine-indexed`. The chat API reads only verified journeys, and the workflow checks that invariant before publishing. Refreshing source metadata does not automatically turn a discovered page into a public guide. All crawls, the SQLite integrity check, native SQLite load check, and production build must succeed before the workflow pushes data.
 
 ### Why SQLite for the MVP?
 

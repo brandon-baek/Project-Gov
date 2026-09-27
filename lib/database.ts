@@ -7,8 +7,9 @@ import { journeys as bundledJourneys } from "@/data/curated/journeys";
 let singleton: Database.Database | null = null;
 
 export function openDatabase(filename = process.env.GOVGUIDE_DB_PATH ?? path.join(process.cwd(), "data", "govguide.db")) {
-  mkdirSync(path.dirname(filename), { recursive: true });
-  const database = new Database(filename);
+  const deployedOnVercel = Boolean(process.env.VERCEL);
+  if (!deployedOnVercel) mkdirSync(path.dirname(filename), { recursive: true });
+  const database = new Database(filename, deployedOnVercel ? { readonly: true, fileMustExist: true } : {});
   database.pragma("foreign_keys = ON");
   database.pragma("busy_timeout = 5000");
   return database;

@@ -1,0 +1,119 @@
+name: GovGuide data refresh
+
+on:
+  schedule:
+    - cron: "23 6 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: govguide-data-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out the production branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install application dependencies
+        run: npm ci
+
+      - name: Install crawler dependencies
+        run: python -m pip install -r pipeline/requirements.txt
+
+      - name: Restore reviewed journeys into SQLite
+        run: npm run db:seed
+
+      - name: Crawl official sources and update SQLite
+        run: python -m pipeline.run --source all
+        env:
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+          GOVGUIDE_CRAWL_LIMIT: 40
+          GOVGUIDE_USER_AGENT: GovGuide/1.0 (scheduled source review; github.com/brandon-baek/Project-Gov)
+
+      - name: Check curated source links
+        run: npm run check:sources
+
+      - name: Validate the refreshed database
+        run: |
+          python - <<'PY'
+          import sqlite3
+          import sys
+
+          db = sqlite3.connect("data/govguide.db")
+          integrity = db.execute("PRAGMA integrity_check").fetchone()[0]
+          if integrity != "ok":
+              sys.exit(f"SQLite integrity check failed: {integrity}")
+
+          verified = db.execute("""
+              SELECT COUNT(*)
+              FROM journeys AS j
+              JOIN graph_nodes AS n ON n.id = j.node_id
+              WHERE n.status = 'verified'
+          """).fetchone()[0]
+          unreviewed_public = db.execute("""
+              SELECT COUNT(*)
+              FROM journeys AS j
+              JOIN graph_nodes AS n ON n.id = j.node_id
+              WHERE n.status != 'verified'
+          """).fetchone()[0]
+          if verified == 0 or unreviewed_public:
+              sys.exit(f"Journey review gate failed: verified={verified}, unreviewed={unreviewed_public}")
+
+          for connector in ("usagov", "california"):
+              row = db.execute(
+                  "SELECT status, records_seen FROM ingestion_runs WHERE connector = ? ORDER BY id DESC LIMIT 1",
+                  (connector,),
+              ).fetchone()
+              if row is None or row[1] == 0:
+                  sys.exit(f"{connector} refresh returned no records")
+              print(f"{connector}: {row[0]}, {row[1]} records")
+
+          print(f"SQLite integrity: {integrity}; verified journeys: {verified}")
+          db.close()
+          PY
+
+      - name: Confirm the SQLite native module loads
+        run: |
+          VERCEL=1 node - <<'NODE'
+          const Database = require("better-sqlite3");
+          const db = new Database("data/govguide.db", { readonly: true, fileMustExist: true });
+          const { count } = db.prepare("SELECT COUNT(*) AS count FROM journeys").get();
+          if (count === 0) throw new Error("No journeys were found in the release database");
+          console.log(`Read-only SQLite check passed (${count} journeys)`);
+          db.close();
+          NODE
+
+      - name: Build the Vercel production configuration
+        run: npm run build
+        env:
+          VERCEL: "1"
+
+      - name: Publish refreshed data to the production branch
+        run: |
+          git add -- data/govguide.db data/generated/*.json
+          if git diff --cached --quiet; then
+            echo "No generated data changed; nothing to publish."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "data: refresh official source index"
+          git push origin HEAD:main

@@ -58,6 +58,7 @@ def main() -> None:
         counts = dict(database.execute("SELECT kind,COUNT(*) FROM graph_nodes GROUP BY kind"))
         print(json.dumps({"database": str(args.database), "integrity": check, "nodes": counts}, indent=2))
     finally:
+        database.execute("PRAGMA wal_checkpoint(TRUNCATE)")
         database.close()
 
 
