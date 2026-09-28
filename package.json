@@ -17,6 +17,11 @@
     "ingest:usa": "python3 -m pipeline.run --source usagov",
     "ingest:california": "python3 -m pipeline.run --source california",
     "ingest:sam": "python3 -m pipeline.run --source sam",
+    "ingest:federal-directory": "python3 -m pipeline.run --source federal-directory",
+    "ingest:federal-sites": "python3 -m pipeline.run --source federal-sites",
+    "ingest:government-directory": "python3 -m pipeline.run --source government-domain-directory",
+    "ingest:state-directory": "python3 -m pipeline.run --source state-directory",
+    "ingest:state-sites": "python3 -m pipeline.run --source state-sites",
     "check:sources": "tsx scripts/check-sources.ts"
   },
   "dependencies": {

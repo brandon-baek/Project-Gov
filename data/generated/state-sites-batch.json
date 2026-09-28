@@ -1,0 +1,5093 @@
+{
+  "domainsAttempted": 562,
+  "domains": [
+    {
+      "connector": "state-sites-ade-arkansas",
+      "domain": "ade.arkansas.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ade.arkansas.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1444,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ag-colorado",
+      "domain": "ag.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ag.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1481,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ag-hawaii",
+      "domain": "ag.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1489,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ag-nv",
+      "domain": "ag.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 6, column 419"
+      ],
+      "runId": 1625,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ag-ny",
+      "domain": "ag.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ag.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1639,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ag-ok",
+      "domain": "ag.ok.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1720,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ag-utah",
+      "domain": "ag.utah.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1790,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ag-wyo",
+      "domain": "ag.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ag.wyo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1863,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agi-alabama",
+      "domain": "agi.alabama.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1341,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ago-mo",
+      "domain": "ago.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1609,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ago-nebraska",
+      "domain": "ago.nebraska.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1628,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ago-vermont",
+      "domain": "ago.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ago.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1806,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ago-wv",
+      "domain": "ago.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1833,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-agr-illinois",
+      "domain": "agr.illinois.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agr.illinois.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1424,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agr-mt",
+      "domain": "agr.mt.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1920,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-agr-wa",
+      "domain": "agr.wa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agr.wa.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1840,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agri-idaho",
+      "domain": "agri.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1465,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-agri-nv",
+      "domain": "agri.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agri.nv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1601,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agri-ohio",
+      "domain": "agri.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agri.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1685,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agriculture-az",
+      "domain": "agriculture.az.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agriculture.az.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1460,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agriculture-delaware",
+      "domain": "agriculture.delaware.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1385,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-agriculture-mo",
+      "domain": "agriculture.mo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agriculture.mo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1571,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agriculture-ny",
+      "domain": "agriculture.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agriculture.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1630,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agriculture-sc",
+      "domain": "agriculture.sc.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1767,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-agriculture-vermont",
+      "domain": "agriculture.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agriculture.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1812,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-agriculture-wv",
+      "domain": "agriculture.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1928,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-agriculture-wy",
+      "domain": "agriculture.wy.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for agriculture.wy.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1862,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-alaska",
+      "domain": "alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1355,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-apps-ilsos",
+      "domain": "apps.ilsos.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for apps.ilsos.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1455,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-arkansasag",
+      "domain": "arkansasag.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1447,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-aroostook-me-us",
+      "domain": "aroostook.me.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for aroostook.me.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1535,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-aselectionoffice",
+      "domain": "aselectionoffice.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for aselectionoffice.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1323,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-atg-sd",
+      "domain": "atg.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1919,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-attorneygeneral-delaware",
+      "domain": "attorneygeneral.delaware.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1394,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-attorneygeneral-nd",
+      "domain": "attorneygeneral.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1681,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-attorneygeneral-utah",
+      "domain": "attorneygeneral.utah.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1811,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-attorneygenerallynnfitch-com",
+      "domain": "attorneygenerallynnfitch.com",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1588,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-az",
+      "domain": "az.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1486,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-azdot",
+      "domain": "azdot.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1502,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-azgovernor",
+      "domain": "azgovernor.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for azgovernor.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1468,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-azsos",
+      "domain": "azsos.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for azsos.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1471,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-bmv-vi",
+      "domain": "bmv.vi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1832,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-cca-hawaii",
+      "domain": "cca.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1464,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-cdhs-colorado",
+      "domain": "cdhs.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for cdhs.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1483,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-cdoc-colorado",
+      "domain": "cdoc.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for cdoc.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1484,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-cdphe-colorado",
+      "domain": "cdphe.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for cdphe.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1491,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ce-naco-org",
+      "domain": "ce.naco.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ce.naco.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1616,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-childcare",
+      "domain": "childcare.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1695,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-coag",
+      "domain": "coag.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for coag.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1482,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-coloradoprosecutors-org",
+      "domain": "coloradoprosecutors.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for coloradoprosecutors.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1516,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-consumer-georgia",
+      "domain": "consumer.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1414,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-consumer-sc",
+      "domain": "consumer.sc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for consumer.sc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1750,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-consumer-sd",
+      "domain": "consumer.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for consumer.sd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1756,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-cor-mt",
+      "domain": "cor.mt.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1921,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-corrections-az",
+      "domain": "corrections.az.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for corrections.az.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1469,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-corrections-ky",
+      "domain": "corrections.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for corrections.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1526,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-corrections-utah",
+      "domain": "corrections.utah.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1799,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-corrections-wyo",
+      "domain": "corrections.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for corrections.wyo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1864,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dait-wi",
+      "domain": "dait.wi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dait.wi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1855,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-danr-sd",
+      "domain": "danr.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for danr.sd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1758,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-datcp-wi",
+      "domain": "datcp.wi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for datcp.wi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1849,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dc",
+      "domain": "dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1364,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dcboe-org",
+      "domain": "dcboe.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dcboe.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1391,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dccouncil",
+      "domain": "dccouncil.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1402,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dcf-wisconsin",
+      "domain": "dcf.wisconsin.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1880,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dcforms-dc",
+      "domain": "dcforms.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dcforms.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1367,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dchealth-dc",
+      "domain": "dchealth.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dchealth.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1389,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dcp-utah",
+      "domain": "dcp.utah.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dcp.utah.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1808,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dcr-hawaii",
+      "domain": "dcr.hawaii.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dcr.hawaii.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1456,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dcr-pr",
+      "domain": "dcr.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dcr.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1715,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dcr-wv",
+      "domain": "dcr.wv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dcr.wv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1823,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dds-georgia",
+      "domain": "dds.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1427,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-de-pr",
+      "domain": "de.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for de.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1732,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-delaware",
+      "domain": "delaware.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1382,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dem-nv",
+      "domain": "dem.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dem.nv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1631,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dem-ri",
+      "domain": "dem.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1746,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dem-utah",
+      "domain": "dem.utah.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dem.utah.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1794,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dema-az",
+      "domain": "dema.az.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dema.az.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1476,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dema-delaware",
+      "domain": "dema.delaware.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dema.delaware.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1369,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-des-az",
+      "domain": "des.az.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for des.az.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1462,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-des-mt",
+      "domain": "des.mt.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1922,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dese-mo",
+      "domain": "dese.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1605,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dfcs-alaska",
+      "domain": "dfcs.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dfcs.alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1346,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dfs-wyo",
+      "domain": "dfs.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1878,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dhhr-wv",
+      "domain": "dhhr.wv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dhhr.wv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1820,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dhhs-ne",
+      "domain": "dhhs.ne.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dhhs.ne.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1596,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dhhs-utah",
+      "domain": "dhhs.utah.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1802,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dhr-alabama",
+      "domain": "dhr.alabama.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1334,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dhs-dc",
+      "domain": "dhs.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dhs.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1374,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dhs-georgia",
+      "domain": "dhs.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1418,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dhs-maryland",
+      "domain": "dhs.maryland.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1573,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dhs-ri",
+      "domain": "dhs.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1744,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dhs-vi",
+      "domain": "dhs.vi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dhs.vi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1822,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dhss-as",
+      "domain": "dhss.as",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dhss.as; catalog entry retained without page crawl."
+      ],
+      "runId": 1328,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-directory-tml-org",
+      "domain": "directory.tml.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for directory.tml.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1800,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dmv-alaska",
+      "domain": "dmv.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dmv.alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1351,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dmv-colorado",
+      "domain": "dmv.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dmv.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1492,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dmv-dc",
+      "domain": "dmv.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dmv.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1387,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dmv-nebraska",
+      "domain": "dmv.nebraska.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1622,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dmv-nv",
+      "domain": "dmv.nv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1651,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dmv-ny",
+      "domain": "dmv.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dmv.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1637,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dmv-ri",
+      "domain": "dmv.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1761,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dmv-utah",
+      "domain": "dmv.utah.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1804,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dmv-vermont",
+      "domain": "dmv.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dmv.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1816,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dnr-alaska",
+      "domain": "dnr.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dnr.alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1348,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doa-vi",
+      "domain": "doa.vi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doa.vi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1817,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doag-guam",
+      "domain": "doag.guam.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1506,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-alabama",
+      "domain": "doc.alabama.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1358,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-alaska",
+      "domain": "doc.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doc.alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1352,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doc-arkansas",
+      "domain": "doc.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1463,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-dc",
+      "domain": "doc.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doc.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1379,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doc-delaware",
+      "domain": "doc.delaware.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doc.delaware.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1365,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doc-guam",
+      "domain": "doc.guam.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1459,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-iowa",
+      "domain": "doc.iowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1509,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-louisiana",
+      "domain": "doc.louisiana.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1579,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-mo",
+      "domain": "doc.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1590,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-nv",
+      "domain": "doc.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doc.nv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1621,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doc-ri",
+      "domain": "doc.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1749,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doc-sd",
+      "domain": "doc.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doc.sd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1765,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doc-vermont",
+      "domain": "doc.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doc.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1809,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doc-wi",
+      "domain": "doc.wi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1866,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doccs-ny",
+      "domain": "doccs.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doccs.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1633,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dod-hawaii",
+      "domain": "dod.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1496,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-doe-nv",
+      "domain": "doe.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: unbound prefix: line 2, column 926"
+      ],
+      "runId": 1641,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doe-sd",
+      "domain": "doe.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doe.sd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1760,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doh-sd",
+      "domain": "doh.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doh.sd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1774,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doh-vi",
+      "domain": "doh.vi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for doh.vi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1824,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-doh-wa",
+      "domain": "doh.wa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1868,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dojmt",
+      "domain": "dojmt.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1613,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dola-colorado",
+      "domain": "dola.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dola.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1487,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dor-mo",
+      "domain": "dor.mo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dor.mo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1584,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dor-sd",
+      "domain": "dor.sd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1784,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dos-myflorida-com",
+      "domain": "dos.myflorida.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dos.myflorida.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1397,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dos-ny",
+      "domain": "dos.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dos.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1629,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dpbh-nv",
+      "domain": "dpbh.nv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1652,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dph-georgia",
+      "domain": "dph.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1419,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dph-illinois",
+      "domain": "dph.illinois.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dph.illinois.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1432,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dph-sc",
+      "domain": "dph.sc.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1914,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dphhs-mt",
+      "domain": "dphhs.mt.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "https://dphhs.mt.gov/PHSDCalendar: 404 Client Error: Not Found for url: https://dphhs.mt.gov/PHSDCalendar"
+      ],
+      "runId": 1600,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dphss-guam",
+      "domain": "dphss.guam.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: HTTPSConnectionPool(host='dphss.guam.gov', port=443): Max retries exceeded with url: /sitemap.xml (Caused by ResponseError('too many 429 error responses'))"
+      ],
+      "runId": 1415,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dpi-wi",
+      "domain": "dpi.wi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1874,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dps-sd",
+      "domain": "dps.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1625, column 55"
+      ],
+      "runId": 1787,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dpscs-maryland",
+      "domain": "dpscs.maryland.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dpscs.maryland.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1544,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-drc-ohio",
+      "domain": "drc.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for drc.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1694,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-drive-ky",
+      "domain": "drive.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for drive.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1522,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dss-mo",
+      "domain": "dss.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1606,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-dss-sc",
+      "domain": "dss.sc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dss.sc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1748,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dss-sd",
+      "domain": "dss.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 38"
+      ],
+      "runId": 1916,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-dwss-nv",
+      "domain": "dwss.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for dwss.nv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1635,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ed-sc",
+      "domain": "ed.sc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ed.sc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1763,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-edu-wyoming",
+      "domain": "edu.wyoming.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1877,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-educateiowa",
+      "domain": "educateiowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1538,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-education-alaska",
+      "domain": "education.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for education.alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1357,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-education-delaware",
+      "domain": "education.delaware.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://education.delaware.gov/wp-sitemap.xml"
+      ],
+      "runId": 1372,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-education-ky",
+      "domain": "education.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for education.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1531,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-education-mn",
+      "domain": "education.mn.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for education.mn.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1555,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-education-ohio",
+      "domain": "education.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for education.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1704,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-education-vermont",
+      "domain": "education.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for education.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1810,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-elect-ky",
+      "domain": "elect.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for elect.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1519,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-elections-delaware",
+      "domain": "elections.delaware.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for elections.delaware.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1371,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-elections-hawaii",
+      "domain": "elections.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1495,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-elections-maryland",
+      "domain": "elections.maryland.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ],
+      "runId": 1563,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ema-alabama",
+      "domain": "ema.alabama.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1347,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ema-ohio",
+      "domain": "ema.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ema.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1700,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-emd-wv",
+      "domain": "emd.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1835,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-evers-wi",
+      "domain": "evers.wi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for evers.wi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1846,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-fdc-myflorida-com",
+      "domain": "fdc.myflorida.com",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1404,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-flgov-com",
+      "domain": "flgov.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for flgov.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1384,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-gdc-georgia",
+      "domain": "gdc.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1411,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gdoe-net",
+      "domain": "gdoe.net",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1410,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gec-guam",
+      "domain": "gec.guam.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for gec.guam.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1412,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-gema-georgia",
+      "domain": "gema.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1426,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-georgia",
+      "domain": "georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1407,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ghs-guam",
+      "domain": "ghs.guam.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ghs.guam.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1413,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-gohsep-la",
+      "domain": "gohsep.la.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for gohsep.la.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1534,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-gov-alaska",
+      "domain": "gov.alaska.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1359,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gov-fm",
+      "domain": "gov.fm",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1408,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gov-georgia",
+      "domain": "gov.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1406,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gov-idaho",
+      "domain": "gov.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1446,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gov-illinois",
+      "domain": "gov.illinois.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for gov.illinois.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1422,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-gov-louisiana",
+      "domain": "gov.louisiana.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1553,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-gov-nv",
+      "domain": "gov.nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for gov.nv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1615,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-gov-texas",
+      "domain": "gov.texas.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: HTTPSConnectionPool(host='gov.texas.gov', port=443): Max retries exceeded with url: /site/sitemap-pages (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='gov.texas.gov', port=443): Read timed out. (read timeout=8)\"))"
+      ],
+      "runId": 1852,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governor-alabama",
+      "domain": "governor.alabama.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1344,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-arkansas",
+      "domain": "governor.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1443,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-cnmi",
+      "domain": "governor.cnmi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1723,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-delaware",
+      "domain": "governor.delaware.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1393,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-guam",
+      "domain": "governor.guam.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1478,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-hawaii",
+      "domain": "governor.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1479,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-iowa",
+      "domain": "governor.iowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1508,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-ky",
+      "domain": "governor.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for governor.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1518,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governor-maryland",
+      "domain": "governor.maryland.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1566,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-mo",
+      "domain": "governor.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1598,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-mt",
+      "domain": "governor.mt.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1918,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-nc",
+      "domain": "governor.nc.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1660,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-nebraska",
+      "domain": "governor.nebraska.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1602,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-ohio",
+      "domain": "governor.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for governor.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1680,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governor-ri",
+      "domain": "governor.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1742,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-sc",
+      "domain": "governor.sc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for governor.sc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1747,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governor-sd",
+      "domain": "governor.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for governor.sd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1757,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governor-utah",
+      "domain": "governor.utah.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1789,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-vermont",
+      "domain": "governor.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for governor.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1803,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governor-wa",
+      "domain": "governor.wa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1857,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-wv",
+      "domain": "governor.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1829,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-governor-wyo",
+      "domain": "governor.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 13, column 38"
+      ],
+      "runId": 1872,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-governorreeves-ms",
+      "domain": "governorreeves.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1586,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-hdoa-hawaii",
+      "domain": "hdoa.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1515,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-health-alaska",
+      "domain": "health.alaska.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1378,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-health-hawaii",
+      "domain": "health.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1490,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-health-maryland",
+      "domain": "health.maryland.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for health.maryland.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1549,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-health-mo",
+      "domain": "health.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1623,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-health-ri",
+      "domain": "health.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1759,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-health-wyo",
+      "domain": "health.wyo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1881,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-healthandwelfare-idaho",
+      "domain": "healthandwelfare.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1439,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-hhs-iowa",
+      "domain": "hhs.iowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1510,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-hidot-hawaii",
+      "domain": "hidot.hawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1473,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-hls-wyo",
+      "domain": "hls.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for hls.wyo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1871,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-homelandsecurity-iowa",
+      "domain": "homelandsecurity.iowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1514,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-hsema-dc",
+      "domain": "hsema.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for hsema.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1386,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-humanservices-arkansas",
+      "domain": "humanservices.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1448,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-humanservices-hawaii",
+      "domain": "humanservices.hawaii.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1474,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-humanservices-vermont",
+      "domain": "humanservices.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for humanservices.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1805,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-idaho",
+      "domain": "idaho.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1452,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-idoc-illinois",
+      "domain": "idoc.illinois.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for idoc.illinois.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1423,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-iemaohs-illinois",
+      "domain": "iemaohs.illinois.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for iemaohs.illinois.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1434,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-illinoisattorneygeneral",
+      "domain": "illinoisattorneygeneral.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for illinoisattorneygeneral.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1428,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-indianavoters-in",
+      "domain": "indianavoters.in.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: mismatched tag: line 37, column 2"
+      ],
+      "runId": 1441,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ioem-idaho",
+      "domain": "ioem.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1467,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-iowaagriculture",
+      "domain": "iowaagriculture.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1520,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-iowadot",
+      "domain": "iowadot.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1527,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-itd-idaho",
+      "domain": "itd.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1497,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-jfs-ohio",
+      "domain": "jfs.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for jfs.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1689,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-kyem-ky",
+      "domain": "kyem.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for kyem.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1530,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-law-alaska",
+      "domain": "law.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ],
+      "runId": 1907,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-law-georgia",
+      "domain": "law.georgia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1425,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ldh-la",
+      "domain": "ldh.la.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ldh.la.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1537,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-legalaffairs-as",
+      "domain": "legalaffairs.as.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1356,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-manejodeemergencias-pr",
+      "domain": "manejodeemergencias.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for manejodeemergencias.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1709,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-manhattanda-org",
+      "domain": "manhattanda.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1665,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-mayor-dc",
+      "domain": "mayor.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for mayor.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1370,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-md-accessgov-com",
+      "domain": "md.accessgov.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for md.accessgov.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1541,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-mda-maryland",
+      "domain": "mda.maryland.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for mda.maryland.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1545,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-mdem-maryland",
+      "domain": "mdem.maryland.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for mdem.maryland.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1552,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-mil-wa",
+      "domain": "mil.wa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1875,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-mn",
+      "domain": "mn.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for mn.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1556,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-msdh-ms",
+      "domain": "msdh.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for msdh.ms.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1575,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-mt",
+      "domain": "mt.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1911,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-mva-maryland",
+      "domain": "mva.maryland.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1570,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-mvdmt",
+      "domain": "mvdmt.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1617,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-myvote-wi",
+      "domain": "myvote.wi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for myvote.wi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1856,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ncdoj",
+      "domain": "ncdoj.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1666,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-nda-nebraska",
+      "domain": "nda.nebraska.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1607,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-nema-nebraska",
+      "domain": "nema.nebraska.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1912,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-nmdeptag-nmsu-edu",
+      "domain": "nmdeptag.nmsu.edu",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1913,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-nmdoj",
+      "domain": "nmdoj.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1692,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-nv",
+      "domain": "nv.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for nv.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1612,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-oag-dc",
+      "domain": "oag.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for oag.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1377,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-odh-ohio",
+      "domain": "odh.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for odh.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1699,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ohio",
+      "domain": "ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1679,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-oklahoma",
+      "domain": "oklahoma.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1714,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-onlineservices-dps-mn",
+      "domain": "onlineservices.dps.mn.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for onlineservices.dps.mn.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1559,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-opengov-sos-ri",
+      "domain": "opengov.sos.ri.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for opengov.sos.ri.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1734,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-opi-mt",
+      "domain": "opi.mt.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "https://opi.mt.gov/Example-Pages/headings-not-structured: 404 Client Error: Not Found for url: https://opi.mt.gov/Example-Pages/headings-not-structured"
+      ],
+      "runId": 1599,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-ops-alabama",
+      "domain": "ops.alabama.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ops.alabama.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1353,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-osse-dc",
+      "domain": "osse.dc.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for osse.dc.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1376,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-pacga-org",
+      "domain": "pacga.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1421,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-pai-wv",
+      "domain": "pai.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1836,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-palauelection-org",
+      "domain": "palauelection.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1728,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-portal-arkansas",
+      "domain": "portal.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1440,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-portal-ct",
+      "domain": "portal.ct.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1345,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-portal-ehawaii",
+      "domain": "portal.ehawaii.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1910,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-portal-kansas",
+      "domain": "portal.kansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1528,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-protectthegoodlife-nebraska",
+      "domain": "protectthegoodlife.nebraska.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1611,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ready-alaska",
+      "domain": "ready.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ready.alaska.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1354,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-riag-ri",
+      "domain": "riag.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1751,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ride-ri",
+      "domain": "ride.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1755,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-riema-ri",
+      "domain": "riema.ri.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1771,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-rmiparliament-org",
+      "domain": "rmiparliament.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1772,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-sc",
+      "domain": "sc.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1909,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-scdmvonline-com",
+      "domain": "scdmvonline.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for scdmvonline.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1782,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sde-ok",
+      "domain": "sde.ok.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 109, column 7"
+      ],
+      "runId": 1721,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sdsos",
+      "domain": "sdsos.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1775,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-sema-dps-mo",
+      "domain": "sema.dps.mo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sema.dps.mo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1581,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sos-ga",
+      "domain": "sos.ga.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sos.ga.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1401,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sos-iowa",
+      "domain": "sos.iowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1521,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-sos-ks",
+      "domain": "sos.ks.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: mismatched tag: line 22, column 2"
+      ],
+      "runId": 1511,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sos-ms",
+      "domain": "sos.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sos.ms.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1564,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sos-oregon",
+      "domain": "sos.oregon.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1722,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-sos-tn",
+      "domain": "sos.tn.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sos.tn.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1777,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sos-vermont",
+      "domain": "sos.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sos.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1821,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sos-wv",
+      "domain": "sos.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1838,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-sos-wyo",
+      "domain": "sos.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sos.wyo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1869,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-sosmt",
+      "domain": "sosmt.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for sosmt.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1589,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-tea-texas",
+      "domain": "tea.texas.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1788,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-transportation-wv",
+      "domain": "transportation.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1841,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-usvidoj-com",
+      "domain": "usvidoj.com",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1818,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-vadoc-virginia",
+      "domain": "vadoc.virginia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1926,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-vem-vermont",
+      "domain": "vem.vermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for vem.vermont.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1815,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-vide-vi",
+      "domain": "vide.vi",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for vide.vi; catalog entry retained without page crawl."
+      ],
+      "runId": 1797,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-vip-sos-nd",
+      "domain": "vip.sos.nd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for vip.sos.nd.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1672,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-vitema-vi",
+      "domain": "vitema.vi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1851,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-vivote",
+      "domain": "vivote.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1807,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-vote-sos-ri",
+      "domain": "vote.sos.ri.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for vote.sos.ri.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1733,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-vote-utah",
+      "domain": "vote.utah.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1801,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-voteidaho",
+      "domain": "voteidaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1915,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-wa",
+      "domain": "wa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: no element found: line 1, column 0"
+      ],
+      "runId": 1843,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-webnew-ped-state-nm-us",
+      "domain": "webnew.ped.state.nm.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for webnew.ped.state.nm.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1690,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-wem-wi",
+      "domain": "wem.wi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1882,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-wisconsindot",
+      "domain": "wisconsindot.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for wisconsindot.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1859,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-wv-accessgov-com",
+      "domain": "wv.accessgov.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for wv.accessgov.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1819,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-wvde-us",
+      "domain": "wvde.us",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1839,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-ww2-ceepur-org",
+      "domain": "ww2.ceepur.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ww2.ceepur.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1710,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ag-idaho",
+      "domain": "www.ag.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1449,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ag-ks",
+      "domain": "www.ag.ks.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ag.ks.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1501,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ag-ky",
+      "domain": "www.ag.ky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ag.ky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1517,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ag-state-la-us",
+      "domain": "www.ag.state.la.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ag.state.la.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1529,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ag-state-mn-us",
+      "domain": "www.ag.state.mn.us",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1576,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-agr-georgia",
+      "domain": "www.agr.georgia.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1403,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-agricultura-pr",
+      "domain": "www.agricultura.pr",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.agricultura.pr; catalog entry retained without page crawl."
+      ],
+      "runId": 1706,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-agriculture-arkansas",
+      "domain": "www.agriculture.arkansas.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1450,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-agriculture-ks",
+      "domain": "www.agriculture.ks.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.agriculture.ks.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1499,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-agriculture-nh",
+      "domain": "www.agriculture.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.agriculture.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1643,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-agriculture-pa",
+      "domain": "www.agriculture.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 71, column 18"
+      ],
+      "runId": 1737,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-alabama",
+      "domain": "www.alabama.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.alabama.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1324,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-alabamaachieves-org",
+      "domain": "www.alabamaachieves.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1373,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-alabamaag",
+      "domain": "www.alabamaag.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1349,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-alabamapublichealth",
+      "domain": "www.alabamapublichealth.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1925,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-americansamoa",
+      "domain": "www.americansamoa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1332,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-atg-wa",
+      "domain": "www.atg.wa.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1854,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-attorneygeneral",
+      "domain": "www.attorneygeneral.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1731,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-azag",
+      "domain": "www.azag.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1488,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-azcounties-org",
+      "domain": "www.azcounties.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.azcounties.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1475,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-azdhs",
+      "domain": "www.azdhs.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1505,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-azed",
+      "domain": "www.azed.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.azed.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1470,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-bmv-ohio",
+      "domain": "www.bmv.ohio.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.bmv.ohio.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1703,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ca",
+      "domain": "www.ca.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1337,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-caloes-ca",
+      "domain": "www.caloes.ca.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1342,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-cd-nm",
+      "domain": "www.cd.nm.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1674,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-cdaa-org",
+      "domain": "www.cdaa.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cdaa.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1330,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cdcr-ca",
+      "domain": "www.cdcr.ca.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1340,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-cde-ca",
+      "domain": "www.cde.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cde.ca.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1327,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cde-state-co-us",
+      "domain": "www.cde.state.co.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cde.state.co.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1493,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cdfa-ca",
+      "domain": "www.cdfa.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ],
+      "runId": 1338,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cdph-ca",
+      "domain": "www.cdph.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cdph.ca.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1325,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cdss-ca",
+      "domain": "www.cdss.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cdss.ca.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1361,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cesco-pr",
+      "domain": "www.cesco.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cesco.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1711,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-chcc-health",
+      "domain": "www.chcc.health",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.chcc.health; catalog entry retained without page crawl."
+      ],
+      "runId": 1678,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-chfs-ky",
+      "domain": "www.chfs.ky.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1923,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-cnmioag-org",
+      "domain": "www.cnmioag.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cnmioag.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1696,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cnmipss-org",
+      "domain": "www.cnmipss.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1729,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-colorado",
+      "domain": "www.colorado.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.colorado.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1485,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-cor-pa",
+      "domain": "www.cor.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 71, column 18"
+      ],
+      "runId": 1738,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-corrections-nebraska",
+      "domain": "www.corrections.nebraska.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1626,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-corrections-nh",
+      "domain": "www.corrections.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.corrections.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1647,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-counties-org",
+      "domain": "www.counties.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1339,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-courts-state-hi-us",
+      "domain": "www.courts.state.hi.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.courts.state.hi.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1457,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dac-nc",
+      "domain": "www.dac.nc.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1667,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-daco-pr",
+      "domain": "www.daco.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.daco.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1708,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dca-ca",
+      "domain": "www.dca.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dca.ca.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1362,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dcf-ks",
+      "domain": "www.dcf.ks.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dcf.ks.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1507,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dcfs-louisiana",
+      "domain": "www.dcfs.louisiana.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1543,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-des-nd",
+      "domain": "www.des.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1697,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dfa-arkansas",
+      "domain": "www.dfa.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1458,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dhhs-nh",
+      "domain": "www.dhhs.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dhhs.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1644,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dhs-state-il-us",
+      "domain": "www.dhs.state.il.us",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1442,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dhs-wisconsin",
+      "domain": "www.dhs.wisconsin.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.dhs.wisconsin.gov/sitemap.xml?page=1"
+      ],
+      "runId": 1867,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dhsem-nm",
+      "domain": "www.dhsem.nm.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1673,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dhses-ny",
+      "domain": "www.dhses.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dhses.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1642,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dhss-delaware",
+      "domain": "www.dhss.delaware.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dhss.delaware.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1363,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dlca-vi",
+      "domain": "www.dlca.vi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dlca.vi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1783,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dmv-ca",
+      "domain": "www.dmv.ca.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1343,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dmv-de",
+      "domain": "www.dmv.de.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dmv.de.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1380,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dmv-nh",
+      "domain": "www.dmv.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dmv.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1649,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dmv-pa",
+      "domain": "www.dmv.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 71, column 18"
+      ],
+      "runId": 1741,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dmv-virginia",
+      "domain": "www.dmv.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1850,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-doc-ks",
+      "domain": "www.doc.ks.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.doc.ks.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1504,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-doc-sc",
+      "domain": "www.doc.sc.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1906,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-doc-wa",
+      "domain": "www.doc.wa.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1861,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-docr-nd",
+      "domain": "www.docr.nd.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1677,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-doe-as",
+      "domain": "www.doe.as",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.doe.as; catalog entry retained without page crawl."
+      ],
+      "runId": 1326,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-doe-mass-edu",
+      "domain": "www.doe.mass.edu",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.doe.mass.edu; catalog entry retained without page crawl."
+      ],
+      "runId": 1547,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-doe-virginia",
+      "domain": "www.doe.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.doe.virginia.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1828,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-doi",
+      "domain": "www.doi.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1675,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-doj-nh",
+      "domain": "www.doj.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.doj.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1646,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-doj-state-or-us",
+      "domain": "www.doj.state.or.us",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1726,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-doj-state-wi-us",
+      "domain": "www.doj.state.wi.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: mismatched tag: line 611, column 338"
+      ],
+      "runId": 1879,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dol-wa",
+      "domain": "www.dol.wa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1873,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dos-myflorida-com",
+      "domain": "www.dos.myflorida.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.dos.myflorida.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1398,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dos-pa",
+      "domain": "www.dos.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 71, column 18"
+      ],
+      "runId": 1739,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dot-nd",
+      "domain": "www.dot.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1701,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dot-state-wy-us",
+      "domain": "www.dot.state.wy.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 3337, column 88"
+      ],
+      "runId": 1924,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-dpi-nc",
+      "domain": "www.dpi.nc.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1663,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dps-arkansas",
+      "domain": "www.dps.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1472,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dps-mn",
+      "domain": "www.dps.mn.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1578,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dshs-texas",
+      "domain": "www.dshs.texas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1792,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dshs-wa",
+      "domain": "www.dshs.wa.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1853,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-dss-virginia",
+      "domain": "www.dss.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 21, column 14"
+      ],
+      "runId": 1847,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-education-ne",
+      "domain": "www.education.ne.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1645,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-education-nh",
+      "domain": "www.education.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.education.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1648,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-education-pa",
+      "domain": "www.education.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 40, column 56"
+      ],
+      "runId": 1743,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-elections-alaska",
+      "domain": "www.elections.alaska.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1399,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-elections-il",
+      "domain": "www.elections.il.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.elections.il.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1429,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-elections-ny",
+      "domain": "www.elections.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.elections.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1634,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-elections-virginia",
+      "domain": "www.elections.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: 404 Client Error: Not Found for url: https://www.elections.virginia.gov/Google-Sitemap/sitemap-en.xml"
+      ],
+      "runId": 1834,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-expresslane-org",
+      "domain": "www.expresslane.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://expresslane.la.gov/robots.txt"
+      ],
+      "runId": 1554,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-fdacs",
+      "domain": "www.fdacs.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1405,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-fldoe-org",
+      "domain": "www.fldoe.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.fldoe.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1381,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-flgov-com",
+      "domain": "www.flgov.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.flgov.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1383,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-flhsmv",
+      "domain": "www.flhsmv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1433,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-floridadisaster-org",
+      "domain": "www.floridadisaster.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.floridadisaster.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1388,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-floridahealth",
+      "domain": "www.floridahealth.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1400,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-fortaleza-pr",
+      "domain": "www.fortaleza.pr.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1716,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-fsmgov-org",
+      "domain": "www.fsmgov.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.fsmgov.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1431,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-fsmned-fm",
+      "domain": "www.fsmned.fm",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.fsmned.fm; catalog entry retained without page crawl."
+      ],
+      "runId": 1396,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-gacities-com",
+      "domain": "www.gacities.com",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1409,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-gadoe-org",
+      "domain": "www.gadoe.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1416,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-gov-ca",
+      "domain": "www.gov.ca.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1333,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-governor-ks",
+      "domain": "www.governor.ks.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.governor.ks.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1498,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-governor-nd",
+      "domain": "www.governor.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1688,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-governor-nh",
+      "domain": "www.governor.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.governor.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1638,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-governor-ny",
+      "domain": "www.governor.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.governor.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1627,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-governor-pa",
+      "domain": "www.governor.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 71, column 18"
+      ],
+      "runId": 1736,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-governor-state-nm-us",
+      "domain": "www.governor.state.nm.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.governor.state.nm.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1654,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-governor-virginia",
+      "domain": "www.governor.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.governor.virginia.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1826,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-guam",
+      "domain": "www.guam.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: XML or text declaration not at start of entity: line 3, column 0"
+      ],
+      "runId": 1430,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-hawaiipublicschools-org",
+      "domain": "www.hawaiipublicschools.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1480,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-hca-nm",
+      "domain": "www.hca.nm.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1718,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-health-ny",
+      "domain": "www.health.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.health.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1636,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-health-pa",
+      "domain": "www.health.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 40, column 53"
+      ],
+      "runId": 1754,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-health-state-mn-us",
+      "domain": "www.health.state.mn.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.health.state.mn.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1557,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-healthvermont",
+      "domain": "www.healthvermont.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1825,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-healthy-arkansas",
+      "domain": "www.healthy.arkansas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1466,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-hhs-nd",
+      "domain": "www.hhs.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1698,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-hhs-texas",
+      "domain": "www.hhs.texas.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.hhs.texas.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1766,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-idaho",
+      "domain": "www.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1454,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-idoc-idaho",
+      "domain": "www.idoc.idaho.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.idoc.idaho.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1435,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-illinois",
+      "domain": "www.illinois.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.illinois.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1420,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-illinoisattorneygeneral",
+      "domain": "www.illinoisattorneygeneral.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.illinoisattorneygeneral.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1436,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ilsos",
+      "domain": "www.ilsos.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ilsos.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1461,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-in",
+      "domain": "www.in.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: HTTPSConnectionPool(host='www.in.gov', port=443): Max retries exceeded with url: /api/vtl/sitemap (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.in.gov', port=443): Read timed out. (read timeout=8)\"))"
+      ],
+      "runId": 1477,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-iowa",
+      "domain": "www.iowa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1503,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-iowaattorneygeneral",
+      "domain": "www.iowaattorneygeneral.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1512,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-isbe-net",
+      "domain": "www.isbe.net",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1438,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-justice",
+      "domain": "www.justice.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.justice.gov/sitemap.xml?page=1"
+      ],
+      "runId": 1375,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-justicia-pr",
+      "domain": "www.justicia.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.justicia.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1717,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-kansastag",
+      "domain": "www.kansastag.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1525,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-kdhe-ks",
+      "domain": "www.kdhe.ks.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1542,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-kentucky",
+      "domain": "www.kentucky.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.kentucky.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1513,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ksde-org",
+      "domain": "www.ksde.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ksde.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1500,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ksrevenue",
+      "domain": "www.ksrevenue.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: mismatched tag: line 45, column 3"
+      ],
+      "runId": 1539,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-kyagr-com",
+      "domain": "www.kyagr.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: mismatched tag: line 20, column 2"
+      ],
+      "runId": 1532,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-law-alaska",
+      "domain": "www.law.alaska.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ],
+      "runId": 1908,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ldaa-org",
+      "domain": "www.ldaa.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1551,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ldaf-state-la-us",
+      "domain": "www.ldaf.state.la.us",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1540,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-legalaffairs-as",
+      "domain": "www.legalaffairs.as.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1335,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-louisiana",
+      "domain": "www.louisiana.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.louisiana.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1523,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-louisianabelieves-com",
+      "domain": "www.louisianabelieves.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.louisianabelieves.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1546,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-maine",
+      "domain": "www.maine.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.maine.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1536,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-mainecounties-org",
+      "domain": "www.mainecounties.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1550,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-maryland",
+      "domain": "www.maryland.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1558,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-marylandattorneygeneral",
+      "domain": "www.marylandattorneygeneral.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://oag.maryland.gov/robots.txt"
+      ],
+      "runId": 1585,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-marylandpublicschools-org",
+      "domain": "www.marylandpublicschools.org",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1561,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-mass",
+      "domain": "www.mass.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.mass.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1548,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-mda-state-mn-us",
+      "domain": "www.mda.state.mn.us",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1582,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-mdac-ms",
+      "domain": "www.mdac.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: HTTPSConnectionPool(host='www.mdac.ms.gov', port=443): Max retries exceeded with url: /page-sitemap.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.mdac.ms.gov', port=443): Read timed out. (read timeout=8)\"))"
+      ],
+      "runId": 1604,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-mdek12-org",
+      "domain": "www.mdek12.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.mdek12.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1567,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-mdhs-ms",
+      "domain": "www.mdhs.ms.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1583,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-mdoc-ms",
+      "domain": "www.mdoc.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.mdoc.ms.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1572,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-michigan",
+      "domain": "www.michigan.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1560,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-mmvc-ms",
+      "domain": "www.mmvc.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.mmvc.ms.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1574,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-mo",
+      "domain": "www.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1594,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ms",
+      "domain": "www.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
+      ],
+      "runId": 1577,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-msema-org",
+      "domain": "www.msema.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.msema.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1569,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-mtcounties-org",
+      "domain": "www.mtcounties.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1610,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-mvd-newmexico",
+      "domain": "www.mvd.newmexico.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1676,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-myflfamilies-com",
+      "domain": "www.myflfamilies.com",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1917,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-myflorida-com",
+      "domain": "www.myflorida.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.myflorida.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1395,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-myfloridalegal-com",
+      "domain": "www.myfloridalegal.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.myfloridalegal.com; catalog entry retained without page crawl."
+      ],
+      "runId": 1392,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-national-doe-fm",
+      "domain": "www.national.doe.fm",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1417,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nc",
+      "domain": "www.nc.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1655,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ncagr",
+      "domain": "www.ncagr.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1657,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ncdhhs",
+      "domain": "www.ncdhhs.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1659,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ncdistrictattorney-org",
+      "domain": "www.ncdistrictattorney.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1684,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ncdot",
+      "domain": "www.ncdot.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1662,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ncdps",
+      "domain": "www.ncdps.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1669,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ncsbe",
+      "domain": "www.ncsbe.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1664,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nd",
+      "domain": "www.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1687,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ndda-nd",
+      "domain": "www.ndda.nd.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1691,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nebraska",
+      "domain": "www.nebraska.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1603,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nh",
+      "domain": "www.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1640,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-nj",
+      "domain": "www.nj.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.nj.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1618,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-njconsumeraffairs",
+      "domain": "www.njconsumeraffairs.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.njconsumeraffairs.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1619,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-njlib-nj",
+      "domain": "www-njlib.nj.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www-njlib.nj.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1620,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-njoag",
+      "domain": "www.njoag.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1653,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nm",
+      "domain": "www.nm.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.nm.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1658,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-nmdas-com",
+      "domain": "www.nmdas.com",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1670,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nmhealth-org",
+      "domain": "www.nmhealth.org",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1668,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-nmidefender-org",
+      "domain": "www.nmidefender.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.nmidefender.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1686,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-nvsos",
+      "domain": "www.nvsos.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.nvsos.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1614,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ny",
+      "domain": "www.ny.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ny.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1624,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-nysed",
+      "domain": "www.nysed.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.nysed.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1632,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-oag-ca",
+      "domain": "www.oag.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.oag.ca.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1329,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-oag-state-va-us",
+      "domain": "www.oag.state.va.us",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1848,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ohioattorneygeneral",
+      "domain": "www.ohioattorneygeneral.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ohioattorneygeneral.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1693,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ohiopa-org",
+      "domain": "www.ohiopa.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "http://ohiopa.org/: redirected outside the configured government origin"
+      ],
+      "runId": 1719,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-ok",
+      "domain": "www.ok.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ok.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1705,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-oregon",
+      "domain": "www.oregon.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.oregon.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1702,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-pa",
+      "domain": "www.pa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1724,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-pacounties-org",
+      "domain": "www.pacounties.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "https://www.pacounties.org/checkout: HTTPSConnectionPool(host='www.pacounties.org', port=443): Max retries exceeded with url: /checkout (Caused by ResponseError('too many 500 error responses'))"
+      ],
+      "runId": 1730,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-palaugov-pw",
+      "domain": "www.palaugov.pw",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1735,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-pdaa-org",
+      "domain": "www.pdaa.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: XML or text declaration not at start of entity: line 1, column 1"
+      ],
+      "runId": 1727,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-pema-pa",
+      "domain": "www.pema.pa.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 73, column 18"
+      ],
+      "runId": 1740,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-pr",
+      "domain": "www.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1707,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-prosecutors-mo",
+      "domain": "www.prosecutors.mo.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1591,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-revenue-alabama",
+      "domain": "www.revenue.alabama.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1368,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-ri",
+      "domain": "www.ri.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.ri.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1725,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-salud-pr",
+      "domain": "www.salud.pr.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.salud.pr.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1713,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sbe-wa",
+      "domain": "www.sbe.wa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1870,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-scag",
+      "domain": "www.scag.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1793,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-scemd-org",
+      "domain": "www.scemd.org",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.scemd.org; catalog entry retained without page crawl."
+      ],
+      "runId": 1752,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-scvotes-org",
+      "domain": "www.scvotes.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1791,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-sd",
+      "domain": "www.sd.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 171, column 27"
+      ],
+      "runId": 1770,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sdcounties-org",
+      "domain": "www.sdcounties.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1798,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-sde-idaho",
+      "domain": "www.sde.idaho.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1437,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-sec-state-ma-us",
+      "domain": "www.sec.state.ma.us",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1562,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-sog-unc-edu",
+      "domain": "www.sog.unc.edu",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1671,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-sos-alabama",
+      "domain": "www.sos.alabama.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.alabama.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1336,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-arkansas",
+      "domain": "www.sos.arkansas.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.arkansas.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1451,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-ca",
+      "domain": "www.sos.ca.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.ca.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1331,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-la",
+      "domain": "www.sos.la.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.la.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1533,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-mo",
+      "domain": "www.sos.mo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.mo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1580,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-ms",
+      "domain": "www.sos.ms.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.ms.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1565,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-nh",
+      "domain": "www.sos.nh.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.nh.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1650,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-nm",
+      "domain": "www.sos.nm.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1661,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-sos-state-co-us",
+      "domain": "www.sos.state.co.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.state.co.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1494,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-state-mn-us",
+      "domain": "www.sos.state.mn.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.state.mn.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1568,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-state-oh-us",
+      "domain": "www.sos.state.oh.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.state.oh.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1682,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-state-tx-us",
+      "domain": "www.sos.state.tx.us",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.sos.state.tx.us; catalog entry retained without page crawl."
+      ],
+      "runId": 1778,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-sos-wa",
+      "domain": "www.sos.wa.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1865,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-tdcaa-com",
+      "domain": "www.tdcaa.com",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1773,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-tdcj-texas",
+      "domain": "www.tdcj.texas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1780,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-tdem-texas",
+      "domain": "www.tdem.texas.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1785,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-texas",
+      "domain": "www.texas.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1769,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-texasagriculture",
+      "domain": "www.texasagriculture.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.texasagriculture.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1776,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-texasattorneygeneral",
+      "domain": "www.texasattorneygeneral.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1786,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-tn",
+      "domain": "www.tn.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.tn.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1779,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-tndagc-org",
+      "domain": "www.tndagc.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1795,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-travelok-com",
+      "domain": "www.travelok.com",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 0"
+      ],
+      "runId": 1712,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-txdmv",
+      "domain": "www.txdmv.gov",
+      "pagesIndexed": 0,
+      "warnings": [],
+      "runId": 1781,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-utah",
+      "domain": "www.utah.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1796,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-vaemergency",
+      "domain": "www.vaemergency.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.vaemergency.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1842,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-vdacs-virginia",
+      "domain": "www.vdacs.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7335, column 65"
+      ],
+      "runId": 1837,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-vdh-virginia",
+      "domain": "www.vdh.virginia.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1927,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-vermont",
+      "domain": "www.vermont.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1814,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-vi",
+      "domain": "www.vi.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.vi.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1813,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-virginia",
+      "domain": "www.virginia.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "sitemap unavailable; fail-closed: 404 Client Error: Not Found for url: https://www.virginia.gov/sitemap.xml"
+      ],
+      "runId": 1831,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-votecnmi-gov-mp",
+      "domain": "www.votecnmi.gov.mp",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.votecnmi.gov.mp; catalog entry retained without page crawl."
+      ],
+      "runId": 1683,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-www-wicounties-org",
+      "domain": "www.wicounties.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1883,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-wisconsin",
+      "domain": "www.wisconsin.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1860,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-wv",
+      "domain": "www.wv.gov",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1827,
+      "status": "completed"
+    },
+    {
+      "connector": "state-sites-www-wyo",
+      "domain": "www.wyo.gov",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.wyo.gov; catalog entry retained without page crawl."
+      ],
+      "runId": 1858,
+      "status": "partial"
+    },
+    {
+      "connector": "state-sites-wyo-wcca-org",
+      "domain": "wyo-wcca.org",
+      "pagesIndexed": 1,
+      "warnings": [],
+      "runId": 1884,
+      "status": "completed"
+    }
+  ]
+}

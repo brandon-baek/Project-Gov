@@ -32,59 +32,68 @@ def slug(value: str) -> str:
     return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", value.lower()))
 
 
-def discover_sitemaps(source: SitemapSource, policy: HttpPolicy) -> tuple[list[str], int]:
-    session = build_session(policy)
+def discover_sitemaps(source: SitemapSource, policy: HttpPolicy, page_limit: int) -> tuple[list[str], int]:
     queue = [(source.sitemap_url, 0)]
     seen: set[str] = set()
     pages: set[str] = set()
-    while queue and len(seen) < MAX_SITEMAPS:
-        url, depth = queue.pop(0)
-        if url in seen or depth > 3:
-            continue
-        seen.add(url)
-        response = session.get(url, timeout=policy.timeout_seconds, headers={"Accept": "application/xml,text/xml"})
-        response.raise_for_status()
-        root = ElementTree.fromstring(response.content)
-        namespace = "" if not root.tag.startswith("{") else root.tag.split("}")[0] + "}"
-        if root.tag.endswith("sitemapindex"):
-            for loc in root.findall(f"{namespace}sitemap/{namespace}loc"):
-                if loc.text:
-                    queue.append((loc.text.strip(), depth + 1))
-        else:
-            for loc in root.findall(f"{namespace}url/{namespace}loc"):
-                if loc.text:
-                    pages.add(clean_url(loc.text.strip()))
+    with build_session(policy) as session:
+        while queue and len(seen) < MAX_SITEMAPS and len(pages) < page_limit:
+            url, depth = queue.pop(0)
+            if url in seen or depth > 3:
+                continue
+            seen.add(url)
+            response = session.get(url, timeout=policy.timeout_seconds, headers={"Accept": "application/xml,text/xml"})
+            response.raise_for_status()
+            root = ElementTree.fromstring(response.content)
+            namespace = "" if not root.tag.startswith("{") else root.tag.split("}")[0] + "}"
+            if root.tag.endswith("sitemapindex"):
+                for loc in root.findall(f"{namespace}sitemap/{namespace}loc"):
+                    if loc.text:
+                        queue.append((loc.text.strip(), depth + 1))
+            else:
+                for loc in root.findall(f"{namespace}url/{namespace}loc"):
+                    if loc.text:
+                        pages.add(clean_url(loc.text.strip()))
+                        if len(pages) >= page_limit:
+                            break
     return sorted(pages), len(seen)
 
 
 def robots_policy(source: SitemapSource, policy: HttpPolicy) -> tuple[RobotFileParser, float]:
     url = f"{source.origin}/robots.txt"
-    session = build_session(policy)
-    response = session.get(url, timeout=policy.timeout_seconds, headers={"Accept": "text/plain"})
-    response.raise_for_status()
+    with build_session(policy) as session:
+        response = session.get(url, timeout=policy.timeout_seconds, headers={"Accept": "text/plain"})
+        if 400 <= response.status_code < 500 and response.status_code != 429:
+            # RFC 9309 permits crawling when robots.txt is unavailable (4xx).
+            # 429 remains fail-closed because it signals rate limiting.
+            body = ""
+        else:
+            response.raise_for_status()
+            body = response.text
     parser = RobotFileParser(url)
-    parser.parse(response.text.splitlines())
+    parser.parse(body.splitlines())
     crawl_delay = parser.crawl_delay(policy.user_agent) or parser.crawl_delay("*") or 0
     return parser, max(policy.delay_seconds, float(crawl_delay))
 
 
 def parse_page(source: SitemapSource, url: str, policy: HttpPolicy, gate: RateGate) -> Node | None:
     gate.wait()
-    response = build_session(policy).get(
-        url,
-        timeout=policy.timeout_seconds,
-        headers={"Accept": "text/html,application/xhtml+xml"},
-        allow_redirects=True,
-    )
-    response.raise_for_status()
-    if not source.accepts(response.url):
+    with build_session(policy) as session:
+        response = session.get(
+            url,
+            timeout=policy.timeout_seconds,
+            headers={"Accept": "text/html,application/xhtml+xml"},
+            allow_redirects=True,
+        )
+        response.raise_for_status()
+        page_url, content_type, content, headers, status_code = response.url, response.headers.get("content-type", ""), response.content, dict(response.headers), response.status_code
+    if not source.accepts(page_url):
         raise ValueError("redirected outside the configured government origin")
-    content_type = response.headers.get("content-type", "")
     if "text/html" not in content_type and "application/xhtml+xml" not in content_type:
         return None
-    if len(response.content) > MAX_PAGE_BYTES:
+    if len(content) > MAX_PAGE_BYTES:
         raise ValueError("page exceeds the 5 MB HTML limit")
-    soup = BeautifulSoup(response.content, "lxml")
+    soup = BeautifulSoup(content, "lxml")
     for element in soup.select("script,style,noscript,svg,nav,footer"):
         element.decompose()
     main = soup.select_one("main, article, [role='main']") or soup.body
@@ -101,7 +110,7 @@ def parse_page(source: SitemapSource, url: str, policy: HttpPolicy, gate: RateGa
         paragraph = main.find("p")
         description = paragraph.get_text(" ", strip=True) if paragraph else text[:700]
     headings = [" ".join(item.get_text(" ", strip=True).split()) for item in main.select("h2,h3")[:20]]
-    final_url = clean_url(response.url)
+    final_url = clean_url(page_url)
     retrieved = now()
     return Node(
         id=f"source:crawl:{hashlib.sha1(final_url.encode()).hexdigest()[:16]}",
@@ -114,8 +123,8 @@ def parse_page(source: SitemapSource, url: str, policy: HttpPolicy, gate: RateGa
             "audience": [], "status": "machine-indexed", "reviewedAt": retrieved[:10],
             "sourceUrl": final_url, "contentHash": hashlib.sha256(text.encode()).hexdigest(),
             "sourceIds": [], "tags": [source.publisher, *headings], "retrievedAt": retrieved,
-            "httpStatus": response.status_code, "etag": response.headers.get("etag"),
-            "lastModified": response.headers.get("last-modified"),
+            "httpStatus": status_code, "etag": headers.get("etag"),
+            "lastModified": headers.get("last-modified"),
         },
     )
 
@@ -127,7 +136,10 @@ def crawl_sitemap(source: SitemapSource, policy: HttpPolicy, limit: int, concurr
         robots, delay = robots_policy(source, policy)
     except Exception as error:
         return CrawlResult(source.key, started, now(), warnings=[f"robots.txt unavailable; fail-closed: {error}"], metadata={"indexedPages": 0})
-    pages, sitemap_count = discover_sitemaps(source, policy)
+    try:
+        pages, sitemap_count = discover_sitemaps(source, policy, limit)
+    except Exception as error:
+        return CrawlResult(source.key, started, now(), warnings=[f"sitemap unavailable; fail-closed: {error}"], metadata={"indexedPages": 0})
     eligible = [url for url in pages if source.accepts(url) and robots.can_fetch(policy.user_agent, url)][:limit]
     gate = RateGate(delay)
     nodes: list[Node] = []
