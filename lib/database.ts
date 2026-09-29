@@ -1,5 +1,5 @@
 import Database from "better-sqlite3";
-import { mkdirSync, readFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync } from "node:fs";
 import path from "node:path";
 import type { Journey } from "@/lib/schema";
 import { journeys as bundledJourneys } from "@/data/curated/journeys";
@@ -8,13 +8,30 @@ let singleton: Database.Database | null = null;
 
 export function openDatabase(filename?: string) {
   const deployedOnVercel = Boolean(process.env.VERCEL);
-  const bundledSnapshot = path.join(process.cwd(), "data", "govguide.db");
   const configuredFilename = filename ?? process.env.GOVGUIDE_DB_PATH;
-  // Vercel builds can expose GOVGUIDE_DB_PATH=:memory:; the packaged snapshot is
-  // the durable, read-only source for both prerendering and deployed requests.
-  const databasePath = deployedOnVercel && (!configuredFilename || configuredFilename === ":memory:")
-    ? bundledSnapshot
-    : configuredFilename ?? bundledSnapshot;
+  let databasePath: string;
+  if (deployedOnVercel) {
+    // Vercel builds can expose GOVGUIDE_DB_PATH=:memory:; functions must read
+    // the packaged snapshot. Search from the runtime cwd because function bundles
+    // can be rooted below the project directory, and ignore stale relative paths.
+    const roots: string[] = [];
+    let root = process.cwd();
+    for (let depth = 0; depth < 7; depth += 1) {
+      roots.push(root);
+      const parent = path.dirname(root);
+      if (parent === root) break;
+      root = parent;
+    }
+    const configuredCandidates = configuredFilename && configuredFilename !== ":memory:"
+      ? path.isAbsolute(configuredFilename)
+        ? [configuredFilename]
+        : roots.map((candidateRoot) => path.resolve(candidateRoot, configuredFilename))
+      : [];
+    const snapshotCandidates = roots.map((candidateRoot) => path.join(candidateRoot, "data", "govguide.db"));
+    databasePath = [...configuredCandidates, ...snapshotCandidates].find((candidate) => existsSync(candidate)) ?? snapshotCandidates[0];
+  } else {
+    databasePath = configuredFilename ?? path.join(process.cwd(), "data", "govguide.db");
+  }
   if (!deployedOnVercel) mkdirSync(path.dirname(databasePath), { recursive: true });
   const database = new Database(databasePath, deployedOnVercel ? { readonly: true, fileMustExist: true } : {});
   database.pragma("foreign_keys = ON");
