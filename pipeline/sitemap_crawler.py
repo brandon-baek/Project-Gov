@@ -129,7 +129,15 @@ def parse_page(source: SitemapSource, url: str, policy: HttpPolicy, gate: RateGa
     )
 
 
-def crawl_sitemap(source: SitemapSource, policy: HttpPolicy, limit: int, concurrency: int) -> CrawlResult:
+def pathway_priority(url: str) -> tuple[int, str]:
+    value = url.lower().replace("-", " ").replace("_", " ")
+    positive = ("apply", "application", "benefit", "service", "permit", "license", "request", "replace", "renew", "register", "eligib", "assistance", "program", "complaint", "report", "file", "payment", "grant", "loan", "tax", "vote", "passport", "record")
+    negative = ("/news", "/press", "/blog", "/events", "/about", "/privacy", "/accessibility", "/contact", "/archive")
+    score = sum(4 for term in positive if term in value) - sum(5 for term in negative if term in value)
+    return score, url
+
+
+def crawl_sitemap(source: SitemapSource, policy: HttpPolicy, limit: int, concurrency: int, known_urls: dict[str, str] | None = None) -> CrawlResult:
     started = now()
     warnings: list[str] = []
     try:
@@ -137,10 +145,16 @@ def crawl_sitemap(source: SitemapSource, policy: HttpPolicy, limit: int, concurr
     except Exception as error:
         return CrawlResult(source.key, started, now(), warnings=[f"robots.txt unavailable; fail-closed: {error}"], metadata={"indexedPages": 0})
     try:
-        pages, sitemap_count = discover_sitemaps(source, policy, limit)
+        inventory_limit = min(max(limit * 40, 400), 5000)
+        pages, sitemap_count = discover_sitemaps(source, policy, inventory_limit)
     except Exception as error:
         return CrawlResult(source.key, started, now(), warnings=[f"sitemap unavailable; fail-closed: {error}"], metadata={"indexedPages": 0})
-    eligible = [url for url in pages if source.accepts(url) and robots.can_fetch(policy.user_agent, url)][:limit]
+    known = known_urls or {}
+    available = [url for url in pages if source.accepts(url) and robots.can_fetch(policy.user_agent, url)]
+    new_candidates = sorted((url for url in available if url not in known), key=pathway_priority, reverse=True)
+    refresh_candidates = sorted((url for url in available if url in known), key=lambda url: (known[url], -pathway_priority(url)[0], url))
+    refresh_quota = min(len(refresh_candidates), max(1, limit // 5))
+    eligible = new_candidates[:max(0, limit - refresh_quota)] + refresh_candidates[:refresh_quota]
     gate = RateGate(delay)
     nodes: list[Node] = []
     lock = threading.Lock()
@@ -160,7 +174,7 @@ def crawl_sitemap(source: SitemapSource, policy: HttpPolicy, limit: int, concurr
     if nodes:
         nodes.append(Node(agency_id, "agency", source.publisher, f"Publisher for {source.key} discovery records.", params={"audience": [], "status": "machine-indexed", "sourceIds": [], "tags": [source.key]}))
     return CrawlResult(source.key, started, now(), nodes, edges, warnings, {
-        "sitemapsRead": sitemap_count, "urlsDiscovered": len(pages), "urlsEligible": len(eligible),
+        "sitemapsRead": sitemap_count, "urlsDiscovered": len(pages), "urlsAlreadyIndexed": len(refresh_candidates), "newPagesSelected": len([url for url in eligible if url not in known]), "refreshPagesSelected": len([url for url in eligible if url in known]), "urlsEligible": len(eligible),
         "pagesIndexed": len([node for node in nodes if node.kind == "source"]), "requestDelaySeconds": delay,
         "workers": max(1, min(concurrency, 8)),
     })

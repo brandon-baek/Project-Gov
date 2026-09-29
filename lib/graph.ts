@@ -1,5 +1,6 @@
 import { journeys } from "@/data/curated/journeys";
 import type { GraphEdge, GraphNode, Journey } from "@/lib/schema";
+import { discoveredGuides } from "@/lib/discovered-guides";
 
 function slug(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
@@ -16,6 +17,14 @@ export function buildGraph(records: Journey[] = journeys): GovGraph {
   const edges: GraphEdge[] = [];
 
   for (const journey of records) {
+    const categoryId = `program:category:${slug(journey.category)}`;
+    if (!nodes.has(categoryId)) nodes.set(categoryId, {
+      id: categoryId,
+      kind: "program",
+      label: journey.category,
+      description: "A browseable group of government outcomes and services.",
+      params: { audience: [], category: journey.category, status: "verified", sourceIds: [], tags: [] }
+    });
     nodes.set(journey.id, {
       id: journey.id,
       kind: "journey",
@@ -31,6 +40,7 @@ export function buildGraph(records: Journey[] = journeys): GovGraph {
         tags: journey.aliases
       }
     });
+    edges.push({ from: journey.id, to: categoryId, relation: "related-to" });
 
     journey.steps.forEach((step, index) => {
       const stepId = `${journey.id}:step:${step.id}`;
@@ -88,6 +98,58 @@ export function buildGraph(records: Journey[] = journeys): GovGraph {
       }
       edges.push({ from: sourceId, to: agencyId, relation: "published-by" });
     }
+  }
+
+  for (const guide of discoveredGuides) {
+    const categoryId = `program:category:${slug(guide.category)}`;
+    if (!nodes.has(categoryId)) nodes.set(categoryId, {
+      id: categoryId,
+      kind: "program",
+      label: guide.category,
+      description: "A browseable group of government outcomes and services.",
+      params: { audience: [], category: guide.category, status: "machine-indexed", sourceIds: [], tags: [] }
+    });
+    nodes.set(guide.id, {
+      id: guide.id,
+      kind: "journey",
+      label: guide.title,
+      description: guide.summary,
+      params: {
+        jurisdiction: "federal-and-state",
+        audience: [],
+        category: guide.category,
+        status: "machine-indexed",
+        reviewedAt: guide.discoveredAt.slice(0, 10),
+        sourceIds: [guide.sourceId],
+        tags: guide.matchedTerms
+      }
+    });
+    nodes.set(guide.sourceId, {
+      id: guide.sourceId,
+      kind: "source",
+      label: guide.title,
+      description: guide.summary,
+      params: {
+        audience: [],
+        status: "machine-indexed",
+        reviewedAt: guide.discoveredAt.slice(0, 10),
+        retrievedAt: guide.discoveredAt,
+        sourceUrl: guide.officialUrl,
+        sourceIds: [],
+        tags: [guide.publisher, ...guide.outline]
+      }
+    });
+    const agencyId = guide.agencyId ?? `agency:discovered:${slug(guide.agency)}`;
+    if (!nodes.has(agencyId)) nodes.set(agencyId, {
+      id: agencyId,
+      kind: "agency",
+      label: guide.agency,
+      description: "Government publisher connected to a crawler-discovered guide.",
+      params: { audience: [], status: "machine-indexed", sourceIds: [], tags: [] }
+    });
+    edges.push({ from: guide.id, to: guide.sourceId, relation: "supported-by" });
+    edges.push({ from: guide.id, to: categoryId, relation: "related-to" });
+    edges.push({ from: guide.sourceId, to: agencyId, relation: "published-by" });
   }
 
   return { nodes: [...nodes.values()], edges, nodeById: nodes };

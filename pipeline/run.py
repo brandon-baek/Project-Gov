@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import sqlite3
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 from pathlib import Path
@@ -10,6 +11,7 @@ from urllib.parse import urlsplit
 
 from pipeline.config import SITEMAP_SOURCES, SitemapSource
 from pipeline.database import export_graph, open_database, store_result
+from pipeline.pathways import export_discovered_guides
 from pipeline.domain_catalog import (
     crawl_federal_directory, crawl_state_directory, discover_sitemap,
     government_domain_result, load_all_gov_domains, load_federal_domains,
@@ -24,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Crawl government sources and populate GovGuide SQLite automatically.")
-    parser.add_argument("--source", choices=("all", "usagov", "california", "sam", "federal-directory", "federal-sites", "government-domain-directory", "state-directory", "state-sites"), default="all")
+    parser.add_argument("--source", choices=("all", "usagov", "california", "sam", "federal-directory", "federal-sites", "government-domain-directory", "government-sites", "state-directory", "state-sites"), default="all")
     parser.add_argument("--limit", type=int, default=int(os.getenv("GOVGUIDE_CRAWL_LIMIT", "40")))
     parser.add_argument("--workers", type=int, default=int(os.getenv("GOVGUIDE_CRAWL_WORKERS", "16")))
     parser.add_argument("--delay", type=float, default=float(os.getenv("GOVGUIDE_CRAWL_DELAY_SECONDS", "0.25")))
@@ -39,6 +41,13 @@ def arguments() -> argparse.Namespace:
 
 def main() -> None:
     args = arguments()
+    known_urls: dict[str, str] = {}
+    if args.database.exists():
+        with sqlite3.connect(args.database) as existing:
+            try:
+                known_urls = {row[0]: row[1] for row in existing.execute("SELECT url, last_checked FROM sources")}
+            except sqlite3.OperationalError:
+                known_urls = {}
     policy = HttpPolicy(
         user_agent=os.getenv("GOVGUIDE_USER_AGENT", "GovGuide/1.0 educational civic navigator; contact repository owner"),
         delay_seconds=args.delay,
@@ -55,7 +64,9 @@ def main() -> None:
         results.append(government_domain_result(load_all_gov_domains(policy)))
     for source in SITEMAP_SOURCES:
         if args.source in ("all", source.key):
-            results.append(crawl_sitemap(source, policy, args.limit, args.workers))
+            # The scheduled all-mode refreshes these core collections on every run.
+            # Focused runs advance past known URLs instead.
+            results.append(crawl_sitemap(source, policy, args.limit, args.workers, {} if args.source == "all" else known_urls))
     if args.source in ("all", "sam"):
         api_key = os.getenv("SAM_API_KEY")
         if api_key:
@@ -65,18 +76,24 @@ def main() -> None:
         else:
             print("SAM.gov skipped because SAM_API_KEY is not set.")
 
-    site_modes = ("federal-sites", "state-sites") if args.source == "all" else (args.source,)
+    site_modes = ("government-sites", "federal-sites", "state-sites") if args.source == "all" else (args.source,)
     for site_mode in site_modes:
-        if site_mode not in ("federal-sites", "state-sites"):
+        if site_mode not in ("government-sites", "federal-sites", "state-sites"):
             continue
         bulk_policy = HttpPolicy(user_agent=policy.user_agent, timeout_seconds=8, retries=0, delay_seconds=args.delay)
-        rows = load_federal_domains(policy) if site_mode == "federal-sites" else state_sites
+        rows = load_all_gov_domains(policy) if site_mode == "government-sites" else load_federal_domains(policy) if site_mode == "federal-sites" else state_sites
+        domain_offset = args.domain_offset
         if args.domains:
             selected_domains = {item.strip().lower().removeprefix("www.") for item in args.domains.split(",") if item.strip()}
             rows = [row for row in rows if (row.get("Domain name", row.get("domain", "")).lower().removeprefix("www.")) in selected_domains]
         else:
-            rows = rows[args.domain_offset:]
-            domain_limit = 0 if args.source == "all" else args.domain_limit
+            domain_limit = args.domain_limit
+            if args.source == "all":
+                scheduled_limits = {"government-sites": 600, "federal-sites": 300, "state-sites": 200}
+                domain_limit = scheduled_limits[site_mode]
+                slots = max(1, (len(rows) + domain_limit - 1) // domain_limit)
+                domain_offset = (int(os.getenv("GITHUB_RUN_NUMBER", "0")) % slots) * domain_limit
+            rows = rows[domain_offset:]
             if domain_limit:
                 rows = rows[:domain_limit]
         def crawl_domain(item: tuple[int, dict[str, str]]):
@@ -95,9 +112,9 @@ def main() -> None:
                 sitemap_url=sitemap,
                 excluded_fragments=("/search",),
             )
-            print(f"[{position}/{args.domain_offset + len(rows)}] {domain}: {sitemap}", flush=True)
+            print(f"[{position}/{domain_offset + len(rows)}] {domain}: {sitemap}", flush=True)
             try:
-                result = crawl_sitemap(source, bulk_policy, args.pages_per_domain, 1)
+                result = crawl_sitemap(source, bulk_policy, args.pages_per_domain, 1, known_urls)
                 result.metadata.update({"domain": domain, "publisher": publisher})
                 return result
             except Exception as error:
@@ -105,7 +122,7 @@ def main() -> None:
                                    metadata={"domain": domain, "publisher": publisher, "pagesIndexed": 0})
 
         with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 24))) as executor:
-            futures = [executor.submit(crawl_domain, item) for item in enumerate(rows, start=args.domain_offset + 1)]
+            futures = [executor.submit(crawl_domain, item) for item in enumerate(rows, start=domain_offset + 1)]
             for future in as_completed(futures):
                 try:
                     results.append(future.result())
@@ -123,8 +140,8 @@ def main() -> None:
                 result.finished_at = stamp
             store_result(database, result)
             args.output_dir.mkdir(parents=True, exist_ok=True)
-            if result.connector.startswith(("federal-sites-", "state-sites-")):
-                batch = "federal-sites" if result.connector.startswith("federal-sites-") else "state-sites"
+            if result.connector.startswith(("government-sites-", "federal-sites-", "state-sites-")):
+                batch = "government-sites" if result.connector.startswith("government-sites-") else "federal-sites" if result.connector.startswith("federal-sites-") else "state-sites"
                 batch_summaries.setdefault(batch, []).append({"connector": result.connector, **result.metadata, "warnings": result.warnings})
             else:
                 output = args.output_dir / f"{result.connector}.json"
@@ -142,9 +159,10 @@ def main() -> None:
             domains = sorted(combined.values(), key=lambda item: item["connector"])
             output.write_text(json.dumps({"domainsAttempted": len(domains), "domains": domains}, indent=2) + "\n")
         export_graph(database, args.output_dir / "graph.json")
+        discovered = export_discovered_guides(database, args.output_dir / "discovered-guides.json")
         check = database.execute("PRAGMA integrity_check").fetchone()[0]
         counts = dict(database.execute("SELECT kind,COUNT(*) FROM graph_nodes GROUP BY kind"))
-        print(json.dumps({"database": str(args.database), "integrity": check, "nodes": counts}, indent=2))
+        print(json.dumps({"database": str(args.database), "integrity": check, "nodes": counts, "discoveredGuides": discovered}, indent=2))
     finally:
         database.close()
 

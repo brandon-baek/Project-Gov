@@ -4,11 +4,12 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { default: "GovGuide", template: "%s · GovGuide" },
-  description: "Clear, source-linked routes through common federal and California government processes.",
-  metadataBase: new URL("https://govguide.local"),
+  description: "Discover source-linked routes through federal, state, and local government services.",
+  metadataBase: new URL(siteUrl),
   robots: { index: true, follow: true }
 };
 

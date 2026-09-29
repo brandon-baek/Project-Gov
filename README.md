@@ -1,17 +1,17 @@
 # GovGuide
 
-GovGuide turns a plain-language government task into an ordered, source-linked pathway. The answer layer is deliberately constrained: a model may help select an existing journey ID, but facts, steps, cautions, and links come from the verified knowledge graph stored in SQL.
+GovGuide turns official government pages into a continuously expanding catalog of outcome-based guides. Reviewed guides contain checked steps; crawler-discovered guides provide a permanent, source-linked starting point while deeper instructions await review.
 
 ## Current MVP
 
-- 24 reviewed federal and California pathways
-- 170 verified graph nodes and 277 typed edges
+- 24 reviewed federal and California pathways plus hundreds of generated discovered guides
+- one shared pathway dataset for the Guides index, guidance retrieval, permanent pages, sitemap, and knowledge graph
 - SQLite database with migrations, foreign keys, integrity checks, FTS5 search, source snapshots, ingestion runs, and GNN review tables
 - deterministic intent retrieval with an optional OpenAI structured-output classifier
 - Python USA.gov and CA.gov sitemap crawlers with robots enforcement, bounded workers, retries, rate limiting, size limits, content hashing, and failure reports
 - paginated Python SAM.gov Assistance Listings API connector with retry and key-gated access
 - automatic crawler-to-SQLite ingestion with source snapshots and run history
-- twice-monthly automated source refresh and deployment; crawled records remain machine-indexed until reviewed
+- twice-monthly crawler advancement, guide generation, validation, commit, and Vercel deployment
 - experimental two-layer GraphSAGE link-discovery model
 - responsive guide browser, source views, graph explorer, skeleton state, privacy guard, error boundary, and 404 page
 
@@ -51,10 +51,10 @@ The normalized node class lives in `lib/schema.ts`. Every node has an ID, kind, 
 User-facing facts follow this path:
 
 ```text
-request -> known journey -> ordered step -> official source -> publisher
+request -> reviewed or discovered guide -> official source -> publisher
 ```
 
-A step without a `supported-by` edge is invalid. Machine-indexed records remain separate from verified records until reviewed. Changed source content becomes a review task; it does not silently rewrite a guide.
+A reviewed step without a `supported-by` edge is invalid. Discovered guides can point to an official destination before detailed steps are reviewed, but their status is always visible. Changed source content becomes a review task; it does not silently rewrite reviewed instructions.
 
 ## Database
 
@@ -70,11 +70,11 @@ Set `GOVGUIDE_DB_PATH` to use a different file. The schema uses conservative SQL
 
 ## Autonomous refresh and deployment
 
-The GitHub Actions workflow in `.github/workflows/data-refresh.yml` runs on the 1st and 15th of each month, or can be started with **Actions → GovGuide data refresh → Run workflow**. It restores the reviewed journeys, crawls USA.gov and California government sitemaps, checks the curated official links, validates the SQLite file, and builds with the same Vercel configuration used in production. SAM.gov ingestion is included when the optional `SAM_API_KEY` repository secret is present.
+The GitHub Actions workflow in `.github/workflows/data-refresh.yml` runs on the 1st and 15th of each month, or can be started with **Actions → GovGuide data refresh → Run workflow**. It refreshes official directories, advances through rotating federal and state domain batches, prioritizes unseen action-oriented pages while reserving capacity for the oldest previously indexed pages, generates `data/generated/discovered-guides.json`, checks curated links, validates SQLite, and builds the Vercel configuration. SAM.gov ingestion is included when the optional `SAM_API_KEY` repository secret is present.
 
 After every check succeeds, the workflow commits only `data/govguide.db` and generated source-index reports to `main`. Keep the GitHub repository connected to the Vercel project with `main` as its production branch; Vercel then deploys the refreshed read-only database snapshot. No hosted database or Vercel API token is needed. On Vercel, the SQLite connection opens read-only because function filesystems are not durable storage.
 
-Crawler output stays marked `machine-indexed`. The chat API reads only verified journeys, and the workflow checks that invariant before publishing. Refreshing source metadata does not automatically turn a discovered page into a public guide. All crawls, the SQLite integrity check, native SQLite load check, and production build must succeed before the workflow pushes data.
+Crawler output stays marked `machine-indexed` and appears publicly as a discovered guide. It can be browsed, matched, graphed, and opened at a permanent URL, while reviewed steps remain a separate trust level. Pages with too little useful content remain visible inside GovGuide but are kept out of the XML sitemap until they meet the search-quality gate. All crawls, guide export, SQLite integrity, native SQLite load, and production build must succeed before the workflow pushes data.
 
 ### Why SQLite for the MVP?
 
@@ -91,7 +91,7 @@ SELECT relation, COUNT(*) FROM graph_edges GROUP BY relation;
 
 ## Crawling and refresh
 
-All acquisition and ETL code lives in `pipeline/`. The sitemap crawlers use an explicit user agent, remain on their configured government origin, enforce `robots.txt`, retry temporary failures, rate-limit requests, reject oversized/non-HTML responses, and hash normalized content. The runner writes every discovered record directly into `graph_nodes`, `sources`, `graph_edges`, `source_snapshots`, and `ingestion_runs`, then exports the updated graph JSON. Indexed pages enter the database automatically with `machine-indexed` status.
+All acquisition and ETL code lives in `pipeline/`. The sitemap crawlers use an explicit user agent, remain on their configured government origin, enforce `robots.txt`, retry temporary failures, rate-limit requests, reject oversized/non-HTML responses, and hash normalized content. They inspect a wider sitemap inventory than they fetch on each run, rank likely actions and services first, and exclude URLs already stored so repeated runs continue advancing. The runner updates SQL, exports the graph, and regenerates the deployable guide catalog automatically.
 
 ```bash
 python3 -m pipeline.run --source all
@@ -103,6 +103,8 @@ SAM_API_KEY=... python3 -m pipeline.run --source sam --limit 500
 The frontend and API remain TypeScript because Next.js is a TypeScript web framework. Crawling, normalization, database ingestion, and graph/ML processing are Python so the data system can be read and run independently of the interface.
 
 SAM.gov’s current Assistance Listings API requires a personal API key. Store it as the `SAM_API_KEY` repository secret for the scheduled workflow. Do not put it in source control.
+
+Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin. Optional guide ad placements are enabled only when `NEXT_PUBLIC_ADSENSE_GUIDE_INLINE_SLOT` or `NEXT_PUBLIC_ADSENSE_GUIDE_END_SLOT` is configured; without a slot ID, no empty ad container is rendered.
 
 ## GNN policy
 

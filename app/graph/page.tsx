@@ -3,7 +3,7 @@ import { GraphExplorer } from "@/components/GraphExplorer";
 import { journeys } from "@/data/curated/journeys";
 import { govGraph } from "@/lib/graph";
 import gnn from "@/data/generated/gnn-neighbors.json";
-import { IndexedAgencyCatalog } from "@/components/IndexedAgencyCatalog";
+import { discoveredGuides } from "@/lib/discovered-guides";
 
 export const metadata: Metadata = { title: "Knowledge graph" };
 
@@ -15,16 +15,15 @@ export default async function GraphPage({ searchParams }: { searchParams: Promis
       <header className="page-intro">
         <p className="eyebrow">Inspectable by design</p>
         <h1>The knowledge graph</h1>
-        <p>The network maps reviewed journeys and their evidence. Explore the much larger machine-indexed agency catalog below; directory listings are discoverable, but are not yet reviewed answer pathways.</p>
+        <p>The network maps every guide the crawler knows: reviewed step-by-step routes, discovered destinations, official sources, and the agencies that publish them.</p>
       </header>
       <div className="graph-stats" aria-label="Graph totals">
         {counts.map(({ kind, count }) => <div key={kind}><strong>{count}</strong><span>{kind}{count === 1 ? "" : "s"}</span></div>)}
         <div><strong>{govGraph.edges.length}</strong><span>typed edges</span></div>
       </div>
-      <GraphExplorer nodes={govGraph.nodes} edges={govGraph.edges} journeys={journeys.map(({ id, title, slug }) => ({ id, title, slug }))} suggestions={gnn.suggestions.map(({ from, to, score, status }) => ({ from, to, score, status, relation: "related-to" as const }))} initialFocus={focus} />
-      <IndexedAgencyCatalog compact initialCollection="connected" />
+      <GraphExplorer nodes={govGraph.nodes} edges={govGraph.edges} journeys={[...journeys.map(({ id, title, slug }) => ({ id, title, slug })), ...discoveredGuides.map(({ id, title, slug }) => ({ id, title, slug }))]} suggestions={gnn.suggestions.map(({ from, to, score, status }) => ({ from, to, score, status, relation: "related-to" as const }))} initialFocus={focus} />
       <section className="graph-rules">
-        <div><h2>What qualifies as an answer</h2><p>A reviewed journey must have ordered steps. Every step must connect to at least one reviewed source. A source must name its publisher and official URL.</p></div>
+        <div><h2>Two levels of guidance</h2><p>Reviewed guides contain ordered, source-checked steps. Discovered guides identify an official outcome and destination automatically, then remain clearly marked until their steps are reviewed.</p></div>
         <div><h2>Where a GNN can help</h2><p>An experimental GraphSAGE model can suggest similar journeys or missing <em>related-to</em> edges for human review. It cannot create or verify a step, source, deadline, fee, or eligibility rule.</p></div>
       </section>
     </div>

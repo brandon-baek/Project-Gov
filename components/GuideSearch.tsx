@@ -5,9 +5,12 @@ import Link from "next/link";
 import type { Journey } from "@/lib/schema";
 import { ArrowIcon, ExternalIcon } from "@/components/icons";
 import { GuideResult } from "@/components/GuideResult";
+import { DiscoveredGuideResult } from "@/components/DiscoveredGuideResult";
+import type { DiscoveredGuide } from "@/lib/discovered-guides";
 
 type ApiResponse =
   | { status: "matched"; message: string; journey: Journey; provenance: { router: string; storage: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string }[] }
+  | { status: "discovered"; message: string; guide: DiscoveredGuide; provenance: { router: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string; summary?: string }[] }
   | { status: "clarify" | "unsupported" | "blocked" | "error"; message: string; alternatives: { id: string; slug: string; title: string; summary?: string }[]; officialSearchUrl?: string };
 
 const examples = [
@@ -57,7 +60,7 @@ export function GuideSearch() {
         <label htmlFor="goal">What are you trying to do?</label>
         <div className="guide-search__control">
           <textarea id="goal" name="goal" value={message} onChange={(event) => setMessage(event.target.value)} placeholder="Describe the situation in your own words" rows={2} maxLength={600} />
-          <button type="submit" disabled={loading || message.trim().length < 3}><span>{loading ? "Finding steps…" : "Find my next steps"}</span><ArrowIcon /></button>
+          <button type="submit" disabled={loading || message.trim().length < 3} aria-label={loading ? "Finding guidance" : "Find guidance"}><ArrowIcon /></button>
         </div>
         <p className="privacy-note">Do not include Social Security, account, passport, or license numbers.</p>
       </form>
@@ -84,7 +87,12 @@ export function GuideSearch() {
             </details>
           </>
         )}
-        {result && result.status !== "matched" && (
+        {result?.status === "discovered" && <>
+          <div className="query-line"><span>You asked</span><p>{submitted}</p></div>
+          <DiscoveredGuideResult guide={result.guide} compact />
+          <details className="trace-details"><summary>Why this result was selected</summary><p>The request matched a crawler-discovered guide connected to the official source. It is available for discovery now and remains marked as unreviewed until its detailed steps pass the source review gate.</p><Link href={`/guides/${result.guide.slug}`}>Open the permanent guide</Link></details>
+        </>}
+        {result && result.status !== "matched" && result.status !== "discovered" && (
           <div className={`notice notice--${result.status}`} role={result.status === "error" || result.status === "blocked" ? "alert" : undefined}>
             <p>{result.message}</p>
             {result.alternatives.length > 0 && <div className="notice-options">{result.alternatives.map((item) => <Link key={item.id} href={`/guides/${item.slug}`}><strong>{item.title}</strong>{item.summary && <span>{item.summary}</span>}</Link>)}</div>}
@@ -107,7 +115,7 @@ function SearchSkeleton({ query }: { query: string }) {
         <span className="skeleton skeleton--wide" />
         <div className="skeleton-steps"><i /><i /><i /></div>
       </div>
-      <span className="sr-only">Searching verified government guides</span>
+      <span className="sr-only">Searching reviewed and discovered government guides</span>
     </div>
   );
 }

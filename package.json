@@ -11,6 +11,7 @@
     "test": "vitest run",
     "ingest": "python3 -m pipeline.run --source all",
     "graph:export": "tsx scripts/export-graph.ts",
+    "pathways:export": "python3 -m pipeline.pathways",
     "gnn:train": "python3 ml/train_gnn.py",
     "db:seed": "tsx scripts/seed-database.ts",
     "db:stats": "tsx scripts/database-stats.ts",
@@ -20,6 +21,7 @@
     "ingest:federal-directory": "python3 -m pipeline.run --source federal-directory",
     "ingest:federal-sites": "python3 -m pipeline.run --source federal-sites",
     "ingest:government-directory": "python3 -m pipeline.run --source government-domain-directory",
+    "ingest:government-sites": "python3 -m pipeline.run --source government-sites",
     "ingest:state-directory": "python3 -m pipeline.run --source state-directory",
     "ingest:state-sites": "python3 -m pipeline.run --source state-sites",
     "check:sources": "tsx scripts/check-sources.ts"

@@ -6,6 +6,7 @@ import { findSensitiveData, isLikelyEmergency } from "@/lib/safety";
 import { routeWithAI } from "@/lib/ai-router";
 import { traceJourney } from "@/lib/graph";
 import { getStoredJourneys } from "@/lib/database";
+import { retrieveDiscoveredGuides } from "@/lib/discovered-guides";
 
 export const runtime = "nodejs";
 
@@ -52,6 +53,7 @@ export async function POST(request: NextRequest) {
 
     const stored = getStoredJourneys();
     let matches = retrieveJourneys(body.message, 8, stored.journeys);
+    const discoveredMatches = retrieveDiscoveredGuides(body.message, 6);
     let router: "graph" | "graph+ai" = "graph";
     if (matches.length > 0) {
       try {
@@ -70,10 +72,20 @@ export async function POST(request: NextRequest) {
     }
 
     const classification = classifyRetrieval(matches);
+    const bestDiscovered = discoveredMatches[0];
+    if (bestDiscovered && (classification !== "matched" || bestDiscovered.score > (matches[0]?.score ?? 0))) {
+      return NextResponse.json({
+        status: "discovered",
+        message: bestDiscovered.guide.summary,
+        guide: bestDiscovered.guide,
+        alternatives: discoveredMatches.slice(1, 4).map(({ guide }) => ({ id: guide.id, slug: guide.slug, title: guide.title, summary: guide.summary })),
+        provenance: { router: "discovered-guide-index", assembledFrom: [bestDiscovered.guide.sourceId] }
+      });
+    }
     if (classification === "unsupported") {
       return NextResponse.json({
         status: "unsupported",
-        message: "I don’t have a verified guide for that yet. Try describing the government task, document, benefit, or notice you are dealing with. You can also search USA.gov directly.",
+        message: "I could not match that request to a reviewed or crawler-discovered guide yet. Try describing the outcome, document, benefit, notice, or agency in different words.",
         alternatives: [],
         officialSearchUrl: `https://search.usa.gov/search?affiliate=usagov&query=${encodeURIComponent(body.message)}`
       });

@@ -3,6 +3,7 @@ import { GuideSearch } from "@/components/GuideSearch";
 import { journeys } from "@/data/curated/journeys";
 import { govGraph } from "@/lib/graph";
 import { ArrowIcon } from "@/components/icons";
+import { discoveredGuides } from "@/lib/discovered-guides";
 
 const featuredIds = ["journey-passport-lost", "journey-ca-unemployment", "journey-report-fraud", "journey-ca-business"];
 
@@ -15,7 +16,7 @@ export default function HomePage() {
           <p className="eyebrow"><span /> Source-grounded public service guidance</p>
           <h1>Find the next<br />right step.</h1>
           <p>Describe what happened. GovGuide turns official government information into one clear, verifiable route.</p>
-          <div className="hero-proof"><span>24 reviewed guides</span><span>45 official sources</span><span>No account required</span></div>
+          <div className="hero-proof"><span>{journeys.length} reviewed guides</span><span>{discoveredGuides.length} discovered guides</span><span>No account required</span></div>
         </div>
         <GuideSearch />
       </section>
@@ -27,7 +28,7 @@ export default function HomePage() {
       <section className="featured shell">
         <div className="section-heading">
           <div><p className="section-label">Common starting points</p><h2>What brings you here?</h2></div>
-          <Link href="/guides">View all {journeys.length} guides <ArrowIcon /></Link>
+          <Link href="/guides">View all {journeys.length + discoveredGuides.length} guides <ArrowIcon /></Link>
         </div>
         <div className="guide-index">{featured.map((journey, index) => journey && (
             <Link href={`/guides/${journey.slug}`} key={journey.id}>

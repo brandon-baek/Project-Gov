@@ -10,8 +10,8 @@ type Suggestion = { from: string; to: string; relation: "related-to"; score: num
 type VizNode = GraphNode & d3.SimulationNodeDatum;
 type VizLink = d3.SimulationLinkDatum<VizNode> & { relation: GraphEdge["relation"]; suggested?: boolean };
 
-const labels: Record<string, string> = { journey: "Journeys", step: "Steps", source: "Official sources", agency: "Agencies" };
-const kinds: GraphNode["kind"][] = ["journey", "step", "source", "agency"];
+const labels: Record<string, string> = { journey: "Guides", program: "Topics", step: "Steps", source: "Official sources", agency: "Agencies" };
+const kinds: GraphNode["kind"][] = ["journey", "program", "step", "source", "agency"];
 
 function neighborhood(root: string, edges: GraphEdge[]) {
   const ids = new Set([root]); let frontier = [root];
@@ -35,7 +35,7 @@ export function GraphExplorer({ nodes, edges, journeys, suggestions, initialFocu
   const validFocus = initialFocus && journeys.some((journey) => journey.id === initialFocus) ? initialFocus : "all";
   const [scope, setScope] = useState(validFocus || "all");
   const [selectedId, setSelectedId] = useState(initialFocus ?? "");
-  const [enabled, setEnabled] = useState<Set<GraphNode["kind"]>>(new Set(kinds));
+  const [enabled, setEnabled] = useState<Set<GraphNode["kind"]>>(new Set(["journey", "program"]));
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [query, setQuery] = useState("");
   const [size, setSize] = useState({ width: 900, height: 680 });
@@ -73,17 +73,17 @@ export function GraphExplorer({ nodes, edges, journeys, suggestions, initialFocu
     const viewport = svg.append("g");
     const link = viewport.append("g").attr("class", "network-links").selectAll("line").data(graphEdges).join("line").attr("data-suggested", (edge) => edge.suggested ? "true" : "false").attr("opacity", (edge) => !selectedId || connected.has(endpoint(edge.source)) && connected.has(endpoint(edge.target)) ? 1 : .07);
     const node = viewport.append("g").attr("class", "network-nodes").selectAll<SVGGElement, VizNode>("g").data(graphNodes).join("g").attr("data-kind", (item) => item.kind).attr("data-selected", (item) => item.id === selectedId ? "true" : "false").attr("opacity", (item) => !selectedId || connected.has(item.id) ? 1 : .12);
-    node.append("circle").attr("r", (item) => item.kind === "journey" ? 9 : item.kind === "step" ? 6.5 : 5.5);
-    node.append("text").attr("x", 13).attr("y", 4).text((item) => item.label.length > 35 ? `${item.label.slice(0, 34)}…` : item.label).attr("display", (item) => item.kind === "journey" || item.id === selectedId || scope !== "all" ? null : "none");
+    node.append("circle").attr("r", (item) => item.kind === "program" ? 12 : item.kind === "journey" ? 7 : item.kind === "step" ? 6.5 : 5.5);
+    node.append("text").attr("x", 13).attr("y", 4).text((item) => item.label.length > 35 ? `${item.label.slice(0, 34)}…` : item.label).attr("display", (item) => item.id === selectedId || scope !== "all" ? null : "none");
     const tooltip = d3.select(tooltipRef.current);
     node.on("pointerenter", function (event, item) {
       d3.select(this).raise().select("text").attr("display", null); tooltip.style("opacity", "1").html(`<span>${labels[item.kind] ?? item.kind}</span><strong>${item.label}</strong>`);
       const box = frameRef.current?.getBoundingClientRect(); if (box) tooltip.style("left", `${Math.max(12, Math.min(event.clientX - box.left + 12, box.width - 265))}px`).style("top", `${Math.max(12, event.clientY - box.top - 12)}px`);
-    }).on("pointerleave", function (_event, item) { d3.select(this).select("text").attr("display", item.kind === "journey" || item.id === selectedId || scope !== "all" ? null : "none"); tooltip.style("opacity", "0"); }).on("click", (_event, item) => setSelectedId(item.id));
+    }).on("pointerleave", function (_event, item) { d3.select(this).select("text").attr("display", item.id === selectedId || scope !== "all" ? null : "none"); tooltip.style("opacity", "0"); }).on("click", (_event, item) => setSelectedId(item.id));
     const zoom = d3.zoom<SVGSVGElement, unknown>().scaleExtent([.3, 4]).on("zoom", (event) => viewport.attr("transform", event.transform)); svg.call(zoom).on("dblclick.zoom", null);
     const simulation = d3.forceSimulation(graphNodes)
       .force("link", d3.forceLink<VizNode, VizLink>(graphEdges).id((item) => item.id).distance((edge) => edge.suggested ? 150 : edge.relation === "next" ? 42 : 72).strength((edge) => edge.suggested ? .06 : .3))
-      .force("charge", d3.forceManyBody().strength(scope === "all" ? -88 : -145)).force("collide", d3.forceCollide<VizNode>().radius((item) => item.kind === "journey" ? 23 : 14).iterations(2)).force("x", d3.forceX(width / 2).strength(.045)).force("y", d3.forceY(height / 2).strength(.055)).alphaDecay(.045)
+      .force("charge", d3.forceManyBody().strength(scope === "all" ? -48 : -145)).force("collide", d3.forceCollide<VizNode>().radius((item) => item.kind === "program" ? 27 : item.kind === "journey" ? 13 : 14).iterations(2)).force("x", d3.forceX(width / 2).strength(.045)).force("y", d3.forceY(height / 2).strength(.055)).alphaDecay(.045)
       .on("tick", () => { link.attr("x1", (edge) => (edge.source as VizNode).x ?? 0).attr("y1", (edge) => (edge.source as VizNode).y ?? 0).attr("x2", (edge) => (edge.target as VizNode).x ?? 0).attr("y2", (edge) => (edge.target as VizNode).y ?? 0); node.attr("transform", (item) => `translate(${item.x ?? 0},${item.y ?? 0})`); });
     node.call(d3.drag<SVGGElement, VizNode>().on("start", (event, item) => { if (!event.active) simulation.alphaTarget(.2).restart(); item.fx = item.x; item.fy = item.y; }).on("drag", (event, item) => { item.fx = event.x; item.fy = event.y; }).on("end", (event, item) => { if (!event.active) simulation.alphaTarget(0); item.fx = null; item.fy = null; }));
     resetRef.current = () => svg.transition().duration(250).call(zoom.transform, d3.zoomIdentity);
@@ -93,7 +93,7 @@ export function GraphExplorer({ nodes, edges, journeys, suggestions, initialFocu
 
   function toggle(kind: GraphNode["kind"]) { setEnabled((current) => { const next = new Set(current); if (next.has(kind) && next.size > 1) next.delete(kind); else next.add(kind); return next; }); }
   function find(event: FormEvent) { event.preventDefault(); const clean = query.trim().toLowerCase(); const match = activeNodes.find((node) => node.label.toLowerCase().includes(clean)); if (match && clean) { setSelectedId(match.id); window.setTimeout(() => centerRef.current(match.id), 80); } }
-  function changeScope(value: string) { setScope(value); setSelectedId(value === "all" ? "" : value); savedPositions.current.clear(); }
+  function changeScope(value: string) { setScope(value); setSelectedId(value === "all" ? "" : value); setEnabled(value === "all" ? new Set(["journey", "program"]) : new Set(kinds)); savedPositions.current.clear(); }
 
   return <section className="graph-workbench" aria-label="Interactive knowledge graph">
     <div className="graph-toolbar">
@@ -103,8 +103,8 @@ export function GraphExplorer({ nodes, edges, journeys, suggestions, initialFocu
     </div>
     <div className="graph-kindbar">{kinds.map((kind) => <button type="button" key={kind} aria-pressed={enabled.has(kind)} onClick={() => toggle(kind)}><i data-kind={kind} />{labels[kind]}</button>)}<span /><button type="button" aria-pressed={showSuggestions} onClick={() => setShowSuggestions((value) => !value)} disabled={scope !== "all"}><i data-kind="suggestion" />GNN suggestions</button></div>
     <div className="graph-canvas-layout">
-      <div className="graph-canvas" ref={frameRef}><div className="graph-canvas__hint">Scroll to zoom · drag to move · select to inspect</div><svg ref={svgRef} viewBox={`0 0 ${size.width} ${size.height}`} role="img" aria-label={`Interactive graph with ${activeNodes.length} nodes and ${activeEdges.length} connections`} /><div className="network-tooltip" ref={tooltipRef} role="tooltip" /></div>
-      <aside className="graph-inspector" aria-live="polite">{selected ? <><div className="inspector-kicker"><i data-kind={selected.kind} />{(labels[selected.kind] ?? selected.kind).replace(/s$/, "")}</div><h2>{selected.label}</h2><p>{selected.description}</p><dl>{selected.params.jurisdiction && <><dt>Jurisdiction</dt><dd>{selected.params.jurisdiction.replaceAll("-", " ")}</dd></>}{selected.params.category && <><dt>Category</dt><dd>{selected.params.category}</dd></>}{selected.params.catalogSource && <><dt>Catalog</dt><dd>Machine-indexed</dd></>}<dt>Connections</dt><dd>{relations.length}</dd><dt>Status</dt><dd>{selected.params.status.replaceAll("-", " ")}</dd></dl>{journey && <Link className="inspector-action" href={`/guides/${journey.slug}`}>Open this guide <span>→</span></Link>}{selected.params.sourceUrl && <a className="inspector-action" href={selected.params.sourceUrl} target="_blank" rel="noreferrer">Open official source <span>↗</span></a>}<button className="inspector-neighborhood" type="button" onClick={() => centerRef.current(selected.id)}>Center this node</button></> : <div className="inspector-empty"><span>{nodes.length} reviewed graph nodes</span><h2>Select anything.</h2><p>Choose a node to inspect its review status, source links, and connections to a verified route.</p></div>}</aside>
+      <div className="graph-canvas" ref={frameRef}><div className="graph-canvas__hint">Every dot is a guide · select one to inspect its evidence</div><svg ref={svgRef} viewBox={`0 0 ${size.width} ${size.height}`} role="img" aria-label={`Interactive graph with ${activeNodes.length} nodes and ${activeEdges.length} connections`} /><div className="network-tooltip" ref={tooltipRef} role="tooltip" /></div>
+      <aside className="graph-inspector" aria-live="polite">{selected ? <><div className="inspector-kicker"><i data-kind={selected.kind} />{(labels[selected.kind] ?? selected.kind).replace(/s$/, "")}</div><h2>{selected.label}</h2><p>{selected.description}</p><dl>{selected.params.jurisdiction && <><dt>Jurisdiction</dt><dd>{selected.params.jurisdiction.replaceAll("-", " ")}</dd></>}{selected.params.category && <><dt>Category</dt><dd>{selected.params.category}</dd></>}{selected.params.catalogSource && <><dt>Catalog</dt><dd>Machine-indexed</dd></>}<dt>Connections</dt><dd>{relations.length}</dd><dt>Status</dt><dd>{selected.params.status === "machine-indexed" ? "discovered" : selected.params.status.replaceAll("-", " ")}</dd></dl>{journey && <Link className="inspector-action" href={`/guides/${journey.slug}`}>Open this guide <span>→</span></Link>}{selected.params.sourceUrl && <a className="inspector-action" href={selected.params.sourceUrl} target="_blank" rel="noreferrer">Open official source <span>↗</span></a>}<button className="inspector-neighborhood" type="button" onClick={() => centerRef.current(selected.id)}>Center this node</button></> : <div className="inspector-empty"><span>{nodes.length} pathway graph nodes</span><h2>Select anything.</h2><p>Choose a guide, source, step, or agency to inspect its status and connections.</p></div>}</aside>
     </div>
     <div className="graph-status"><span>{activeNodes.length} visible nodes</span><span>{activeEdges.length} connections</span>{showSuggestions && scope === "all" && <span>Dashed lines require human review</span>}</div>
   </section>;
