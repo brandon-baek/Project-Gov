@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const journey = getJourneyBySlug(slug);
   const discovered = getDiscoveredGuideBySlug(slug);
   const guide = journey ?? discovered;
-  return guide ? { title: guide.title, description: guide.summary, alternates: { canonical: `/guides/${slug}` }, robots: discovered && !discovered.seoEligible ? { index: false, follow: true } : undefined, openGraph: { title: guide.title, description: guide.summary, type: "article", url: `/guides/${slug}`, siteName: "GovGuide" } } : { title: "Guide not found" };
+  return guide ? { title: guide.title, description: guide.summary, alternates: { canonical: `/guides/${slug}` }, openGraph: { title: guide.title, description: guide.summary, type: "article", url: `/guides/${slug}`, siteName: "GovRoute" } } : { title: "Guide not found" };
 }
 
 export default async function GuidePage({ params }: { params: Promise<{ slug: string }> }) {
@@ -34,8 +34,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
     name: title,
     description: summary,
     url: `${siteUrl}/guides/${slug}`,
-    isPartOf: { "@type": "WebSite", name: "GovGuide", url: siteUrl },
-    reviewedBy: journey ? { "@type": "Organization", name: "GovGuide" } : undefined,
+    isPartOf: { "@type": "WebSite", name: "GovRoute", url: siteUrl },
+    reviewedBy: { "@type": "Organization", name: "GovRoute" },
+    dateModified: journey?.reviewedAt ?? discovered!.reviewedAt,
     isBasedOn: discovered ? guideSource(discovered.officialUrl, publisher) : journey!.sources.map((source) => guideSource(source.url, source.publisher)),
     breadcrumb: { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Guides", item: `${siteUrl}/guides` }, { "@type": "ListItem", position: 2, name: title, item: `${siteUrl}/guides/${slug}` }] }
   };
@@ -44,7 +45,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       {journey ? <GuideResult journey={journey} /> : <DiscoveredGuideResult guide={discovered!} />}
       <AdSlot position="guide-end" />
-      <aside className="legal-note"><strong>Before you act</strong><p>Requirements, fees, and deadlines can change. Confirm time-sensitive details on the linked official page. GovGuide provides public information, not legal advice.</p></aside>
+      <aside className="legal-note"><strong>Before you act</strong><p>Requirements, fees, and deadlines can change. Confirm time-sensitive details on the linked official page. GovRoute provides public information, not legal advice.</p></aside>
     </div>
   );
 }

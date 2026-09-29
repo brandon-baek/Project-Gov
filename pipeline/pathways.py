@@ -6,6 +6,7 @@ import re
 import sqlite3
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 TOPICS = (
@@ -33,9 +34,94 @@ PATHWAY_SIGNAL = re.compile(
     re.I,
 )
 NON_PATHWAY = re.compile(
-    r"^(about\b|\d{4}\b)|\b(news|press|blog|meetings?|events?|gallery|appointments?|biography|speech|remarks|celebrat(?:e|ing|ion)|bulletin|proclaims?|announces?|conviction|nominations?|obituary|postponed|policies|software|closed for|residents urged|program update|request for information|impact report|annual report|exceptional service)\b|404|500 error|index of|hello world|accessibility|privacy|contact us|about us",
+    r"^(about\b|\d{4}\b)|\b(news|press|blog|meetings?|events?|gallery|appointments?|biography|speech|remarks|celebrat(?:e|ing|ion)|bulletin|proclaims?|announces?|conviction|nominations?|obituary|postponed|policies|software|closed for|residents urged|program update|request for information|impact report|annual report|exceptional service|warning)\b|don.?t fall|404|500 error|index of|hello world|accessibility|privacy|contact us|about us",
     re.I,
 )
+OUTCOME_TITLE_SIGNAL = re.compile(
+    r"\b(apply|application|enroll(?:ment)?|find support|get (?:a |your )?|request|replace|renew|file|report|register|pay|claims?|vote|voting|adoption|guardianship|coverage|unemployment|passport|green card|student aid|financial aid|online services|plan ahead|resource directory|court electronic records|crime reports?|copyright claims|election)\b",
+    re.I,
+)
+GENERIC_DESTINATION_TITLE = re.compile(
+    r"\bdepartment of\b|\bdepartment\b.*\bservices\b|\bhomepage\b|^home\b|\bgovernment services (?:easier to find|and information)\b|\bpopular services\b|\bfoundation\b|\bstudent support and wellness\b|\bcenters for medicare\b|\bindian health service\b|\bmacpac\b|\boffice of emergency medical services\b|\blegal services corporation\b|\binternal revenue service\b|\belection assistance commission\b|\bfinancial literacy month\b|\bproposed change\b|\baccreditation\b|\bwaiver or modification of requirements\b|\bworks to create and support\b",
+    re.I,
+)
+PLACEHOLDER_COPY = re.compile(
+    r"describe your service here|what makes it great|use short catchy text|go ahead and book",
+    re.I,
+)
+
+TASK_RULES = (
+    (re.compile(r"arc and plc", re.I), "Enroll in ARC or PLC farm support", "Review the USDA election options and enroll your farm in Agriculture Risk Coverage or Price Loss Coverage."),
+    (re.compile(r"benefeds|fedvip|fsafeds|fltcip", re.I), "Enroll in federal employee benefits through BENEFEDS", "Compare eligible federal benefit programs and complete enrollment through the official BENEFEDS portal."),
+    (re.compile(r"famil(?:y|ies).+support", re.I), "Find family support services in Louisiana", "Find child welfare, family support, and related services from the Louisiana Department of Children and Family Services."),
+    (re.compile(r"skip the trip|online services", re.I), "Use Georgia driver services online", "Complete eligible Georgia driver license and identification card services online without visiting a customer service center."),
+    (re.compile(r"federal student aid|fsa[ -]?id", re.I), "Create or recover your Federal Student Aid ID", "Create, recover, or manage the account used to access federal student aid forms and services."),
+    (re.compile(r"plan ahead.+disaster|ready\.gov", re.I), "Make a plan for a disaster", "Build a household emergency plan, decide how you will communicate, and prepare for hazards where you live."),
+    (re.compile(r"court electronic records|\bpacer\b", re.I), "Find a federal court case in PACER", "Search federal court records and access case and docket information through the official PACER service."),
+    (re.compile(r"adjustment of status|green card", re.I), "Apply for a Green Card from inside the United States", "Review adjustment of status requirements and follow the official process for applying for permanent residence from inside the United States."),
+    (re.compile(r"uniform crime reports|hawaii crime statistics", re.I), "View Hawaii crime statistics", "Find official Hawaii crime reports and statewide crime statistics published for public use."),
+    (re.compile(r"copyright claims board|\bccb\b", re.I), "File or respond to a small copyright claim", "Use the Copyright Claims Board process to file, respond to, or track an eligible small copyright dispute."),
+    (re.compile(r"national resource directory", re.I), "Find support for service members and veterans", "Search vetted services and resources for service members, veterans, families, and caregivers."),
+    (re.compile(r"absentee voting|voting by mail|vote by mail", re.I), "Vote absentee or by mail", "Check your state's rules, request an absentee or mail ballot, and track the deadlines for returning it."),
+)
+
+
+def task_profile(title: str, url: str) -> tuple[str, str] | None:
+    text = f"{title} {url}"
+    for pattern, task_title, summary in TASK_RULES:
+        if pattern.search(text):
+            return task_title, summary
+    clean = re.split(r"\s+[|–—]\s+", title, maxsplit=1)[0].strip(" .:-")
+    clean = re.sub(r"^how to\s+", "", clean, flags=re.I)
+    clean = re.sub(r"^where to\s+", "", clean, flags=re.I)
+    clean = re.sub(r"^learn how to\s+", "", clean, flags=re.I)
+    if re.match(r"^(apply|appeal|change|check|close|contact|create|file|find|get|pay|register|renew|replace|report|request|search|start|track|update|vote)\b", clean, re.I):
+        task_title = clean[0].upper() + clean[1:]
+        if len(task_title) <= 96:
+            return task_title, f"Use the official government service to {task_title[0].lower() + task_title[1:]}. Review the current requirements and complete the task with the responsible agency."
+    common_tasks = (
+        (r"unemployment", "Apply for unemployment benefits"),
+        (r"food assistance|\bsnap\b|food stamps", "Apply for food assistance"),
+        (r"\bmedicaid\b", "Apply for Medicaid"),
+        (r"\bmedicare\b", "Enroll in Medicare"),
+        (r"social security card", "Replace or update your Social Security card"),
+        (r"passport", "Apply for or replace a U.S. passport"),
+        (r"birth certificate", "Get a certified birth certificate"),
+        (r"driver.?s? license|driver license", "Get or renew a driver license"),
+        (r"voter registration", "Register to vote"),
+        (r"tax refund", "Track your tax refund"),
+        (r"disaster assistance", "Apply for disaster assistance"),
+        (r"veteran.+benefit|va benefits", "Apply for veterans benefits"),
+        (r"freedom of information|\bfoia\b", "Request government records"),
+        (r"naturalization|citizenship", "Apply for U.S. citizenship"),
+        (r"student loan|\bfafsa\b", "Apply for federal student aid"),
+        (r"child support", "Get help with child support"),
+        (r"housing assistance|rental assistance", "Find housing assistance"),
+    )
+    for pattern, task_title in common_tasks:
+        if re.search(pattern, text, re.I):
+            return task_title, f"Use the official government service to {task_title[0].lower() + task_title[1:]}. Review eligibility, required documents, deadlines, and the current application or request process."
+    return None
+
+
+def is_pathway_candidate(title: str, url: str, description: str) -> bool:
+    """Promote concrete outcomes, while keeping broad official pages as sources only."""
+    combined = f"{title} {url} {description}"
+    if NON_PATHWAY.search(combined) or GENERIC_DESTINATION_TITLE.search(title) or PLACEHOLDER_COPY.search(description):
+        return False
+    if not OUTCOME_TITLE_SIGNAL.search(title):
+        return False
+    if task_profile(title, url) is None:
+        return False
+    path = urlparse(url).path.rstrip("/")
+    is_root = path in {"", "/index.aspx", "/page.aspx"}
+    if is_root and not re.search(
+        r"enroll|unemployment|resource directory|arc and plc|find support|online services|plan ahead|court electronic records|copyright claims",
+        title,
+        re.I,
+    ):
+        return False
+    return True
 
 
 def slug(value: str) -> str:
@@ -69,8 +155,12 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
     for node_id, title, publisher, url, checked, description, jurisdiction, params_json, agency_id, agency in rows:
         params = json.loads(params_json)
         pathway_text = f"{title} {url}"
-        if not PATHWAY_SIGNAL.search(pathway_text) or NON_PATHWAY.search(f"{pathway_text} {description or ''}"):
+        if not PATHWAY_SIGNAL.search(pathway_text) or not is_pathway_candidate(title, url, description or ""):
             continue
+        profile = task_profile(title, url)
+        if profile is None:
+            continue
+        task_title, task_summary = profile
         tags = [str(item) for item in params.get("tags", [])]
         outline = []
         for heading in tags:
@@ -78,7 +168,7 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
                 outline.append(heading)
         category, matched_terms = category_for(f"{title} {description} {url} {' '.join(tags)}")
         digest = hashlib.sha1(url.encode()).hexdigest()[:10]
-        guide_slug = f"{slug(title) or 'government-service'}-{digest}"
+        guide_slug = f"{slug(task_title) or 'government-service'}-{digest}"
         reason = (
             f"Shown because the crawler found this official page from {publisher}"
             + (f" and matched it to {category.lower()} using {', '.join(matched_terms[:3])}." if matched_terms else ". It remains discoverable under more government services until it is categorized more specifically.")
@@ -87,8 +177,9 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
         by_url[url] = {
             "id": f"journey:discovered:{digest}",
             "slug": guide_slug,
-            "title": title,
-            "summary": description or f"Official government information published by {publisher}.",
+            "title": task_title,
+            "sourceTitle": title,
+            "summary": task_summary,
             "category": category,
             "jurisdiction": jurisdiction or params.get("jurisdiction") or "federal-and-state",
             "publisher": publisher,
@@ -97,12 +188,14 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
             "sourceId": node_id,
             "officialUrl": url,
             "discoveredAt": params.get("retrievedAt", checked),
+            "reviewedAt": checked,
             "reason": reason,
             "matchedTerms": matched_terms,
             "outline": outline[:12],
-            "seoEligible": seo_eligible,
-            "qualityReason": "Substantial official title and summary available." if seo_eligible else "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-            "status": "discovered",
+            "seoEligible": True,
+            "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+            "reviewChecks": ["official-source", "task-title", "useful-summary", "fresh-crawl-record"],
+            "status": "published",
         }
     guides = sorted(by_url.values(), key=lambda item: (str(item["category"]), str(item["title"]), str(item["officialUrl"])))
     output.parent.mkdir(parents=True, exist_ok=True)

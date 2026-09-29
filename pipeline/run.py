@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def arguments() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Crawl government sources and populate GovGuide SQLite automatically.")
+    parser = argparse.ArgumentParser(description="Crawl government sources and populate GovRoute SQLite automatically.")
     parser.add_argument("--source", choices=("all", "usagov", "california", "sam", "federal-directory", "federal-sites", "government-domain-directory", "government-sites", "state-directory", "state-sites"), default="all")
     parser.add_argument("--limit", type=int, default=int(os.getenv("GOVGUIDE_CRAWL_LIMIT", "40")))
     parser.add_argument("--workers", type=int, default=int(os.getenv("GOVGUIDE_CRAWL_WORKERS", "16")))
@@ -49,7 +49,7 @@ def main() -> None:
             except sqlite3.OperationalError:
                 known_urls = {}
     policy = HttpPolicy(
-        user_agent=os.getenv("GOVGUIDE_USER_AGENT", "GovGuide/1.0 educational civic navigator; contact repository owner"),
+        user_agent=os.getenv("GOVGUIDE_USER_AGENT", "GovRoute/1.0 educational civic navigator; contact repository owner"),
         delay_seconds=args.delay,
     )
     results = []
@@ -64,9 +64,9 @@ def main() -> None:
         results.append(government_domain_result(load_all_gov_domains(policy)))
     for source in SITEMAP_SOURCES:
         if args.source in ("all", source.key):
-            # The scheduled all-mode refreshes these core collections on every run.
-            # Focused runs advance past known URLs instead.
-            results.append(crawl_sitemap(source, policy, args.limit, args.workers, {} if args.source == "all" else known_urls))
+            # Advance through unseen task pages on every run while the crawler's
+            # refresh quota rechecks the oldest known pages for changes.
+            results.append(crawl_sitemap(source, policy, args.limit, args.workers, known_urls))
     if args.source in ("all", "sam"):
         api_key = os.getenv("SAM_API_KEY")
         if api_key:

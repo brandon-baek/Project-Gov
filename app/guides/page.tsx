@@ -2,19 +2,26 @@ import type { Metadata } from "next";
 import { journeys } from "@/data/curated/journeys";
 import { discoveredGuides } from "@/lib/discovered-guides";
 import { GuideDirectory } from "@/components/GuideDirectory";
+import { GUIDE_GROUPS, guideGroupForCategory } from "@/lib/guide-groups";
 
 export const metadata: Metadata = { title: "Guides" };
 
 export default function GuidesPage() {
-  const categoryCounts = Object.entries(discoveredGuides.reduce<Record<string, number>>((counts, guide) => ({ ...counts, [guide.category]: (counts[guide.category] ?? 0) + 1 }), {}));
+  const all = [...journeys, ...discoveredGuides];
+  const generatedCounts = discoveredGuides.reduce<Record<string, number>>((counts, guide) => {
+    const group = guideGroupForCategory(guide.category);
+    counts[group] = (counts[group] ?? 0) + 1;
+    return counts;
+  }, {});
+  const samples = Object.fromEntries(GUIDE_GROUPS.map((group) => [group.id, all.filter((guide) => guideGroupForCategory(guide.category) === group.id).slice(0, 2).map((guide) => guide.title)]));
   return (
     <div className="page-shell shell">
       <header className="page-intro">
-        <p className="eyebrow">{(journeys.length + discoveredGuides.length).toLocaleString()} government guides</p>
-        <h1>Every known path,<br />in one place.</h1>
-        <p>Browse outcomes you can complete with government. Reviewed guides include checked steps; discovered guides are official destinations surfaced automatically by the crawler and waiting for deeper review.</p>
+        <p className="eyebrow">{all.length.toLocaleString()} published government tasks</p>
+        <h1>Start with what<br />you need to do.</h1>
+        <p>Browse by life situation, then choose a concrete task. Every listed guide passes automated publication checks and links back to an official government source.</p>
       </header>
-      <GuideDirectory reviewed={journeys} discoveredCount={discoveredGuides.length} categoryCounts={categoryCounts} />
+      <GuideDirectory guides={journeys} generatedCounts={generatedCounts} samples={samples} />
     </div>
   );
 }

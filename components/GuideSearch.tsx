@@ -43,7 +43,7 @@ export function GuideSearch() {
       setResult(data);
       window.setTimeout(() => resultRef.current?.focus(), 50);
     } catch {
-      setResult({ status: "error", message: "GovGuide could not connect. Check your connection and try again.", alternatives: [] });
+      setResult({ status: "error", message: "GovRoute could not connect. Check your connection and try again.", alternatives: [] });
     } finally {
       setLoading(false);
     }
@@ -90,7 +90,7 @@ export function GuideSearch() {
         {result?.status === "discovered" && <>
           <div className="query-line"><span>You asked</span><p>{submitted}</p></div>
           <DiscoveredGuideResult guide={result.guide} compact />
-          <details className="trace-details"><summary>Why this result was selected</summary><p>The request matched a crawler-discovered guide connected to the official source. It is available for discovery now and remains marked as unreviewed until its detailed steps pass the source review gate.</p><Link href={`/guides/${result.guide.slug}`}>Open the permanent guide</Link></details>
+          <details className="trace-details"><summary>Why this result was selected</summary><p>Your request matched a published government task whose source, task title, page content, and crawl record passed the automated publication checks.</p><Link href={`/guides/${result.guide.slug}`}>Open the permanent guide</Link></details>
         </>}
         {result && result.status !== "matched" && result.status !== "discovered" && (
           <div className={`notice notice--${result.status}`} role={result.status === "error" || result.status === "blocked" ? "alert" : undefined}>
@@ -115,7 +115,7 @@ function SearchSkeleton({ query }: { query: string }) {
         <span className="skeleton skeleton--wide" />
         <div className="skeleton-steps"><i /><i /><i /></div>
       </div>
-      <span className="sr-only">Searching reviewed and discovered government guides</span>
+      <span className="sr-only">Searching published government guides</span>
     </div>
   );
 }

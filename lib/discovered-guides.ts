@@ -4,6 +4,7 @@ export type DiscoveredGuide = {
   id: string;
   slug: string;
   title: string;
+  sourceTitle: string;
   summary: string;
   category: string;
   jurisdiction: string;
@@ -13,12 +14,14 @@ export type DiscoveredGuide = {
   sourceId: string;
   officialUrl: string;
   discoveredAt: string;
+  reviewedAt: string;
   reason: string;
   matchedTerms: string[];
   outline: string[];
   seoEligible: boolean;
   qualityReason: string;
-  status: "discovered";
+  reviewChecks: string[];
+  status: "published";
 };
 
 export const discoveredGuides = raw.guides as DiscoveredGuide[];

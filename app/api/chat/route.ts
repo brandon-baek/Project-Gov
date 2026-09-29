@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     if (sensitive.length > 0) {
       return NextResponse.json({
         status: "blocked",
-        message: `Please remove the ${sensitive.join(" and ")} before continuing. GovGuide does not need sensitive identification or account numbers.`,
+        message: `Please remove the ${sensitive.join(" and ")} before continuing. GovRoute does not need sensitive identification or account numbers.`,
         alternatives: []
       });
     }
@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
     if (isLikelyEmergency(body.message)) {
       return NextResponse.json({
         status: "blocked",
-        message: "If someone is in immediate danger, call 911 or your local emergency number now. GovGuide is not an emergency service.",
+        message: "If someone is in immediate danger, call 911 or your local emergency number now. GovRoute is not an emergency service.",
         alternatives: []
       });
     }
@@ -85,7 +85,7 @@ export async function POST(request: NextRequest) {
     if (classification === "unsupported") {
       return NextResponse.json({
         status: "unsupported",
-        message: "I could not match that request to a reviewed or crawler-discovered guide yet. Try describing the outcome, document, benefit, notice, or agency in different words.",
+        message: "I could not match that request to a published guide yet. Try describing the outcome, document, benefit, notice, or agency in different words.",
         alternatives: [],
         officialSearchUrl: `https://search.usa.gov/search?affiliate=usagov&query=${encodeURIComponent(body.message)}`
       });
@@ -118,6 +118,6 @@ export async function POST(request: NextRequest) {
     if (error instanceof ZodError) {
       return NextResponse.json({ status: "error", message: "Please enter a request between 3 and 600 characters." }, { status: 400 });
     }
-    return NextResponse.json({ status: "error", message: "GovGuide could not process that request. Please try again." }, { status: 500 });
+    return NextResponse.json({ status: "error", message: "GovRoute could not process that request. Please try again." }, { status: 500 });
   }
 }

@@ -15,8 +15,8 @@ export default function HomePage() {
         <div className="hero__copy">
           <p className="eyebrow"><span /> Source-grounded public service guidance</p>
           <h1>Find the next<br />right step.</h1>
-          <p>Describe what happened. GovGuide turns official government information into one clear, verifiable route.</p>
-          <div className="hero-proof"><span>{journeys.length} reviewed guides</span><span>{discoveredGuides.length} discovered guides</span><span>No account required</span></div>
+          <p>Describe what happened. GovRoute turns official government information into one clear, verifiable route.</p>
+          <div className="hero-proof"><span>{journeys.length + discoveredGuides.length} published guides</span><span>19,000+ government domains mapped</span><span>No account required</span></div>
         </div>
         <GuideSearch />
       </section>

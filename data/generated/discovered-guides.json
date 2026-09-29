@@ -1,12 +1,13 @@
 {
   "schemaVersion": 1,
-  "count": 43,
+  "count": 12,
   "guides": [
     {
       "id": "journey:discovered:93120661dd",
-      "slug": "arc-and-plc-election-and-enrollment-93120661dd",
-      "title": "ARC and PLC Election and Enrollment",
-      "summary": "Explore USDA programs and resources to help you start, grow, and protect your operation.",
+      "slug": "enroll-in-arc-or-plc-farm-support-93120661dd",
+      "title": "Enroll in ARC or PLC farm support",
+      "sourceTitle": "ARC and PLC Election and Enrollment",
+      "summary": "Review the USDA election options and enroll your farm in Agriculture Risk Coverage or Price Loss Coverage.",
       "category": "Benefits and financial help",
       "jurisdiction": "federal-and-state",
       "publisher": "Department of Agriculture",
@@ -15,6 +16,7 @@
       "sourceId": "source:crawl:93120661ddf65dfc",
       "officialUrl": "https://www.farmers.gov/",
       "discoveredAt": "2026-09-28T17:52:05.426159+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Department of Agriculture and matched it to benefits and financial help using benefit, assistance.",
       "matchedTerms": [
         "benefit",
@@ -35,14 +37,21 @@
         "Fridays on the Farm: Conservation That Benefits the Next Generation"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
+      ],
+      "status": "published"
     },
     {
       "id": "journey:discovered:4c01f6b945",
-      "slug": "benefeds-federal-benefits-enrollment-fedvip-fsafeds-fltcip-4c01f6b945",
-      "title": "BENEFEDS | Federal Benefits Enrollment (FEDVIP, FSAFEDS, FLTCIP)",
-      "summary": "Official government information published by Office of Personnel Management.",
+      "slug": "enroll-in-federal-employee-benefits-through-benefeds-4c01f6b945",
+      "title": "Enroll in federal employee benefits through BENEFEDS",
+      "sourceTitle": "BENEFEDS | Federal Benefits Enrollment (FEDVIP, FSAFEDS, FLTCIP)",
+      "summary": "Compare eligible federal benefit programs and complete enrollment through the official BENEFEDS portal.",
       "category": "Benefits and financial help",
       "jurisdiction": "federal-and-state",
       "publisher": "Office of Personnel Management",
@@ -51,287 +60,28 @@
       "sourceId": "source:crawl:4c01f6b9457f1ceb",
       "officialUrl": "https://www.benefeds.gov/",
       "discoveredAt": "2026-09-28T17:55:07.678725+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Office of Personnel Management and matched it to benefits and financial help using benefit.",
       "matchedTerms": [
         "benefit"
       ],
       "outline": [],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:8caa50aa86",
-      "slug": "georgia-department-of-human-services-8caa50aa86",
-      "title": "Georgia Department of Human Services",
-      "summary": "The Georgia Department of Human Services (DHS) delivers a wide range of human services designed to promote self-sufficiency, safety and well-being for all Geo",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Human Services",
-      "agency": "Department of Human Services",
-      "agencyId": "agency:crawl:department-of-human-services",
-      "sourceId": "source:crawl:8caa50aa86edeaba",
-      "officialUrl": "https://dhs.georgia.gov/",
-      "discoveredAt": "2026-09-28T17:56:32.901249+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Human Services and matched it to benefits and financial help using benefit, snap, assistance.",
-      "matchedTerms": [
-        "benefit",
-        "snap",
-        "assistance"
-      ],
-      "outline": [
-        "The SFY 2025 Annual Report is available!",
-        "Press Releases and Announcements",
-        "Georgia DHS Announces Community Conversations for State Plan on Aging",
-        "Low-Income Home Energy Assistance Program for Cooling is Open",
-        "Low-Income Home Energy Assistance Program for Heating Opens Today",
-        "Full SNAP Benefits to be Issued to Eligible Georgians",
-        "Click here to view more press releases",
-        "Spotlights",
-        "DHS Celebrates the 2026 Kinship Caregiver of the Year Award Winners",
-        "DHS Recognizes Falls Prevention Awareness Week",
-        "Building Brighter Futures: Celebrating National Child Support Awareness Month in Georgia",
-        "Stop SNAP Fraud, Waste, and Abuse"
-      ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:f2bef3fb29",
-      "slug": "homepage-missouri-department-of-health-and-senior-services-f2bef3fb29",
-      "title": "Homepage | Missouri Department of Health and Senior Services",
-      "summary": "Resources and information to promote healthy lifestyles through education and prevention.",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Health & Senior Services",
-      "agency": "Department of Health & Senior Services",
-      "agencyId": "agency:crawl:department-of-health-senior-services",
-      "sourceId": "source:crawl:f2bef3fb297bd477",
-      "officialUrl": "https://health.mo.gov/",
-      "discoveredAt": "2026-09-28T17:57:12.583834+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Health & Senior Services and matched it to benefits and financial help using disability.",
-      "matchedTerms": [
-        "disability"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [
-        "How can we help?",
-        "Find Your Local Public Health Agency",
-        "Cannabis",
-        "Senior & Disability Services",
-        "For Business Professionals",
-        "Healthy Living Starts With the Basics",
-        "News and Media",
-        "Ready in 3: Prepare for Emergencies"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:3863845e2f",
-      "slug": "immigration-3863845e2f",
-      "title": "Immigration",
-      "summary": "Describe your service here. What makes it great? Use short catchy text to tell people what you offer, and the benefits they will receive. A great description gets readers in the mood, and makes them more likely to go ahead and book.",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "American Samoa Bureau of Consumer Protection",
-      "agency": "American Samoa Bureau of Consumer Protection",
-      "agencyId": "agency:crawl:american-samoa-bureau-of-consumer-protection",
-      "sourceId": "source:crawl:3863845e2f63b7f2",
-      "officialUrl": "https://legalaffairs.as.gov/service-page/immigration-2",
-      "discoveredAt": "2026-09-28T17:56:23.027080+00:00",
-      "reason": "Shown because the crawler found this official page from American Samoa Bureau of Consumer Protection and matched it to benefits and financial help using benefit.",
-      "matchedTerms": [
-        "benefit"
-      ],
-      "outline": [
-        "Service Description",
-        "Contact Details"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:dc1ce2bbc6",
-      "slug": "iowa-department-of-health-and-human-services-dc1ce2bbc6",
-      "title": "Iowa Department of Health and Human Services",
-      "summary": "Iowa HHS provides high quality programs and services that protect and improve the health and resiliency of individuals, families, and communities.",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Social services",
-      "agency": "Social Services",
-      "agencyId": "agency:crawl:social-services",
-      "sourceId": "source:crawl:dc1ce2bbc6abca84",
-      "officialUrl": "https://hhs.iowa.gov/",
-      "discoveredAt": "2026-09-28T17:56:47.792537+00:00",
-      "reason": "Shown because the crawler found this official page from Social services and matched it to benefits and financial help using food, medicaid, disability.",
-      "matchedTerms": [
-        "food",
-        "medicaid",
-        "disability",
-        "assistance"
-      ],
-      "outline": [
-        "Get Started",
-        "Programs & Services",
-        "Medicaid",
-        "Food Assistance",
-        "Marriage, Birth, or Death Certificates",
-        "Aging Services",
-        "Disability Services",
-        "Mental Health",
-        "Immunization & Vaccination",
-        "Child Protective Services",
-        "Contact Us!",
-        "Send Us a Message"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:c028434ca2",
-      "slug": "making-government-services-easier-to-find-c028434ca2",
-      "title": "Making government services easier to find",
-      "summary": "Find government benefits, services, agencies, and information at USA.gov. Contact elected officials. Learn about passports, Social Security, taxes, and more.",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "General Services Administration",
-      "agency": "General Services Administration",
-      "agencyId": "agency:crawl:general-services-administration",
-      "sourceId": "source:crawl:c028434ca280f5e5",
-      "officialUrl": "https://www.usa.gov/",
-      "discoveredAt": "2026-09-28T17:54:46.162023+00:00",
-      "reason": "Shown because the crawler found this official page from General Services Administration and matched it to benefits and financial help using benefit, disability, assistance.",
-      "matchedTerms": [
-        "benefit",
-        "disability",
-        "assistance"
-      ],
-      "outline": [
-        "How do I ...",
-        "Government benefits and financial assistance",
-        "All topics and services",
-        "Voting and elections",
-        "The U.S. and its government",
-        "Complaints",
-        "Disability services",
-        "Disasters and emergencies",
-        "Education",
-        "Government benefits",
-        "Health",
-        "Housing help"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:46e9fb7109",
-      "slug": "find-government-services-and-information-46e9fb7109",
-      "title": "Find government services and information",
-      "summary": "Discover places to visit and learn about California's various regions and lively cities.",
-      "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
-      "publisher": "California",
-      "agency": "California",
-      "agencyId": "agency:crawl:california",
-      "sourceId": "source:crawl:46e9fb7109b842be",
-      "officialUrl": "https://www.ca.gov/",
-      "discoveredAt": "2026-09-28T17:56:20.548326+00:00",
-      "reason": "Shown because the crawler found this official page from California and matched it to business and permits using business, permit, license.",
-      "matchedTerms": [
-        "business",
-        "permit",
-        "license"
-      ],
-      "outline": [
-        "Popular services",
-        "Real ID/license",
-        "Birth certificates",
-        "Check your refund",
-        "Traffic tickets",
-        "Business license",
-        "Seller\u2019s permit",
-        "Popular topics",
-        "DMV/Auto",
-        "Personal records",
-        "Businesses",
-        "Jobs and unemployment"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:6891b5c8aa",
-      "slug": "oklahoma-popular-services-6891b5c8aa",
-      "title": "Oklahoma Popular Services",
-      "summary": "Welcome to Oklahoma's Official Web Site",
-      "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Oklahoma",
-      "agency": "Oklahoma",
-      "agencyId": "agency:crawl:oklahoma",
-      "sourceId": "source:crawl:6891b5c8aa1d9ff7",
-      "officialUrl": "https://oklahoma.gov",
-      "discoveredAt": "2026-09-28T17:57:25.700450+00:00",
-      "reason": "Shown because the crawler found this official page from Oklahoma and matched it to business and permits using business, license.",
-      "matchedTerms": [
-        "business",
-        "license"
-      ],
-      "outline": [
-        "TOP.OK.GOV",
-        "File Your Taxes",
-        "REAL ID",
-        "Hunting or Fishing License",
-        "Oklahoma Car Tag Renewal",
-        "Birth or Death Certificate",
-        "Enabling Accountable Innovation for Public Value",
-        "Jump-start your journey into AI \u2013 start mastering the future today!",
-        "Popular Resources",
-        "Travel in Oklahoma",
-        "Businesses & Communities",
-        "Work for the State"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:00aeb292c9",
-      "slug": "adoption-and-guardianship-maryland-department-of-human-services-00aeb292c9",
-      "title": "Adoption and Guardianship - Maryland Department of Human Services",
-      "summary": "Maryland is a kin-first state. While children are in out-of-home care, local departments of social services staff make every effort to identify kin (relati",
-      "category": "Children and families",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Human Services",
-      "agency": "Department of Human Services",
-      "agencyId": "agency:crawl:department-of-human-services",
-      "sourceId": "source:crawl:00aeb292c94991e3",
-      "officialUrl": "https://dhs.maryland.gov/adoption/",
-      "discoveredAt": "2026-09-28T17:57:00.187665+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Human Services and matched it to children and families using child, adoption, guardian.",
-      "matchedTerms": [
-        "child",
-        "adoption",
-        "guardian"
-      ],
-      "outline": [
-        "Adoption and Guardianship"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:f31c236d51",
-      "slug": "where-families-find-support-f31c236d51",
-      "title": "Where Families Find Support",
-      "summary": "The Louisiana Department of Children & Family Services works to protect children, empower families, and strengthen communities so every child grows up safe.",
+      "slug": "find-family-support-services-in-louisiana-f31c236d51",
+      "title": "Find family support services in Louisiana",
+      "sourceTitle": "Where Families Find Support",
+      "summary": "Find child welfare, family support, and related services from the Louisiana Department of Children and Family Services.",
       "category": "Children and families",
       "jurisdiction": "federal-and-state",
       "publisher": "Department of Children and Family Services",
@@ -340,6 +90,7 @@
       "sourceId": "source:crawl:f31c236d51dff471",
       "officialUrl": "https://dcfs.louisiana.gov/",
       "discoveredAt": "2026-09-28T17:56:54.166646+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Department of Children and Family Services and matched it to children and families using child, family, foster.",
       "matchedTerms": [
         "child",
@@ -361,36 +112,21 @@
         "Find Services Near You"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:5af7ba36f1",
-      "slug": "don-t-fall-for-financial-aid-offers-claiming-to-be-from-the-state-treasu-5af7ba36f1",
-      "title": "Don\u2019t Fall For Financial Aid Offers Claiming To Be From The State Treasurer",
-      "summary": "Wednesday, May 01, 2019",
-      "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Consumer Protection",
-      "agency": "Consumer Protection",
-      "agencyId": "agency:crawl:consumer-protection",
-      "sourceId": "source:crawl:5af7ba36f1fe53a6",
-      "officialUrl": "https://ncdoj.gov/dont-fall-for-financial-aid-offers-claiming-to-be/",
-      "discoveredAt": "2026-09-28T17:57:19.434859+00:00",
-      "reason": "Shown because the crawler found this official page from Consumer Protection and matched it to consumer protection using consumer.",
-      "matchedTerms": [
-        "consumer"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:945edc8341",
-      "slug": "skip-the-trip-use-online-services-945edc8341",
-      "title": "Skip the Trip! Use Online Services!",
-      "summary": "Our Mission at DDS is to provide secure driver and identity credentials to our customers with excellence and respect.",
+      "slug": "use-georgia-driver-services-online-945edc8341",
+      "title": "Use Georgia driver services online",
+      "sourceTitle": "Skip the Trip! Use Online Services!",
+      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
       "category": "Driving and transportation",
       "jurisdiction": "federal-and-state",
       "publisher": "Motor Vehicles",
@@ -399,6 +135,7 @@
       "sourceId": "source:crawl:945edc834132d1c6",
       "officialUrl": "https://dds.georgia.gov/",
       "discoveredAt": "2026-09-28T17:56:33.405746+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Motor Vehicles and matched it to driving and transportation using driver, vehicle, real id.",
       "matchedTerms": [
         "driver",
@@ -420,61 +157,21 @@
         "Opt-In/Out of Electronic Notification Reminders"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:6cf2532756",
-      "slug": "continuing-education-units-and-the-proposed-change-to-license-expiration-6cf2532756",
-      "title": "Continuing Education Units and the Proposed Change to License Expiration Dates",
-      "summary": "NMDA is aware of concerns related to Continuing Education Units (CEUs) and the proposed expiration date change to Pesticide Applicator licenses.",
-      "category": "Education and training",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Agriculture",
-      "agency": "Department of Agriculture",
-      "agencyId": "agency:crawl:department-of-agriculture",
-      "sourceId": "source:crawl:6cf2532756a79edf",
-      "officialUrl": "https://nmdeptag.nmsu.edu/ceu-and-proposed-changes.html",
-      "discoveredAt": "2026-09-28T18:05:44.879414+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Agriculture and matched it to education and training using education.",
-      "matchedTerms": [
-        "education"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:340ac45d5a",
-      "slug": "federal-law-enforcement-training-accreditation-340ac45d5a",
-      "title": "Federal Law Enforcement Training Accreditation",
-      "summary": "The Federal Law Enforcement Training Accreditation (FLETA) Board is the independent body charged with accrediting all federal law enforcement training.",
-      "category": "Education and training",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Homeland Security",
-      "agency": "Department of Homeland Security",
-      "agencyId": "agency:crawl:department-of-homeland-security",
-      "sourceId": "source:crawl:340ac45d5a10aa32",
-      "officialUrl": "https://www.fleta.gov/",
-      "discoveredAt": "2026-09-28T17:52:52.825027+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Homeland Security and matched it to education and training using training.",
-      "matchedTerms": [
-        "training"
-      ],
-      "outline": [
-        "Recently Accredited",
-        "Board of Directors"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:f6ba538b77",
-      "slug": "federal-student-aid-f6ba538b77",
-      "title": "Federal Student Aid",
-      "summary": "Loading...",
+      "slug": "create-or-recover-your-federal-student-aid-id-f6ba538b77",
+      "title": "Create or recover your Federal Student Aid ID",
+      "sourceTitle": "Federal Student Aid",
+      "summary": "Create, recover, or manage the account used to access federal student aid forms and services.",
       "category": "Education and training",
       "jurisdiction": "federal-and-state",
       "publisher": "Department of Education",
@@ -483,121 +180,29 @@
       "sourceId": "source:crawl:f6ba538b779f17c4",
       "officialUrl": "https://studentaid.gov/es/help/fsa-id",
       "discoveredAt": "2026-09-28T17:52:19.952719+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Department of Education and matched it to education and training using student, education.",
       "matchedTerms": [
         "student",
         "education"
       ],
       "outline": [],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:3997ae6ac2",
-      "slug": "student-support-and-wellness-3997ae6ac2",
-      "title": "Student Support and Wellness",
-      "summary": "The West Virginia Department of Education is constitutionally mandated to provide a thorough and efficient system of free schools.",
-      "category": "Education and training",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Education",
-      "agency": "Department of Education",
-      "agencyId": "agency:crawl:department-of-education",
-      "sourceId": "source:crawl:3997ae6ac202f23f",
-      "officialUrl": "https://wvde.us/",
-      "discoveredAt": "2026-09-28T17:57:49.616629+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Education and matched it to education and training using student, school, education.",
-      "matchedTerms": [
-        "student",
-        "school",
-        "education"
-      ],
-      "outline": [
-        "Spotlights",
-        "Culineering Challenge",
-        "West Virginia Middle Schools - Bridging the Future",
-        "Third Grade Success Act",
-        "Public School Proud WV",
-        "Recent News",
-        "WV Dept. of Ed. Honors Excellence in Adult Education Programs",
-        "U.S. Secretary of Education Linda McMahon Visits the Mountain State",
-        "WV Dept. of Ed. Announces 2026 Culineering Challenge Student Teams",
-        "Popular Pages",
-        "Certification",
-        "Content Standards and Policies"
-      ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:615d059522",
-      "slug": "the-harry-s-truman-scholarship-foundation-615d059522",
-      "title": "The Harry S. Truman Scholarship Foundation",
-      "summary": "The nation's premiere scholarship for students interested in public service.",
-      "category": "Education and training",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Harry S Truman Scholarship Foundation",
-      "agency": "Harry S Truman Scholarship Foundation",
-      "agencyId": "agency:crawl:harry-s-truman-scholarship-foundation",
-      "sourceId": "source:crawl:615d0595225f7713",
-      "officialUrl": "https://www.truman.gov/",
-      "discoveredAt": "2026-09-28T17:54:48.401865+00:00",
-      "reason": "Shown because the crawler found this official page from Harry S Truman Scholarship Foundation and matched it to education and training using student, education, scholarship.",
-      "matchedTerms": [
-        "student",
-        "education",
-        "scholarship"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [
-        "Congratulations 2026 Truman Scholars!",
-        "2027 Application Webinars",
-        "Welcoming the 2026 Class of Truman Scholars",
-        "Welcoming Secretary of Education Designee Noah Pollak",
-        "2026 Finalists Announced",
-        "2026 Public Service Awards",
-        "50 Years of Truman Scholars",
-        "Give Back & Get Involved"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:08fdefa8b7",
-      "slug": "department-of-emergency-services-north-dakota-08fdefa8b7",
-      "title": "Department of Emergency Services North Dakota",
-      "summary": "Official government information published by Department of Emergency Services.",
-      "category": "Emergencies and recovery",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Emergency Services",
-      "agency": "Department of Emergency Services",
-      "agencyId": "agency:crawl:department-of-emergency-services",
-      "sourceId": "source:crawl:08fdefa8b71e7c70",
-      "officialUrl": "https://www.des.nd.gov/",
-      "discoveredAt": "2026-09-28T17:57:23.248537+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Emergency Services and matched it to emergencies and recovery using emergency, wildfire.",
-      "matchedTerms": [
-        "emergency",
-        "wildfire"
-      ],
-      "outline": [
-        "Recent News",
-        "Governor Armstrong Proclaims August as Emergency Management Awareness Month",
-        "Search for missing hiker in TRNP North Unit continues; North Dakota provides aviation support",
-        "FEMA announces Notice Of Funding Opportunity (NOFO) through BRIC program",
-        "North Dakota sends firefighting aid to Nebraska, South Dakota; warns about growing fire conditions in state",
-        "Widow of Johannes Nicolaas van Eeden of South Africa Attends Community Strong Event in Watford City, Remembering the 2024 October Wildfires"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:c69d2aa0ad",
-      "slug": "plan-ahead-for-disasters-ready-gov-c69d2aa0ad",
-      "title": "Plan Ahead for Disasters | Ready.gov",
-      "summary": "Last Updated: 09/24/2026",
+      "slug": "make-a-plan-for-a-disaster-c69d2aa0ad",
+      "title": "Make a plan for a disaster",
+      "sourceTitle": "Plan Ahead for Disasters | Ready.gov",
+      "summary": "Build a household emergency plan, decide how you will communicate, and prepare for hazards where you live.",
       "category": "Emergencies and recovery",
       "jurisdiction": "federal-and-state",
       "publisher": "Department of Homeland Security",
@@ -606,6 +211,7 @@
       "sourceId": "source:crawl:c69d2aa0ad810025",
       "officialUrl": "https://www.ready.gov/",
       "discoveredAt": "2026-09-28T17:52:58.472457+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Department of Homeland Security and matched it to emergencies and recovery using disaster, emergency, flood.",
       "matchedTerms": [
         "disaster",
@@ -625,222 +231,22 @@
         "Build a Kit",
         "FEMA Mobile App"
       ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:65c71d5063",
-      "slug": "waiver-or-modification-of-requirements-under-section-1135-of-the-social--65c71d5063",
-      "title": "Waiver or Modification of Requirements Under Section 1135 of the Social Security Act",
-      "summary": "HHS Secretary Xavier Becerra waives certain requirements under Section 1135 of the Social Security Act to ensure healthcare services during New Mexico\u2019s wildfire emergency, effective April 5, 2022.",
-      "category": "Emergencies and recovery",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Health and Human Services",
-      "agency": "Department of Health and Human Services",
-      "agencyId": "agency:crawl:department-of-health-and-human-services",
-      "sourceId": "source:crawl:65c71d50636acafb",
-      "officialUrl": "https://www.aspr.gov/about/law-policy-strategy/emergency-declarations/section-1135-waivers/1135-waivers-list/2022-05-new-mexico",
-      "discoveredAt": "2026-09-28T17:52:30.544031+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Health and Human Services and matched it to emergencies and recovery using emergency, wildfire.",
-      "matchedTerms": [
-        "emergency",
-        "wildfire"
-      ],
-      "outline": [],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:3469f5602b",
-      "slug": "arkansas-department-of-human-services-3469f5602b",
-      "title": "Arkansas Department of Human Services",
-      "summary": "We Care. We Act. We Change Lives. Together we improve the quality of life of all Arkansans by protecting the vulnerable, fostering independence, and promoting better health.",
-      "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Human Services",
-      "agency": "Department of Human Services",
-      "agencyId": "agency:crawl:department-of-human-services",
-      "sourceId": "source:crawl:3469f5602b2fb83e",
-      "officialUrl": "https://humanservices.arkansas.gov/",
-      "discoveredAt": "2026-09-28T17:56:38.175420+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Human Services and matched it to health and coverage using health.",
-      "matchedTerms": [
-        "health"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [
-        "Learn About Programs"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:3a6f83a561",
-      "slug": "chfs-home-cabinet-for-health-and-family-services-3a6f83a561",
-      "title": "CHFS Home - Cabinet for Health and Family Services",
-      "summary": "CHFS Home",
-      "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Social Services",
-      "agency": "Social Services",
-      "agencyId": "agency:crawl:social-services",
-      "sourceId": "source:crawl:3a6f83a56107fc5e",
-      "officialUrl": "https://www.chfs.ky.gov/Pages/index.aspx",
-      "discoveredAt": "2026-09-28T18:05:46.005906+00:00",
-      "reason": "Shown because the crawler found this official page from Social Services and matched it to health and coverage using health, medical, medicaid.",
-      "matchedTerms": [
-        "health",
-        "medical",
-        "medicaid"
-      ],
-      "outline": [
-        "Find Assistance",
-        "Medicaid",
-        "CHFS Highlights",
-        "Medical Cannabis News",
-        "Mental Health News",
-        "Overdose Response News",
-        "Honoring Service in Kentucky",
-        "Rural Health Transformation"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:198f84028c",
-      "slug": "home-centers-for-medicare-medicaid-services-198f84028c",
-      "title": "Home - Centers for Medicare & Medicaid Services",
-      "summary": "We\u2019re empowering states to improve healthcare and strengthen rural communities.",
-      "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Health and Human Services",
-      "agency": "Department of Health and Human Services",
-      "agencyId": "agency:crawl:department-of-health-and-human-services",
-      "sourceId": "source:crawl:198f84028cff51bd",
-      "officialUrl": "https://www.cms.gov/",
-      "discoveredAt": "2026-09-28T17:52:32.551599+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Health and Human Services and matched it to health and coverage using health, medicaid, medicare.",
-      "matchedTerms": [
-        "health",
-        "medicaid",
-        "medicare"
-      ],
-      "outline": [
-        "What are you looking for today?",
-        "Rural Health Transformation Program",
-        "Health Technology Ecosystem",
-        "Crushing Fraud, Waste, & Abuse",
-        "Medicare Drug Price Negotiation",
-        "Innovation Center",
-        "Top resources",
-        "Medicare fee schedules",
-        "Codes for claim reimbursement",
-        "Marketplace partner resources",
-        "Manuals, forms, & transmittals",
-        "Recent Articles"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:b2594c2d69",
-      "slug": "illinois-department-of-human-services-b2594c2d69",
-      "title": "Illinois Department of Human Services",
-      "summary": "The Illinios Department of Human Services helps Illinoisans and their families become healthy and self-sufficient.",
-      "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Human Services",
-      "agency": "Department of Human Services",
-      "agencyId": "agency:crawl:department-of-human-services",
-      "sourceId": "source:crawl:b2594c2d699f895d",
-      "officialUrl": "https://www.dhs.state.il.us/page.aspx",
-      "discoveredAt": "2026-09-28T17:56:36.724299+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Human Services and matched it to health and coverage using health.",
-      "matchedTerms": [
-        "health"
-      ],
-      "outline": [
-        "IDHS Services",
-        "Providers",
-        "Statewide Offices",
-        "IDHS Divisions",
-        "IDHS Resources",
-        "WE'RE HIRING"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:3192f3d83e",
-      "slug": "indian-health-service-indian-health-service-ihs-3192f3d83e",
-      "title": "Indian Health Service | Indian Health Service (IHS)",
-      "summary": "The Indian Health Service (IHS), an agency within the Department of Health and Human Services, is responsible for providing federal health services to American Indians and Alaska Natives. The provision of health services to members of federally-recognized Tribes grew out of the special government-to-government relationship between the federal government and Indian Tribes. The IHS is the principal federal health care provider and health advocate for Indian people, and provides a comprehensive health service delivery system for American Indians and Alaska Natives. The IHS Mission is to raise the physical, mental, social, and spiritual health of American Indians and Alaska Natives to the highes",
-      "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Health and Human Services",
-      "agency": "Department of Health and Human Services",
-      "agencyId": "agency:crawl:department-of-health-and-human-services",
-      "sourceId": "source:crawl:3192f3d83e47ddb3",
-      "officialUrl": "https://www.ihs.gov/",
-      "discoveredAt": "2026-09-28T17:52:41.156332+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Health and Human Services and matched it to health and coverage using health.",
-      "matchedTerms": [
-        "health"
-      ],
-      "outline": [
-        "In the News",
-        "Upcoming Events"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:d34ad3e420",
-      "slug": "macpac-advising-congress-on-medicaid-and-chip-policy-d34ad3e420",
-      "title": "MACPAC - Advising Congress on Medicaid and CHIP Policy",
-      "summary": "Featured | Publication",
-      "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Medicaid and CHIP Payment and Access Commission",
-      "agency": "Medicaid and CHIP Payment and Access Commission",
-      "agencyId": "agency:crawl:medicaid-and-chip-payment-and-access-commission",
-      "sourceId": "source:crawl:d34ad3e42054281d",
-      "officialUrl": "https://www.macpac.gov/",
-      "discoveredAt": "2026-09-28T17:55:42.723502+00:00",
-      "reason": "Shown because the crawler found this official page from Medicaid and CHIP Payment and Access Commission and matched it to health and coverage using health, medicaid.",
-      "matchedTerms": [
-        "health",
-        "medicaid"
-      ],
-      "outline": [
-        "MACPAC Releases June 2026 Report to Congress on Medicaid and CHIP",
-        "MACPAC Releases March 2026 Report to Congress on Medicaid and CHIP",
-        "Advising Congress and the states on Medicaid and CHIP Policy",
-        "Featured Publications",
-        "Comment Letter: Amending the Indirect Hold Harmless Threshold of Health Care-Related Taxes",
-        "Comment Letter: Community Engagement Requirement for Certain Individuals",
-        "State Medicaid Enterprise Systems",
-        "Comment Letter: Medicaid Managed Care State Directed Payments and Medicaid Fee-for-Service Targeted Medicaid Practitioner Payments",
-        "Access in Brief: Children\u2019s Use of Behavioral Health Services",
-        "Demographic Characteristics of Medicaid Beneficiaries Enrolled in the Program of All-Inclusive Care for the Elderly",
-        "Public Meetings",
-        "View Upcoming Meetings"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:17f9a9ea7f",
-      "slug": "public-access-to-court-electronic-records-pacer-17f9a9ea7f",
-      "title": "Public Access to Court Electronic Records (PACER)",
-      "summary": "PACER provides information about accessing and filing federal court records electronically. Find resources for using PACER.",
+      "slug": "find-a-federal-court-case-in-pacer-17f9a9ea7f",
+      "title": "Find a federal court case in PACER",
+      "sourceTitle": "Public Access to Court Electronic Records (PACER)",
+      "summary": "Search federal court records and access case and docket information through the official PACER service.",
       "category": "Identity and records",
       "jurisdiction": "federal-and-state",
       "publisher": "Administrative Office of the United States Courts",
@@ -849,6 +255,7 @@
       "sourceId": "source:crawl:17f9a9ea7f24bd34",
       "officialUrl": "https://pacer.uscourts.gov/",
       "discoveredAt": "2026-09-28T17:55:28.890388+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Administrative Office of the United States Courts and matched it to identity and records using record.",
       "matchedTerms": [
         "record"
@@ -868,14 +275,21 @@
         "June 10, 2026"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
+      ],
+      "status": "published"
     },
     {
       "id": "journey:discovered:bec07dfe9e",
-      "slug": "adjustment-of-status-get-a-green-card-if-you-are-in-the-united-states-bec07dfe9e",
-      "title": "Adjustment of status: Get a Green Card if you are in the United States",
-      "summary": "Find out if you are eligible to change your visa to a Green Card, and how to apply. Use the USCIS fee calculator to find out how much it will cost.",
+      "slug": "apply-for-a-green-card-from-inside-the-united-states-bec07dfe9e",
+      "title": "Apply for a Green Card from inside the United States",
+      "sourceTitle": "Adjustment of status: Get a Green Card if you are in the United States",
+      "summary": "Review adjustment of status requirements and follow the official process for applying for permanent residence from inside the United States.",
       "category": "Immigration and citizenship",
       "jurisdiction": "federal-and-state",
       "publisher": "USA.gov",
@@ -884,6 +298,7 @@
       "sourceId": "source:crawl:bec07dfe9eacab0d",
       "officialUrl": "https://www.usa.gov/adjustment-of-status",
       "discoveredAt": "2026-09-09T17:02:49.958183+00:00",
+      "reviewedAt": "2026-09-09",
       "reason": "Shown because the crawler found this official page from USA.gov and matched it to immigration and citizenship using green card, visa, uscis.",
       "matchedTerms": [
         "green card",
@@ -896,114 +311,21 @@
         "Have a question?"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:fd1e8526ce",
-      "slug": "home-unemployment-gov-fd1e8526ce",
-      "title": "Home | UNEMPLOYMENT.GOV",
-      "summary": "Unemployment Insurance is a joint federal\u2011state program that provides temporary cash benefits to eligible workers who are unemployed through no fault of their own. Each state administers its own unemployment insurance program within federal guidelines.",
-      "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Labor",
-      "agency": "Department of Labor",
-      "agencyId": "agency:crawl:department-of-labor",
-      "sourceId": "source:crawl:fd1e8526ce4259f8",
-      "officialUrl": "https://www.unemployment.gov/",
-      "discoveredAt": "2026-09-28T17:53:15.076916+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Labor and matched it to jobs and workplace using worker, employment, labor.",
-      "matchedTerms": [
-        "worker",
-        "employment",
-        "labor"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [
-        "Learning",
-        "How unemployment insurance programs are administered",
-        "Unemployment insurance benefits for Federal Employees",
-        "Unemployment insurance benefits for former Members of the Military",
-        "Common Questions",
-        "What is unemployment insurance?",
-        "Where do I apply for unemployment benefits?",
-        "I\u2019m a former federal employee \u2014 can I get unemployment benefits?",
-        "I recently left the military \u2014 can I apply for unemployment benefits?",
-        "I lost work because of a disaster \u2014 is there unemployment help available?",
-        "Can I get unemployment benefits if I\u2019m an independent contractor or self-employed?"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:579812d9b7",
-      "slug": "nhtsa-s-office-of-emergency-medical-services-ems-gov-579812d9b7",
-      "title": "NHTSA's Office of Emergency Medical Services | EMS.gov",
-      "summary": "The OEMS and National 911 Program work to advance a national vision for optimal emergency medical services and 911 systems.",
-      "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Transportation",
-      "agency": "Department of Transportation",
-      "agencyId": "agency:crawl:department-of-transportation",
-      "sourceId": "source:crawl:579812d9b715e214",
-      "officialUrl": "https://www.ems.gov/",
-      "discoveredAt": "2026-09-28T17:53:56.669622+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Transportation and matched it to jobs and workplace using labor, workforce.",
-      "matchedTerms": [
-        "labor",
-        "workforce"
-      ],
-      "outline": [
-        "Important Issues in EMS",
-        "EMS Collaboration",
-        "EMS, Highway Safety & Post-Crash Care",
-        "Evidence-Based Guidelines & Performance Management",
-        "Increasing EMS Safety with Traffic Incident Management (TIM)",
-        "Managing Emerging Diseases",
-        "Pediatric Resources",
-        "Planning for the Future: EMS Agenda 2050",
-        "Prehospital Blood Transfusion",
-        "Preparing the EMS Workforce",
-        "State EMS Systems",
-        "Using EMS Data"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:59b8fb5a29",
-      "slug": "homepage-lsc-legal-services-corporation-america-s-partner-for-equal-just-59b8fb5a29",
-      "title": "Homepage | LSC - Legal Services Corporation: America's Partner for Equal Justice",
-      "summary": "Legal aid providers play a significant role in assisting Veterans in need. This toolkit provides practical guidance for planning and operating successful veterans\u2019 clinics, including step-by-step instructions, templates and practical resources.",
-      "category": "Law, courts, and public safety",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Legal Services Corporation",
-      "agency": "Legal Services Corporation",
-      "agencyId": "agency:crawl:legal-services-corporation",
-      "sourceId": "source:crawl:59b8fb5a291f3abb",
-      "officialUrl": "https://www.lsc.gov/",
-      "discoveredAt": "2026-09-28T17:54:51.211218+00:00",
-      "reason": "Shown because the crawler found this official page from Legal Services Corporation and matched it to law, courts, and public safety using legal, justice.",
-      "matchedTerms": [
-        "legal",
-        "justice"
-      ],
-      "outline": [
-        "Grantee Client Impact",
-        "Learn More About LSC",
-        "Fiscal Year 2027 Budget Request",
-        "Justice Gap"
-      ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:3e710ae931",
-      "slug": "uniform-crime-reports-hawaii-crime-statistics-crime-prevention-and-justi-3e710ae931",
-      "title": "Uniform Crime Reports \u2013 Hawaii Crime Statistics \u2013 Crime Prevention and Justice Assistance Division",
-      "summary": "Hawaii Crime Dashboard (NIBRS) https://crimestats.hawaii.gov Legacy Uniform Crime Reports (Summary Reporting System) The Hawaii Department of the Attorney General\u2019s annual Uniform Crime Report, Crime in Hawaii, 2021, shows that in Calendar Year 2021, a total of 41,355 Index Crimes were reported in the State of Hawaii, yielding a rate of 2,868 offenses per 100,000 resident [\u2026]",
+      "slug": "view-hawaii-crime-statistics-3e710ae931",
+      "title": "View Hawaii crime statistics",
+      "sourceTitle": "Uniform Crime Reports \u2013 Hawaii Crime Statistics \u2013 Crime Prevention and Justice Assistance Division",
+      "summary": "Find official Hawaii crime reports and statewide crime statistics published for public use.",
       "category": "Law, courts, and public safety",
       "jurisdiction": "federal-and-state",
       "publisher": "Office of the Attorney General",
@@ -1012,6 +334,7 @@
       "sourceId": "source:crawl:3e710ae931181e7a",
       "officialUrl": "https://ag.hawaii.gov/cpja/rs/cih/",
       "discoveredAt": "2026-09-28T17:56:43.399620+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Office of the Attorney General and matched it to law, courts, and public safety using justice, attorney, crime.",
       "matchedTerms": [
         "justice",
@@ -1024,34 +347,21 @@
         "CPJAD Administrator"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:17c3ce8de1",
-      "slug": "missouri-department-of-social-services-missouri-department-of-social-ser-17c3ce8de1",
-      "title": "Missouri Department of Social Services | Missouri Department of Social Services",
-      "summary": "mo.gov Governor Kehoe Find an Agency Online Services",
-      "category": "More government services",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Social Services",
-      "agency": "Department of Social Services",
-      "agencyId": "agency:crawl:department-of-social-services",
-      "sourceId": "source:crawl:17c3ce8de111adcf",
-      "officialUrl": "https://dss.mo.gov/",
-      "discoveredAt": "2026-09-28T17:57:09.715565+00:00",
-      "reason": "Shown because the crawler found this official page from Department of Social Services. It remains discoverable under more government services until it is categorized more specifically.",
-      "matchedTerms": [],
-      "outline": [],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
+      ],
+      "status": "published"
     },
     {
       "id": "journey:discovered:f33eec0408",
-      "slug": "the-copyright-claims-board-ccb-f33eec0408",
-      "title": "The Copyright Claims Board (CCB)",
-      "summary": "Copyright Claims Board Homepage",
+      "slug": "file-or-respond-to-a-small-copyright-claim-f33eec0408",
+      "title": "File or respond to a small copyright claim",
+      "sourceTitle": "The Copyright Claims Board (CCB)",
+      "summary": "Use the Copyright Claims Board process to file, respond to, or track an eligible small copyright dispute.",
       "category": "More government services",
       "jurisdiction": "federal-and-state",
       "publisher": "Library of Congress",
@@ -1060,6 +370,7 @@
       "sourceId": "source:crawl:f33eec0408495124",
       "officialUrl": "https://ccb.gov/",
       "discoveredAt": "2026-09-28T17:55:35.487312+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Library of Congress. It remains discoverable under more government services until it is categorized more specifically.",
       "matchedTerms": [],
       "outline": [
@@ -1068,149 +379,22 @@
         "Statistics",
         "The Copyright Claims Board"
       ],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:3de5b000bd",
-      "slug": "april-2026-financial-literacy-month-resources-3de5b000bd",
-      "title": "April 2026 Financial Literacy Month Resources",
-      "summary": "MyMoney.gov is the U.S. government's website dedicated to teaching all Americans the basics about financial education.",
-      "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of the Treasury",
-      "agency": "Department of the Treasury",
-      "agencyId": "agency:crawl:department-of-the-treasury",
-      "sourceId": "source:crawl:3de5b000bd9f493c",
-      "officialUrl": "https://www.mymoney.gov/april-2026-financial-literacy-month-resources/",
-      "discoveredAt": "2026-09-28T17:53:42.809438+00:00",
-      "reason": "Shown because the crawler found this official page from Department of the Treasury and matched it to taxes and money using money, currency.",
-      "matchedTerms": [
-        "money",
-        "currency"
-      ],
-      "outline": [
-        "FEATURED EVENTS",
-        "Consumer Financial Protection Bureau",
-        "The Federal Deposit Insurance Corporation",
-        "Office of the Comptroller of the Currency",
-        "U.S. Securities and Exchange Commission",
-        "U.S. Department of Labor",
-        "Social Security Administration",
-        "Federal Trade Commission",
-        "National Credit Union Administration",
-        "Commodity Futures Trading Commission"
-      ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:fa11818f97",
-      "slug": "home-ttb-alcohol-and-tobacco-tax-and-trade-bureau-fa11818f97",
-      "title": "Home | TTB: Alcohol and Tobacco Tax and Trade Bureau",
-      "summary": "Resources for Beer , Distilled Spirits , Wine , Sake , Kombucha , and Trade Practices",
-      "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of the Treasury",
-      "agency": "Department of the Treasury",
-      "agencyId": "agency:crawl:department-of-the-treasury",
-      "sourceId": "source:crawl:fa11818f9712928f",
-      "officialUrl": "https://www.ttb.gov/",
-      "discoveredAt": "2026-09-28T17:53:54.174390+00:00",
-      "reason": "Shown because the crawler found this official page from Department of the Treasury and matched it to taxes and money using tax.",
-      "matchedTerms": [
-        "tax"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [
-        "Business Tools",
-        "TTB Regulated Industries",
-        "News and Events",
-        "Regulations and Guidance",
-        "Featured",
-        "TTB Boot Camp Videos",
-        "TTB Video",
-        "TTB Labeling",
-        "Doing Business Online",
-        "Can\u2019t Find What You Need?"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:9926758ed8",
-      "slug": "internal-revenue-service-an-official-website-of-the-united-states-govern-9926758ed8",
-      "title": "Internal Revenue Service | An official website of the United States government",
-      "summary": "Pay your taxes. Get your refund status. Find IRS forms and answers to tax questions. We help you understand and meet your federal tax responsibilities.",
-      "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of the Treasury",
-      "agency": "Department of the Treasury",
-      "agencyId": "agency:crawl:department-of-the-treasury",
-      "sourceId": "source:crawl:9926758ed853c886",
-      "officialUrl": "https://www.irs.gov/",
-      "discoveredAt": "2026-09-28T17:53:40.611775+00:00",
-      "reason": "Shown because the crawler found this official page from Department of the Treasury and matched it to taxes and money using tax, refund, debt.",
-      "matchedTerms": [
-        "tax",
-        "refund",
-        "debt",
-        "irs"
-      ],
-      "outline": [
-        "Trump Accounts",
-        "Do more with an IRS account",
-        "All your info in one app",
-        "Find tax debt help",
-        "Popular topics",
-        "Payments",
-        "IRS Free File",
-        "Tax records",
-        "Employer ID number (EIN)",
-        "Withholding",
-        "Amended tax return",
-        "Help & contact"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:eb502141d9",
-      "slug": "the-cfpb-works-to-create-and-support-innovative-and-resilient-consumer-f-eb502141d9",
-      "title": "The CFPB works to create and support innovative and resilient consumer financial markets where consumers can choose the products and services that meet their individual needs.",
-      "summary": "The CFPB's vision is a consumer finance marketplace that works for American consumers, responsible providers, and the economy as a whole.",
-      "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Consumer Financial Protection Bureau",
-      "agency": "Consumer Financial Protection Bureau",
-      "agencyId": "agency:crawl:consumer-financial-protection-bureau",
-      "sourceId": "source:crawl:eb502141d90d6b70",
-      "officialUrl": "https://www.consumerfinance.gov/",
-      "discoveredAt": "2026-09-28T17:51:56.106557+00:00",
-      "reason": "Shown because the crawler found this official page from Consumer Financial Protection Bureau and matched it to taxes and money using finance.",
-      "matchedTerms": [
-        "finance"
-      ],
-      "outline": [
-        "CFPB accomplishments under Acting Director Vought",
-        "CFPB vision, mission, and values",
-        "Our deregulatory agenda",
-        "Supervision",
-        "Enforcement",
-        "Help when you need it"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
+      "status": "published"
     },
     {
       "id": "journey:discovered:899ea154f8",
-      "slug": "national-resource-directory-connecting-service-members-veterans-899ea154f8",
-      "title": "National Resource Directory | Connecting Service Members & Veterans",
-      "summary": "National Resource Directory Connects Wounded, Ill & Injured Service Members, Veterans, Their Families, and Caregivers with Those Who Support Them",
+      "slug": "find-support-for-service-members-and-veterans-899ea154f8",
+      "title": "Find support for service members and veterans",
+      "sourceTitle": "National Resource Directory | Connecting Service Members & Veterans",
+      "summary": "Search vetted services and resources for service members, veterans, families, and caregivers.",
       "category": "Veterans and military",
       "jurisdiction": "federal-and-state",
       "publisher": "Department of Defense",
@@ -1219,6 +403,7 @@
       "sourceId": "source:crawl:899ea154f8f14acd",
       "officialUrl": "https://nrd.gov/",
       "discoveredAt": "2026-09-28T17:52:18.305072+00:00",
+      "reviewedAt": "2026-09-28",
       "reason": "Shown because the crawler found this official page from Department of Defense and matched it to veterans and military using veteran, service member, defense.",
       "matchedTerms": [
         "veteran",
@@ -1227,14 +412,21 @@
       ],
       "outline": [],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
+      ],
+      "status": "published"
     },
     {
       "id": "journey:discovered:35e5acb1a8",
-      "slug": "absentee-voting-and-voting-by-mail-35e5acb1a8",
-      "title": "Absentee voting and voting by mail",
-      "summary": "Learn how to get an absentee ballot if you live in the U.S., live abroad, or are in the military. Find out how to cast your vote, and meet voting deadlines.",
+      "slug": "vote-absentee-or-by-mail-35e5acb1a8",
+      "title": "Vote absentee or by mail",
+      "sourceTitle": "Absentee voting and voting by mail",
+      "summary": "Check your state's rules, request an absentee or mail ballot, and track the deadlines for returning it.",
       "category": "Voting and civic life",
       "jurisdiction": "federal-and-state",
       "publisher": "USA.gov",
@@ -1243,6 +435,7 @@
       "sourceId": "source:crawl:35e5acb1a878dfa5",
       "officialUrl": "https://www.usa.gov/absentee-voting",
       "discoveredAt": "2026-09-09T17:02:19.949420+00:00",
+      "reviewedAt": "2026-09-09",
       "reason": "Shown because the crawler found this official page from USA.gov and matched it to voting and civic life using vote, voting, election.",
       "matchedTerms": [
         "vote",
@@ -1259,68 +452,14 @@
         "Have a question?"
       ],
       "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:0beab38565",
-      "slug": "home-u-s-election-assistance-commission-0beab38565",
-      "title": "Home | U.S. Election Assistance Commission",
-      "summary": "If you're looking for a way to support elections in your community this November, consider becoming a poll worker. Local election offices supply training and resources to ensure you\u2019re fully prepared for the role.",
-      "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Election Assistance Commission",
-      "agency": "Election Assistance Commission",
-      "agencyId": "agency:crawl:election-assistance-commission",
-      "sourceId": "source:crawl:0beab38565c5cd63",
-      "officialUrl": "https://www.eac.gov/",
-      "discoveredAt": "2026-09-28T17:54:03.456337+00:00",
-      "reason": "Shown because the crawler found this official page from Election Assistance Commission and matched it to voting and civic life using vote, voting, election.",
-      "matchedTerms": [
-        "vote",
-        "voting",
-        "election"
+      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
+      "reviewChecks": [
+        "official-source",
+        "task-title",
+        "useful-summary",
+        "fresh-crawl-record"
       ],
-      "outline": [
-        "Interested in being an poll worker?",
-        "EAC Professional Certification Now Available!",
-        "2025 Clearie Winners Have Been Announced",
-        "Sign up for the EAC Newsletter",
-        "Advancing Safe, Secure, Accurate, and Accessible Elections",
-        "REGISTER AND VOTE IN YOUR STATE",
-        "Featured Election Administrator Topics",
-        "Election Official Resources",
-        "Election Official Security",
-        "Election Management Guidelines",
-        "Voluntary Voting System Guidelines (VVSG) Communications",
-        "Accessibility Resources"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Substantial official title and summary available.",
-      "status": "discovered"
-    },
-    {
-      "id": "journey:discovered:b3702deae5",
-      "slug": "regular-general-election-november-3-2026-b3702deae5",
-      "title": "Regular General Election: November 3, 2026",
-      "summary": "Utah Voter Information",
-      "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Elections",
-      "agency": "Elections",
-      "agencyId": "agency:crawl:elections",
-      "sourceId": "source:crawl:b3702deae50683bc",
-      "officialUrl": "https://vote.utah.gov/",
-      "discoveredAt": "2026-09-28T17:57:43.552548+00:00",
-      "reason": "Shown because the crawler found this official page from Elections and matched it to voting and civic life using vote, election.",
-      "matchedTerms": [
-        "vote",
-        "election"
-      ],
-      "outline": [],
-      "seoEligible": false,
-      "qualityReason": "Visible for discovery; held out of search indexing until the crawler captures enough useful page detail.",
-      "status": "discovered"
+      "status": "published"
     }
   ]
 }
