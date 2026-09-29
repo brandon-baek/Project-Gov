@@ -6,10 +6,17 @@ import { journeys as bundledJourneys } from "@/data/curated/journeys";
 
 let singleton: Database.Database | null = null;
 
-export function openDatabase(filename = process.env.GOVGUIDE_DB_PATH ?? path.join(process.cwd(), "data", "govguide.db")) {
+export function openDatabase(filename?: string) {
   const deployedOnVercel = Boolean(process.env.VERCEL);
-  if (!deployedOnVercel) mkdirSync(path.dirname(filename), { recursive: true });
-  const database = new Database(filename, deployedOnVercel ? { readonly: true, fileMustExist: true } : {});
+  const bundledSnapshot = path.join(process.cwd(), "data", "govguide.db");
+  const configuredFilename = filename ?? process.env.GOVGUIDE_DB_PATH;
+  // Vercel builds can expose GOVGUIDE_DB_PATH=:memory:; the packaged snapshot is
+  // the durable, read-only source for both prerendering and deployed requests.
+  const databasePath = deployedOnVercel && (!configuredFilename || configuredFilename === ":memory:")
+    ? bundledSnapshot
+    : configuredFilename ?? bundledSnapshot;
+  if (!deployedOnVercel) mkdirSync(path.dirname(databasePath), { recursive: true });
+  const database = new Database(databasePath, deployedOnVercel ? { readonly: true, fileMustExist: true } : {});
   database.pragma("foreign_keys = ON");
   database.pragma("busy_timeout = 5000");
   return database;
