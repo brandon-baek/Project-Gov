@@ -6,7 +6,9 @@ const nextConfig: NextConfig = {
   output: process.env.VERCEL ? undefined : "standalone",
   serverExternalPackages: ["better-sqlite3"],
   outputFileTracingIncludes: {
-    "/api/chat": ["./database/migrations/**/*", "./data/govguide.db"]
+    "/api/chat": ["./database/migrations/**/*", "./data/govguide.db"],
+    "/api/catalog": ["./data/govguide.db"],
+    "/graph": ["./data/govguide.db"]
   },
   poweredByHeader: false,
   reactStrictMode: true,
