@@ -28,6 +28,14 @@ TOPICS = (
 )
 
 LOW_VALUE_TITLE = re.compile(r"privacy|accessibility|press release|newsroom|news release|newsletter|blog|meeting|photo gallery|about us|contact us|home ?page", re.I)
+PATHWAY_SIGNAL = re.compile(
+    r"\b(apply|application|benefits?|services?|assistance|request|replace|renew|file|report|register|payments?|claims?|vote|voting|adoption|guardianship|coverage|unemployment|tax|passport|grants?|permits?|licen[sc]e|eligibility|enrollment|complaints?|records?|training|internship|scholarship|support|resources?|online|citizenship|medicare|medicaid)\b|how-to|how to|green-card|green card|social-security|social security|student-aid|student aid|financial-aid|financial aid|plan-ahead|plan ahead|disaster-assistance|disaster assistance",
+    re.I,
+)
+NON_PATHWAY = re.compile(
+    r"^(about\b|\d{4}\b)|\b(news|press|blog|meetings?|events?|gallery|appointments?|biography|speech|remarks|celebrat(?:e|ing|ion)|bulletin|proclaims?|announces?|conviction|nominations?|obituary|postponed|policies|software|closed for|residents urged|program update|request for information|impact report|annual report|exceptional service)\b|404|500 error|index of|hello world|accessibility|privacy|contact us|about us",
+    re.I,
+)
 
 
 def slug(value: str) -> str:
@@ -60,6 +68,9 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
     by_url: dict[str, dict[str, object]] = {}
     for node_id, title, publisher, url, checked, description, jurisdiction, params_json, agency_id, agency in rows:
         params = json.loads(params_json)
+        pathway_text = f"{title} {url}"
+        if not PATHWAY_SIGNAL.search(pathway_text) or NON_PATHWAY.search(f"{pathway_text} {description or ''}"):
+            continue
         tags = [str(item) for item in params.get("tags", [])]
         outline = []
         for heading in tags:

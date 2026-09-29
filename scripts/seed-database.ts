@@ -29,7 +29,16 @@ const insertSearch = database.prepare("INSERT INTO journey_search (journey_node_
 const insertGnn = database.prepare("INSERT OR REPLACE INTO gnn_suggestions (from_node_id, to_node_id, model, score, review_status) VALUES (?, ?, ?, ?, 'pending')");
 
 database.transaction(() => {
-  database.exec("DELETE FROM journey_search; DELETE FROM step_sources; DELETE FROM journey_steps; DELETE FROM journeys; DELETE FROM graph_edges;");
+  database.exec(`
+    DELETE FROM journey_search;
+    DELETE FROM step_sources;
+    DELETE FROM journey_steps;
+    DELETE FROM journeys;
+    DELETE FROM graph_edges
+      WHERE from_node_id IN (SELECT id FROM graph_nodes WHERE kind IN ('journey', 'step') OR status = 'verified')
+         OR to_node_id IN (SELECT id FROM graph_nodes WHERE kind = 'program');
+    DELETE FROM graph_nodes WHERE status = 'machine-indexed' AND kind IN ('journey', 'program');
+  `);
   for (const node of govGraph.nodes) {
     insertNode.run({
       id: node.id,
