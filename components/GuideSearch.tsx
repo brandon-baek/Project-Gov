@@ -57,7 +57,7 @@ export function GuideSearch() {
         <label htmlFor="goal">What are you trying to do?</label>
         <div className="guide-search__control">
           <textarea id="goal" name="goal" value={message} onChange={(event) => setMessage(event.target.value)} placeholder="Describe the situation in your own words" rows={2} maxLength={600} />
-          <button type="submit" disabled={loading || message.trim().length < 3} aria-label="Find a government guide"><ArrowIcon /></button>
+          <button type="submit" disabled={loading || message.trim().length < 3}><span>{loading ? "Finding steps…" : "Find my next steps"}</span><ArrowIcon /></button>
         </div>
         <p className="privacy-note">Do not include Social Security, account, passport, or license numbers.</p>
       </form>

@@ -14,7 +14,7 @@ export function SiteHeader() {
             <Link href="/data">Data</Link>
             <Link href="/about">About</Link>
           </nav>
-          <Link className="header-ask" href="/#ask"><span aria-hidden="true" /> Ask GovGuide</Link>
+          <Link className="header-ask" href="/#ask"><span aria-hidden="true" /> Get guidance</Link>
         </div>
       </header>
   );
