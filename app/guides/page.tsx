@@ -2,11 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { journeys } from "@/data/curated/journeys";
 import { ArrowIcon } from "@/components/icons";
+import { IndexedAgencyCatalog } from "@/components/IndexedAgencyCatalog";
+import { getIndexedAgencyTotals } from "@/lib/database";
 
 export const metadata: Metadata = { title: "Guides" };
 
 export default function GuidesPage() {
   const categories = [...new Set(journeys.map((journey) => journey.category))].sort();
+  const indexedTotals = getIndexedAgencyTotals();
   return (
     <div className="page-shell shell">
       <header className="page-intro">
@@ -29,6 +32,7 @@ export default function GuidesPage() {
           </section>
         ))}
       </div>
+      <IndexedAgencyCatalog initialTotal={indexedTotals.total} />
     </div>
   );
 }

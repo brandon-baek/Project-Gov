@@ -61,7 +61,10 @@ export const graphNodeSchema = z.object({
     etag: z.string().optional(),
     lastModified: z.string().optional(),
     sourceIds: z.array(z.string()).default([]),
-    tags: z.array(z.string()).default([])
+    tags: z.array(z.string()).default([]),
+    catalogSource: z.string().optional(),
+    connector: z.string().optional(),
+    state: z.string().optional()
   })
 });
 
