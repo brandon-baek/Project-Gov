@@ -185,23 +185,21 @@
     },
     {
       "connector": "federal-sites-acwi",
+      "indexedPages": 0,
       "domain": "acwi.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 48"
-      ],
-      "runId": 578,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ada",
+      "indexedPages": 0,
       "domain": "ada.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 4, column 11"
-      ],
-      "runId": 457,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-adams",
@@ -410,12 +408,11 @@
     {
       "connector": "federal-sites-aiworkforcehub",
       "domain": "aiworkforcehub.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for aiworkforcehub.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 510,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-alertaenlinea",
@@ -478,22 +475,20 @@
     {
       "connector": "federal-sites-amberalert",
       "domain": "amberalert.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for amberalert.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 440,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-america",
       "domain": "america.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for america.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 539,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-america250",
@@ -595,13 +590,12 @@
     },
     {
       "connector": "federal-sites-anstaskforce",
+      "indexedPages": 0,
       "domain": "anstaskforce.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 117"
-      ],
-      "runId": 570,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-aoa",
@@ -661,19 +655,37 @@
     },
     {
       "connector": "federal-sites-apprenticeship",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 213,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "apprenticeship.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 524,
-      "status": "completed"
+      "publisher": "Department of Labor",
+      "warnings": [
+        "https://www.apprenticeship.gov/investments-tax-credits-and-tuition-support/pay-performance-incentive-payments-program: 404 Client Error: Not Found for url: https://www.apprenticeship.gov/investments-tax-credits-and-tuition-support/pay-performance-incentive-payments-program"
+      ]
     },
     {
       "connector": "federal-sites-apprenticeships",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 213,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "apprenticeships.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 522,
-      "status": "completed"
+      "publisher": "Department of Labor",
+      "warnings": [
+        "https://www.apprenticeship.gov/investments-tax-credits-and-tuition-support/pay-performance-incentive-payments-program: 404 Client Error: Not Found for url: https://www.apprenticeship.gov/investments-tax-credits-and-tuition-support/pay-performance-incentive-payments-program"
+      ]
     },
     {
       "connector": "federal-sites-arc",
@@ -838,12 +850,11 @@
     {
       "connector": "federal-sites-atf",
       "domain": "atf.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for atf.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 450,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-atvsafety",
@@ -947,13 +958,12 @@
     },
     {
       "connector": "federal-sites-bats",
+      "indexedPages": 0,
       "domain": "bats.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
-        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://live.bats.gov/robots.txt"
-      ],
-      "runId": 487,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 242, column 22"
+      ]
     },
     {
       "connector": "federal-sites-bbg",
@@ -1024,20 +1034,26 @@
     {
       "connector": "federal-sites-betobaccofree",
       "domain": "betobaccofree.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for betobaccofree.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 291,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bia",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "bia.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 589,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-bidenlibrary",
@@ -1068,12 +1084,11 @@
     {
       "connector": "federal-sites-bioethics",
       "domain": "bioethics.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for bioethics.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 284,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-biomassboard",
@@ -1087,23 +1102,21 @@
     },
     {
       "connector": "federal-sites-biometriccoe",
+      "indexedPages": 0,
       "domain": "biometriccoe.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 37, column 2"
-      ],
-      "runId": 476,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-biometrics",
+      "indexedPages": 0,
       "domain": "biometrics.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 399,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-biopreferred",
@@ -1117,13 +1130,12 @@
     },
     {
       "connector": "federal-sites-birthcontrol",
+      "indexedPages": 0,
       "domain": "birthcontrol.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 304,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bis",
@@ -1137,13 +1149,12 @@
     },
     {
       "connector": "federal-sites-bjs",
+      "indexedPages": 0,
       "domain": "bjs.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 48, column 76"
-      ],
-      "runId": 463,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-blackhistorymonth",
@@ -1167,31 +1178,36 @@
     },
     {
       "connector": "federal-sites-blm",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "blm.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 582,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-bls",
       "domain": "bls.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for bls.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 517,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bluecampaign",
+      "indexedPages": 0,
       "domain": "bluecampaign.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 402,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-blueroof",
@@ -1215,21 +1231,27 @@
     },
     {
       "connector": "federal-sites-boem",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "boem.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 587,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-boemre",
       "domain": "boemre.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for boemre.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 565,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bondpro",
@@ -1242,22 +1264,20 @@
     {
       "connector": "federal-sites-bop",
       "domain": "bop.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for bop.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 445,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bor",
       "domain": "bor.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for bor.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 566,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bpa",
@@ -1271,13 +1291,12 @@
     },
     {
       "connector": "federal-sites-brain",
+      "indexedPages": 0,
       "domain": "brain.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 58, column 74"
-      ],
-      "runId": 300,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-broadbandmap",
@@ -1291,21 +1310,27 @@
     },
     {
       "connector": "federal-sites-bsee",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "bsee.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 591,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-btfa",
       "domain": "btfa.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for btfa.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 614,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bts",
@@ -1378,20 +1403,26 @@
     {
       "connector": "federal-sites-campusdrugprevention",
       "domain": "campusdrugprevention.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for campusdrugprevention.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 449,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cancer",
-      "domain": "cancer.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 299,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "cancer.gov",
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cao",
@@ -1523,11 +1554,18 @@
     },
     {
       "connector": "federal-sites-cbp",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cbp.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 407,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-ccac",
@@ -1549,23 +1587,21 @@
     },
     {
       "connector": "federal-sites-cdc",
+      "indexedPages": 0,
       "domain": "cdc.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
-        "No same-domain sitemap found for cdc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 292,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 21, column 78"
+      ]
     },
     {
       "connector": "federal-sites-cdcpartners",
       "domain": "cdcpartners.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cdcpartners.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 289,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cdfifund",
@@ -1723,21 +1759,27 @@
     },
     {
       "connector": "federal-sites-childcare",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 100,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "childcare.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 307,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-childreninadversity",
       "domain": "childreninadversity.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for childreninadversity.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 534,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-childstats",
@@ -1752,12 +1794,11 @@
     {
       "connector": "federal-sites-childwelfare",
       "domain": "childwelfare.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for childwelfare.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 298,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-chips",
@@ -1809,13 +1850,18 @@
     },
     {
       "connector": "federal-sites-cisa",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cisa.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.cisa.gov/sitemap.xml"
-      ],
-      "runId": 1889,
-      "status": "partial"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-citap",
@@ -1840,12 +1886,11 @@
     {
       "connector": "federal-sites-cjis",
       "domain": "cjis.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cjis.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 493,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-climate",
@@ -1860,20 +1905,26 @@
     {
       "connector": "federal-sites-clinicaltrial",
       "domain": "clinicaltrial.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for clinicaltrial.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 293,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-clinicaltrials",
+      "sitemapsRead": 5,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "clinicaltrials.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 297,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-clintonlibrary",
@@ -1893,11 +1944,18 @@
     },
     {
       "connector": "federal-sites-cms",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cms.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 303,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cmts",
@@ -1981,11 +2039,18 @@
     },
     {
       "connector": "federal-sites-collegedrinkingprevention",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 74,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "collegedrinkingprevention.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 318,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-collegenavigator",
@@ -2088,12 +2153,11 @@
     {
       "connector": "federal-sites-conservation",
       "domain": "conservation.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for conservation.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 616,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-consumer",
@@ -2260,12 +2324,11 @@
     {
       "connector": "federal-sites-cpnireporting",
       "domain": "cpnireporting.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cpnireporting.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 403,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cpsc",
@@ -2300,22 +2363,20 @@
     {
       "connector": "federal-sites-crimesolutions",
       "domain": "crimesolutions.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for crimesolutions.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 448,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-criticalminerals",
+      "indexedPages": 0,
       "domain": "criticalminerals.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 13, column 49"
-      ],
-      "runId": 605,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-crs",
@@ -2385,21 +2446,27 @@
     },
     {
       "connector": "federal-sites-cuidadodesalud",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cuidadodesalud.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 301,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cupcao",
       "domain": "cupcao.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cupcao.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 571,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-currencyreader",
@@ -2433,13 +2500,18 @@
     },
     {
       "connector": "federal-sites-cyber",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cyber.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "robots.txt unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.cisa.gov/robots.txt"
-      ],
-      "runId": 406,
-      "status": "partial"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cybercareers",
@@ -2453,23 +2525,27 @@
     },
     {
       "connector": "federal-sites-cybercrime",
+      "indexedPages": 0,
       "domain": "cybercrime.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 36, column 73"
-      ],
-      "runId": 458,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cybersecurity",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cybersecurity.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "robots.txt unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.cisa.gov/robots.txt"
-      ],
-      "runId": 405,
-      "status": "partial"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-d250",
@@ -2522,22 +2598,20 @@
     {
       "connector": "federal-sites-dea",
       "domain": "dea.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dea.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 455,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-deaecom",
       "domain": "deaecom.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for deaecom.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 460,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-declaration250",
@@ -2640,20 +2714,26 @@
     {
       "connector": "federal-sites-devtestfan1",
       "domain": "devtestfan1.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for devtestfan1.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 532,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dfafacts",
-      "domain": "dfafacts.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 0,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 560,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "dfafacts.gov",
+      "publisher": "Department of State",
+      "warnings": []
     },
     {
       "connector": "federal-sites-dfc",
@@ -2666,30 +2746,35 @@
     {
       "connector": "federal-sites-dhhs",
       "domain": "dhhs.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dhhs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 339,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dhs",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dhs.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 411,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-diabetescommittee",
       "domain": "diabetescommittee.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for diabetescommittee.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 308,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dietaryguidelines",
@@ -2751,21 +2836,27 @@
     },
     {
       "connector": "federal-sites-disasterassistance",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 155,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "disasterassistance.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 414,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-disasterhousing",
+      "indexedPages": 0,
       "domain": "disasterhousing.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Housing and Urban Development",
       "warnings": [
-        "No same-domain sitemap found for disasterhousing.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 439,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 76"
+      ]
     },
     {
       "connector": "federal-sites-distraction",
@@ -2830,12 +2921,11 @@
     {
       "connector": "federal-sites-docline",
       "domain": "docline.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for docline.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 312,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-doddns",
@@ -2869,49 +2959,68 @@
     },
     {
       "connector": "federal-sites-doi",
+      "sitemapsRead": 5,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "doi.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 602,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-doioig",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 30.0,
+      "workers": 1,
       "domain": "doioig.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 607,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-doj",
       "domain": "doj.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for doj.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 452,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dol",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dol.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for dol.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 507,
-      "status": "partial"
+        "https://www.dol.gov/agencies/oasp/evaluation/currentstudies/Reemployment-Services-and-Eligibility-Assessments-Research: 403 Client Error: Forbidden for url: http://www.dol.gov/resource-library/reemployment-services-and-eligibility-assessments-resea-evidence-building-and"
+      ]
     },
     {
       "connector": "federal-sites-doleta",
+      "indexedPages": 0,
       "domain": "doleta.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for doleta.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 513,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 78"
+      ]
     },
     {
       "connector": "federal-sites-domainops",
@@ -2926,12 +3035,11 @@
     {
       "connector": "federal-sites-donaciondeorganos",
       "domain": "donaciondeorganos.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for donaciondeorganos.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 302,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-donotcall",
@@ -3010,12 +3118,11 @@
     {
       "connector": "federal-sites-drugabuse",
       "domain": "drugabuse.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for drugabuse.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 306,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-drywallresponse",
@@ -3029,13 +3136,12 @@
     },
     {
       "connector": "federal-sites-dsac",
+      "indexedPages": 0,
       "domain": "dsac.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 76, column 2"
-      ],
-      "runId": 473,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-e-qip",
@@ -3049,11 +3155,18 @@
     },
     {
       "connector": "federal-sites-e-verify",
-      "domain": "e-verify.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 421,
-      "status": "completed"
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
+      "domain": "e-verify.gov",
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-eac",
@@ -3103,13 +3216,12 @@
     },
     {
       "connector": "federal-sites-earthquake",
+      "indexedPages": 0,
       "domain": "earthquake.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: no element found: line 9, column 0"
-      ],
-      "runId": 599,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ecfc",
@@ -3250,22 +3362,20 @@
     {
       "connector": "federal-sites-eldercare",
       "domain": "eldercare.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for eldercare.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 316,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-elderjustice",
+      "indexedPages": 0,
       "domain": "elderjustice.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 39, column 73"
-      ],
-      "runId": 462,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-emergency-federal-register",
@@ -3290,12 +3400,11 @@
     {
       "connector": "federal-sites-employer",
       "domain": "employer.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for employer.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 514,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-empowhr",
@@ -3318,12 +3427,11 @@
     {
       "connector": "federal-sites-encuentraapoyo",
       "domain": "encuentraapoyo.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for encuentraapoyo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 340,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-energy",
@@ -3404,12 +3512,11 @@
     {
       "connector": "federal-sites-epic",
       "domain": "epic.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for epic.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 461,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-erpo",
@@ -3473,49 +3580,60 @@
     },
     {
       "connector": "federal-sites-evergladesrestoration",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "evergladesrestoration.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 600,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-everify",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 1,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "everify.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 418,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-everykidoutdoors",
       "domain": "everykidoutdoors.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for everykidoutdoors.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 590,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-everytrycounts",
+      "indexedPages": 0,
       "domain": "everytrycounts.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
-        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://everytrycounts.betobaccofree.hhs.gov/robots.txt"
-      ],
-      "runId": 326,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ]
     },
     {
       "connector": "federal-sites-evus",
       "domain": "evus.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for evus.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 412,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-example",
@@ -3653,23 +3771,21 @@
     },
     {
       "connector": "federal-sites-familyplanning",
+      "indexedPages": 0,
       "domain": "familyplanning.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 329,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fan",
       "domain": "fan.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fan.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 540,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fapiis",
@@ -3683,13 +3799,12 @@
     },
     {
       "connector": "federal-sites-fara",
+      "indexedPages": 0,
       "domain": "fara.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 38, column 73"
-      ],
-      "runId": 464,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-farmerfairness",
@@ -3720,22 +3835,20 @@
     {
       "connector": "federal-sites-fatherhood",
       "domain": "fatherhood.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fatherhood.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 311,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fbi",
+      "indexedPages": 0,
       "domain": "fbi.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 0"
-      ],
-      "runId": 466,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fbiic",
@@ -3749,23 +3862,21 @@
     },
     {
       "connector": "federal-sites-fbijobs",
+      "indexedPages": 0,
       "domain": "fbijobs.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
-        "No same-domain sitemap found for fbijobs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 470,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 53, column 69"
+      ]
     },
     {
       "connector": "federal-sites-fbilab",
       "domain": "fbilab.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fbilab.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 459,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fbo",
@@ -3838,12 +3949,11 @@
     {
       "connector": "federal-sites-fda",
       "domain": "fda.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fda.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 313,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fdic",
@@ -4098,12 +4208,11 @@
     {
       "connector": "federal-sites-feedthefuture",
       "domain": "feedthefuture.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for feedthefuture.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 535,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fegli",
@@ -4127,13 +4236,22 @@
     },
     {
       "connector": "federal-sites-fema",
-      "domain": "fema.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
       "pagesIndexed": 0,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "fema.gov",
+      "publisher": "Department of Homeland Security",
       "warnings": [
-        "No same-domain sitemap found for fema.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 408,
-      "status": "partial"
+        "https://www.fema.gov/appeal/seismic-hazard-mitigation-program-hospitals-eligibility: HTTPSConnectionPool(host='www.fema.gov', port=443): Max retries exceeded with url: /appeal/seismic-hazard-mitigation-program-hospitals-eligibility (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.fema.gov', port=443): Read timed out. (read timeout=8)\"))",
+        "https://www.fema.gov/appeal/request-public-assistance: HTTPSConnectionPool(host='www.fema.gov', port=443): Max retries exceeded with url: /appeal/request-public-assistance (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.fema.gov', port=443): Read timed out. (read timeout=8)\"))",
+        "https://www.fema.gov/appeal/west-los-angeles-adult-services-office-and-parkng-structure: HTTPSConnectionPool(host='www.fema.gov', port=443): Max retries exceeded with url: /appeal/west-los-angeles-adult-services-office-and-parkng-structure (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.fema.gov', port=443): Read timed out. (read timeout=8)\"))"
+      ]
     },
     {
       "connector": "federal-sites-ferc",
@@ -4166,22 +4284,20 @@
     {
       "connector": "federal-sites-fgdc",
       "domain": "fgdc.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fgdc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 588,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fha",
+      "indexedPages": 0,
       "domain": "fha.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Housing and Urban Development",
       "warnings": [
-        "No same-domain sitemap found for fha.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 441,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 76"
+      ]
     },
     {
       "connector": "federal-sites-fhfa",
@@ -4202,12 +4318,11 @@
     {
       "connector": "federal-sites-ficor",
       "domain": "ficor.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ficor.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 592,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-financialresearch",
@@ -4230,62 +4345,56 @@
     {
       "connector": "federal-sites-findsupport",
       "domain": "findsupport.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for findsupport.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 341,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-findtreatment",
+      "indexedPages": 0,
       "domain": "findtreatment.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 44, column 63"
-      ],
-      "runId": 324,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-firecode",
       "domain": "firecode.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for firecode.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 593,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fireleadership",
       "domain": "fireleadership.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fireleadership.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 618,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-firenet",
       "domain": "firenet.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for firenet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 609,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-firescience",
       "domain": "firescience.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for firescience.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 594,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-firstgov",
@@ -4308,12 +4417,11 @@
     {
       "connector": "federal-sites-firstrespondertraining",
       "domain": "firstrespondertraining.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for firstrespondertraining.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 410,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fishwatch",
@@ -4328,12 +4436,11 @@
     {
       "connector": "federal-sites-fitness",
       "domain": "fitness.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fitness.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 325,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fjc",
@@ -4357,19 +4464,33 @@
     },
     {
       "connector": "federal-sites-fleta",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fleta.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 417,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fletc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fletc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 415,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-flightrights",
@@ -4383,13 +4504,12 @@
     },
     {
       "connector": "federal-sites-floodsmart",
+      "indexedPages": 0,
       "domain": "floodsmart.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 73, column 4"
-      ],
-      "runId": 426,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-flra",
@@ -4403,13 +4523,12 @@
     },
     {
       "connector": "federal-sites-flu",
+      "indexedPages": 0,
       "domain": "flu.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
-        "No same-domain sitemap found for flu.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 320,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 19, column 78"
+      ]
     },
     {
       "connector": "federal-sites-fmc",
@@ -4459,23 +4578,21 @@
     },
     {
       "connector": "federal-sites-foia",
+      "indexedPages": 0,
       "domain": "foia.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 10, column 183"
-      ],
-      "runId": 469,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-foodsafety",
       "domain": "foodsafety.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for foodsafety.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 321,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fordlibrarymuseum",
@@ -4490,12 +4607,11 @@
     {
       "connector": "federal-sites-foreignassistance",
       "domain": "foreignassistance.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for foreignassistance.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 551,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-foreignfundinghighered",
@@ -4520,12 +4636,11 @@
     {
       "connector": "federal-sites-forfeiture",
       "domain": "forfeiture.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for forfeiture.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 502,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-forms",
@@ -4538,12 +4653,11 @@
     {
       "connector": "federal-sites-fosteringthefuture",
       "domain": "fosteringthefuture.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fosteringthefuture.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 319,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fosteringthefuturetogether",
@@ -4696,12 +4810,11 @@
     {
       "connector": "federal-sites-fruitsandveggiesmatter",
       "domain": "fruitsandveggiesmatter.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fruitsandveggiesmatter.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 315,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fsafeds",
@@ -4726,22 +4839,20 @@
     {
       "connector": "federal-sites-fsgb",
       "domain": "fsgb.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fsgb.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 537,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fso",
       "domain": "fso.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fso.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 538,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fsoc",
@@ -4873,11 +4984,18 @@
     },
     {
       "connector": "federal-sites-genome",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "genome.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 357,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-geoplatform",
@@ -4899,21 +5017,27 @@
     },
     {
       "connector": "federal-sites-get",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 47,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "get.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 422,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-getactive",
       "domain": "getactive.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for getactive.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 322,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-getinternet",
@@ -4928,30 +5052,35 @@
     {
       "connector": "federal-sites-getsmartaboutdrugs",
       "domain": "getsmartaboutdrugs.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for getsmartaboutdrugs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 465,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ginniemae",
-      "domain": "ginniemae.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 456,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "ginniemae.gov",
+      "publisher": "Department of Housing and Urban Development",
+      "warnings": []
     },
     {
       "connector": "federal-sites-girlshealth",
       "domain": "girlshealth.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for girlshealth.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 317,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-givecfc",
@@ -4975,23 +5104,21 @@
     },
     {
       "connector": "federal-sites-globalentry",
+      "indexedPages": 0,
       "domain": "globalentry.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 34, column 144"
-      ],
-      "runId": 423,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-globalhealth",
       "domain": "globalhealth.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for globalhealth.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 328,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-globe",
@@ -5016,12 +5143,11 @@
     {
       "connector": "federal-sites-gmta",
       "domain": "gmta.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for gmta.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 323,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-go",
@@ -5088,12 +5214,11 @@
     {
       "connector": "federal-sites-goodjobs",
       "domain": "goodjobs.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for goodjobs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 515,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-gop",
@@ -5173,21 +5298,27 @@
     },
     {
       "connector": "federal-sites-grants",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "grants.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 337,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-grantsolutions",
       "domain": "grantsolutions.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for grantsolutions.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 334,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-greathealthcare",
@@ -5250,22 +5381,20 @@
     {
       "connector": "federal-sites-guideline",
       "domain": "guideline.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for guideline.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 331,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-guidelines",
       "domain": "guidelines.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for guidelines.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 332,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hanford",
@@ -5280,106 +5409,119 @@
     {
       "connector": "federal-sites-hc",
       "domain": "hc.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 327,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-headstart",
+      "indexedPages": 0,
       "domain": "headstart.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://headstart.gov/sitemap.xml"
-      ],
-      "runId": 336,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-health",
-      "domain": "health.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 1,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 344,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "health.gov",
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-healthcare",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "healthcare.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 333,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-healthdata",
       "domain": "healthdata.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for healthdata.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 351,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-healthfinder",
       "domain": "healthfinder.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for healthfinder.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 338,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-healthindicators",
       "domain": "healthindicators.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for healthindicators.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 330,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-healthit",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "healthit.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 335,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-healthycompetition",
+      "indexedPages": 0,
       "domain": "healthycompetition.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 36, column 73"
-      ],
-      "runId": 472,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-healthypeople",
       "domain": "healthypeople.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for healthypeople.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 348,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hearttruth",
+      "indexedPages": 0,
       "domain": "hearttruth.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 45, column 450"
-      ],
-      "runId": 362,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-heat",
@@ -5470,42 +5612,38 @@
     {
       "connector": "federal-sites-hhs",
       "domain": "hhs.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hhs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 342,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hhsoig",
       "domain": "hhsoig.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hhsoig.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 385,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hhsops",
       "domain": "hhsops.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hhsops.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 386,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hirevets",
       "domain": "hirevets.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hirevets.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 525,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hispanicheritagemonth",
@@ -5529,11 +5667,18 @@
     },
     {
       "connector": "federal-sites-hiv",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "hiv.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 350,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-hive",
@@ -5557,13 +5702,12 @@
     },
     {
       "connector": "federal-sites-homelandsecurity",
+      "indexedPages": 0,
       "domain": "homelandsecurity.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 416,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-house",
@@ -5648,22 +5792,20 @@
     {
       "connector": "federal-sites-hrsa",
       "domain": "hrsa.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hrsa.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 345,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hsi",
+      "indexedPages": 0,
       "domain": "hsi.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 424,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hsr",
@@ -5678,52 +5820,47 @@
     {
       "connector": "federal-sites-hstf",
       "domain": "hstf.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hstf.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 420,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hud",
       "domain": "hud.gov",
+      "publisher": "Department of Housing and Urban Development",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hud.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 442,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hudhomestore",
       "domain": "hudhomestore.gov",
+      "publisher": "Department of Housing and Urban Development",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for hudhomestore.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 453,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-hudoig",
+      "indexedPages": 0,
       "domain": "hudoig.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Housing and Urban Development",
       "warnings": [
-        "No same-domain sitemap found for hudoig.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 447,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.hudoig.gov/sitemap.xml"
+      ]
     },
     {
       "connector": "federal-sites-huduser",
       "domain": "huduser.gov",
+      "publisher": "Department of Housing and Urban Development",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for huduser.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 446,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-humanities",
@@ -5806,12 +5943,11 @@
     {
       "connector": "federal-sites-iawg",
       "domain": "iawg.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for iawg.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 553,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ibab",
@@ -5836,12 +5972,11 @@
     {
       "connector": "federal-sites-ibwc",
       "domain": "ibwc.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ibwc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 547,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ic",
@@ -5856,12 +5991,11 @@
     {
       "connector": "federal-sites-ic3",
       "domain": "ic3.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ic3.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 481,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-icams-portal",
@@ -5875,11 +6009,18 @@
     },
     {
       "connector": "federal-sites-ice",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ice.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 427,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-ich",
@@ -5914,12 +6055,11 @@
     {
       "connector": "federal-sites-idealab",
       "domain": "idealab.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for idealab.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 343,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-identitysandbox",
@@ -5989,11 +6129,18 @@
     },
     {
       "connector": "federal-sites-ihs",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ihs.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 359,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-imls",
@@ -6051,13 +6198,18 @@
     },
     {
       "connector": "federal-sites-insurekidsnow",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 243,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "insurekidsnow.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for insurekidsnow.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 346,
-      "status": "partial"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-integrity",
@@ -6121,13 +6273,12 @@
     },
     {
       "connector": "federal-sites-interpol",
+      "indexedPages": 0,
       "domain": "interpol.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: undefined entity: line 1, column 524"
-      ],
-      "runId": 478,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-invasivespecies",
@@ -6175,13 +6326,12 @@
     },
     {
       "connector": "federal-sites-iprcenter",
+      "indexedPages": 0,
       "domain": "iprcenter.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 0"
-      ],
-      "runId": 474,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-irs",
@@ -6342,12 +6492,11 @@
     {
       "connector": "federal-sites-jcode",
       "domain": "jcode.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for jcode.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 467,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-jct",
@@ -6411,13 +6560,12 @@
     },
     {
       "connector": "federal-sites-jobcorps",
+      "indexedPages": 0,
       "domain": "jobcorps.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 46"
-      ],
-      "runId": 531,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-joinamericorps",
@@ -6452,12 +6600,11 @@
     {
       "connector": "federal-sites-juntos",
       "domain": "juntos.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for juntos.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 425,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-jusfc",
@@ -6472,32 +6619,29 @@
     {
       "connector": "federal-sites-justauth",
       "domain": "justauth.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for justauth.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 468,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-justice",
+      "indexedPages": 0,
       "domain": "justice.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.justice.gov/sitemap.xml?page=1"
-      ],
-      "runId": 479,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-justthinktwice",
       "domain": "justthinktwice.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for justthinktwice.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 471,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-jwod",
@@ -6521,23 +6665,21 @@
     },
     {
       "connector": "federal-sites-know2protect",
+      "indexedPages": 0,
       "domain": "know2protect.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 428,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-labor",
       "domain": "labor.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for labor.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 512,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lacoast",
@@ -6660,42 +6802,38 @@
     {
       "connector": "federal-sites-learnatf",
       "domain": "learnatf.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for learnatf.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 477,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-learndoj",
+      "indexedPages": 0,
       "domain": "learndoj.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 36, column 73"
-      ],
-      "runId": 482,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-leo",
       "domain": "leo.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for leo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 475,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lep",
+      "indexedPages": 0,
       "domain": "lep.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 39, column 73"
-      ],
-      "runId": 486,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lfs",
@@ -6727,11 +6865,18 @@
     },
     {
       "connector": "federal-sites-listo",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 372,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "listo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 438,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-literacy",
@@ -6810,22 +6955,20 @@
     {
       "connector": "federal-sites-longtermcare",
       "domain": "longtermcare.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for longtermcare.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 349,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lowerdrugcosts",
       "domain": "lowerdrugcosts.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for lowerdrugcosts.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 352,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lps",
@@ -6989,47 +7132,72 @@
     },
     {
       "connector": "federal-sites-medicaid",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 1.0,
+      "workers": 1,
       "domain": "medicaid.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for medicaid.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 347,
-      "status": "partial"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-medicalcountermeasures",
-      "domain": "medicalcountermeasures.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 63,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 358,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "medicalcountermeasures.gov",
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-medicamentosbajoprecio",
       "domain": "medicamentosbajoprecio.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for medicamentosbajoprecio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 354,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-medicare",
-      "domain": "medicare.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 365,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "medicare.gov",
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-medlineplus",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "medlineplus.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 360,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-medpac",
@@ -7042,22 +7210,20 @@
     {
       "connector": "federal-sites-menopause",
       "domain": "menopause.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for menopause.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 676,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mentalhealth",
+      "indexedPages": 0,
       "domain": "mentalhealth.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 48"
-      ],
-      "runId": 376,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mentor",
@@ -7081,13 +7247,12 @@
     },
     {
       "connector": "federal-sites-mesh",
+      "indexedPages": 0,
       "domain": "mesh.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
-        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://meshb.nlm.nih.gov/robots.txt"
-      ],
-      "runId": 368,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ]
     },
     {
       "connector": "federal-sites-mgi",
@@ -7101,13 +7266,12 @@
     },
     {
       "connector": "federal-sites-migrantworker",
+      "indexedPages": 0,
       "domain": "migrantworker.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for migrantworker.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 516,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 30, column 78"
+      ]
     },
     {
       "connector": "federal-sites-militaryconsumer",
@@ -7188,12 +7352,11 @@
     {
       "connector": "federal-sites-moms",
       "domain": "moms.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for moms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 355,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-moneyfactory",
@@ -7248,12 +7411,11 @@
     {
       "connector": "federal-sites-msha",
       "domain": "msha.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for msha.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 529,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mspb",
@@ -7369,13 +7531,12 @@
     },
     {
       "connector": "federal-sites-namus",
+      "indexedPages": 0,
       "domain": "namus.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 8, column 22"
-      ],
-      "runId": 500,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nano",
@@ -7540,22 +7701,20 @@
     {
       "connector": "federal-sites-ncifcrf",
       "domain": "ncifcrf.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ncifcrf.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 353,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ncirc",
+      "indexedPages": 0,
       "domain": "ncirc.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 42, column 76"
-      ],
-      "runId": 497,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ncix",
@@ -7570,12 +7729,11 @@
     {
       "connector": "federal-sites-ncjrs",
       "domain": "ncjrs.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ncjrs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 495,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ncmms",
@@ -7676,12 +7834,11 @@
     {
       "connector": "federal-sites-neglecteddiseases",
       "domain": "neglecteddiseases.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for neglecteddiseases.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 541,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-neh",
@@ -7744,12 +7901,11 @@
     {
       "connector": "federal-sites-nextlegends",
       "domain": "nextlegends.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nextlegends.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 363,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nfpors",
@@ -7793,21 +7949,27 @@
     },
     {
       "connector": "federal-sites-nicic",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nicic.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 489,
-      "status": "completed"
+      "publisher": "Department of Justice",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nicsezcheckfbi",
       "domain": "nicsezcheckfbi.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nicsezcheckfbi.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 484,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nifc",
@@ -7827,31 +7989,36 @@
     },
     {
       "connector": "federal-sites-nih",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nih.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 375,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nij",
       "domain": "nij.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nij.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 480,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-niosh",
       "domain": "niosh.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for niosh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 356,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nist",
@@ -7879,11 +8046,18 @@
     },
     {
       "connector": "federal-sites-nlm",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nlm.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 377,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nlr",
@@ -7915,11 +8089,18 @@
     },
     {
       "connector": "federal-sites-nnlm",
-      "domain": "nnlm.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 372,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "nnlm.gov",
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nnss",
@@ -8057,11 +8238,18 @@
     },
     {
       "connector": "federal-sites-nsopw",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 44,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nsopw.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 488,
-      "status": "completed"
+      "publisher": "Department of Justice",
+      "warnings": []
     },
     {
       "connector": "federal-sites-ntia",
@@ -8120,12 +8308,11 @@
     {
       "connector": "federal-sites-nvtc",
       "domain": "nvtc.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nvtc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 490,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nwbc",
@@ -8304,20 +8491,26 @@
     {
       "connector": "federal-sites-ojjdp",
       "domain": "ojjdp.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ojjdp.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 483,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ojp",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ojp.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 546,
-      "status": "completed"
+      "publisher": "Department of Justice",
+      "warnings": []
     },
     {
       "connector": "federal-sites-oldcc",
@@ -8430,12 +8623,11 @@
     {
       "connector": "federal-sites-opioids",
       "domain": "opioids.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for opioids.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 366,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-opm",
@@ -8447,13 +8639,12 @@
     },
     {
       "connector": "federal-sites-opportunityzones",
+      "indexedPages": 0,
       "domain": "opportunityzones.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Housing and Urban Development",
       "warnings": [
-        "No same-domain sitemap found for opportunityzones.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 444,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 76"
+      ]
     },
     {
       "connector": "federal-sites-orau",
@@ -8466,12 +8657,11 @@
     {
       "connector": "federal-sites-organdonor",
       "domain": "organdonor.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for organdonor.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 367,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ornl",
@@ -8486,12 +8676,11 @@
     {
       "connector": "federal-sites-osac",
       "domain": "osac.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for osac.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 554,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-osc",
@@ -8534,12 +8723,11 @@
     {
       "connector": "federal-sites-osha",
       "domain": "osha.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for osha.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 519,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-oshrc",
@@ -8610,22 +8798,20 @@
     {
       "connector": "federal-sites-ovc",
       "domain": "ovc.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ovc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 485,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ovcttac",
+      "indexedPages": 0,
       "domain": "ovcttac.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 44, column 76"
-      ],
-      "runId": 505,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-oversight",
@@ -8666,12 +8852,11 @@
     {
       "connector": "federal-sites-pandemicflu",
       "domain": "pandemicflu.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pandemicflu.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 361,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pandemicoversight",
@@ -8692,22 +8877,20 @@
     {
       "connector": "federal-sites-passport",
       "domain": "passport.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for passport.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 557,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-passports",
       "domain": "passports.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for passports.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 544,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-patriotbonds",
@@ -8814,12 +8997,11 @@
     {
       "connector": "federal-sites-pepfar",
       "domain": "pepfar.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pepfar.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 573,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-performance",
@@ -8839,23 +9021,21 @@
     },
     {
       "connector": "federal-sites-persuader-reports",
+      "indexedPages": 0,
       "domain": "persuader-reports.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for persuader-reports.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 518,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
+      ]
     },
     {
       "connector": "federal-sites-phe",
       "domain": "phe.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for phe.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 364,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pic",
@@ -8948,12 +9128,11 @@
     {
       "connector": "federal-sites-pmi",
       "domain": "pmi.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pmi.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 610,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pnl",
@@ -9008,12 +9187,11 @@
     {
       "connector": "federal-sites-power2prevent",
       "domain": "power2prevent.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for power2prevent.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 419,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ppdcecc",
@@ -9066,12 +9244,11 @@
     {
       "connector": "federal-sites-preprodfan",
       "domain": "preprodfan.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for preprodfan.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 548,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-preserveamerica",
@@ -9161,13 +9338,12 @@
     },
     {
       "connector": "federal-sites-preventionresourcefinder",
+      "indexedPages": 0,
       "domain": "preventionresourcefinder.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 434,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-privacyshield",
@@ -9191,33 +9367,30 @@
     },
     {
       "connector": "federal-sites-projectsafechildhood",
+      "indexedPages": 0,
       "domain": "projectsafechildhood.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 38, column 73"
-      ],
-      "runId": 494,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-projectsafeneighborhoods",
+      "indexedPages": 0,
       "domain": "projectsafeneighborhoods.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 38, column 73"
-      ],
-      "runId": 496,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-prosperafrica",
       "domain": "prosperafrica.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for prosperafrica.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 550,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-protectyourmove",
@@ -9240,12 +9413,11 @@
     {
       "connector": "federal-sites-psc",
       "domain": "psc.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for psc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 370,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pscr",
@@ -9270,12 +9442,11 @@
     {
       "connector": "federal-sites-psob",
       "domain": "psob.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for psob.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 511,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-psup",
@@ -9310,12 +9481,11 @@
     {
       "connector": "federal-sites-pubmed",
       "domain": "pubmed.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pubmed.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 371,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pubservices",
@@ -9357,13 +9527,12 @@
     },
     {
       "connector": "federal-sites-rcfl",
+      "indexedPages": 0,
       "domain": "rcfl.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 71, column 2"
-      ],
-      "runId": 509,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-reach",
@@ -9387,21 +9556,27 @@
     },
     {
       "connector": "federal-sites-ready",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 372,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ready.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 437,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-readybusiness",
+      "indexedPages": 0,
       "domain": "readybusiness.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 433,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-reaganlibrary",
@@ -9473,13 +9648,12 @@
     },
     {
       "connector": "federal-sites-recoverymonth",
+      "indexedPages": 0,
       "domain": "recoverymonth.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 48"
-      ],
-      "runId": 394,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-recreation",
@@ -9494,12 +9668,11 @@
     {
       "connector": "federal-sites-reentry",
       "domain": "reentry.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for reentry.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 491,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-reginfo",
@@ -9553,13 +9726,12 @@
     },
     {
       "connector": "federal-sites-reproductivehealthservices",
+      "indexedPages": 0,
       "domain": "reproductivehealthservices.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 374,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-republicanleader",
@@ -9781,13 +9953,12 @@
     },
     {
       "connector": "federal-sites-safetyact",
+      "indexedPages": 0,
       "domain": "safetyact.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 71, column 2"
-      ],
-      "runId": 436,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-safetyvideos",
@@ -9831,11 +10002,18 @@
     },
     {
       "connector": "federal-sites-samhsa",
-      "domain": "samhsa.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 388,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "samhsa.gov",
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-sandia",
@@ -9919,11 +10097,18 @@
     },
     {
       "connector": "federal-sites-schoolsafety",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "schoolsafety.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 429,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-scidac",
@@ -10043,11 +10228,18 @@
     },
     {
       "connector": "federal-sites-secretservice",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "secretservice.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 431,
-      "status": "completed"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-section108",
@@ -10070,12 +10262,11 @@
     {
       "connector": "federal-sites-securitytestfan",
       "domain": "securitytestfan.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for securitytestfan.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 549,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-seguridadconsumidor",
@@ -10100,22 +10291,20 @@
     {
       "connector": "federal-sites-seized",
       "domain": "seized.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for seized.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 492,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-selectagents",
       "domain": "selectagents.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for selectagents.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 369,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-selectusa",
@@ -10189,13 +10378,12 @@
     },
     {
       "connector": "federal-sites-servicemembers",
+      "indexedPages": 0,
       "domain": "servicemembers.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 38, column 73"
-      ],
-      "runId": 499,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-sftool",
@@ -10237,11 +10425,18 @@
     },
     {
       "connector": "federal-sites-simplereport",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 48,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "simplereport.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 381,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-sji",
@@ -10264,12 +10459,11 @@
     {
       "connector": "federal-sites-smart",
       "domain": "smart.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for smart.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 520,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-smartcheck",
@@ -10293,11 +10487,18 @@
     },
     {
       "connector": "federal-sites-smokefree",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 133,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "smokefree.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 382,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-sns",
@@ -10444,22 +10645,20 @@
     {
       "connector": "federal-sites-state",
       "domain": "state.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for state.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 576,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-stateoig",
       "domain": "stateoig.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for stateoig.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 558,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-statspolicy",
@@ -10490,22 +10689,20 @@
     {
       "connector": "federal-sites-stopalcoholabuse",
       "domain": "stopalcoholabuse.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for stopalcoholabuse.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 373,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-stopbullying",
       "domain": "stopbullying.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for stopbullying.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 378,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-stopfakes",
@@ -10519,13 +10716,12 @@
     },
     {
       "connector": "federal-sites-stopransomware",
+      "indexedPages": 0,
       "domain": "stopransomware.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
-        "robots.txt unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.cisa.gov/robots.txt"
-      ],
-      "runId": 432,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 169"
+      ]
     },
     {
       "connector": "federal-sites-studentaid",
@@ -10558,12 +10754,11 @@
     {
       "connector": "federal-sites-supportfan",
       "domain": "supportfan.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for supportfan.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 552,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-supreme-court",
@@ -10598,12 +10793,11 @@
     {
       "connector": "federal-sites-surgeongeneral",
       "domain": "surgeongeneral.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for surgeongeneral.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 380,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-sustainability",
@@ -10744,30 +10938,35 @@
     {
       "connector": "federal-sites-thebraininitiative",
       "domain": "thebraininitiative.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for thebraininitiative.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 409,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-therealcost",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 38,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "therealcost.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 392,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-thisfreelife",
       "domain": "thisfreelife.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for thisfreelife.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 395,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-thomas",
@@ -10812,30 +11011,35 @@
     {
       "connector": "federal-sites-tobacco",
       "domain": "tobacco.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tobacco.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 383,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-together",
       "domain": "together.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for together.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 430,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-tox21",
+      "sitemapsRead": 5,
+      "urlsDiscovered": 41,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "tox21.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 397,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-tps",
@@ -10849,13 +11053,12 @@
     },
     {
       "connector": "federal-sites-trabajadormigrante",
+      "indexedPages": 0,
       "domain": "trabajadormigrante.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for trabajadormigrante.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 526,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 30, column 78"
+      ]
     },
     {
       "connector": "federal-sites-tracss",
@@ -10888,12 +11091,11 @@
     {
       "connector": "federal-sites-trainingproviderresults",
       "domain": "trainingproviderresults.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for trainingproviderresults.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 536,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-transparency",
@@ -10999,13 +11201,12 @@
     },
     {
       "connector": "federal-sites-tribaljusticeandsafety",
+      "indexedPages": 0,
       "domain": "tribaljusticeandsafety.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 38, column 73"
-      ],
-      "runId": 501,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-truman",
@@ -11066,12 +11267,11 @@
     {
       "connector": "federal-sites-trumpjobs",
       "domain": "trumpjobs.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for trumpjobs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 521,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-trumplibrary",
@@ -11115,21 +11315,27 @@
     },
     {
       "connector": "federal-sites-tsa",
-      "domain": "tsa.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 435,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "tsa.gov",
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-tsc",
       "domain": "tsc.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tsc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 498,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-tsp",
@@ -11261,13 +11467,12 @@
     },
     {
       "connector": "federal-sites-ui",
+      "indexedPages": 0,
       "domain": "ui.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for ui.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 533,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 78"
+      ]
     },
     {
       "connector": "federal-sites-ukraineoversight",
@@ -11281,31 +11486,36 @@
     },
     {
       "connector": "federal-sites-unemployment",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 13,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "unemployment.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 559,
-      "status": "completed"
+      "publisher": "Department of Labor",
+      "warnings": []
     },
     {
       "connector": "federal-sites-unicor",
       "domain": "unicor.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for unicor.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 504,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-unionreports",
+      "indexedPages": 0,
       "domain": "unionreports.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for unionreports.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 530,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 32, column 78"
+      ]
     },
     {
       "connector": "federal-sites-unitedstatescongress",
@@ -11349,13 +11559,18 @@
     },
     {
       "connector": "federal-sites-us-cert",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "us-cert.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "robots.txt unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.cisa.gov/robots.txt"
-      ],
-      "runId": 443,
-      "status": "partial"
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-usa",
@@ -11417,11 +11632,18 @@
     },
     {
       "connector": "federal-sites-usaid",
-      "domain": "usaid.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 0,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 568,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "usaid.gov",
+      "publisher": "Department of State",
+      "warnings": []
     },
     {
       "connector": "federal-sites-usajobs",
@@ -11504,12 +11726,11 @@
     {
       "connector": "federal-sites-usbm",
       "domain": "usbm.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usbm.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 379,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usbr",
@@ -11620,12 +11841,11 @@
     {
       "connector": "federal-sites-uscg",
       "domain": "uscg.gov",
+      "publisher": "Department of Homeland Security",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for uscg.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 661,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-uscirf",
@@ -11637,11 +11857,18 @@
     },
     {
       "connector": "federal-sites-uscis",
-      "domain": "uscis.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 454,
-      "status": "completed"
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
+      "domain": "uscis.gov",
+      "publisher": "Department of Homeland Security",
+      "warnings": []
     },
     {
       "connector": "federal-sites-uscode",
@@ -11666,12 +11893,11 @@
     {
       "connector": "federal-sites-usconsulate",
       "domain": "usconsulate.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usconsulate.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 562,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-uscourts",
@@ -11749,23 +11975,21 @@
     },
     {
       "connector": "federal-sites-usdoj",
+      "indexedPages": 0,
       "domain": "usdoj.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Justice",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 35, column 73"
-      ],
-      "runId": 506,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usdoscloud",
       "domain": "usdoscloud.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usdoscloud.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 555,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usds",
@@ -11778,12 +12002,11 @@
     {
       "connector": "federal-sites-usembassy",
       "domain": "usembassy.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usembassy.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 564,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usgeo",
@@ -11914,12 +12137,11 @@
     {
       "connector": "federal-sites-usmarshals",
       "domain": "usmarshals.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usmarshals.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 503,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usmint",
@@ -11934,22 +12156,20 @@
     {
       "connector": "federal-sites-usmission",
       "domain": "usmission.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usmission.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 563,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usphs",
       "domain": "usphs.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usphs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 390,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-uspis",
@@ -12047,13 +12267,12 @@
     },
     {
       "connector": "federal-sites-usss",
+      "indexedPages": 0,
       "domain": "usss.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Homeland Security",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 59, column 72"
-      ],
-      "runId": 451,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ustaxcourt",
@@ -12103,13 +12322,12 @@
     },
     {
       "connector": "federal-sites-usxports",
+      "indexedPages": 0,
       "domain": "usxports.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of State",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 184, column 27"
-      ],
-      "runId": 574,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-utahfireinfo",
@@ -12132,62 +12350,56 @@
     {
       "connector": "federal-sites-vaccine",
       "domain": "vaccine.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vaccine.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 384,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vaccines",
+      "indexedPages": 0,
       "domain": "vaccines.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: junk after document element: line 212, column 25009"
-      ],
-      "runId": 398,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vacine",
       "domain": "vacine.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vacine.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 387,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vacines",
       "domain": "vacines.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vacines.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 389,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vacuna",
       "domain": "vacuna.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vacuna.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 391,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vacunas",
       "domain": "vacunas.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vacunas.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 393,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vaoig",
@@ -12201,31 +12413,36 @@
     },
     {
       "connector": "federal-sites-vcf",
-      "domain": "vcf.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 508,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "vcf.gov",
+      "publisher": "Department of Justice",
+      "warnings": []
     },
     {
       "connector": "federal-sites-vehiclehistory",
       "domain": "vehiclehistory.gov",
+      "publisher": "Department of Justice",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vehiclehistory.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 523,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-veterans",
+      "indexedPages": 0,
       "domain": "veterans.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for veterans.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 545,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 31, column 78"
+      ]
     },
     {
       "connector": "federal-sites-vets",
@@ -12238,12 +12455,11 @@
     {
       "connector": "federal-sites-visas",
       "domain": "visas.gov",
+      "publisher": "Department of State",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for visas.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 561,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-visitthecapital",
@@ -12412,22 +12628,20 @@
     {
       "connector": "federal-sites-whaging",
       "domain": "whaging.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whaging.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 413,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-whatcanyoudocampaign",
       "domain": "whatcanyoudocampaign.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whatcanyoudocampaign.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 528,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-whcs",
@@ -12462,12 +12676,11 @@
     {
       "connector": "federal-sites-whistleblowers",
       "domain": "whistleblowers.gov",
+      "publisher": "Department of Labor",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whistleblowers.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 527,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-whitehouse",
@@ -12482,12 +12695,11 @@
     {
       "connector": "federal-sites-whitehouseconferenceonaging",
       "domain": "whitehouseconferenceonaging.gov",
+      "publisher": "Department of Health and Human Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whitehouseconferenceonaging.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 396,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-whms",
@@ -12535,11 +12747,18 @@
     },
     {
       "connector": "federal-sites-womenshealth",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "womenshealth.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 404,
-      "status": "completed"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "federal-sites-womenshistorymonth",
@@ -12553,19 +12772,33 @@
     },
     {
       "connector": "federal-sites-workcenter",
+      "sitemapsRead": 6,
+      "urlsDiscovered": 53,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "workcenter.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 567,
-      "status": "completed"
+      "publisher": "Department of Labor",
+      "warnings": []
     },
     {
       "connector": "federal-sites-worker",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 66,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "worker.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 577,
-      "status": "completed"
+      "publisher": "Department of Labor",
+      "warnings": []
     },
     {
       "connector": "federal-sites-workplace",
@@ -12579,13 +12812,12 @@
     },
     {
       "connector": "federal-sites-wrp",
+      "indexedPages": 0,
       "domain": "wrp.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for wrp.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 556,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 29, column 78"
+      ]
     },
     {
       "connector": "federal-sites-wwtg",
@@ -12615,23 +12847,21 @@
     },
     {
       "connector": "federal-sites-youth",
+      "indexedPages": 0,
       "domain": "youth.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Health and Human Services",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 401,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-youthrules",
+      "indexedPages": 0,
       "domain": "youthrules.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Labor",
       "warnings": [
-        "No same-domain sitemap found for youthrules.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 542,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 32, column 78"
+      ]
     }
   ]
 }

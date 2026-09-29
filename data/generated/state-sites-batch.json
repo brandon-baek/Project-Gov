@@ -31,31 +31,36 @@
     },
     {
       "connector": "state-sites-ag-nv",
+      "indexedPages": 0,
       "domain": "ag.nv.gov",
-      "pagesIndexed": 0,
+      "publisher": "Bureau of Consumer Protection",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 6, column 419"
-      ],
-      "runId": 1625,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-ag-ny",
       "domain": "ag.ny.gov",
+      "publisher": "Office of the Attorney General",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ag.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1639,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-ag-ok",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 3.0,
+      "workers": 1,
       "domain": "ag.ok.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1720,
-      "status": "completed"
+      "publisher": "Department of Agriculture, Food and Forestry",
+      "warnings": []
     },
     {
       "connector": "state-sites-ag-utah",
@@ -85,19 +90,33 @@
     },
     {
       "connector": "state-sites-ago-mo",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 3.0,
+      "workers": 1,
       "domain": "ago.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1609,
-      "status": "completed"
+      "publisher": "Consumer Protection Section",
+      "warnings": []
     },
     {
       "connector": "state-sites-ago-nebraska",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ago.nebraska.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1628,
-      "status": "completed"
+      "publisher": "Office of the Attorney General",
+      "warnings": []
     },
     {
       "connector": "state-sites-ago-vermont",
@@ -129,11 +148,18 @@
     },
     {
       "connector": "state-sites-agr-mt",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "agr.mt.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1920,
-      "status": "completed"
+      "publisher": "Department of Agriculture",
+      "warnings": []
     },
     {
       "connector": "state-sites-agr-wa",
@@ -156,22 +182,20 @@
     {
       "connector": "state-sites-agri-nv",
       "domain": "agri.nv.gov",
+      "publisher": "Department of Agriculture",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for agri.nv.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1601,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-agri-ohio",
       "domain": "agri.ohio.gov",
+      "publisher": "Department of Agriculture",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for agri.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1685,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-agriculture-az",
@@ -194,22 +218,26 @@
     {
       "connector": "state-sites-agriculture-mo",
       "domain": "agriculture.mo.gov",
+      "publisher": "Department of Agriculture",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for agriculture.mo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1571,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-agriculture-ny",
-      "domain": "agriculture.ny.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
       "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for agriculture.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1630,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "agriculture.ny.gov",
+      "publisher": "Department of Agriculture & Markets",
+      "warnings": []
     },
     {
       "connector": "state-sites-agriculture-sc",
@@ -278,12 +306,11 @@
     {
       "connector": "state-sites-aroostook-me-us",
       "domain": "aroostook.me.us",
+      "publisher": "Local governments",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for aroostook.me.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1535,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-aselectionoffice",
@@ -313,11 +340,18 @@
     },
     {
       "connector": "state-sites-attorneygeneral-nd",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "attorneygeneral.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1681,
-      "status": "completed"
+      "publisher": "Consumer Protection",
+      "warnings": []
     },
     {
       "connector": "state-sites-attorneygeneral-utah",
@@ -329,11 +363,18 @@
     },
     {
       "connector": "state-sites-attorneygenerallynnfitch-com",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "attorneygenerallynnfitch.com",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1588,
-      "status": "completed"
+      "publisher": "Consumer Protection Division",
+      "warnings": []
     },
     {
       "connector": "state-sites-az",
@@ -420,20 +461,26 @@
     {
       "connector": "state-sites-ce-naco-org",
       "domain": "ce.naco.org",
+      "publisher": "Local governments",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ce.naco.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1616,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-childcare",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 100,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "childcare.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1695,
-      "status": "completed"
+      "publisher": "Social Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-coag",
@@ -485,11 +532,18 @@
     },
     {
       "connector": "state-sites-cor-mt",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 94,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cor.mt.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1921,
-      "status": "completed"
+      "publisher": "Department of Corrections",
+      "warnings": []
     },
     {
       "connector": "state-sites-corrections-az",
@@ -638,12 +692,11 @@
     {
       "connector": "state-sites-dcr-pr",
       "domain": "dcr.pr.gov",
+      "publisher": "Department of Correction and Rehabilitation (in Spanish)",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dcr.pr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1715,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-dcr-wv",
@@ -665,13 +718,18 @@
     },
     {
       "connector": "state-sites-de-pr",
+      "sitemapsRead": 8,
+      "urlsDiscovered": 305,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "de.pr.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for de.pr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1732,
-      "status": "partial"
+      "publisher": "Department of Education (in Spanish)",
+      "warnings": []
     },
     {
       "connector": "state-sites-delaware",
@@ -684,12 +742,11 @@
     {
       "connector": "state-sites-dem-nv",
       "domain": "dem.nv.gov",
+      "publisher": "Division of Emergency Management",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dem.nv.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1631,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-dem-ri",
@@ -741,19 +798,33 @@
     },
     {
       "connector": "state-sites-des-mt",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 96,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "des.mt.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1922,
-      "status": "completed"
+      "publisher": "Disaster and Emergency Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-dese-mo",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dese.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1605,
-      "status": "completed"
+      "publisher": "Department of Elementary & Secondary Education",
+      "warnings": []
     },
     {
       "connector": "state-sites-dfcs-alaska",
@@ -786,12 +857,11 @@
     {
       "connector": "state-sites-dhhs-ne",
       "domain": "dhhs.ne.gov",
+      "publisher": "Children and Family Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dhhs.ne.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1596,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-dhhs-utah",
@@ -829,11 +899,18 @@
     },
     {
       "connector": "state-sites-dhs-maryland",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dhs.maryland.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1573,
-      "status": "completed"
+      "publisher": "Department of Human Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-dhs-ri",
@@ -905,29 +982,48 @@
     },
     {
       "connector": "state-sites-dmv-nebraska",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 371,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "dmv.nebraska.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1622,
-      "status": "completed"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-dmv-nv",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dmv.nv.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1651,
-      "status": "completed"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-dmv-ny",
-      "domain": "dmv.ny.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for dmv.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1637,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "dmv.ny.gov",
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-dmv-ri",
@@ -1047,29 +1143,42 @@
     },
     {
       "connector": "state-sites-doc-louisiana",
+      "sitemapsRead": 12,
+      "urlsDiscovered": 248,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "doc.louisiana.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1579,
-      "status": "completed"
+      "publisher": "Department of Public Safety and Corrections",
+      "warnings": []
     },
     {
       "connector": "state-sites-doc-mo",
-      "domain": "doc.mo.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 1,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1590,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "doc.mo.gov",
+      "publisher": "Department of Corrections",
+      "warnings": []
     },
     {
       "connector": "state-sites-doc-nv",
       "domain": "doc.nv.gov",
+      "publisher": "Department of Corrections",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for doc.nv.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1621,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-doc-ri",
@@ -1109,13 +1218,18 @@
     },
     {
       "connector": "state-sites-doccs-ny",
-      "domain": "doccs.ny.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
       "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for doccs.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1633,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "doccs.ny.gov",
+      "publisher": "Department of Corrections and Community Supervision",
+      "warnings": []
     },
     {
       "connector": "state-sites-dod-hawaii",
@@ -1127,13 +1241,12 @@
     },
     {
       "connector": "state-sites-doe-nv",
+      "indexedPages": 0,
       "domain": "doe.nv.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Education",
       "warnings": [
         "sitemap unavailable; fail-closed: unbound prefix: line 2, column 926"
-      ],
-      "runId": 1641,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-doe-sd",
@@ -1175,11 +1288,18 @@
     },
     {
       "connector": "state-sites-dojmt",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "dojmt.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1613,
-      "status": "completed"
+      "publisher": "Office of Consumer Protection",
+      "warnings": []
     },
     {
       "connector": "state-sites-dola-colorado",
@@ -1194,12 +1314,11 @@
     {
       "connector": "state-sites-dor-mo",
       "domain": "dor.mo.gov",
+      "publisher": "Motor Vehicles",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dor.mo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1584,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-dor-sd",
@@ -1221,21 +1340,33 @@
     },
     {
       "connector": "state-sites-dos-ny",
-      "domain": "dos.ny.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
       "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for dos.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1629,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "dos.ny.gov",
+      "publisher": "Consumer Protection",
+      "warnings": []
     },
     {
       "connector": "state-sites-dpbh-nv",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dpbh.nv.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1652,
-      "status": "completed"
+      "publisher": "Public and Behavioral Health",
+      "warnings": []
     },
     {
       "connector": "state-sites-dph-georgia",
@@ -1265,13 +1396,18 @@
     },
     {
       "connector": "state-sites-dphhs-mt",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dphhs.mt.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "https://dphhs.mt.gov/PHSDCalendar: 404 Client Error: Not Found for url: https://dphhs.mt.gov/PHSDCalendar"
-      ],
-      "runId": 1600,
-      "status": "partial"
+      "publisher": "Child and Family Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-dphss-guam",
@@ -1304,22 +1440,20 @@
     {
       "connector": "state-sites-dpscs-maryland",
       "domain": "dpscs.maryland.gov",
+      "publisher": "Department of Public Safety and Correctional Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dpscs.maryland.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1544,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-drc-ohio",
       "domain": "drc.ohio.gov",
+      "publisher": "Department of Rehabilitation and Correction",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for drc.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1694,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-drive-ky",
@@ -1333,11 +1467,18 @@
     },
     {
       "connector": "state-sites-dss-mo",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "dss.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1606,
-      "status": "completed"
+      "publisher": "Department of Social Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-dss-sc",
@@ -1362,12 +1503,11 @@
     {
       "connector": "state-sites-dwss-nv",
       "domain": "dwss.nv.gov",
+      "publisher": "Welfare and Supportive Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dwss.nv.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1635,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-ed-sc",
@@ -1428,22 +1568,20 @@
     {
       "connector": "state-sites-education-mn",
       "domain": "education.mn.gov",
+      "publisher": "Department of Education",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for education.mn.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1555,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-education-ohio",
       "domain": "education.ohio.gov",
+      "publisher": "Department of Education and Workforce",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for education.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1704,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-education-vermont",
@@ -1485,13 +1623,12 @@
     },
     {
       "connector": "state-sites-elections-maryland",
+      "indexedPages": 0,
       "domain": "elections.maryland.gov",
-      "pagesIndexed": 0,
+      "publisher": "Election Information",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 1563,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-ema-alabama",
@@ -1504,12 +1641,11 @@
     {
       "connector": "state-sites-ema-ohio",
       "domain": "ema.ohio.gov",
+      "publisher": "Emergency Management Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ema.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1700,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-emd-wv",
@@ -1602,12 +1738,11 @@
     {
       "connector": "state-sites-gohsep-la",
       "domain": "gohsep.la.gov",
+      "publisher": "Office of Homeland Security & Emergency Preparedness",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for gohsep.la.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1534,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-gov-alaska",
@@ -1653,21 +1788,27 @@
     },
     {
       "connector": "state-sites-gov-louisiana",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "gov.louisiana.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1553,
-      "status": "completed"
+      "publisher": "Governor Jeff Landry",
+      "warnings": []
     },
     {
       "connector": "state-sites-gov-nv",
       "domain": "gov.nv.gov",
+      "publisher": "Governor Joe Lombardo",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for gov.nv.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1615,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-gov-texas",
@@ -1697,11 +1838,18 @@
     },
     {
       "connector": "state-sites-governor-cnmi",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "governor.cnmi.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1723,
-      "status": "completed"
+      "publisher": "Governor Arnold Palacios",
+      "warnings": []
     },
     {
       "connector": "state-sites-governor-delaware",
@@ -1747,53 +1895,87 @@
     },
     {
       "connector": "state-sites-governor-maryland",
-      "domain": "governor.maryland.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1566,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "governor.maryland.gov",
+      "publisher": "Governor Wes Moore",
+      "warnings": []
     },
     {
       "connector": "state-sites-governor-mo",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "governor.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1598,
-      "status": "completed"
+      "publisher": "Governor Mike Kehoe",
+      "warnings": []
     },
     {
       "connector": "state-sites-governor-mt",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 46,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "governor.mt.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1918,
-      "status": "completed"
+      "publisher": "Governor Greg Gianforte",
+      "warnings": []
     },
     {
       "connector": "state-sites-governor-nc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "governor.nc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1660,
-      "status": "completed"
+      "publisher": "Governor Josh Stein",
+      "warnings": []
     },
     {
       "connector": "state-sites-governor-nebraska",
-      "domain": "governor.nebraska.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1602,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "governor.nebraska.gov",
+      "publisher": "Governor Jim Pillen",
+      "warnings": []
     },
     {
       "connector": "state-sites-governor-ohio",
       "domain": "governor.ohio.gov",
+      "publisher": "Governor Mike DeWine",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for governor.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1680,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-governor-ri",
@@ -1869,11 +2051,18 @@
     },
     {
       "connector": "state-sites-governorreeves-ms",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 177,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "governorreeves.ms.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1586,
-      "status": "completed"
+      "publisher": "Governor Tate Reeves",
+      "warnings": []
     },
     {
       "connector": "state-sites-hdoa-hawaii",
@@ -1902,20 +2091,26 @@
     {
       "connector": "state-sites-health-maryland",
       "domain": "health.maryland.gov",
+      "publisher": "Department of Health",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for health.maryland.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1549,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-health-mo",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "health.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1623,
-      "status": "completed"
+      "publisher": "Department of Health & Senior Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-health-ri",
@@ -2094,12 +2289,11 @@
     {
       "connector": "state-sites-jfs-ohio",
       "domain": "jfs.ohio.gov",
+      "publisher": "Jobs and Family Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for jfs.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1689,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-kyem-ky",
@@ -2132,12 +2326,11 @@
     {
       "connector": "state-sites-ldh-la",
       "domain": "ldh.la.gov",
+      "publisher": "Department of Health",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ldh.la.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1537,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-legalaffairs-as",
@@ -2159,11 +2352,18 @@
     },
     {
       "connector": "state-sites-manhattanda-org",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "manhattanda.org",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1665,
-      "status": "completed"
+      "publisher": "District Attorney's Office",
+      "warnings": []
     },
     {
       "connector": "state-sites-mayor-dc",
@@ -2178,32 +2378,29 @@
     {
       "connector": "state-sites-md-accessgov-com",
       "domain": "md.accessgov.com",
+      "publisher": "Contact Governor Moore",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for md.accessgov.com; catalog entry retained without page crawl."
-      ],
-      "runId": 1541,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-mda-maryland",
       "domain": "mda.maryland.gov",
+      "publisher": "Department of Agriculture",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mda.maryland.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1545,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-mdem-maryland",
       "domain": "mdem.maryland.gov",
+      "publisher": "Department of Emergency Management",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mdem.maryland.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1552,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-mil-wa",
@@ -2216,46 +2413,68 @@
     {
       "connector": "state-sites-mn",
       "domain": "mn.gov",
+      "publisher": "Minnesota",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mn.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1556,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-msdh-ms",
       "domain": "msdh.ms.gov",
+      "publisher": "State Department of Health",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for msdh.ms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1575,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-mt",
-      "domain": "mt.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 45,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1911,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "mt.gov",
+      "publisher": "Montana",
+      "warnings": [
+        "https://mt.gov/widget-examples/mobile-tables: 404 Client Error: Not Found for url: https://mt.gov/widget-examples/mobile-tables",
+        "https://mt.gov/widget-examples/index: 404 Client Error: Not Found for url: https://mt.gov/widget-examples/"
+      ]
     },
     {
       "connector": "state-sites-mva-maryland",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "mva.maryland.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1570,
-      "status": "completed"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-mvdmt",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 72,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "mvdmt.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1617,
-      "status": "completed"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-myvote-wi",
@@ -2269,53 +2488,81 @@
     },
     {
       "connector": "state-sites-ncdoj",
+      "indexedPages": 0,
       "domain": "ncdoj.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1666,
-      "status": "completed"
+      "publisher": "Consumer Protection",
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 123"
+      ]
     },
     {
       "connector": "state-sites-nda-nebraska",
-      "domain": "nda.nebraska.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1607,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "nda.nebraska.gov",
+      "publisher": "Department of Agriculture",
+      "warnings": []
     },
     {
       "connector": "state-sites-nema-nebraska",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 72,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nema.nebraska.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1912,
-      "status": "completed"
+      "publisher": "Emergency Management Agency",
+      "warnings": []
     },
     {
       "connector": "state-sites-nmdeptag-nmsu-edu",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 291,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nmdeptag.nmsu.edu",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1913,
-      "status": "completed"
+      "publisher": "Department of Agriculture",
+      "warnings": []
     },
     {
       "connector": "state-sites-nmdoj",
+      "sitemapsRead": 9,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nmdoj.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1692,
-      "status": "completed"
+      "publisher": "Consumer Protection",
+      "warnings": []
     },
     {
       "connector": "state-sites-nv",
       "domain": "nv.gov",
+      "publisher": "Nevada",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nv.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1612,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-oag-dc",
@@ -2330,40 +2577,44 @@
     {
       "connector": "state-sites-odh-ohio",
       "domain": "odh.ohio.gov",
+      "publisher": "Department of Health",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for odh.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1699,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-ohio",
       "domain": "ohio.gov",
+      "publisher": "Ohio",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1679,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-oklahoma",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "oklahoma.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1714,
-      "status": "completed"
+      "publisher": "Oklahoma",
+      "warnings": []
     },
     {
       "connector": "state-sites-onlineservices-dps-mn",
       "domain": "onlineservices.dps.mn.gov",
+      "publisher": "Motor Vehicles",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for onlineservices.dps.mn.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1559,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-opengov-sos-ri",
@@ -2377,13 +2628,18 @@
     },
     {
       "connector": "state-sites-opi-mt",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 213,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "opi.mt.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "https://opi.mt.gov/Example-Pages/headings-not-structured: 404 Client Error: Not Found for url: https://opi.mt.gov/Example-Pages/headings-not-structured"
-      ],
-      "runId": 1599,
-      "status": "partial"
+      "publisher": "Office of Public Instruction",
+      "warnings": []
     },
     {
       "connector": "state-sites-ops-alabama",
@@ -2455,19 +2711,33 @@
     },
     {
       "connector": "state-sites-portal-kansas",
+      "sitemapsRead": 5,
+      "urlsDiscovered": 34,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "portal.kansas.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1528,
-      "status": "completed"
+      "publisher": "Kansas",
+      "warnings": []
     },
     {
       "connector": "state-sites-protectthegoodlife-nebraska",
-      "domain": "protectthegoodlife.nebraska.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1611,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "protectthegoodlife.nebraska.gov",
+      "publisher": "Consumer Protection Division",
+      "warnings": []
     },
     {
       "connector": "state-sites-ready-alaska",
@@ -2531,13 +2801,12 @@
     },
     {
       "connector": "state-sites-sde-ok",
+      "indexedPages": 0,
       "domain": "sde.ok.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Education",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 109, column 7"
-      ],
-      "runId": 1721,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-sdsos",
@@ -2550,12 +2819,11 @@
     {
       "connector": "state-sites-sema-dps-mo",
       "domain": "sema.dps.mo.gov",
+      "publisher": "State Emergency Management Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for sema.dps.mo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1581,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-sos-ga",
@@ -2577,31 +2845,36 @@
     },
     {
       "connector": "state-sites-sos-ks",
+      "indexedPages": 0,
       "domain": "sos.ks.gov",
-      "pagesIndexed": 0,
+      "publisher": "Elections",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 22, column 2"
-      ],
-      "runId": 1511,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-sos-ms",
       "domain": "sos.ms.gov",
+      "publisher": "Local governments",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for sos.ms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1564,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-sos-oregon",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "sos.oregon.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1722,
-      "status": "completed"
+      "publisher": "Local governments",
+      "warnings": []
     },
     {
       "connector": "state-sites-sos-tn",
@@ -2644,12 +2917,11 @@
     {
       "connector": "state-sites-sosmt",
       "domain": "sosmt.gov",
+      "publisher": "Elections and Voter Services",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for sosmt.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1589,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-tea-texas",
@@ -2706,12 +2978,11 @@
     {
       "connector": "state-sites-vip-sos-nd",
       "domain": "vip.sos.nd.gov",
+      "publisher": "Elections and Voting",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vip.sos.nd.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1672,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-vitema-vi",
@@ -2768,12 +3039,11 @@
     {
       "connector": "state-sites-webnew-ped-state-nm-us",
       "domain": "webnew.ped.state.nm.us",
+      "publisher": "Public Education Department",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for webnew.ped.state.nm.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1690,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-wem-wi",
@@ -2814,12 +3084,11 @@
     {
       "connector": "state-sites-ww2-ceepur-org",
       "domain": "ww2.ceepur.org",
+      "publisher": "Election Commission (in Spanish)",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ww2.ceepur.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1710,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ag-idaho",
@@ -2832,12 +3101,11 @@
     {
       "connector": "state-sites-www-ag-ks",
       "domain": "www.ag.ks.gov",
+      "publisher": "Consumer Protection",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.ag.ks.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1501,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ag-ky",
@@ -2852,20 +3120,26 @@
     {
       "connector": "state-sites-www-ag-state-la-us",
       "domain": "www.ag.state.la.us",
+      "publisher": "Consumer Protection",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.ag.state.la.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1529,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ag-state-mn-us",
-      "domain": "www.ag.state.mn.us",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 21,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1576,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.ag.state.mn.us",
+      "publisher": "Office of the Attorney General",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-agr-georgia",
@@ -2878,12 +3152,11 @@
     {
       "connector": "state-sites-www-agricultura-pr",
       "domain": "www.agricultura.pr",
+      "publisher": "Department of Agriculture (in Spanish)",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.agricultura.pr; catalog entry retained without page crawl."
-      ],
-      "runId": 1706,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-agriculture-arkansas",
@@ -2896,22 +3169,26 @@
     {
       "connector": "state-sites-www-agriculture-ks",
       "domain": "www.agriculture.ks.gov",
+      "publisher": "Department of Agriculture",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.agriculture.ks.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1499,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-agriculture-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.agriculture.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.agriculture.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1643,
-      "status": "partial"
+      "publisher": "Department of Agriculture, Markets & Food",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-agriculture-pa",
@@ -3020,12 +3297,11 @@
     {
       "connector": "state-sites-www-bmv-ohio",
       "domain": "www.bmv.ohio.gov",
+      "publisher": "Motor Vehicles",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.bmv.ohio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1703,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ca",
@@ -3045,11 +3321,18 @@
     },
     {
       "connector": "state-sites-www-cd-nm",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 123,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.cd.nm.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1674,
-      "status": "completed"
+      "publisher": "Corrections Department",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-cdaa-org",
@@ -3132,12 +3415,11 @@
     {
       "connector": "state-sites-www-chcc-health",
       "domain": "www.chcc.health",
+      "publisher": "Commonwealth Healthcare Corporation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.chcc.health; catalog entry retained without page crawl."
-      ],
-      "runId": 1678,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-chfs-ky",
@@ -3149,21 +3431,27 @@
     },
     {
       "connector": "state-sites-www-cnmioag-org",
+      "sitemapsRead": 6,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 30.0,
+      "workers": 1,
       "domain": "www.cnmioag.org",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.cnmioag.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1696,
-      "status": "partial"
+      "publisher": "Consumer Protection",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-cnmipss-org",
       "domain": "www.cnmipss.org",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1729,
-      "status": "completed"
+      "publisher": "Public School System",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.cnmipss.org; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "state-sites-www-colorado",
@@ -3187,21 +3475,33 @@
     },
     {
       "connector": "state-sites-www-corrections-nebraska",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.corrections.nebraska.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1626,
-      "status": "completed"
+      "publisher": "Department of Correctional Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-corrections-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 87,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.corrections.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.corrections.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1647,
-      "status": "partial"
+      "publisher": "Department of Corrections",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-counties-org",
@@ -3223,21 +3523,27 @@
     },
     {
       "connector": "state-sites-www-dac-nc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dac.nc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1667,
-      "status": "completed"
+      "publisher": "Department of Adult Correction",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-daco-pr",
       "domain": "www.daco.pr.gov",
+      "publisher": "Consumer Affairs (in Spanish)",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.daco.pr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1708,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-dca-ca",
@@ -3252,28 +3558,43 @@
     {
       "connector": "state-sites-www-dcf-ks",
       "domain": "www.dcf.ks.gov",
+      "publisher": "Department for Children and Families",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.dcf.ks.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1507,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-dcfs-louisiana",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dcfs.louisiana.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1543,
-      "status": "completed"
+      "publisher": "Department of Children and Family Services",
+      "warnings": [
+        "https://dcfs.louisiana.gov/rulemaking/2020-supplemental-nutrition-assistance-program-snap-electronic-benefits-issuance-system/: 404 Client Error: Not Found for url: https://dcfs.louisiana.gov/archive/division-of-management-finance/rulemaking/2020-supplemental-nutrition-assistance-program-snap-electronic-benefits-issuance-system/"
+      ]
     },
     {
       "connector": "state-sites-www-des-nd",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 104,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.des.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1697,
-      "status": "completed"
+      "publisher": "Department of Emergency Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dfa-arkansas",
@@ -3285,13 +3606,18 @@
     },
     {
       "connector": "state-sites-www-dhhs-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dhhs.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.dhhs.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1644,
-      "status": "partial"
+      "publisher": "Department of Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dhs-state-il-us",
@@ -3313,21 +3639,33 @@
     },
     {
       "connector": "state-sites-www-dhsem-nm",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 263,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dhsem.nm.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1673,
-      "status": "completed"
+      "publisher": "Department of Homeland Security & Emergency Management",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dhses-ny",
-      "domain": "www.dhses.ny.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.dhses.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1642,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.dhses.ny.gov",
+      "publisher": "Homeland Security and Emergency Management",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dhss-delaware",
@@ -3369,13 +3707,18 @@
     },
     {
       "connector": "state-sites-www-dmv-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 133,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dmv.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.dmv.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1649,
-      "status": "partial"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dmv-pa",
@@ -3398,12 +3741,11 @@
     {
       "connector": "state-sites-www-doc-ks",
       "domain": "www.doc.ks.gov",
+      "publisher": "Department of Corrections",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.doc.ks.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1504,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-doc-sc",
@@ -3423,11 +3765,18 @@
     },
     {
       "connector": "state-sites-www-docr-nd",
-      "domain": "www.docr.nd.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 73,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1677,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.docr.nd.gov",
+      "publisher": "Department of Corrections and Rehabilitation",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-doe-as",
@@ -3442,12 +3791,11 @@
     {
       "connector": "state-sites-www-doe-mass-edu",
       "domain": "www.doe.mass.edu",
+      "publisher": "Department of Elementary & Secondary Education",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.doe.mass.edu; catalog entry retained without page crawl."
-      ],
-      "runId": 1547,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-doe-virginia",
@@ -3461,29 +3809,48 @@
     },
     {
       "connector": "state-sites-www-doi",
+      "sitemapsRead": 5,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.doi.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1675,
-      "status": "completed"
+      "publisher": "Northern Mariana Islands",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-doj-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 174,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.doj.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.doj.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1646,
-      "status": "partial"
+      "publisher": "Consumer Protection and Antitrust Bureau",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-doj-state-or-us",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.doj.state.or.us",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1726,
-      "status": "completed"
+      "publisher": "Consumer Protection",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-doj-state-wi-us",
@@ -3525,11 +3892,18 @@
     },
     {
       "connector": "state-sites-www-dot-nd",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dot.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1701,
-      "status": "completed"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dot-state-wy-us",
@@ -3543,11 +3917,18 @@
     },
     {
       "connector": "state-sites-www-dpi-nc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dpi.nc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1663,
-      "status": "completed"
+      "publisher": "Department of Public Instruction",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dps-arkansas",
@@ -3559,11 +3940,18 @@
     },
     {
       "connector": "state-sites-www-dps-mn",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.dps.mn.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1578,
-      "status": "completed"
+      "publisher": "Homeland Security and Emergency Management",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-dshs-texas",
@@ -3593,21 +3981,33 @@
     },
     {
       "connector": "state-sites-www-education-ne",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "www.education.ne.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1645,
-      "status": "completed"
+      "publisher": "Department of Education",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-education-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.education.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.education.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1648,
-      "status": "partial"
+      "publisher": "Department of Education",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-education-pa",
@@ -3640,12 +4040,11 @@
     {
       "connector": "state-sites-www-elections-ny",
       "domain": "www.elections.ny.gov",
+      "publisher": "Board of Elections",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.elections.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1634,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-elections-virginia",
@@ -3659,13 +4058,18 @@
     },
     {
       "connector": "state-sites-www-expresslane-org",
-      "domain": "www.expresslane.org",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 97,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [
-        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://expresslane.la.gov/robots.txt"
-      ],
-      "runId": 1554,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.expresslane.org",
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-fdacs",
@@ -3723,11 +4127,18 @@
     },
     {
       "connector": "state-sites-www-fortaleza-pr",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 384,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.fortaleza.pr.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1716,
-      "status": "completed"
+      "publisher": "Governor Jenniffer Gonz\u00e1lez-Col\u00f3n",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-fsmgov-org",
@@ -3776,40 +4187,56 @@
     {
       "connector": "state-sites-www-governor-ks",
       "domain": "www.governor.ks.gov",
+      "publisher": "Governor Laura Kelly",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.governor.ks.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1498,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-governor-nd",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.governor.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1688,
-      "status": "completed"
+      "publisher": "Governor Kelly Armstrong",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-governor-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 20,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.governor.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.governor.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1638,
-      "status": "partial"
+      "publisher": "Governor Kelly Ayotte",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-governor-ny",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.governor.ny.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.governor.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1627,
-      "status": "partial"
+      "publisher": "Governor Kathy Hochul",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-governor-pa",
@@ -3824,12 +4251,11 @@
     {
       "connector": "state-sites-www-governor-state-nm-us",
       "domain": "www.governor.state.nm.us",
+      "publisher": "Governor Michelle Lujan Grisham",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.governor.state.nm.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1654,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-governor-virginia",
@@ -3861,21 +4287,27 @@
     },
     {
       "connector": "state-sites-www-hca-nm",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.hca.nm.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1718,
-      "status": "completed"
+      "publisher": "Human Services Department",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-health-ny",
       "domain": "www.health.ny.gov",
+      "publisher": "Department of Health",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.health.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1636,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-health-pa",
@@ -3890,12 +4322,11 @@
     {
       "connector": "state-sites-www-health-state-mn-us",
       "domain": "www.health.state.mn.us",
+      "publisher": "Department of Health",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.health.state.mn.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1557,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-healthvermont",
@@ -3915,11 +4346,18 @@
     },
     {
       "connector": "state-sites-www-hhs-nd",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.hhs.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1698,
-      "status": "completed"
+      "publisher": "Health and Human Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-hhs-texas",
@@ -4035,19 +4473,33 @@
     },
     {
       "connector": "state-sites-www-kansastag",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 263,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.kansastag.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1525,
-      "status": "completed"
+      "publisher": "Division of Emergency Management",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-kdhe-ks",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.kdhe.ks.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1542,
-      "status": "completed"
+      "publisher": "Department of Health and Environment",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-kentucky",
@@ -4062,22 +4514,20 @@
     {
       "connector": "state-sites-www-ksde-org",
       "domain": "www.ksde.org",
+      "publisher": "Department of Education",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.ksde.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1500,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ksrevenue",
+      "indexedPages": 0,
       "domain": "www.ksrevenue.gov",
-      "pagesIndexed": 0,
+      "publisher": "Motor Vehicles",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 45, column 3"
-      ],
-      "runId": 1539,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-kyagr-com",
@@ -4101,19 +4551,33 @@
     },
     {
       "connector": "state-sites-www-ldaa-org",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 21,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ldaa.org",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1551,
-      "status": "completed"
+      "publisher": "District Attorneys Association",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ldaf-state-la-us",
-      "domain": "www.ldaf.state.la.us",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1540,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.ldaf.state.la.us",
+      "publisher": "Department of Agriculture & Forestry",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-legalaffairs-as",
@@ -4126,184 +4590,236 @@
     {
       "connector": "state-sites-www-louisiana",
       "domain": "www.louisiana.gov",
+      "publisher": "Louisiana",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.louisiana.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1523,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-louisianabelieves-com",
       "domain": "www.louisianabelieves.com",
+      "publisher": "Department of Education",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.louisianabelieves.com; catalog entry retained without page crawl."
-      ],
-      "runId": 1546,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-maine",
       "domain": "www.maine.gov",
+      "publisher": "Maine",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.maine.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1536,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-mainecounties-org",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 100,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.mainecounties.org",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1550,
-      "status": "completed"
+      "publisher": "County District Attorneys",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-maryland",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 55,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.maryland.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1558,
-      "status": "completed"
+      "publisher": "Maryland",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-marylandattorneygeneral",
+      "indexedPages": 0,
       "domain": "www.marylandattorneygeneral.gov",
-      "pagesIndexed": 0,
+      "publisher": "Consumer Protection Division",
       "warnings": [
-        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://oag.maryland.gov/robots.txt"
-      ],
-      "runId": 1585,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 14, column 67"
+      ]
     },
     {
       "connector": "state-sites-www-marylandpublicschools-org",
-      "domain": "www.marylandpublicschools.org",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 0,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1561,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.marylandpublicschools.org",
+      "publisher": "Department of Education",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-mass",
-      "domain": "www.mass.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
       "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.mass.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1548,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.mass.gov",
+      "publisher": "Massachusetts",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-mda-state-mn-us",
-      "domain": "www.mda.state.mn.us",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1582,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.mda.state.mn.us",
+      "publisher": "Department of Agriculture",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-mdac-ms",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 154,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.mdac.ms.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "sitemap unavailable; fail-closed: HTTPSConnectionPool(host='www.mdac.ms.gov', port=443): Max retries exceeded with url: /page-sitemap.xml (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='www.mdac.ms.gov', port=443): Read timed out. (read timeout=8)\"))"
-      ],
-      "runId": 1604,
-      "status": "partial"
+      "publisher": "Department of Agriculture and Commerce",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-mdek12-org",
       "domain": "www.mdek12.org",
+      "publisher": "Department of Education",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.mdek12.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1567,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-mdhs-ms",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.mdhs.ms.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1583,
-      "status": "completed"
+      "publisher": "Department of Human Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-mdoc-ms",
       "domain": "www.mdoc.ms.gov",
+      "publisher": "Department of Corrections",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.mdoc.ms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1572,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-michigan",
       "domain": "www.michigan.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1560,
-      "status": "completed"
+      "publisher": "Michigan",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for www.michigan.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "state-sites-www-mmvc-ms",
       "domain": "www.mmvc.ms.gov",
+      "publisher": "Motor Vehicles",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.mmvc.ms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1574,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-mo",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 18,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1594,
-      "status": "completed"
+      "publisher": "Missouri",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ms",
+      "indexedPages": 0,
       "domain": "www.ms.gov",
-      "pagesIndexed": 0,
+      "publisher": "Mississippi",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 1577,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-msema-org",
       "domain": "www.msema.org",
+      "publisher": "Emergency Management Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.msema.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1569,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-mtcounties-org",
+      "indexedPages": 0,
       "domain": "www.mtcounties.org",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1610,
-      "status": "completed"
+      "publisher": "Local governments",
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 123"
+      ]
     },
     {
       "connector": "state-sites-www-mvd-newmexico",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.mvd.newmexico.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1676,
-      "status": "completed"
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-myflfamilies-com",
@@ -4343,197 +4859,291 @@
     },
     {
       "connector": "state-sites-www-nc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 85,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.nc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1655,
-      "status": "completed"
+      "publisher": "North Carolina",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ncagr",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ncagr.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1657,
-      "status": "completed"
+      "publisher": "Department of Agriculture and Consumer Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ncdhhs",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ncdhhs.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1659,
-      "status": "completed"
+      "publisher": "Division of Social Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ncdistrictattorney-org",
+      "sitemapsRead": 8,
+      "urlsDiscovered": 152,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ncdistrictattorney.org",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1684,
-      "status": "completed"
+      "publisher": "District Attorneys",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ncdot",
-      "domain": "www.ncdot.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1662,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.ncdot.gov",
+      "publisher": "Motor Vehicles",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ncdps",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ncdps.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1669,
-      "status": "completed"
+      "publisher": "Emergency Management",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ncsbe",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ncsbe.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1664,
-      "status": "completed"
+      "publisher": "State Board of Elections",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nd",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1687,
-      "status": "completed"
+      "publisher": "North Dakota",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-ndda-nd",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ndda.nd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1691,
-      "status": "completed"
+      "publisher": "Department of Agriculture",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nebraska",
-      "domain": "www.nebraska.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 56,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1603,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.nebraska.gov",
+      "publisher": "Nebraska",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 134,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1640,
-      "status": "partial"
+      "publisher": "New Hampshire",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nj",
       "domain": "www.nj.gov",
+      "publisher": "New Jersey",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.nj.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1618,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-njconsumeraffairs",
       "domain": "www.njconsumeraffairs.gov",
+      "publisher": "Division of Consumer Affairs",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.njconsumeraffairs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1619,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-njlib-nj",
       "domain": "www-njlib.nj.gov",
+      "publisher": "Contact Governor Sherrill",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www-njlib.nj.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1620,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-njoag",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.njoag.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1653,
-      "status": "completed"
+      "publisher": "Office of the Attorney General",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nm",
       "domain": "www.nm.gov",
+      "publisher": "New Mexico",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.nm.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1658,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-nmdas-com",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 47,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.nmdas.com",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1670,
-      "status": "completed"
+      "publisher": "District Attorneys Association",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nmhealth-org",
-      "domain": "www.nmhealth.org",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1668,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.nmhealth.org",
+      "publisher": "Department of Heatlh",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nmidefender-org",
       "domain": "www.nmidefender.org",
+      "publisher": "Office of the Public Defender",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.nmidefender.org; catalog entry retained without page crawl."
-      ],
-      "runId": 1686,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-nvsos",
       "domain": "www.nvsos.gov",
+      "publisher": "Elections",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.nvsos.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1614,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ny",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.ny.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.ny.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1624,
-      "status": "partial"
+      "publisher": "New York",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-nysed",
       "domain": "www.nysed.gov",
+      "publisher": "Education Department",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.nysed.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1632,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-oag-ca",
@@ -4556,42 +5166,46 @@
     {
       "connector": "state-sites-www-ohioattorneygeneral",
       "domain": "www.ohioattorneygeneral.gov",
+      "publisher": "Consumer Protection",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.ohioattorneygeneral.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1693,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ohiopa-org",
-      "domain": "www.ohiopa.org",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 1,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 1,
       "pagesIndexed": 0,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.ohiopa.org",
+      "publisher": "Prosecuting Attorneys Association",
       "warnings": [
         "http://ohiopa.org/: redirected outside the configured government origin"
-      ],
-      "runId": 1719,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-ok",
       "domain": "www.ok.gov",
+      "publisher": "District Attorneys Council",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.ok.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1705,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-oregon",
       "domain": "www.oregon.gov",
+      "publisher": "Oregon",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.oregon.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1702,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-pa",
@@ -4642,20 +5256,26 @@
     {
       "connector": "state-sites-www-pr",
       "domain": "www.pr.gov",
+      "publisher": "Puerto Rico",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.pr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1707,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-prosecutors-mo",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 48,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.prosecutors.mo.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1591,
-      "status": "completed"
+      "publisher": "Office of Prosecution Services",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-revenue-alabama",
@@ -4747,19 +5367,33 @@
     },
     {
       "connector": "state-sites-www-sec-state-ma-us",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.sec.state.ma.us",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1562,
-      "status": "completed"
+      "publisher": "Elections and Voting",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-sog-unc-edu",
-      "domain": "www.sog.unc.edu",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1671,
-      "status": "completed"
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
+      "domain": "www.sog.unc.edu",
+      "publisher": "Local governments",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-sos-alabama",
@@ -4794,50 +5428,59 @@
     {
       "connector": "state-sites-www-sos-la",
       "domain": "www.sos.la.gov",
+      "publisher": "Elections and Voting",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.sos.la.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1533,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-sos-mo",
       "domain": "www.sos.mo.gov",
+      "publisher": "Elections and Voting",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.sos.mo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1580,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-sos-ms",
       "domain": "www.sos.ms.gov",
+      "publisher": "Elections and Voting",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.sos.ms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1565,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-sos-nh",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "www.sos.nh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "No same-domain sitemap found for www.sos.nh.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1650,
-      "status": "partial"
+      "publisher": "Voters and Elections",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-sos-nm",
-      "domain": "www.sos.nm.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 0,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 1661,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "www.sos.nm.gov",
+      "publisher": "Voting and Elections",
+      "warnings": []
     },
     {
       "connector": "state-sites-www-sos-state-co-us",
@@ -4852,22 +5495,20 @@
     {
       "connector": "state-sites-www-sos-state-mn-us",
       "domain": "www.sos.state.mn.us",
+      "publisher": "Elections and Voting",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.sos.state.mn.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1568,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-sos-state-oh-us",
       "domain": "www.sos.state.oh.us",
+      "publisher": "Elections and Voting",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.sos.state.oh.us; catalog entry retained without page crawl."
-      ],
-      "runId": 1682,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-sos-state-tx-us",
@@ -4957,13 +5598,12 @@
     },
     {
       "connector": "state-sites-www-travelok-com",
+      "indexedPages": 0,
       "domain": "www.travelok.com",
-      "pagesIndexed": 0,
+      "publisher": "Local governments",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 0"
-      ],
-      "runId": 1712,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-txdmv",
@@ -5040,12 +5680,11 @@
     {
       "connector": "state-sites-www-votecnmi-gov-mp",
       "domain": "www.votecnmi.gov.mp",
+      "publisher": "Election Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for www.votecnmi.gov.mp; catalog entry retained without page crawl."
-      ],
-      "runId": 1683,
-      "status": "partial"
+      ]
     },
     {
       "connector": "state-sites-www-wicounties-org",

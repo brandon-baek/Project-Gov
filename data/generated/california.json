@@ -1,18 +1,24 @@
 {
-  "source": "california",
-  "startedAt": "2026-09-04T17:16:17.610Z",
-  "finishedAt": "2026-09-04T17:16:19.275Z",
+  "connector": "california",
+  "started_at": "2026-09-29T16:53:59.286985+00:00",
+  "finished_at": "2026-09-29T16:54:11.282058+00:00",
   "nodes": [
     {
       "id": "source:crawl:46e9fb7109b842be",
       "kind": "source",
       "label": "Find government services and information",
       "description": "Discover places to visit and learn about California's various regions and lively cities.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-04",
+        "reviewedAt": "2026-09-29",
         "sourceUrl": "https://www.ca.gov/",
+        "contentHash": "4623aada5160832fc11620c432e6efcbb6ad81843d34d56ba8deb54333d710ce",
         "sourceIds": [],
         "tags": [
           "State of California",
@@ -22,7 +28,7 @@
           "Check your refund",
           "Traffic tickets",
           "Business license",
-          "Seller’s permit",
+          "Seller\u2019s permit",
           "Popular topics",
           "DMV/Auto",
           "Personal records",
@@ -31,16 +37,1559 @@
           "Social services",
           "Taxes",
           "California highlights",
-          "Places to visit"
+          "Places to visit",
+          "State parks",
+          "Camping reservations",
+          "California by the numbers",
+          "In the spotlight"
+        ],
+        "retrievedAt": "2026-09-29T16:54:10.282192+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:b9deac8c148659ed",
+      "kind": "source",
+      "label": "Fire safety and regulation information bulletins",
+      "description": "Office of the State Fire Marshal",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/301/services/1246/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/301/services/1246/",
+        "contentHash": "d9a666d92c1bbb67e9c74986b2f7f579c0be4eeec63cf7daf02de427377c72e8",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:11.280401+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:b3def1fee84c1e5d",
+      "kind": "source",
+      "label": "California State Fire Training",
+      "description": "Office of the State Fire Marshal",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/301/services/1247/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/301/services/1247/",
+        "contentHash": "3e625050481761392ffb6d49b74c3c64f14e6be5948f7e0e102bf302cf709abe",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:09.771588+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:65dfda226be042ab",
+      "kind": "source",
+      "label": "Fire safety licenses and permits",
+      "description": "Office of the State Fire Marshal",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/301/services/1248/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/301/services/1248/",
+        "contentHash": "b5dc34762840769c87e9151b2eb685209cb012d5031d9f5cce4dc4bd19c6ad8b",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:09.721871+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:51bdd0d0ca8f0a7b",
+      "kind": "source",
+      "label": "Smoke alarm and fire extinguisher recalls",
+      "description": "Office of the State Fire Marshal",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/301/services/1249/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/301/services/1249/",
+        "contentHash": "bf091c7ee213f1bf24054fd5c954a4631b0f987c6646a1f4be14f881bbe0c3ad",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:09.461863+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:0b4b954a9613334a",
+      "kind": "source",
+      "label": "Firewise USA\u00ae",
+      "description": "Office of the State Fire Marshal",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/301/services/1252/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/301/services/1252/",
+        "contentHash": "058a74386938e043956bfa64ecd3299912438c2fc8959fc68cf586750c9147eb",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:09.250104+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:eca2ad017e344d00",
+      "kind": "source",
+      "label": "Review of cannabis licensing decisions",
+      "description": "Cannabis Control Appeals Panel",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/306/services/1145/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/306/services/1145/",
+        "contentHash": "cd2fe3f370f81597fe9b78990c762b2a8cd1838c95dcbeaaf068116dea8b68b1",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:08.726686+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:031aa8eb0ed8a24c",
+      "kind": "source",
+      "label": "Appeal a cannabis license decision",
+      "description": "Cannabis Control Appeals Panel",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/306/services/1146/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/306/services/1146/",
+        "contentHash": "29697bfe6f371776621e8ff356c5f9b378000b0221a2b4ded94b80eb0ab83732",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:08.736441+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:83ec86474c6a1526",
+      "kind": "source",
+      "label": "Submit a consumer privacy complaint",
+      "description": "California Privacy Protection Agency",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/315/services/1187/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/315/services/1187/",
+        "contentHash": "e6caf2bbb6f0b55a46ce7116d7493f54260c64eb4fd9a918d373a72e993ef7aa",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:08.225912+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:56e392f6abaaf300",
+      "kind": "source",
+      "label": "Delete Request and Opt-out Platform (DROP)",
+      "description": "California Privacy Protection Agency",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/315/services/1306/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/315/services/1306/",
+        "contentHash": "d4f98fce803cd3131f36308df673d7608fde3b85bb739a4682914d5bbcc6c245",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:07.978715+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:8a129f0fd73bdbdf",
+      "kind": "source",
+      "label": "Request a free California visitor's guide",
+      "description": "State of California",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/317/services/1285/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/317/services/1285/",
+        "contentHash": "0944598755435c8d8b07e937e202a4a45d2bc99d07db924b292d484f15eed7b8",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:08.197486+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:47c2be7788028705",
+      "kind": "source",
+      "label": "Recovery services finder",
+      "description": "State of California",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/317/services/1286/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/317/services/1286/",
+        "contentHash": "889e3f5cf4d8370d6c86b67eee2fac47a2e64fc014284f58a59dfb97b03837f9",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:07.480797+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:26338cb3e7f89ea6",
+      "kind": "source",
+      "label": "Maternal health resources",
+      "description": "Office of the California Surgeon General",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/319/services/1291/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/319/services/1291/",
+        "contentHash": "a65c668d5d63291efacb1b401bb99107bd1f6a25180595083171d542a34a7dd6",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:07.484353+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:8d9875ec70b2f151",
+      "kind": "source",
+      "label": "Find information on reproductive health",
+      "description": "Office of the California Surgeon General",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/319/services/1303/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/319/services/1303/",
+        "contentHash": "ff46817c85cf7ce4ba14f2263097c33fd7670b98e167fb40115dafcb522b2f43",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:07.002172+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:5aaaa706b83a0951",
+      "kind": "source",
+      "label": "Get maternal health help",
+      "description": "Office of the California Surgeon General",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/319/services/1305/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/319/services/1305/",
+        "contentHash": "a44dc5c3901d1a1c7d9f96afae08d98d3077b5803d0cec2c4c614f80a0a09476",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:06.980865+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:39f1ef729d3c966a",
+      "kind": "source",
+      "label": "Manage your California real estate license",
+      "description": "Department of Real Estate",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/40/services/1130/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/40/services/1130/",
+        "contentHash": "c3c5a0cb93550abee8a53d2635c6523fa85a810df09a851a15e669c139bda57d",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:06.719161+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:070e6589e9deb384",
+      "kind": "source",
+      "label": "Verify real estate licenses",
+      "description": "Department of Real Estate",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/40/services/1131/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/40/services/1131/",
+        "contentHash": "2d5b07c55a8163b28e1b6026ea1256629d6837a3e597193d10db6be0312fb6bf",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:06.236610+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:9988924731b18b20",
+      "kind": "source",
+      "label": "Professional Foresters Registration Exam",
+      "description": "Board of Forestry and Fire Protection",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/53/services/1242/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/53/services/1242/",
+        "contentHash": "52426249aa7245612c5a95f823424ef3c12ad8b7d7a401e9ee6d30e25b670dcf",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:06.211352+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:8b5fcc8b398b1342",
+      "kind": "source",
+      "label": "CA state recruitment events and resources",
+      "description": "Department of Human Resources",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/89/services/1189/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/89/services/1189/",
+        "contentHash": "4e98eec9655d1408616a0fae507e1813cae952e3ae23d1250f37975b21ffe5c3",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:05.738750+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:7bb2bf0b1e9abb0a",
+      "kind": "source",
+      "label": "Learn about your state employee benefits",
+      "description": "Department of Human Resources",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/89/services/1190/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/89/services/1190/",
+        "contentHash": "b3fe1bbcdcfcb6d173b70baa3494bc28d8574c5a46aedddcf958afb55ee8b48f",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:05.723766+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:61ad54b0cb631341",
+      "kind": "source",
+      "label": "Start Saving for Retirement Today",
+      "description": "Department of Human Resources",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/89/services/1191/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/89/services/1191/",
+        "contentHash": "269ae5f48af80fdebe4971b48a7e6f78158ce67e867a70965d0995a8a7424d6a",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:05.216114+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:83dc1a2411351929",
+      "kind": "source",
+      "label": "Create a CalCareer account",
+      "description": "Department of Human Resources",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/89/services/1195/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/89/services/1195/",
+        "contentHash": "1069227af71de81cb77b78a04b74845b55de0d44fb7714c8670d1224fab94f08",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:04.975761+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:54956bd56f64f1d7",
+      "kind": "source",
+      "label": "Search for a CalCareers exam",
+      "description": "Department of Human Resources",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/89/services/1213/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/89/services/1213/",
+        "contentHash": "e1894ce73cd48355a97e64d1e72a0019e2285e934150673ca5a2201b7036a929",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:04.969210+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:8ef542d2ad714385",
+      "kind": "source",
+      "label": "Find a CA state job",
+      "description": "Department of Human Resources",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/89/services/39/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/89/services/39/",
+        "contentHash": "c5ea71463502656409423ba8676583a142521bcee650247312afc76f987cd7cb",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:04.725445+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:e0caf221da5b86ac",
+      "kind": "source",
+      "label": "Find an apprenticeship",
+      "description": "Department of Industrial Relations",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/91/services/1206/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/91/services/1206/",
+        "contentHash": "6edf1b99b0f33f344f84d9bb3b28e0b03c5f4eed37e956af0b0c28cadbdac4a9",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:04.464349+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:bc576736119db744",
+      "kind": "source",
+      "label": "Certified Payroll Reporting",
+      "description": "Department of Industrial Relations",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/91/services/1208/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/91/services/1208/",
+        "contentHash": "69b1275a1ad1af917e6bd6b9e5866dd07ca846f908be91af8a7c33893588e435",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:03.968249+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:00319b2025de187e",
+      "kind": "source",
+      "label": "California Paid Sick Leave (PSL)",
+      "description": "Department of Industrial Relations",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/91/services/1224/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/91/services/1224/",
+        "contentHash": "8809a6cec2c4d6bd75ee503b3308a93f87241b9894debc21459453014378d1ef",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Frequently Asked Questions",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:03.955036+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:910a3789fe531339",
+      "kind": "source",
+      "label": "Worker safety, wildfire cleanup, and rebuilding",
+      "description": "Department of Industrial Relations",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/91/services/1279/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/91/services/1279/",
+        "contentHash": "7426f9f7f2c4a95e02f6fed65c0af4012505b412a12e4677a1f5e71a6e607b3e",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:03.466084+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:06c3c60032379a84",
+      "kind": "source",
+      "label": "Worker rights and employer responsibilities",
+      "description": "Department of Industrial Relations",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/departments/91/services/1280/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/departments/91/services/1280/",
+        "contentHash": "a872fd6f0b54a9ff8d64abdf544e779e500d4b8abf0c00d448f537da6442964e",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Description",
+          "Related services",
+          "Topics",
+          "Keywords"
+        ],
+        "retrievedAt": "2026-09-29T16:54:03.218243+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:776aeca299ff9a36",
+      "kind": "source",
+      "label": "Get financial assistance 2025 Los Angeles Fires",
+      "description": "Get help with insurance, taxes, employment, and other financial needs.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/help-for-you/financial-assistance/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/help-for-you/financial-assistance/",
+        "contentHash": "9d2ff557e4a026e4f0225d69106142177b4e589126f0785b4b5d948d4ad99ddc",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Insurance",
+          "Insurance claims",
+          "Non-renewal protection",
+          "Mortgage protections",
+          "Mortgage assistance",
+          "Mortgage relief",
+          "Foreclosure protection",
+          "Renter protections",
+          "Free mediation",
+          "Taxes",
+          "Property tax",
+          "Employment",
+          "Income replacement",
+          "Job search support",
+          "Student loan protections",
+          "Student loan relief"
+        ],
+        "retrievedAt": "2026-09-29T16:54:02.980314+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:beed17384d5eb734",
+      "kind": "source",
+      "label": "Replace personal documents 2025 Los Angeles Fires",
+      "description": "If you lost IDs or other personal documents in the fires, learn how to get replacements.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/",
+        "contentHash": "0938208e9ece5d2a17313fed8648d7e699c42cf5cb0e78dbc2fb7c68ea4bdce8",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Licenses and IDs",
+          "Birth, death, and marriage certificates (vital records)",
+          "Records from California",
+          "Records from other states",
+          "Immigration documents",
+          "Vehicle documents",
+          "Related information"
+        ],
+        "retrievedAt": "2026-09-29T16:54:02.964290+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:7ab2baae6fe41439",
+      "kind": "source",
+      "label": "Birth certificates 2025 Los Angeles Fires",
+      "description": "Learn how to replace lost or destroyed birth records from California. Replacements are free of charge for verified applicants in disaster-affected zip codes.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/birth-certificates/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/birth-certificates/",
+        "contentHash": "31e658ae3813a0a0a991c6de60db227991297b475d4a49d688546fc11c4dfcf7",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Apply online",
+          "Verify your identity with Login.gov",
+          "Apply by mail",
+          "Apply by email",
+          "Other options"
+        ],
+        "retrievedAt": "2026-09-29T16:54:02.484996+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:f8279993db98003d",
+      "kind": "source",
+      "label": "Death certificates 2025 Los Angeles Fires",
+      "description": "Learn how to replace lost or destroyed death records from California. Replacements are free of charge for verified applicants in disaster-affected zip codes.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/death-certificates/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/death-certificates/",
+        "contentHash": "33b6c3f273ecaa88b926a9f686b6b2aab9f358cdac11744a787b0652ee34e23f",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Apply online",
+          "Verify your identity with Login.gov",
+          "Apply by mail",
+          "Apply by email",
+          "Other options"
+        ],
+        "retrievedAt": "2026-09-29T16:54:02.474744+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:955a51479df8c360",
+      "kind": "source",
+      "label": "Marriage certificates 2025 Los Angeles Fires",
+      "description": "Learn how to replace lost or destroyed marriage records from California. Replacements are free of charge for verified applicants in disaster-affected zip codes.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/marriage-certificates/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/help-for-you/replace-personal-documents/marriage-certificates/",
+        "contentHash": "1f664824e707e755190504297e7dfaf61590ca9a178484b4fe6bcf10a7b0e969",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Apply online",
+          "Verify your identity with Login.gov",
+          "Apply by mail",
+          "Apply by email",
+          "Other options"
+        ],
+        "retrievedAt": "2026-09-29T16:54:02.264255+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:3401f2ece0830179",
+      "kind": "source",
+      "label": "Recovery services finder",
+      "description": "There are a lot of disaster services available from the state and federal government. Use this tool to get a customized list.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/recovery-services-finder/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/recovery-services-finder/",
+        "contentHash": "80bcf58ae5acdf5a90154e650556fb336229f4c4421cf0bc0db1370563a3f253",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "For you and your family",
+          "Basic needs",
+          "Recovery needs",
+          "For your business",
+          "Recovery needs"
+        ],
+        "retrievedAt": "2026-09-29T16:54:01.981057+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:141a550994ae60bc",
+      "kind": "source",
+      "label": "Recovery services finder Your customized services plans",
+      "description": "Here are the services that meet your needs. We provide direct links or information on how to get these services.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/lafires/recovery-services-finder/results/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/lafires/recovery-services-finder/results/",
+        "contentHash": "9d494248d0f00a5f5b9b5b9b06fba05d2e79e7fd416cce8c3085289ba2e6506a",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "For you and your family",
+          "Food",
+          "Pets",
+          "Health and safety",
+          "Housing",
+          "Resources for certain groups",
+          "For you and your family",
+          "Financial assistance",
+          "Insurance",
+          "Rebuild your house",
+          "Replace documents",
+          "Employment",
+          "For your business",
+          "Rebuild your business",
+          "Financial assistance",
+          "Share your customized plan"
+        ],
+        "retrievedAt": "2026-09-29T16:54:01.515930+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:3f4a073c5e1224a6",
+      "kind": "source",
+      "label": "Services",
+      "description": "Find California state services by browsing popular options or searching by topic.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/services/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/services/",
+        "contentHash": "37ecad0d68d4c28652d7ac4254f7b304c414cc95c6674c24ac678e82c42dd3d4",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Popular services",
+          "Food stamps",
+          "Traffic tickets",
+          "Business permits",
+          "Birth certificates",
+          "Apply for Medi-Cal",
+          "Lottery numbers",
+          "Topics",
+          "Assistance and social programs",
+          "Businesses",
+          "Disaster recovery",
+          "DMV/Auto",
+          "Education",
+          "Health and wellness",
+          "Housing and real estate",
+          "Immigration",
+          "Jobs and unemployment",
+          "Personal records",
+          "Safety and emergencies",
+          "State info and laws"
+        ],
+        "retrievedAt": "2026-09-29T16:54:01.456721+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:0c25a08861e266d0",
+      "kind": "source",
+      "label": "Assistance and social programs",
+      "description": "Find services that help improve the well-being of individuals, families, and communities in California. Benefits support",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/topics/assistance/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/topics/assistance/",
+        "contentHash": "f70668eabfe4128599509e4c2ca9d3d59db4d0c572039e22cc2ca784817114b5",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Popular related services",
+          "Apply for food stamps",
+          "Apply for Medi-Cal",
+          "File for unemployment",
+          "Get a CalABLE Visa prepaid card",
+          "0 services found",
+          "CalABLE disability savings account",
+          "Food and nutrition for older adults",
+          "Adult Day Health Services Centers",
+          "Home and Community Services for seniors",
+          "Family Caregiver Services",
+          "Medicare Counseling",
+          "Legal services for older adults",
+          "Find an auto shop",
+          "Check a license",
+          "File an auto repair complaint",
+          "Repair or retire your vehicle",
+          "Request a collision repair inspection",
+          "CA COVID-19 Rent Relief",
+          "Maternal health resources"
+        ],
+        "retrievedAt": "2026-09-29T16:54:01.018513+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:6e8101bb6b0fff93",
+      "kind": "source",
+      "label": "Personal records",
+      "description": "Your birth certificate, ID card, and other personal records confirm who you are. They help you get the services you need.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/topics/personal-records/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/topics/personal-records/",
+        "contentHash": "b7ca8d142430ebe96f4c28c10deb5d8ddcfd870e8df1e3021ee8be737731d4d9",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Popular related services",
+          "Apply for a birth certificate",
+          "DMV address change",
+          "Get digital vaccine records",
+          "Apply for a death certificate",
+          "0 services found",
+          "Submit a consumer privacy complaint",
+          "Delete Request and Opt-out Platform (DROP)",
+          "Calculate child support",
+          "Locate a correctional facility",
+          "California Inmate Records and Information System",
+          "Get a divorce",
+          "Find a citizenship class",
+          "Tax forms and publications",
+          "Get COVID-19 information and help",
+          "Get updates on DACA",
+          "Apply for a DL, ID or REAL ID",
+          "Create a MyDMV Account",
+          "Get your mDL",
+          "Renew driver\u2019s license or ID card"
+        ],
+        "retrievedAt": "2026-09-29T16:54:00.996066+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:3e7f9acfa2457a20",
+      "kind": "source",
+      "label": "Taxes",
+      "description": "Learn about taxes in California and how to file for free, check your refund, and earn tax credits.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-09-29",
+      "source_url": "https://www.ca.gov/topics/taxes/",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-09-29",
+        "sourceUrl": "https://www.ca.gov/topics/taxes/",
+        "contentHash": "163a9bb5c5c5ce612c0ac678f20f2a5adb458bcb921ec2d16bc85075c473f4d5",
+        "sourceIds": [],
+        "tags": [
+          "State of California",
+          "Popular related services",
+          "Check your tax refund status",
+          "File taxes for free with CalFile",
+          "Look up tax rates",
+          "Learn about the Earned Income Tax Credit",
+          "0 services found",
+          "CalABLE disability savings account",
+          "Find business resources",
+          "Business permits and licensing help",
+          "EDD payroll taxes",
+          "Enroll in EDD employer services",
+          "Check your tax refund status",
+          "Pay your state taxes",
+          "California Earned Income Tax Credit",
+          "CalFile - File return for free",
+          "Volunteer Income Tax Assistance (VITA)",
+          "Create a MyFTB account",
+          "Tax forms and publications",
+          "File state taxes",
+          "Certified Payroll Reporting"
+        ],
+        "retrievedAt": "2026-09-29T16:54:00.767854+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "agency:crawl:state-of-california",
+      "kind": "agency",
+      "label": "State of California",
+      "description": "Publisher for california discovery records.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": null,
+      "source_url": null,
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "sourceIds": [],
+        "tags": [
+          "california"
         ]
       }
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "source": "source:crawl:46e9fb7109b842be",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:b9deac8c148659ed",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:b3def1fee84c1e5d",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:65dfda226be042ab",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:51bdd0d0ca8f0a7b",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:0b4b954a9613334a",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:eca2ad017e344d00",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:031aa8eb0ed8a24c",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:83ec86474c6a1526",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:56e392f6abaaf300",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:8a129f0fd73bdbdf",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:47c2be7788028705",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:26338cb3e7f89ea6",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:8d9875ec70b2f151",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:5aaaa706b83a0951",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:39f1ef729d3c966a",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:070e6589e9deb384",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:9988924731b18b20",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:8b5fcc8b398b1342",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:7bb2bf0b1e9abb0a",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:61ad54b0cb631341",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:83dc1a2411351929",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:54956bd56f64f1d7",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:8ef542d2ad714385",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:e0caf221da5b86ac",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:bc576736119db744",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:00319b2025de187e",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:910a3789fe531339",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:06c3c60032379a84",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:776aeca299ff9a36",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:beed17384d5eb734",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:7ab2baae6fe41439",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:f8279993db98003d",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:955a51479df8c360",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:3401f2ece0830179",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:141a550994ae60bc",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:3f4a073c5e1224a6",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:0c25a08861e266d0",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:6e8101bb6b0fff93",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:3e7f9acfa2457a20",
+      "target": "agency:crawl:state-of-california",
+      "relation": "published-by",
+      "order": null
+    }
+  ],
   "warnings": [],
   "metadata": {
-    "discoveredUrls": 1,
-    "indexedPages": 1,
-    "appliedDelayMs": 0
+    "sitemapsRead": 7,
+    "urlsDiscovered": 558,
+    "urlsAlreadyIndexed": 1,
+    "newPagesSelected": 39,
+    "refreshPagesSelected": 1,
+    "urlsEligible": 40,
+    "pagesIndexed": 40,
+    "requestDelaySeconds": 0.25,
+    "workers": 8
   }
 }
