@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "count": 123,
+  "count": 108,
   "guides": [
     {
       "id": "journey:discovered:35dc428a4a",
@@ -9,7 +9,9 @@
       "sourceTitle": "Human Services Department submits innovative whole-person care five-year renewal application to federal partners for the state\u2019s Medicaid program \u2013 New Mexico Health Care Authority",
       "summary": "Use the official government service to apply for Medicaid. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NM",
+      "locality": "",
       "publisher": "Human Services Department",
       "agency": "Human Services Department",
       "agencyId": "agency:crawl:human-services-department",
@@ -25,7 +27,7 @@
       "outline": [
         "Human Services Department submits innovative whole-person care five-year renewal application to federal partners for the state\u2019s Medicaid program"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -33,7 +35,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:8019e19346",
@@ -42,7 +45,9 @@
       "sourceTitle": "Application and Fair Hearings Resources",
       "summary": "Use the official government service to apply for Medicaid. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Health and Human Services",
       "agency": "Department of Health and Human Services",
       "agencyId": "agency:crawl:department-of-health-and-human-services",
@@ -64,7 +69,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:42adb9dba0",
@@ -73,7 +79,9 @@
       "sourceTitle": "I recently left the military \u2014 can I apply for unemployment benefits?",
       "summary": "Use the official government service to apply for unemployment benefits. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Labor",
       "agency": "Department of Labor",
       "agencyId": "agency:crawl:department-of-labor",
@@ -95,38 +103,10 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:be33472251",
-      "slug": "apply-for-unemployment-benefits-be33472251",
-      "title": "Apply for unemployment benefits",
-      "sourceTitle": "Where do I apply for unemployment benefits?",
-      "summary": "Use the official government service to apply for unemployment benefits. Review eligibility, required documents, deadlines, and the current application or request process.",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Department of Labor",
-      "agency": "Department of Labor",
-      "agencyId": "agency:crawl:department-of-labor",
-      "sourceId": "source:crawl:be33472251bb3636",
-      "officialUrl": "https://www.unemployment.gov/article/where-do-i-apply-unemployment-benefits",
-      "discoveredAt": "2026-09-29T16:58:25.531877+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Department of Labor and matched it to benefits and financial help using benefit, unemployment.",
-      "matchedTerms": [
-        "benefit",
-        "unemployment"
-      ],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": [
+        "apply-for-unemployment-benefits-be33472251"
+      ]
     },
     {
       "id": "journey:discovered:93120661dd",
@@ -135,7 +115,9 @@
       "sourceTitle": "ARC and PLC Election and Enrollment",
       "summary": "Review the USDA election options and enroll your farm in Agriculture Risk Coverage or Price Loss Coverage.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Agriculture",
       "agency": "Department of Agriculture",
       "agencyId": "agency:crawl:department-of-agriculture",
@@ -170,7 +152,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:4c01f6b945",
@@ -179,7 +162,9 @@
       "sourceTitle": "BENEFEDS | Federal Benefits Enrollment (FEDVIP, FSAFEDS, FLTCIP)",
       "summary": "Compare eligible federal benefit programs and complete enrollment through the official BENEFEDS portal.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Office of Personnel Management",
       "agency": "Office of Personnel Management",
       "agencyId": "agency:crawl:office-of-personnel-management",
@@ -200,39 +185,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:d7c312faa8",
-      "slug": "report-d7c312faa8",
-      "title": "Report",
-      "sourceTitle": "Report",
-      "summary": "Use the official government service to report. Review the current requirements and complete the task with the responsible agency.",
-      "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Chesterfield County, VA",
-      "agency": "Chesterfield County, VA",
-      "agencyId": "agency:crawl:chesterfield-county-va",
-      "sourceId": "source:crawl:d7c312faa869cd2a",
-      "officialUrl": "https://www.chesterfield.gov/5414/Report-Concerns-or-Request-Assistance",
-      "discoveredAt": "2026-09-29T16:55:57.410989+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Chesterfield County, VA and matched it to benefits and financial help using assistance.",
-      "matchedTerms": [
-        "assistance"
-      ],
-      "outline": [
-        "Report Concerns or Request Assistance"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:fa3799a3b6",
@@ -241,7 +195,9 @@
       "sourceTitle": "Where to report incorrect benefit payments",
       "summary": "Use the official government service to report incorrect benefit payments. Review the current requirements and complete the task with the responsible agency.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -271,7 +227,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:7c6cf7d38e",
@@ -280,7 +237,9 @@
       "sourceTitle": "Request Assistance from State Agency | Office of Governor Jeff Landry",
       "summary": "Use the official government service to request Assistance from State Agency. Review the current requirements and complete the task with the responsible agency.",
       "category": "Benefits and financial help",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "LA",
+      "locality": "",
       "publisher": "Governor Jeff Landry",
       "agency": "Governor Jeff Landry",
       "agencyId": "agency:crawl:governor-jeff-landry",
@@ -293,7 +252,7 @@
         "assistance"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -301,7 +260,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:e6e5b310f6",
@@ -310,7 +270,9 @@
       "sourceTitle": "How to Apply",
       "summary": "Use the official government service to apply. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "ND",
+      "locality": "",
       "publisher": "Department of Agriculture",
       "agency": "Department of Agriculture",
       "agencyId": "agency:crawl:department-of-agriculture",
@@ -340,38 +302,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:be76d44116",
-      "slug": "apply-for-be76d44116",
-      "title": "Apply For",
-      "sourceTitle": "Apply For",
-      "summary": "Use the official government service to apply For. Review the current requirements and complete the task with the responsible agency.",
-      "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
-      "publisher": "The City of Burbank Illinois",
-      "agency": "The City of Burbank Illinois",
-      "agencyId": "agency:crawl:the-city-of-burbank-illinois",
-      "sourceId": "source:crawl:be76d44116812454",
-      "officialUrl": "https://www.burbankil.gov/193/Apply-For",
-      "discoveredAt": "2026-09-29T16:54:58.557011+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from The City of Burbank Illinois and matched it to business and permits using permit, license.",
-      "matchedTerms": [
-        "permit",
-        "license"
-      ],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:c1a9dcf0a9",
@@ -380,7 +312,9 @@
       "sourceTitle": "Apply for a Building Permit",
       "summary": "Use the official government service to apply for a Building Permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "AZ",
+      "locality": "Casa Grande",
       "publisher": "City of Casa Grande",
       "agency": "City of Casa Grande",
       "agencyId": "agency:crawl:city-of-casa-grande",
@@ -414,7 +348,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:1f1a18eea4",
@@ -423,7 +358,9 @@
       "sourceTitle": "Apply for a Building Permit | Chapel Hill, NC",
       "summary": "Use the official government service to apply for a Building Permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NC",
+      "locality": "Chapel Hill",
       "publisher": "Town of Chapel Hill",
       "agency": "Town of Chapel Hill",
       "agencyId": "agency:crawl:town-of-chapel-hill",
@@ -436,7 +373,7 @@
         "permit"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -444,7 +381,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:94e16f36ec",
@@ -453,7 +391,9 @@
       "sourceTitle": "Apply for a Burn Permit",
       "summary": "Use the official government service to apply for a Burn Permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MA",
+      "locality": "Chatham",
       "publisher": "City of Chatham",
       "agency": "City of Chatham",
       "agencyId": "agency:crawl:city-of-chatham",
@@ -474,7 +414,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:802dcc082f",
@@ -483,7 +424,9 @@
       "sourceTitle": "Apply for a Permit",
       "summary": "Use the official government service to apply for a Permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "ME",
+      "locality": "Brewer",
       "publisher": "City of Brewer",
       "agency": "City of Brewer",
       "agencyId": "agency:crawl:city-of-brewer",
@@ -513,7 +456,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:567eda6e3d",
@@ -522,7 +466,9 @@
       "sourceTitle": "Apply for a Permit",
       "summary": "Use the official government service to apply for a Permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NC",
+      "locality": "Carolina Beach",
       "publisher": "Town of Carolina Beach",
       "agency": "Town of Carolina Beach",
       "agencyId": "agency:crawl:town-of-carolina-beach",
@@ -538,7 +484,7 @@
         "Permit Applications",
         "Other Applications & Forms"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -546,7 +492,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:4404ab08c5",
@@ -555,7 +502,9 @@
       "sourceTitle": "Apply for a Planning Permit",
       "summary": "Use the official government service to apply for a Planning Permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CA",
+      "locality": "Brisbane",
       "publisher": "City of Brisbane",
       "agency": "City of Brisbane",
       "agencyId": "agency:crawl:city-of-brisbane",
@@ -580,7 +529,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:b943b5d022",
@@ -589,7 +539,9 @@
       "sourceTitle": "Apply for an IFTA License",
       "summary": "Use the official government service to apply for an IFTA License. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NE",
+      "locality": "",
       "publisher": "Motor Vehicles",
       "agency": "Motor Vehicles",
       "agencyId": "agency:crawl:motor-vehicles",
@@ -613,7 +565,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:5be7a5adec",
@@ -622,7 +575,9 @@
       "sourceTitle": "Apply to the Securing Communities Against Hate Crimes Grant Program",
       "summary": "Use the official government service to apply to the Securing Communities Against Hate Crimes Grant Program. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NY",
+      "locality": "",
       "publisher": "Governor Kathy Hochul",
       "agency": "Governor Kathy Hochul",
       "agencyId": "agency:crawl:governor-kathy-hochul",
@@ -639,7 +594,7 @@
         "How to Apply",
         "Contact"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -647,7 +602,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:6a70f31a0a",
@@ -656,7 +612,9 @@
       "sourceTitle": "How to get an export license or permit",
       "summary": "Use the official government service to get an export license or permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -682,7 +640,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:63c848fa75",
@@ -691,7 +650,9 @@
       "sourceTitle": "How to get an import license or permit",
       "summary": "Use the official government service to get an import license or permit. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -719,7 +680,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:b739c0a389",
@@ -728,7 +690,9 @@
       "sourceTitle": "How to Renew / Apply for a Gun License",
       "summary": "Use the official government service to renew / Apply for a Gun License. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MA",
+      "locality": "Boxford",
       "publisher": "Town of Boxford",
       "agency": "Town of Boxford",
       "agencyId": "agency:crawl:town-of-boxford",
@@ -749,7 +713,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:e28bcde635",
@@ -758,7 +723,9 @@
       "sourceTitle": "Renew Existing Dog License",
       "summary": "Use the official government service to renew Existing Dog License. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NY",
+      "locality": "Rochester",
       "publisher": "Town of Brighton",
       "agency": "Town of Brighton",
       "agencyId": "agency:crawl:town-of-brighton",
@@ -776,7 +743,7 @@
         "If the rabies immunization information section (seen below) is blank on the renewal notice, you will need to provide updated rabies information prior to being able to renew the license. Once we receive the form, we will update the information in our system and contact you when you can proceed with the renewal.",
         "ATTENTION - Online Dog Renewals are currently unavailable due an issue with our software vendor. We are able to take credit card payments over the phone for dog licenses during regular business hours. We apologize for the inconvenience."
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -784,7 +751,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:999b71cf42",
@@ -793,7 +761,9 @@
       "sourceTitle": "Report a Water or Sewer Issue",
       "summary": "Use the official government service to report a Water or Sewer Issue. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "OH",
+      "locality": "Village of Chagrin Falls",
       "publisher": "Village of Chagrin Falls",
       "agency": "Village of Chagrin Falls",
       "agencyId": "agency:crawl:village-of-chagrin-falls",
@@ -822,7 +792,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:fc92d5932f",
@@ -831,7 +802,9 @@
       "sourceTitle": "Request A Police Report",
       "summary": "Use the official government service to request A Police Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "SD",
+      "locality": "Box Elder",
       "publisher": "City of Box Elder",
       "agency": "City of Box Elder",
       "agencyId": "agency:crawl:city-of-box-elder",
@@ -849,7 +822,7 @@
         "Contact Info",
         "Helpful Links"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -857,7 +830,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:30c6d81d62",
@@ -866,7 +840,9 @@
       "sourceTitle": "Request an Eligible Partner Project Grant",
       "summary": "Use the official government service to request an Eligible Partner Project Grant. Review the current requirements and complete the task with the responsible agency.",
       "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CO",
+      "locality": "Centennial",
       "publisher": "CIty of Centennial",
       "agency": "CIty of Centennial",
       "agencyId": "agency:crawl:city-of-centennial",
@@ -899,82 +875,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:ec9593d1e8",
-      "slug": "use-georgia-driver-services-online-ec9593d1e8",
-      "title": "Use Georgia driver services online",
-      "sourceTitle": "Explore Maine's Online Services Effortlessly",
-      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
-      "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Bradford Maine 04401",
-      "agency": "Town of Bradford Maine 04401",
-      "agencyId": "agency:crawl:town-of-bradford-maine-04401",
-      "sourceId": "source:crawl:ec9593d1e86ad13d",
-      "officialUrl": "https://www.bradfordme.gov/online-services",
-      "discoveredAt": "2026-09-29T16:54:30.584011+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Bradford Maine 04401 and matched it to business and permits using business, permit, license.",
-      "matchedTerms": [
-        "business",
-        "permit",
-        "license"
-      ],
-      "outline": [
-        "Wildlife Permits and Licenses",
-        "Deer Permits",
-        "MOSES Hunting & Fishing Licenses",
-        "Moose Permits",
-        "Maine Wild Turkey Spring Hunt Permits",
-        "Registrations and Renewals",
-        "Vehicle",
-        "ATV/Snowmobile",
-        "Trailer",
-        "Boat",
-        "Permits",
-        "Burn Permits"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:76428573f2",
-      "slug": "use-georgia-driver-services-online-76428573f2",
-      "title": "Use Georgia driver services online",
-      "sourceTitle": "Online Services & Payments",
-      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
-      "category": "Business and permits",
-      "jurisdiction": "federal-and-state",
-      "publisher": "City of Brewer",
-      "agency": "City of Brewer",
-      "agencyId": "agency:crawl:city-of-brewer",
-      "sourceId": "source:crawl:76428573f29f7671",
-      "officialUrl": "https://www.brewermaine.gov/232/Online-Services-Payments",
-      "discoveredAt": "2026-09-29T16:54:37.445726+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from City of Brewer and matched it to business and permits using business.",
-      "matchedTerms": [
-        "business"
-      ],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f31c236d51",
@@ -983,7 +885,9 @@
       "sourceTitle": "Where Families Find Support",
       "summary": "Find child welfare, family support, and related services from the Louisiana Department of Children and Family Services.",
       "category": "Children and families",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "LA",
+      "locality": "",
       "publisher": "Department of Children and Family Services",
       "agency": "Department of Children and Family Services",
       "agencyId": "agency:crawl:department-of-children-and-family-services",
@@ -1019,43 +923,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:2d08f4342b",
-      "slug": "report-2d08f4342b",
-      "title": "Report",
-      "sourceTitle": "Report",
-      "summary": "Use the official government service to report. Review the current requirements and complete the task with the responsible agency.",
-      "category": "Children and families",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Village of Bosque Farms",
-      "agency": "Village of Bosque Farms",
-      "agencyId": "agency:crawl:village-of-bosque-farms",
-      "sourceId": "source:crawl:2d08f4342bc4e578",
-      "officialUrl": "https://bosquefarmsnm.gov/how-do-i/report/",
-      "discoveredAt": "2026-09-29T16:54:25.062661+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Village of Bosque Farms and matched it to children and families using child.",
-      "matchedTerms": [
-        "child"
-      ],
-      "outline": [
-        "Report a Concern",
-        "Complaint against police department personnel",
-        "Child Abuse or Neglect",
-        "Power Outage",
-        "Neighborhood Concern"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:0273559c4c",
@@ -1064,7 +933,9 @@
       "sourceTitle": "File Complaint",
       "summary": "Use the official government service to file Complaint. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "GA",
+      "locality": "Cartersville",
       "publisher": "City of Cartersville",
       "agency": "City of Cartersville",
       "agencyId": "agency:crawl:city-of-cartersville",
@@ -1087,7 +958,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:734596d089",
@@ -1096,7 +968,9 @@
       "sourceTitle": "File a Complaint",
       "summary": "Use the official government service to file a Complaint. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NM",
+      "locality": "Bosque Farms",
       "publisher": "Village of Bosque Farms",
       "agency": "Village of Bosque Farms",
       "agencyId": "agency:crawl:village-of-bosque-farms",
@@ -1117,7 +991,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:e3c0dc321b",
@@ -1126,7 +1001,9 @@
       "sourceTitle": "File a Complaint",
       "summary": "Use the official government service to file a Complaint. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "UT",
+      "locality": "Cedar City",
       "publisher": "Cedar City Corporation",
       "agency": "Cedar City Corporation",
       "agencyId": "agency:crawl:cedar-city-corporation",
@@ -1139,7 +1016,7 @@
         "complaint"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1147,7 +1024,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:9dc7f50989",
@@ -1156,7 +1034,9 @@
       "sourceTitle": "How to file a U.S. Postal Service complaint",
       "summary": "Use the official government service to file a U.S. Postal Service complaint. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -1184,7 +1064,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:efafeca38a",
@@ -1193,7 +1074,9 @@
       "sourceTitle": "How to file a complaint about a company\u2019s products or services",
       "summary": "Use the official government service to file a complaint about a company\u2019s products or services. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -1222,7 +1105,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:56c671e6b5",
@@ -1231,7 +1115,9 @@
       "sourceTitle": "Register As a Victim",
       "summary": "Use the official government service to register As a Victim. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "unknown",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Public Safety and Corrections",
       "agency": "Department of Public Safety and Corrections",
       "agencyId": "agency:crawl:department-of-public-safety-and-corrections",
@@ -1261,7 +1147,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f7fb48224c",
@@ -1270,7 +1157,9 @@
       "sourceTitle": "Report A Child Care Concern",
       "summary": "Use the official government service to report A Child Care Concern. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "MP",
+      "locality": "",
       "publisher": "Social Services",
       "agency": "Social Services",
       "agencyId": "agency:crawl:social-services",
@@ -1297,7 +1186,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:11484190f3",
@@ -1306,7 +1196,9 @@
       "sourceTitle": "Report Code Violation",
       "summary": "Use the official government service to report Code Violation. Review the current requirements and complete the task with the responsible agency.",
       "category": "Consumer protection",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CO",
+      "locality": "Buena Vista",
       "publisher": "Town of Buena Vista",
       "agency": "Town of Buena Vista",
       "agencyId": "agency:crawl:town-of-buena-vista",
@@ -1329,7 +1221,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:154da7843a",
@@ -1338,7 +1231,9 @@
       "sourceTitle": "File a Report",
       "summary": "Use the official government service to file a Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "Driving and transportation",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CO",
+      "locality": "Brighton",
       "publisher": "City of Brighton",
       "agency": "City of Brighton",
       "agencyId": "agency:crawl:city-of-brighton",
@@ -1364,7 +1259,7 @@
         "Looking to file a crash report?",
         "Looking to file a sex assault report?"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1372,7 +1267,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:56d47ceaa3",
@@ -1381,7 +1277,9 @@
       "sourceTitle": "Register for Selective Service (the draft)",
       "summary": "Use the official government service to register for Selective Service (the draft). Review the current requirements and complete the task with the responsible agency.",
       "category": "Driving and transportation",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -1409,7 +1307,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:5c4a2048d8",
@@ -1418,7 +1317,9 @@
       "sourceTitle": "Renew While Out of State",
       "summary": "Use the official government service to renew While Out of State. Review the current requirements and complete the task with the responsible agency.",
       "category": "Driving and transportation",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NH",
+      "locality": "",
       "publisher": "Motor Vehicles",
       "agency": "Motor Vehicles",
       "agencyId": "agency:crawl:motor-vehicles",
@@ -1437,7 +1338,7 @@
         "Requesting a License Extension",
         "Related Resources"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1445,7 +1346,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:11fa1e3005",
@@ -1454,7 +1356,9 @@
       "sourceTitle": "Request a Hearing",
       "summary": "Use the official government service to request a Hearing. Review the current requirements and complete the task with the responsible agency.",
       "category": "Driving and transportation",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "MD",
+      "locality": "",
       "publisher": "Motor Vehicles",
       "agency": "Motor Vehicles",
       "agencyId": "agency:crawl:motor-vehicles",
@@ -1489,7 +1393,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:945edc8341",
@@ -1498,7 +1403,9 @@
       "sourceTitle": "Skip the Trip! Use Online Services!",
       "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
       "category": "Driving and transportation",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "GA",
+      "locality": "",
       "publisher": "Motor Vehicles",
       "agency": "Motor Vehicles",
       "agencyId": "agency:crawl:motor-vehicles",
@@ -1534,7 +1441,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f6ba538b77",
@@ -1543,7 +1451,9 @@
       "sourceTitle": "Federal Student Aid",
       "summary": "Create, recover, or manage the account used to access federal student aid forms and services.",
       "category": "Education and training",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Education",
       "agency": "Department of Education",
       "agencyId": "agency:crawl:department-of-education",
@@ -1565,7 +1475,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:0e6a790694",
@@ -1574,7 +1485,9 @@
       "sourceTitle": "Renew or Update Your Professional Educator's License",
       "summary": "Use the official government service to renew or Update Your Professional Educator's License. Review the current requirements and complete the task with the responsible agency.",
       "category": "Education and training",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NC",
+      "locality": "",
       "publisher": "Department of Public Instruction",
       "agency": "Department of Public Instruction",
       "agencyId": "agency:crawl:department-of-public-instruction",
@@ -1602,7 +1515,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:8d51675237",
@@ -1611,7 +1525,9 @@
       "sourceTitle": "Request a Police Record",
       "summary": "Use the official government service to request a Police Record. Review the current requirements and complete the task with the responsible agency.",
       "category": "Education and training",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CO",
+      "locality": "Brighton",
       "publisher": "City of Brighton",
       "agency": "City of Brighton",
       "agencyId": "agency:crawl:city-of-brighton",
@@ -1641,7 +1557,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:c69d2aa0ad",
@@ -1650,7 +1567,9 @@
       "sourceTitle": "Plan Ahead for Disasters | Ready.gov",
       "summary": "Build a household emergency plan, decide how you will communicate, and prepare for hazards where you live.",
       "category": "Emergencies and recovery",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Homeland Security",
       "agency": "Department of Homeland Security",
       "agencyId": "agency:crawl:department-of-homeland-security",
@@ -1677,7 +1596,7 @@
         "Build a Kit",
         "FEMA Mobile App"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1685,7 +1604,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:5aaaa706b8",
@@ -1694,7 +1614,9 @@
       "sourceTitle": "Get maternal health help",
       "summary": "Use the official government service to get maternal health help. Review the current requirements and complete the task with the responsible agency.",
       "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "CA",
+      "locality": "",
       "publisher": "State of California",
       "agency": "State of California",
       "agencyId": "agency:crawl:state-of-california",
@@ -1712,7 +1634,7 @@
         "Topics",
         "Keywords"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1720,7 +1642,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:7e87d2bab0",
@@ -1729,7 +1652,9 @@
       "sourceTitle": "Update Application Info",
       "summary": "Use the official government service to update Application Info. Review the current requirements and complete the task with the responsible agency.",
       "category": "Health and coverage",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Health and Human Services",
       "agency": "Department of Health and Human Services",
       "agencyId": "agency:crawl:department-of-health-and-human-services",
@@ -1754,7 +1679,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:4a087ec267",
@@ -1763,7 +1689,9 @@
       "sourceTitle": "Apply for Service",
       "summary": "Use the official government service to apply for Service. Review the current requirements and complete the task with the responsible agency.",
       "category": "Housing and utilities",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "GA",
+      "locality": "Cartersville",
       "publisher": "City of Cartersville",
       "agency": "City of Cartersville",
       "agencyId": "agency:crawl:city-of-cartersville",
@@ -1776,7 +1704,7 @@
         "utility"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1784,7 +1712,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:ea905f0ce7",
@@ -1793,7 +1722,9 @@
       "sourceTitle": "Request For Proposals (RFPs)",
       "summary": "Use the official government service to request For Proposals (RFPs). Review the current requirements and complete the task with the responsible agency.",
       "category": "Housing and utilities",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MD",
+      "locality": "Brentwood",
       "publisher": "Town of Brentwood",
       "agency": "Town of Brentwood",
       "agencyId": "agency:crawl:town-of-brentwood",
@@ -1819,7 +1750,7 @@
         "Open Tuesday, April 3, 2024, Closes Tuesday, April 17, 2024, 3 PM",
         "Automated Enforcement Program (RFP will close Tuesday, January 24, 2023, at 3 PM ) (Closed)"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1827,7 +1758,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:ef11ff0ff0",
@@ -1836,7 +1768,9 @@
       "sourceTitle": "How to Request Library Materials",
       "summary": "Use the official government service to request Library Materials. Review the current requirements and complete the task with the responsible agency.",
       "category": "Housing and utilities",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Health and Human Services",
       "agency": "Department of Health and Human Services",
       "agencyId": "agency:crawl:department-of-health-and-human-services",
@@ -1857,39 +1791,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:56e0af4058",
-      "slug": "use-georgia-driver-services-online-56e0af4058",
-      "title": "Use Georgia driver services online",
-      "sourceTitle": "Online Services - Payment Options",
-      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
-      "category": "Housing and utilities",
-      "jurisdiction": "federal-and-state",
-      "publisher": "City of Canandaigua",
-      "agency": "City of Canandaigua",
-      "agencyId": "agency:crawl:city-of-canandaigua",
-      "sourceId": "source:crawl:56e0af40580dc832",
-      "officialUrl": "https://canandaiguanewyork.gov/389/Online-Services---Payment-Options",
-      "discoveredAt": "2026-09-29T16:55:15.638823+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from City of Canandaigua and matched it to housing and utilities using utility.",
-      "matchedTerms": [
-        "utility"
-      ],
-      "outline": [
-        "On-Line Account Services"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:dd02f897ce",
@@ -1898,7 +1801,9 @@
       "sourceTitle": "Apply for a new adult passport",
       "summary": "Use the official government service to apply for a new adult passport. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -1930,7 +1835,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:d3e89b64ba",
@@ -1939,7 +1845,9 @@
       "sourceTitle": "Passport Services",
       "summary": "Use the official government service to apply for or replace a U.S. passport. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MO",
+      "locality": "Branson",
       "publisher": "City of Branson",
       "agency": "City of Branson",
       "agencyId": "agency:crawl:city-of-branson",
@@ -1963,7 +1871,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:cdc7fb9bbd",
@@ -1972,7 +1881,9 @@
       "sourceTitle": "Passport Services | City of Cedar Hills",
       "summary": "Use the official government service to apply for or replace a U.S. passport. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "UT",
+      "locality": "Cedar Hills",
       "publisher": "City of Cedar Hills",
       "agency": "City of Cedar Hills",
       "agencyId": "agency:crawl:city-of-cedar-hills",
@@ -1985,7 +1896,7 @@
         "passport"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -1993,39 +1904,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:b3ef33fa7f",
-      "slug": "apply-for-or-replace-a-u-s-passport-b3ef33fa7f",
-      "title": "Apply for or replace a U.S. passport",
-      "sourceTitle": "Town of Hempstead Mobile Passport Service is coming to Cedarhurst - Incorporated Village of Cedarhurst",
-      "summary": "Use the official government service to apply for or replace a U.S. passport. Review eligibility, required documents, deadlines, and the current application or request process.",
-      "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Incorporated Village of Cedarhurst",
-      "agency": "Incorporated Village of Cedarhurst",
-      "agencyId": "agency:crawl:incorporated-village-of-cedarhurst",
-      "sourceId": "source:crawl:b3ef33fa7fb2f754",
-      "officialUrl": "https://www.cedarhurst.gov/town-hempstead-mobile-passport-service-coming-cedarhurst/",
-      "discoveredAt": "2026-09-29T16:55:36.545661+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Incorporated Village of Cedarhurst and matched it to identity and records using passport.",
-      "matchedTerms": [
-        "passport"
-      ],
-      "outline": [
-        "Share this:"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:939c9fdcf3",
@@ -2034,7 +1914,9 @@
       "sourceTitle": "\"Speedy Pass\" Mobile Passport Service - Incorporated Village of Cedarhurst",
       "summary": "Use the official government service to apply for or replace a U.S. passport. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NY",
+      "locality": "Cedarhurst",
       "publisher": "Incorporated Village of Cedarhurst",
       "agency": "Incorporated Village of Cedarhurst",
       "agencyId": "agency:crawl:incorporated-village-of-cedarhurst",
@@ -2057,7 +1939,10 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": [
+        "apply-for-or-replace-a-u-s-passport-b3ef33fa7f"
+      ]
     },
     {
       "id": "journey:discovered:17f9a9ea7f",
@@ -2066,7 +1951,9 @@
       "sourceTitle": "Public Access to Court Electronic Records (PACER)",
       "summary": "Search federal court records and access case and docket information through the official PACER service.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Administrative Office of the United States Courts",
       "agency": "Administrative Office of the United States Courts",
       "agencyId": "agency:crawl:administrative-office-of-the-united-states-courts",
@@ -2100,7 +1987,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:db4cf2578a",
@@ -2109,7 +1997,9 @@
       "sourceTitle": "Register to Vote",
       "summary": "Use the official government service to register to Vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "RI",
+      "locality": "Bristol",
       "publisher": "Town of Bristol",
       "agency": "Town of Bristol",
       "agencyId": "agency:crawl:town-of-bristol",
@@ -2130,7 +2020,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f47ea47dea",
@@ -2139,7 +2030,9 @@
       "sourceTitle": "Renew an adult passport",
       "summary": "Use the official government service to renew an adult passport. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -2173,7 +2066,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:beed17384d",
@@ -2182,7 +2076,9 @@
       "sourceTitle": "Replace personal documents 2025 Los Angeles Fires",
       "summary": "Use the official government service to replace personal documents 2025 Los Angeles Fires. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "CA",
+      "locality": "",
       "publisher": "State of California",
       "agency": "State of California",
       "agencyId": "agency:crawl:state-of-california",
@@ -2212,7 +2108,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:3e1a6db214",
@@ -2221,7 +2118,9 @@
       "sourceTitle": "Request ICE Records From ICE",
       "summary": "Use the official government service to request ICE Records From ICE. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Homeland Security",
       "agency": "Department of Homeland Security",
       "agencyId": "agency:crawl:department-of-homeland-security",
@@ -2245,7 +2144,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:356999c711",
@@ -2254,7 +2154,9 @@
       "sourceTitle": "Request Records & Reports",
       "summary": "Use the official government service to request Records & Reports. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "GA",
+      "locality": "Brookhaven",
       "publisher": "City of Brookhaven",
       "agency": "City of Brookhaven",
       "agencyId": "agency:crawl:city-of-brookhaven",
@@ -2271,7 +2173,7 @@
         "Hours",
         "Social Media"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2279,7 +2181,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:395f37541e",
@@ -2288,7 +2191,9 @@
       "sourceTitle": "Request a Certificate of Recognition | Office of Governor Jeff Landry",
       "summary": "Use the official government service to request a Certificate of Recognition. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "LA",
+      "locality": "",
       "publisher": "Governor Jeff Landry",
       "agency": "Governor Jeff Landry",
       "agencyId": "agency:crawl:governor-jeff-landry",
@@ -2301,7 +2206,7 @@
         "certificate"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2309,7 +2214,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:a78e964783",
@@ -2318,7 +2224,9 @@
       "sourceTitle": "Request a Police Report",
       "summary": "Use the official government service to request a Police Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "UT",
+      "locality": "Bountiful City",
       "publisher": "Bountiful City",
       "agency": "Bountiful City",
       "agencyId": "agency:crawl:bountiful-city",
@@ -2345,7 +2253,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:00be1a149c",
@@ -2354,7 +2263,9 @@
       "sourceTitle": "Request for Certificates",
       "summary": "Use the official government service to request for Certificates. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NH",
+      "locality": "",
       "publisher": "Voters and Elections",
       "agency": "Voters and Elections",
       "agencyId": "agency:crawl:voters-and-elections",
@@ -2370,7 +2281,7 @@
       "outline": [
         "Looking for a certificate? Click below to download the application!"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2378,7 +2289,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:51a286a736",
@@ -2387,7 +2299,9 @@
       "sourceTitle": "Request for Police Department Records",
       "summary": "Use the official government service to request for Police Department Records. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "OH",
+      "locality": "Centerville",
       "publisher": "City of Centerville",
       "agency": "City of Centerville",
       "agencyId": "agency:crawl:city-of-centerville",
@@ -2400,7 +2314,7 @@
         "record"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2408,7 +2322,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:db4396ccc3",
@@ -2417,7 +2332,9 @@
       "sourceTitle": "Request for Records",
       "summary": "Use the official government service to request for Records. Review the current requirements and complete the task with the responsible agency.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MO",
+      "locality": "Branson",
       "publisher": "City of Branson",
       "agency": "City of Branson",
       "agencyId": "agency:crawl:city-of-branson",
@@ -2438,7 +2355,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:fb398a1581",
@@ -2447,7 +2365,9 @@
       "sourceTitle": "Records Request (FOIA)",
       "summary": "Use the official government service to request government records. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Identity and records",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MI",
+      "locality": "Canton",
       "publisher": "Canton Township",
       "agency": "Canton Township",
       "agencyId": "agency:crawl:canton-township",
@@ -2465,7 +2385,7 @@
         "Contact Us",
         "Quick Links"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2473,7 +2393,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:bec07dfe9e",
@@ -2482,7 +2403,9 @@
       "sourceTitle": "Adjustment of status: Get a Green Card if you are in the United States",
       "summary": "Review adjustment of status requirements and follow the official process for applying for permanent residence from inside the United States.",
       "category": "Immigration and citizenship",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -2509,7 +2432,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f0edc2e786",
@@ -2518,7 +2442,9 @@
       "sourceTitle": "File a Report",
       "summary": "Use the official government service to file a Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "Immigration and citizenship",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "UT",
+      "locality": "Cedar City",
       "publisher": "Cedar City Corporation",
       "agency": "Cedar City Corporation",
       "agencyId": "agency:crawl:cedar-city-corporation",
@@ -2539,7 +2465,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:8a8c92eab8",
@@ -2548,7 +2475,9 @@
       "sourceTitle": "How to file a federal tax return if you live outside the U.S.",
       "summary": "Use the official government service to file a federal tax return if you live outside the U.S. Review the current requirements and complete the task with the responsible agency.",
       "category": "Immigration and citizenship",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -2572,7 +2501,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:536becd7c2",
@@ -2581,7 +2511,9 @@
       "sourceTitle": "Report a concern | Bulverde, TX - Official Website",
       "summary": "Use the official government service to report a concern. Review the current requirements and complete the task with the responsible agency.",
       "category": "Immigration and citizenship",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "TX",
+      "locality": "Bulverde",
       "publisher": "City of Bulverde, Texas",
       "agency": "City of Bulverde, Texas",
       "agencyId": "agency:crawl:city-of-bulverde-texas",
@@ -2599,7 +2531,7 @@
         "Download the \" Access Bulverde\u201d app on the following platforms (FREE):",
         "SUPPORT"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2607,7 +2539,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:1875025b26",
@@ -2616,7 +2549,9 @@
       "sourceTitle": "Request an A-File From USCIS",
       "summary": "Use the official government service to request an A-File From USCIS. Review the current requirements and complete the task with the responsible agency.",
       "category": "Immigration and citizenship",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Homeland Security",
       "agency": "Department of Homeland Security",
       "agencyId": "agency:crawl:department-of-homeland-security",
@@ -2641,67 +2576,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:4ded83989f",
-      "slug": "apply-for-4ded83989f",
-      "title": "Apply For",
-      "sourceTitle": "Apply For",
-      "summary": "Use the official government service to apply For. Review the current requirements and complete the task with the responsible agency.",
-      "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Blowing Rock",
-      "agency": "Town of Blowing Rock",
-      "agencyId": "agency:crawl:town-of-blowing-rock",
-      "sourceId": "source:crawl:4ded83989f263a3f",
-      "officialUrl": "https://www.blowingrock.gov/143/Apply-For",
-      "discoveredAt": "2026-09-29T16:54:18.468404+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Blowing Rock and matched it to jobs and workplace using employment.",
-      "matchedTerms": [
-        "employment"
-      ],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:c632207a12",
-      "slug": "apply-for-c632207a12",
-      "title": "Apply For",
-      "sourceTitle": "Apply For",
-      "summary": "Use the official government service to apply For. Review the current requirements and complete the task with the responsible agency.",
-      "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Brandon",
-      "agency": "Town of Brandon",
-      "agencyId": "agency:crawl:town-of-brandon",
-      "sourceId": "source:crawl:c632207a127e6a19",
-      "officialUrl": "https://www.brandonvermont.gov/143/Apply-For",
-      "discoveredAt": "2026-09-29T16:54:34.082963+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Brandon and matched it to jobs and workplace using employment.",
-      "matchedTerms": [
-        "employment"
-      ],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:b4ca22d148",
@@ -2710,7 +2586,9 @@
       "sourceTitle": "Apply or Renew a Contractor License",
       "summary": "Use the official government service to apply or Renew a Contractor License. Review the current requirements and complete the task with the responsible agency.",
       "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CO",
+      "locality": "Centennial",
       "publisher": "CIty of Centennial",
       "agency": "CIty of Centennial",
       "agencyId": "agency:crawl:city-of-centennial",
@@ -2744,7 +2622,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:776aeca299",
@@ -2753,7 +2632,9 @@
       "sourceTitle": "Get financial assistance 2025 Los Angeles Fires",
       "summary": "Use the official government service to get financial assistance 2025 Los Angeles Fires. Review the current requirements and complete the task with the responsible agency.",
       "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "CA",
+      "locality": "",
       "publisher": "State of California",
       "agency": "State of California",
       "agencyId": "agency:crawl:state-of-california",
@@ -2780,7 +2661,7 @@
         "Property tax",
         "Employment"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2788,7 +2669,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:1e427a22cf",
@@ -2797,7 +2679,9 @@
       "sourceTitle": "Request support - Worker Organizing Resource and Knowledge Center",
       "summary": "Use the official government service to request support - Worker Organizing Resource and Knowledge Center. Review the current requirements and complete the task with the responsible agency.",
       "category": "Jobs and workplace",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Labor",
       "agency": "Department of Labor",
       "agencyId": "agency:crawl:department-of-labor",
@@ -2811,7 +2695,7 @@
         "labor"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2819,7 +2703,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:2edb5a6f5d",
@@ -2828,7 +2713,9 @@
       "sourceTitle": "File an Online Report",
       "summary": "Use the official government service to file an Online Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "Law, courts, and public safety",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CA",
+      "locality": "Ceres",
       "publisher": "City of Ceres",
       "agency": "City of Ceres",
       "agencyId": "agency:crawl:city-of-ceres",
@@ -2841,7 +2728,7 @@
         "crime"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2849,7 +2736,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:5f64fb914c",
@@ -2858,7 +2746,9 @@
       "sourceTitle": "Report A Code Violation | Report Violations Today - Ensure Community Compliance \u2014 City of Broken Bow",
       "summary": "Use the official government service to report A Code Violation. Review the current requirements and complete the task with the responsible agency.",
       "category": "Law, courts, and public safety",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "OK",
+      "locality": "Broken Bow",
       "publisher": "City of Broken Bow",
       "agency": "City of Broken Bow",
       "agencyId": "agency:crawl:city-of-broken-bow",
@@ -2879,7 +2769,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:42edfaeb4b",
@@ -2888,7 +2779,9 @@
       "sourceTitle": "How to Report Drug/Suspicious Activity | Bogota Police Dept",
       "summary": "Use the official government service to report Drug/Suspicious Activity. Review the current requirements and complete the task with the responsible agency.",
       "category": "Law, courts, and public safety",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NJ",
+      "locality": "Bogota",
       "publisher": "Bogota Police Department",
       "agency": "Bogota Police Department",
       "agencyId": "agency:crawl:bogota-police-department",
@@ -2904,7 +2797,7 @@
         "Reporting Drug Activity to Police",
         "Narcotics/Anti-Crime Unit"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -2912,7 +2805,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:3e710ae931",
@@ -2921,7 +2815,9 @@
       "sourceTitle": "Uniform Crime Reports \u2013 Hawaii Crime Statistics \u2013 Crime Prevention and Justice Assistance Division",
       "summary": "Find official Hawaii crime reports and statewide crime statistics published for public use.",
       "category": "Law, courts, and public safety",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "HI",
+      "locality": "",
       "publisher": "Office of the Attorney General",
       "agency": "Office of the Attorney General",
       "agencyId": "agency:crawl:office-of-the-attorney-general",
@@ -2948,35 +2844,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:4d96201708",
-      "slug": "apply-for-4d96201708",
-      "title": "Apply For",
-      "sourceTitle": "Apply For",
-      "summary": "Use the official government service to apply For. Review the current requirements and complete the task with the responsible agency.",
-      "category": "More government services",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Chili",
-      "agency": "Town of Chili",
-      "agencyId": "agency:crawl:town-of-chili",
-      "sourceId": "source:crawl:4d9620170822e417",
-      "officialUrl": "https://www.chiliny.gov/309/Apply-For",
-      "discoveredAt": "2026-09-29T16:56:03.377498+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Chili. It remains discoverable under more government services until it is categorized more specifically.",
-      "matchedTerms": [],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:e7111698e3",
@@ -2985,7 +2854,9 @@
       "sourceTitle": "File a Police Report",
       "summary": "Use the official government service to file a Police Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "TX",
+      "locality": "Cedar Park",
       "publisher": "City of Cedar Park",
       "agency": "City of Cedar Park",
       "agencyId": "agency:crawl:city-of-cedar-park",
@@ -3004,7 +2875,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:c2da25ccac",
@@ -3013,7 +2885,9 @@
       "sourceTitle": "File a Police Report | Chapel Hill, NC",
       "summary": "Use the official government service to file a Police Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NC",
+      "locality": "Chapel Hill",
       "publisher": "Town of Chapel Hill",
       "agency": "Town of Chapel Hill",
       "agencyId": "agency:crawl:town-of-chapel-hill",
@@ -3024,7 +2898,7 @@
       "reason": "Shown because the crawler found this official page from Town of Chapel Hill. It remains discoverable under more government services until it is categorized more specifically.",
       "matchedTerms": [],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3032,7 +2906,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f33eec0408",
@@ -3041,7 +2916,9 @@
       "sourceTitle": "The Copyright Claims Board (CCB)",
       "summary": "Use the Copyright Claims Board process to file, respond to, or track an eligible small copyright dispute.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Library of Congress",
       "agency": "Library of Congress",
       "agencyId": "agency:crawl:library-of-congress",
@@ -3065,7 +2942,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:30046d8717",
@@ -3074,7 +2952,9 @@
       "sourceTitle": "File/Obtain Police Report",
       "summary": "Use the official government service to file/Obtain Police Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MI",
+      "locality": "Canton",
       "publisher": "Canton Township",
       "agency": "Canton Township",
       "agencyId": "agency:crawl:canton-township",
@@ -3088,7 +2968,7 @@
         "Contact Us",
         "Quick Links"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3096,7 +2976,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:1020b45017",
@@ -3105,7 +2986,9 @@
       "sourceTitle": "Register for Recreation Programs",
       "summary": "Use the official government service to register for Recreation Programs. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "UT",
+      "locality": "Centerville",
       "publisher": "Centerville City Corp",
       "agency": "Centerville City Corp",
       "agencyId": "agency:crawl:centerville-city-corp",
@@ -3116,7 +2999,7 @@
       "reason": "Shown because the crawler found this official page from Centerville City Corp. It remains discoverable under more government services until it is categorized more specifically.",
       "matchedTerms": [],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3124,7 +3007,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:3b13fc7c49",
@@ -3133,7 +3017,9 @@
       "sourceTitle": "Report Potholes",
       "summary": "Use the official government service to report Potholes. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NJ",
+      "locality": "Bridgewater",
       "publisher": "Bridgewater Township",
       "agency": "Bridgewater Township",
       "agencyId": "agency:crawl:bridgewater-township",
@@ -3144,7 +3030,7 @@
       "reason": "Shown because the crawler found this official page from Bridgewater Township. It remains discoverable under more government services until it is categorized more specifically.",
       "matchedTerms": [],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3152,35 +3038,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:1ec1ec29da",
-      "slug": "request-1ec1ec29da",
-      "title": "Request",
-      "sourceTitle": "Request",
-      "summary": "Use the official government service to request. Review the current requirements and complete the task with the responsible agency.",
-      "category": "More government services",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Boiling Springs",
-      "agency": "Town of Boiling Springs",
-      "agencyId": "agency:crawl:town-of-boiling-springs",
-      "sourceId": "source:crawl:1ec1ec29da672980",
-      "officialUrl": "https://boilingspringsnc.gov/229/Request",
-      "discoveredAt": "2026-09-29T16:54:22.716142+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Boiling Springs. It remains discoverable under more government services until it is categorized more specifically.",
-      "matchedTerms": [],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:2450a81fa6",
@@ -3189,7 +3048,9 @@
       "sourceTitle": "Request Fire/EMS Report",
       "summary": "Use the official government service to request Fire/EMS Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MN",
+      "locality": "Burnsville",
       "publisher": "City of Burnsville",
       "agency": "City of Burnsville",
       "agencyId": "agency:crawl:city-of-burnsville",
@@ -3200,7 +3061,7 @@
       "reason": "Shown because the crawler found this official page from City of Burnsville. It remains discoverable under more government services until it is categorized more specifically.",
       "matchedTerms": [],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3208,7 +3069,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:8ce67e4ad8",
@@ -3217,7 +3079,9 @@
       "sourceTitle": "Request For Services",
       "summary": "Use the official government service to request For Services. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MA",
+      "locality": "Boxborough",
       "publisher": "Town of Boxborough",
       "agency": "Town of Boxborough",
       "agencyId": "agency:crawl:town-of-boxborough",
@@ -3230,7 +3094,7 @@
       "outline": [
         "Quick Links"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3238,7 +3102,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:f93de9f966",
@@ -3247,7 +3112,9 @@
       "sourceTitle": "Request a Copy of a Police Report",
       "summary": "Use the official government service to request a Copy of a Police Report. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CA",
+      "locality": "Brisbane",
       "publisher": "City of Brisbane",
       "agency": "City of Brisbane",
       "agencyId": "agency:crawl:city-of-brisbane",
@@ -3264,7 +3131,7 @@
         "Contact Us",
         "Social Media"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3272,7 +3139,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:8a129f0fd7",
@@ -3281,7 +3149,9 @@
       "sourceTitle": "Request a free California visitor's guide",
       "summary": "Use the official government service to request a free California visitor's guide. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "CA",
+      "locality": "",
       "publisher": "State of California",
       "agency": "State of California",
       "agencyId": "agency:crawl:state-of-california",
@@ -3298,7 +3168,7 @@
         "Topics",
         "Keywords"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3306,7 +3176,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:ede7fe82c2",
@@ -3315,7 +3186,9 @@
       "sourceTitle": "Request for Bids / Proposals - Town of Broadway Virginia",
       "summary": "Use the official government service to request for Bids / Proposals - Town of Broadway Virginia. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "VA",
+      "locality": "Broadway",
       "publisher": "Town of Broadway, Virginia ",
       "agency": "Town of Broadway, Virginia ",
       "agencyId": "agency:crawl:town-of-broadway-virginia",
@@ -3328,7 +3201,7 @@
       "outline": [
         "Request for Bids / Proposals"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3336,7 +3209,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:1e9c5ef540",
@@ -3345,7 +3219,9 @@
       "sourceTitle": "Request for Proposals (RFP)",
       "summary": "Use the official government service to request for Proposals (RFP). Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MD",
+      "locality": "Burkittsville",
       "publisher": "Town of Burkittsville",
       "agency": "Town of Burkittsville",
       "agencyId": "agency:crawl:town-of-burkittsville",
@@ -3364,7 +3240,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:de491f0de2",
@@ -3373,7 +3250,9 @@
       "sourceTitle": "Request for Proposals: Fire House Renovation Design and Engineering Services",
       "summary": "Use the official government service to request for Proposals: Fire House Renovation Design and Engineering Services. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NY",
+      "locality": "Canastota",
       "publisher": "Village of Canastota",
       "agency": "Village of Canastota",
       "agencyId": "agency:crawl:village-of-canastota",
@@ -3395,7 +3274,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:1145567a3f",
@@ -3404,7 +3284,9 @@
       "sourceTitle": "Request for Qualifications - Sewer Proje | Chimney Rock Village",
       "summary": "Use the official government service to request for Qualifications - Sewer Proje. Review the current requirements and complete the task with the responsible agency.",
       "category": "More government services",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NC",
+      "locality": "Chimney Rock",
       "publisher": "Chimney Rock Village",
       "agency": "Chimney Rock Village",
       "agencyId": "agency:crawl:chimney-rock-village",
@@ -3415,7 +3297,7 @@
       "reason": "Shown because the crawler found this official page from Chimney Rock Village. It remains discoverable under more government services until it is categorized more specifically.",
       "matchedTerms": [],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3423,93 +3305,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:1139986494",
-      "slug": "use-georgia-driver-services-online-1139986494",
-      "title": "Use Georgia driver services online",
-      "sourceTitle": "Town Office Closed -Holiday -Online services available",
-      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
-      "category": "More government services",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Blue Hill",
-      "agency": "Town of Blue Hill",
-      "agencyId": "agency:crawl:town-of-blue-hill",
-      "sourceId": "source:crawl:1139986494036e16",
-      "officialUrl": "https://bluehillme.gov/2025/06/town-office-closed-holiday-online-services-available/",
-      "discoveredAt": "2026-09-29T16:54:21.586399+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Blue Hill. It remains discoverable under more government services until it is categorized more specifically.",
-      "matchedTerms": [],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:362207c03a",
-      "slug": "use-georgia-driver-services-online-362207c03a",
-      "title": "Use Georgia driver services online",
-      "sourceTitle": "Online Services",
-      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
-      "category": "More government services",
-      "jurisdiction": "federal-and-state",
-      "publisher": "Town of Charlestown",
-      "agency": "Town of Charlestown",
-      "agencyId": "agency:crawl:town-of-charlestown",
-      "sourceId": "source:crawl:362207c03a3eb36c",
-      "officialUrl": "https://charlestown-nh.gov/pages/online-services",
-      "discoveredAt": "2026-09-29T16:55:48.561930+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from Town of Charlestown. It remains discoverable under more government services until it is categorized more specifically.",
-      "matchedTerms": [],
-      "outline": [
-        "Useful Bill Pay Links"
-      ],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
-    },
-    {
-      "id": "journey:discovered:c364cc83aa",
-      "slug": "use-georgia-driver-services-online-c364cc83aa",
-      "title": "Use Georgia driver services online",
-      "sourceTitle": "Online Services",
-      "summary": "Complete eligible Georgia driver license and identification card services online without visiting a customer service center.",
-      "category": "More government services",
-      "jurisdiction": "federal-and-state",
-      "publisher": "City of Blackwell",
-      "agency": "City of Blackwell",
-      "agencyId": "agency:crawl:city-of-blackwell",
-      "sourceId": "source:crawl:c364cc83aa23429b",
-      "officialUrl": "https://www.blackwellok.gov/9/Online-Services",
-      "discoveredAt": "2026-09-29T16:54:15.048756+00:00",
-      "reviewedAt": "2026-09-29",
-      "reason": "Shown because the crawler found this official page from City of Blackwell. It remains discoverable under more government services until it is categorized more specifically.",
-      "matchedTerms": [],
-      "outline": [],
-      "seoEligible": true,
-      "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
-      "reviewChecks": [
-        "official-source",
-        "task-title",
-        "useful-summary",
-        "fresh-crawl-record"
-      ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:a3af803b1c",
@@ -3518,7 +3315,9 @@
       "sourceTitle": "Where to File",
       "summary": "Use the official government service to file. Review the current requirements and complete the task with the responsible agency.",
       "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "OH",
+      "locality": "Cleveland",
       "publisher": "Central Collection Agency, Division of Taxation",
       "agency": "Central Collection Agency, Division of Taxation",
       "agencyId": "agency:crawl:central-collection-agency-division-of-taxation",
@@ -3543,7 +3342,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:c05696d369",
@@ -3552,7 +3352,9 @@
       "sourceTitle": "File federal taxes",
       "summary": "Use the official government service to file federal taxes. Review the current requirements and complete the task with the responsible agency.",
       "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -3581,7 +3383,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:2f6938a489",
@@ -3590,7 +3393,9 @@
       "sourceTitle": "How to file your federal income tax return",
       "summary": "Use the official government service to file your federal income tax return. Review the current requirements and complete the task with the responsible agency.",
       "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -3617,7 +3422,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:e9661caab3",
@@ -3626,7 +3432,9 @@
       "sourceTitle": "Find out if you need to file a federal tax return",
       "summary": "Use the official government service to find out if you need to file a federal tax return. Review the current requirements and complete the task with the responsible agency.",
       "category": "Taxes and money",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -3650,7 +3458,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:d6aa7172d5",
@@ -3659,7 +3468,9 @@
       "sourceTitle": "How to Apply for Property Tax Exemptions",
       "summary": "Use the official government service to apply for Property Tax Exemptions. Review the current requirements and complete the task with the responsible agency.",
       "category": "Veterans and military",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NH",
+      "locality": "Brookfield",
       "publisher": "Town of Brookfield",
       "agency": "Town of Brookfield",
       "agencyId": "agency:crawl:town-of-brookfield",
@@ -3685,7 +3496,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:899ea154f8",
@@ -3694,7 +3506,9 @@
       "sourceTitle": "National Resource Directory | Connecting Service Members & Veterans",
       "summary": "Search vetted services and resources for service members, veterans, families, and caregivers.",
       "category": "Veterans and military",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "federal",
+      "state": "",
+      "locality": "",
       "publisher": "Department of Defense",
       "agency": "Department of Defense",
       "agencyId": "agency:crawl:department-of-defense",
@@ -3717,7 +3531,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:cb25357ef3",
@@ -3726,7 +3541,9 @@
       "sourceTitle": "Find out when to vote",
       "summary": "Use the official government service to find out when to vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -3750,7 +3567,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:88cff02776",
@@ -3759,7 +3577,9 @@
       "sourceTitle": "How to get a voter registration card",
       "summary": "Use the official government service to get a voter registration card. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -3789,7 +3609,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:0889d74ff8",
@@ -3798,7 +3619,9 @@
       "sourceTitle": "Register to Vote",
       "summary": "Use the official government service to register to Vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MI",
+      "locality": "Bloomfield Hills",
       "publisher": "City of Bloomfield Hills",
       "agency": "City of Bloomfield Hills",
       "agencyId": "agency:crawl:city-of-bloomfield-hills",
@@ -3823,7 +3646,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:ff44692729",
@@ -3832,7 +3656,9 @@
       "sourceTitle": "How to Register to Vote",
       "summary": "Use the official government service to register to Vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NH",
+      "locality": "Bow",
       "publisher": "Town of Bow, NH",
       "agency": "Town of Bow, NH",
       "agencyId": "agency:crawl:town-of-bow-nh",
@@ -3853,7 +3679,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:cb928ee013",
@@ -3862,7 +3689,9 @@
       "sourceTitle": "Register to Vote",
       "summary": "Use the official government service to register to Vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MN",
+      "locality": "Champlin",
       "publisher": "City of Champlin",
       "agency": "City of Champlin",
       "agencyId": "agency:crawl:city-of-champlin",
@@ -3885,7 +3714,7 @@
         "FAQs",
         "Campaign Signs"
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3893,7 +3722,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:11c4f7dd40",
@@ -3902,7 +3732,9 @@
       "sourceTitle": "Register to Vote",
       "summary": "Use the official government service to register to Vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "CT",
+      "locality": "Bridgewater",
       "publisher": "Town of Bridgewater CT",
       "agency": "Town of Bridgewater CT",
       "agencyId": "agency:crawl:town-of-bridgewater-ct",
@@ -3923,7 +3755,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:166ee20053",
@@ -3932,7 +3765,9 @@
       "sourceTitle": "Register to Vote",
       "summary": "Use the official government service to register to Vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "NC",
+      "locality": "Butner",
       "publisher": "Town of Butner",
       "agency": "Town of Butner",
       "agencyId": "agency:crawl:town-of-butner",
@@ -3960,7 +3795,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:2654b2de1f",
@@ -3969,7 +3805,9 @@
       "sourceTitle": "Register to Vote Today!",
       "summary": "Use the official government service to register to Vote Today!. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "MI",
+      "locality": "Hudsonville",
       "publisher": "Blendon Township ",
       "agency": "Blendon Township ",
       "agencyId": "agency:crawl:blendon-township",
@@ -3982,7 +3820,7 @@
         "vote"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -3990,7 +3828,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:eb34523cff",
@@ -3999,7 +3838,9 @@
       "sourceTitle": "Voter Registration Application",
       "summary": "Use the official government service to register to vote. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "WI",
+      "locality": "Burlington",
       "publisher": "City of Burlington",
       "agency": "City of Burlington",
       "agencyId": "agency:crawl:city-of-burlington",
@@ -4012,7 +3853,7 @@
         "vote"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -4020,7 +3861,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:6310210e27",
@@ -4029,7 +3871,9 @@
       "sourceTitle": "Voter Registration and Eligibility to Vote",
       "summary": "Use the official government service to register to vote. Review eligibility, required documents, deadlines, and the current application or request process.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "local",
+      "state": "SC",
+      "locality": "Charleston",
       "publisher": "City of Charleston",
       "agency": "City of Charleston",
       "agencyId": "agency:crawl:city-of-charleston",
@@ -4043,7 +3887,7 @@
         "election"
       ],
       "outline": [],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -4051,7 +3895,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:b30a4dfe8f",
@@ -4060,7 +3905,9 @@
       "sourceTitle": "How to register to vote",
       "summary": "Use the official government service to register to vote. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -4088,7 +3935,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:46e0c811fa",
@@ -4097,7 +3945,9 @@
       "sourceTitle": "Request Voter Registration Applications for NVRA Agencies and County Boards",
       "summary": "Use the official government service to request Voter Registration Applications for NVRA Agencies and County Boards. Review the current requirements and complete the task with the responsible agency.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NC",
+      "locality": "",
       "publisher": "State Board of Elections",
       "agency": "State Board of Elections",
       "agencyId": "agency:crawl:state-board-of-elections",
@@ -4121,7 +3971,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:8386029097",
@@ -4130,7 +3981,9 @@
       "sourceTitle": "Five Steps to Vote by Mail in North Carolina in the 2020 General Election",
       "summary": "Check your state's rules, request an absentee or mail ballot, and track the deadlines for returning it.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "NC",
+      "locality": "",
       "publisher": "State Board of Elections",
       "agency": "State Board of Elections",
       "agencyId": "agency:crawl:state-board-of-elections",
@@ -4151,7 +4004,7 @@
         "4. Complete and sign the absentee ballot return envelope.",
         "5. Return your ballot to your county board of elections."
       ],
-      "seoEligible": true,
+      "seoEligible": false,
       "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
       "reviewChecks": [
         "official-source",
@@ -4159,7 +4012,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     },
     {
       "id": "journey:discovered:35e5acb1a8",
@@ -4168,7 +4022,9 @@
       "sourceTitle": "Absentee voting and voting by mail",
       "summary": "Check your state's rules, request an absentee or mail ballot, and track the deadlines for returning it.",
       "category": "Voting and civic life",
-      "jurisdiction": "federal-and-state",
+      "jurisdiction": "state",
+      "state": "WY",
+      "locality": "",
       "publisher": "USA.gov",
       "agency": "USA.gov",
       "agencyId": "agency:crawl:usa-gov",
@@ -4199,7 +4055,8 @@
         "useful-summary",
         "fresh-crawl-record"
       ],
-      "status": "published"
+      "status": "published",
+      "aliasSlugs": []
     }
   ]
 }

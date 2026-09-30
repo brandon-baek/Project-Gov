@@ -5,7 +5,7 @@ import { govGraph } from "@/lib/graph";
 import { ArrowIcon } from "@/components/icons";
 import { discoveredGuides } from "@/lib/discovered-guides";
 
-const featuredIds = ["journey-passport-lost", "journey-ca-unemployment", "journey-report-fraud", "journey-ca-business"];
+const featuredIds = ["journey-ca-license", "journey-ca-unemployment", "journey-calfresh", "journey-ca-business"];
 
 export default function HomePage() {
   const featured = featuredIds.map((id) => journeys.find((journey) => journey.id === id)).filter(Boolean);
@@ -13,18 +13,19 @@ export default function HomePage() {
     <>
       <section className="hero shell" id="ask">
         <div className="hero__copy">
-          <p className="eyebrow"><span /> Source-grounded public service guidance</p>
-          <h1>Find the next<br />right step.</h1>
-          <p>Describe what happened. GovRoute turns official government information into one clear, verifiable route.</p>
-          <div className="hero-proof"><span>{journeys.length + discoveredGuides.length} published guides</span><span>19,000+ government domains mapped</span><span>No account required</span></div>
+          <p className="eyebrow"><span /> State, local, and cross-state guidance</p>
+          <h1>Your next step,<br />wherever you live.</h1>
+          <p>Find the state or local service you need. Moving across state lines? Bring both jurisdictions into one checklist.</p>
+          <div className="hero-proof"><span>{journeys.length + discoveredGuides.length} published guides</span><span>Free guidance</span><span>No account required</span></div>
         </div>
         <GuideSearch />
       </section>
 
       <section className="trust-line">
-        <div className="shell"><span>Independent project—not a government agency.</span><p><i /> Every instruction traces to an official source.</p></div>
+        <div className="shell"><span>Independent project—not a government agency.</span><p><i /> Official sources. Clearly labeled coverage.</p></div>
       </section>
 
+      <section className="moving-callout shell"><div><p className="eyebrow">Moving between states</p><h2>One move. More than one rulebook.</h2><p>Combine your old state’s departure rules with your new state’s license and vehicle tasks.</p></div><Link className="primary-action" href="/moving">Build a moving checklist</Link></section>
       <section className="featured shell">
         <div className="section-heading">
           <div><p className="section-label">Common starting points</p><h2>What brings you here?</h2></div>

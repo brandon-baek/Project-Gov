@@ -42,7 +42,7 @@ jobs:
         run: npm run db:seed
 
       - name: Crawl official sources and update SQLite
-        run: python -m pipeline.run --source all
+        run: python -m pipeline.run --source local
         env:
           SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
           GOVGUIDE_CRAWL_LIMIT: 40
@@ -77,7 +77,7 @@ jobs:
           if verified == 0 or unreviewed_public:
               sys.exit(f"Journey review gate failed: verified={verified}, unreviewed={unreviewed_public}")
 
-          for connector in ("usagov", "california"):
+          for connector in ("california",):
               row = db.execute(
                   "SELECT status, records_seen FROM ingestion_runs WHERE connector = ? ORDER BY id DESC LIMIT 1",
                   (connector,),

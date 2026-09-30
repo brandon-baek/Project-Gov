@@ -1,5 +1,6 @@
 import { journeys } from "@/data/curated/journeys";
 import type { Journey, RetrievalMatch } from "@/lib/schema";
+import { matchesLocation, statesInText } from "@/lib/jurisdictions";
 
 const stopwords = new Set([
   "a", "about", "an", "and", "are", "can", "do", "for", "get", "how", "i", "in", "is", "it", "me", "my", "need", "of", "on", "or", "please", "the", "to", "want", "what", "with"
@@ -16,6 +17,10 @@ const expansions: Record<string, string[]> = {
   college: ["fafsa", "student", "aid"],
   scammer: ["scam", "fraud"],
   moved: ["address", "mail", "moving"],
+  dmv: ["driver", "license", "vehicle"],
+  car: ["vehicle", "registration"],
+  driving: ["driver", "license"],
+  unemployed: ["unemployment", "job"],
   retirement: ["social", "security", "medicare"],
   company: ["business", "ein"],
   id: ["identity", "license", "card"],
@@ -75,8 +80,10 @@ function scoreJourney(query: string, journey: Journey): RetrievalMatch {
   return { journey, score, matchedTerms: [...matchedTerms] };
 }
 
-export function retrieveJourneys(query: string, limit = 4, records: Journey[] = journeys) {
+export function retrieveJourneys(query: string, limit = 4, records: Journey[] = journeys, state?: string) {
+  const location = state ?? statesInText(query)[0]?.code;
   return records
+    .filter((journey) => matchesLocation(journey, location))
     .map((journey) => scoreJourney(query, journey))
     .filter((match) => match.score > 0)
     .sort((a, b) => b.score - a.score || a.journey.title.localeCompare(b.journey.title))

@@ -6,7 +6,7 @@ import re
 import sqlite3
 import sys
 from pathlib import Path
-from urllib.parse import urlparse
+from urllib.parse import urlparse, parse_qsl, urlencode, urlunparse
 
 
 TOPICS = (
@@ -53,8 +53,8 @@ PLACEHOLDER_COPY = re.compile(
 TASK_RULES = (
     (re.compile(r"arc and plc", re.I), "Enroll in ARC or PLC farm support", "Review the USDA election options and enroll your farm in Agriculture Risk Coverage or Price Loss Coverage."),
     (re.compile(r"benefeds|fedvip|fsafeds|fltcip", re.I), "Enroll in federal employee benefits through BENEFEDS", "Compare eligible federal benefit programs and complete enrollment through the official BENEFEDS portal."),
-    (re.compile(r"famil(?:y|ies).+support", re.I), "Find family support services in Louisiana", "Find child welfare, family support, and related services from the Louisiana Department of Children and Family Services."),
-    (re.compile(r"skip the trip|online services", re.I), "Use Georgia driver services online", "Complete eligible Georgia driver license and identification card services online without visiting a customer service center."),
+    (re.compile(r"dcfs\.louisiana\.gov", re.I), "Find family support services in Louisiana", "Find child welfare, family support, and related services from the Louisiana Department of Children and Family Services."),
+    (re.compile(r"dds\.georgia\.gov", re.I), "Use Georgia driver services online", "Complete eligible Georgia driver license and identification card services online without visiting a customer service center."),
     (re.compile(r"federal student aid|fsa[ -]?id", re.I), "Create or recover your Federal Student Aid ID", "Create, recover, or manage the account used to access federal student aid forms and services."),
     (re.compile(r"plan ahead.+disaster|ready\.gov", re.I), "Make a plan for a disaster", "Build a household emergency plan, decide how you will communicate, and prepare for hazards where you live."),
     (re.compile(r"court electronic records|\bpacer\b", re.I), "Find a federal court case in PACER", "Search federal court records and access case and docket information through the official PACER service."),
@@ -68,6 +68,8 @@ TASK_RULES = (
 
 def task_profile(title: str, url: str) -> tuple[str, str] | None:
     text = f"{title} {url}"
+    if re.fullmatch(r"apply for|report|request|online services(?: and payments)?", title.strip(" .:-"), re.I):
+        return None
     for pattern, task_title, summary in TASK_RULES:
         if pattern.search(text):
             return task_title, summary
@@ -137,6 +139,47 @@ def category_for(text: str) -> tuple[str, list[str]]:
     return max(matches, key=lambda item: len(item[1]))
 
 
+def canonical_url(url: str) -> str:
+    parsed = urlparse(url)
+    query = urlencode(sorted((k, v) for k, v in parse_qsl(parsed.query) if not k.lower().startswith("utm_") and k.lower() not in {"fbclid", "gclid"}))
+    return urlunparse(parsed._replace(netloc=parsed.netloc.lower().removeprefix("www."), path=parsed.path.rstrip("/"), query=query, fragment=""))
+
+
+def location_catalog(database: sqlite3.Connection) -> dict[str, dict[str, str]]:
+    catalog = {}
+    for url, jurisdiction, params_json in database.execute("SELECT source_url, jurisdiction, params_json FROM graph_nodes WHERE kind = 'agency' AND source_url IS NOT NULL ORDER BY id"):
+        params = json.loads(params_json)
+        host = urlparse(url).hostname or ""
+        host = host.removeprefix("www.")
+        tags = params.get("tags", [])
+        state = params.get("state", "")
+        scope = jurisdiction or params.get("jurisdiction", "unknown")
+        locality = ""
+        if params.get("connector") == "government-domain-directory":
+            domain_type = str(tags[1]).lower() if len(tags) > 1 else ""
+            state = str(tags[2]) if len(tags) > 2 else ""
+            locality = str(tags[3]) if len(tags) > 3 and domain_type in {"city", "county"} else ""
+            scope = "federal" if domain_type.startswith("federal") else "state" if domain_type == "state" else "local" if domain_type in {"city", "county"} else "unknown"
+        if scope == "california":
+            scope, state = "state", "CA"
+        if scope in {"state-or-territory", "state"}:
+            scope = "state"
+        if scope not in {"state", "local", "federal"}:
+            continue
+        catalog[host] = {"jurisdiction": scope, "state": state if scope != "federal" else "", "locality": locality}
+    return catalog
+
+
+def guide_location(url: str, catalog: dict[str, dict[str, str]], jurisdiction: str | None) -> dict[str, str]:
+    host = (urlparse(url).hostname or "").removeprefix("www.")
+    matches = [domain for domain in catalog if host == domain or host.endswith("." + domain)]
+    if matches:
+        return catalog[max(matches, key=len)]
+    if host == "ca.gov" or host.endswith(".ca.gov"):
+        return {"jurisdiction": "state", "state": "CA", "locality": ""}
+    return {"jurisdiction": "federal" if jurisdiction == "federal" else "unknown", "state": "", "locality": ""}
+
+
 def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
     rows = database.execute(
         """
@@ -151,6 +194,7 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
         ORDER BY s.title COLLATE NOCASE, s.url
         """
     ).fetchall()
+    catalog = location_catalog(database)
     by_url: dict[str, dict[str, object]] = {}
     for node_id, title, publisher, url, checked, description, jurisdiction, params_json, agency_id, agency in rows:
         params = json.loads(params_json)
@@ -174,14 +218,17 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
             + (f" and matched it to {category.lower()} using {', '.join(matched_terms[:3])}." if matched_terms else ". It remains discoverable under more government services until it is categorized more specifically.")
         )
         seo_eligible = len(title) >= 8 and len(description or "") >= 80 and not LOW_VALUE_TITLE.search(title)
-        by_url[url] = {
+        location = guide_location(url, catalog, jurisdiction)
+        by_url[canonical_url(url)] = {
             "id": f"journey:discovered:{digest}",
             "slug": guide_slug,
             "title": task_title,
             "sourceTitle": title,
             "summary": task_summary,
             "category": category,
-            "jurisdiction": jurisdiction or params.get("jurisdiction") or "federal-and-state",
+            "jurisdiction": location["jurisdiction"],
+            "state": location["state"],
+            "locality": location["locality"],
             "publisher": publisher,
             "agency": agency or publisher,
             "agencyId": agency_id,
@@ -192,12 +239,28 @@ def export_discovered_guides(database: sqlite3.Connection, output: Path) -> int:
             "reason": reason,
             "matchedTerms": matched_terms,
             "outline": outline[:12],
-            "seoEligible": True,
+            "seoEligible": bool(seo_eligible),
             "qualityReason": "Passed the automated publication checks for an official source, concrete task, useful summary, and current crawl record.",
             "reviewChecks": ["official-source", "task-title", "useful-summary", "fresh-crawl-record"],
             "status": "published",
         }
-    guides = sorted(by_url.values(), key=lambda item: (str(item["category"]), str(item["title"]), str(item["officialUrl"])))
+    # One task per responsible host and jurisdiction. Never merge different towns
+    # or states just because they use the same task name.
+    unique = {}
+    for guide in by_url.values():
+        key = (slug(str(guide["title"])), guide["jurisdiction"], guide["state"], guide["locality"], urlparse(str(guide["officialUrl"])).netloc.removeprefix("www."))
+        if key in unique:
+            unique[key].setdefault("aliasSlugs", []).append(guide["slug"])
+        else:
+            unique[key] = guide
+    guides = sorted(unique.values(), key=lambda item: (str(item["category"]), str(item["title"]), str(item["officialUrl"])))
+    if output.exists():
+        previous = json.loads(output.read_text()).get("guides", [])
+        for guide in guides:
+            for old in previous:
+                if canonical_url(str(old["officialUrl"])) == canonical_url(str(guide["officialUrl"])) and old["slug"] != guide["slug"]:
+                    guide.setdefault("aliasSlugs", []).extend([old["slug"], *old.get("aliasSlugs", [])])
+            guide["aliasSlugs"] = sorted(set(guide.get("aliasSlugs", [])))
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps({"schemaVersion": 1, "count": len(guides), "guides": guides}, indent=2) + "\n")
     return len(guides)

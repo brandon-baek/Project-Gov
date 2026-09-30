@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import { journeys } from "@/data/curated/journeys";
 import { getJourneyBySlug } from "@/lib/retrieval";
 import { GuideResult } from "@/components/GuideResult";
@@ -25,6 +25,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const journey = getJourneyBySlug(slug);
   const discovered = getDiscoveredGuideBySlug(slug);
   if (!journey && !discovered) notFound();
+  if (!journey && discovered && discovered.slug !== slug) permanentRedirect(`/guides/${discovered.slug}`);
   const title = journey?.title ?? discovered!.title;
   const summary = journey?.summary ?? discovered!.summary;
   const publisher = journey?.sources[0]?.publisher ?? discovered!.publisher;

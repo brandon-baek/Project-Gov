@@ -1,13 +1,14 @@
 # GovGuide
 
-GovGuide turns official government pages into a continuously expanding catalog of outcome-based guides. Reviewed guides contain checked steps; crawler-discovered guides provide a permanent, source-linked starting point while deeper instructions await review.
+GovGuide focuses on state and local government services, including cross-state driving and vehicle moves. Reviewed guides contain checked steps; crawler-discovered guides provide a permanent, source-linked starting point while deeper instructions await review.
 
 ## Current MVP
 
-- 24 reviewed federal and California pathways plus hundreds of generated discovered guides
+- location-filtered state/local guides, with federal routes available as supporting references
+- interstate moving planner with checked destination guidance for CA, TX, and NY; other destinations explicitly show limited coverage
 - one shared pathway dataset for the Guides index, guidance retrieval, permanent pages, sitemap, and knowledge graph
 - SQLite database with migrations, foreign keys, integrity checks, FTS5 search, source snapshots, ingestion runs, and GNN review tables
-- deterministic intent retrieval with an optional OpenAI structured-output classifier
+- free deterministic intent retrieval; paid classification requires GOVGUIDE_ENABLE_PAID_AI=true and only runs for ambiguous reviewed matches
 - Python USA.gov and CA.gov sitemap crawlers with robots enforcement, bounded workers, retries, rate limiting, size limits, content hashing, and failure reports
 - paginated Python SAM.gov Assistance Listings API connector with retry and key-gated access
 - automatic crawler-to-SQLite ingestion with source snapshots and run history
@@ -119,3 +120,11 @@ Set `NEXT_PUBLIC_SITE_URL` to the canonical production origin. Optional guide ad
 - Run the full test, build, database integrity, and source-health gates before deployment.
 
 GovGuide is an independent educational project. It provides public information, not legal advice, and hands transactions back to official government sites.
+
+## Cost and abuse controls
+
+The default public guidance and moving planner make no LLM calls, even if an API key is configured. The optional paid router uses a short timeout, no retries, bounded output, and a per-process hourly call cap. Request sizes, per-process IP windows, and rate-limit memory are bounded. These process-local controls are **not** a distributed billing limit: use your hosting firewall and provider-side project limits before enabling paid AI. Distributed bots can still consume hosting resources. No new paid service is required by this change.
+
+## Jurisdiction and publication
+
+The default guide directory focuses on state/local services. Generated guides recover state and locality from official directory records; unknown locations are never treated as a selected state's guide. Publication consolidates equivalent task titles on the same responsible host and scope, removes tracking URL variants, and preserves aliases for consolidated permanent pages. Reviewed-source URLs take precedence over discovered starting points. Similar tasks in different towns remain separate and display their location. The scheduled crawler prioritizes state/local sources through `--source local`; federal ingestion remains available manually.

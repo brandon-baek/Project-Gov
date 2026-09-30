@@ -26,7 +26,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Crawl government sources and populate GovRoute SQLite automatically.")
-    parser.add_argument("--source", choices=("all", "usagov", "california", "sam", "federal-directory", "federal-sites", "government-domain-directory", "government-sites", "state-directory", "state-sites"), default="all")
+    parser.add_argument("--source", choices=("all", "local", "usagov", "california", "sam", "federal-directory", "federal-sites", "government-domain-directory", "government-sites", "state-directory", "state-sites"), default="all")
     parser.add_argument("--limit", type=int, default=int(os.getenv("GOVGUIDE_CRAWL_LIMIT", "40")))
     parser.add_argument("--workers", type=int, default=int(os.getenv("GOVGUIDE_CRAWL_WORKERS", "16")))
     parser.add_argument("--delay", type=float, default=float(os.getenv("GOVGUIDE_CRAWL_DELAY_SECONDS", "0.25")))
@@ -54,16 +54,16 @@ def main() -> None:
     )
     results = []
     state_sites: list[dict[str, str]] = []
-    if args.source in ("all", "state-directory", "state-sites"):
+    if args.source in ("all", "local", "state-directory", "state-sites"):
         state_result, state_sites = crawl_state_directory(policy)
-        if args.source in ("all", "state-directory"):
+        if args.source in ("all", "local", "state-directory"):
             results.append(state_result)
     if args.source in ("all", "federal-directory"):
         results.append(crawl_federal_directory(policy))
-    if args.source in ("all", "government-domain-directory"):
+    if args.source in ("all", "local", "government-domain-directory"):
         results.append(government_domain_result(load_all_gov_domains(policy)))
     for source in SITEMAP_SOURCES:
-        if args.source in ("all", source.key):
+        if args.source in ("all", source.key) or (args.source == "local" and source.key == "california"):
             # Advance through unseen task pages on every run while the crawler's
             # refresh quota rechecks the oldest known pages for changes.
             results.append(crawl_sitemap(source, policy, args.limit, args.workers, known_urls))
@@ -76,20 +76,22 @@ def main() -> None:
         else:
             print("SAM.gov skipped because SAM_API_KEY is not set.")
 
-    site_modes = ("government-sites", "federal-sites", "state-sites") if args.source == "all" else (args.source,)
+    site_modes = ("government-sites", "federal-sites", "state-sites") if args.source == "all" else ("government-sites", "state-sites") if args.source == "local" else (args.source,)
     for site_mode in site_modes:
         if site_mode not in ("government-sites", "federal-sites", "state-sites"):
             continue
         bulk_policy = HttpPolicy(user_agent=policy.user_agent, timeout_seconds=8, retries=0, delay_seconds=args.delay)
         rows = load_all_gov_domains(policy) if site_mode == "government-sites" else load_federal_domains(policy) if site_mode == "federal-sites" else state_sites
+        if args.source == "local" and site_mode == "government-sites":
+            rows = [row for row in rows if not row.get("Domain type", "").lower().startswith("federal")]
         domain_offset = args.domain_offset
         if args.domains:
             selected_domains = {item.strip().lower().removeprefix("www.") for item in args.domains.split(",") if item.strip()}
             rows = [row for row in rows if (row.get("Domain name", row.get("domain", "")).lower().removeprefix("www.")) in selected_domains]
         else:
             domain_limit = args.domain_limit
-            if args.source == "all":
-                scheduled_limits = {"government-sites": 600, "federal-sites": 300, "state-sites": 200}
+            if args.source in ("all", "local"):
+                scheduled_limits = {"government-sites": 600, "federal-sites": 100, "state-sites": 400}
                 domain_limit = scheduled_limits[site_mode]
                 slots = max(1, (len(rows) + domain_limit - 1) // domain_limit)
                 domain_offset = (int(os.getenv("GITHUB_RUN_NUMBER", "0")) % slots) * domain_limit

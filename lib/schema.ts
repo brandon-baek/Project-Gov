@@ -80,6 +80,8 @@ export type GraphEdge = z.infer<typeof graphEdgeSchema>;
 
 export const chatRequestSchema = z.object({
   message: z.string().trim().min(3).max(600),
+  state: z.string().regex(/^[A-Z]{2}$/).optional(),
+  locality: z.string().trim().max(80).optional(),
   history: z
     .array(z.object({ role: z.enum(["user", "assistant"]), content: z.string().max(1200) }))
     .max(8)
