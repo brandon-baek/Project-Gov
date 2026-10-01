@@ -4,32 +4,29 @@
     {
       "connector": "federal-sites-18f",
       "domain": "18f.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for 18f.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 864,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-250",
       "domain": "250.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for 250.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 753,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-400yaahc",
       "domain": "400yaahc.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for 400yaahc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 868,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-9-11commission",
@@ -43,11 +40,18 @@
     },
     {
       "connector": "federal-sites-911",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 285,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "911.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 751,
-      "status": "completed"
+      "publisher": "Department of Transportation",
+      "warnings": []
     },
     {
       "connector": "federal-sites-911commission",
@@ -80,12 +84,11 @@
     {
       "connector": "federal-sites-abd",
       "domain": "abd.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for abd.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 754,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-abilityone",
@@ -110,12 +113,11 @@
     {
       "connector": "federal-sites-accedeainternet",
       "domain": "accedeainternet.gov",
+      "publisher": "Federal Communications Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for accedeainternet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 835,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-access-board",
@@ -159,19 +161,33 @@
     },
     {
       "connector": "federal-sites-acquisition",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
+      "pagesIndexed": 0,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "acquisition.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 905,
-      "status": "completed"
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-acquisitiongateway",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "acquisitiongateway.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 885,
-      "status": "completed"
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-acus",
@@ -232,22 +248,20 @@
     {
       "connector": "federal-sites-adr",
       "domain": "adr.gov",
+      "publisher": "Federal Mediation and Conciliation Service",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for adr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 840,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-afadvantage",
       "domain": "afadvantage.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for afadvantage.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 880,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-aff",
@@ -349,11 +363,18 @@
     },
     {
       "connector": "federal-sites-ai",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 4,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ai.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 777,
-      "status": "completed"
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-aicenter",
@@ -388,22 +409,20 @@
     {
       "connector": "federal-sites-airknowledge",
       "domain": "airknowledge.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for airknowledge.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 756,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-airnow",
       "domain": "airnow.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for airnow.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 740,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-aiworkforcehub",
@@ -417,30 +436,29 @@
     {
       "connector": "federal-sites-alertaenlinea",
       "domain": "alertaenlinea.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 901,
-      "status": "completed"
+      "warnings": [
+        "No same-domain sitemap found for alertaenlinea.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-alien",
+      "indexedPages": 0,
       "domain": "alien.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 225, column 39"
-      ],
-      "runId": 783,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-aliens",
+      "indexedPages": 0,
       "domain": "aliens.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 225, column 39"
-      ],
-      "runId": 781,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-altusandc",
@@ -503,12 +521,11 @@
     {
       "connector": "federal-sites-americabydesign",
       "domain": "americabydesign.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for americabydesign.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 769,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-americanmemory",
@@ -635,13 +652,12 @@
     },
     {
       "connector": "federal-sites-app",
+      "indexedPages": 0,
       "domain": "app.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 194, column 39"
-      ],
-      "runId": 785,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-applicationmanager",
@@ -697,23 +713,21 @@
     },
     {
       "connector": "federal-sites-arcade",
+      "indexedPages": 0,
       "domain": "arcade.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 192, column 39"
-      ],
-      "runId": 784,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-arcades",
+      "indexedPages": 0,
       "domain": "arcades.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 192, column 39"
-      ],
-      "runId": 786,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-archives",
@@ -792,12 +806,11 @@
     {
       "connector": "federal-sites-asap",
       "domain": "asap.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for asap.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 634,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-asc",
@@ -878,13 +891,12 @@
     },
     {
       "connector": "federal-sites-ayudaconmibanco",
+      "indexedPages": 0,
       "domain": "ayudaconmibanco.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 650,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bam",
@@ -898,53 +910,48 @@
     },
     {
       "connector": "federal-sites-bankanswers",
+      "indexedPages": 0,
       "domain": "bankanswers.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 652,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bankcustomer",
+      "indexedPages": 0,
       "domain": "bankcustomer.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 655,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bankcustomerassistance",
+      "indexedPages": 0,
       "domain": "bankcustomerassistance.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 654,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bankhelp",
+      "indexedPages": 0,
       "domain": "bankhelp.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 653,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-banknet",
       "domain": "banknet.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for banknet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 667,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bankruptcy",
@@ -995,13 +1002,12 @@
     },
     {
       "connector": "federal-sites-bebest",
+      "indexedPages": 0,
       "domain": "bebest.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for bebest.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 775,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 253, column 39"
+      ]
     },
     {
       "connector": "federal-sites-benefeds",
@@ -1013,23 +1019,21 @@
     },
     {
       "connector": "federal-sites-benefits",
+      "indexedPages": 0,
       "domain": "benefits.gov",
-      "pagesIndexed": 0,
+      "publisher": "General Services Administration",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 6, column 71"
-      ],
-      "runId": 899,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bep",
       "domain": "bep.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 651,
-      "status": "partial"
+        "No same-domain sitemap found for bep.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-betobaccofree",
@@ -1255,11 +1259,18 @@
     },
     {
       "connector": "federal-sites-bondpro",
-      "domain": "bondpro.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 646,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "bondpro.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-bop",
@@ -1301,12 +1312,11 @@
     {
       "connector": "federal-sites-broadbandmap",
       "domain": "broadbandmap.gov",
+      "publisher": "Federal Communications Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for broadbandmap.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 844,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-bsee",
@@ -1335,22 +1345,20 @@
     {
       "connector": "federal-sites-bts",
       "domain": "bts.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for bts.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 712,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-budget",
+      "indexedPages": 0,
       "domain": "budget.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 201, column 39"
-      ],
-      "runId": 787,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-budgetlob",
@@ -1392,13 +1400,18 @@
     },
     {
       "connector": "federal-sites-buyamerican",
-      "domain": "buyamerican.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 14,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [
-        "robots.txt unavailable; fail-closed: 404 Client Error: Not Found for url: https://www.madeinamerica.gov/robots.txt"
-      ],
-      "runId": 897,
-      "status": "partial"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "buyamerican.gov",
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-campusdrugprevention",
@@ -1427,12 +1440,11 @@
     {
       "connector": "federal-sites-cao",
       "domain": "cao.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cao.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 871,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cap",
@@ -1516,21 +1528,27 @@
     },
     {
       "connector": "federal-sites-cbca",
-      "domain": "cbca.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 895,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "cbca.gov",
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cbi-epa",
       "domain": "cbi-epa.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cbi-epa.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 741,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cbo",
@@ -1570,12 +1588,11 @@
     {
       "connector": "federal-sites-ccac",
       "domain": "ccac.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 656,
-      "status": "partial"
+        "No same-domain sitemap found for ccac.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-ccb",
@@ -1606,20 +1623,20 @@
     {
       "connector": "federal-sites-cdfifund",
       "domain": "cdfifund.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 662,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for cdfifund.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-cdo",
       "domain": "cdo.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cdo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 882,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ce-ncsc",
@@ -1681,21 +1698,27 @@
     },
     {
       "connector": "federal-sites-cfius",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 58,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cfius.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 647,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cfo",
       "domain": "cfo.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cfo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 883,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cfpa",
@@ -1730,12 +1753,11 @@
     {
       "connector": "federal-sites-challenge",
       "domain": "challenge.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for challenge.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 884,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-changeofaddress",
@@ -1841,12 +1863,11 @@
     {
       "connector": "federal-sites-cio",
       "domain": "cio.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for cio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 888,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cisa",
@@ -1876,12 +1897,11 @@
     {
       "connector": "federal-sites-citizenscience",
       "domain": "citizenscience.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for citizenscience.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 889,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cjis",
@@ -1936,11 +1956,18 @@
     },
     {
       "connector": "federal-sites-cloud",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 9,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "cloud.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 898,
-      "status": "completed"
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-cms",
@@ -1999,23 +2026,21 @@
     },
     {
       "connector": "federal-sites-code",
+      "indexedPages": 0,
       "domain": "code.gov",
-      "pagesIndexed": 0,
+      "publisher": "General Services Administration",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 53, column 2"
-      ],
-      "runId": 911,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-coffa",
       "domain": "coffa.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for coffa.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 893,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-coil",
@@ -2075,12 +2100,11 @@
     {
       "connector": "federal-sites-complaintreferralexpress",
       "domain": "complaintreferralexpress.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for complaintreferralexpress.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 665,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-compliance",
@@ -2094,21 +2118,27 @@
     },
     {
       "connector": "federal-sites-comptrollerofthecurrency",
-      "domain": "comptrollerofthecurrency.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 657,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "comptrollerofthecurrency.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-computersforlearning",
       "domain": "computersforlearning.gov",
+      "publisher": "General Services Administration",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for computersforlearning.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 892,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-congress",
@@ -2162,10 +2192,11 @@
     {
       "connector": "federal-sites-consumer",
       "domain": "consumer.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 866,
-      "status": "completed"
+      "warnings": [
+        "No same-domain sitemap found for consumer.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-consumerbureau",
@@ -2217,31 +2248,30 @@
     },
     {
       "connector": "federal-sites-consumersentinel",
+      "indexedPages": 0,
       "domain": "consumersentinel.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Trade Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 81, column 18"
-      ],
-      "runId": 891,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-consumidor",
       "domain": "consumidor.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 867,
-      "status": "completed"
+      "warnings": [
+        "No same-domain sitemap found for consumidor.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-contractdirectory",
+      "indexedPages": 0,
       "domain": "contractdirectory.gov",
-      "pagesIndexed": 0,
+      "publisher": "General Services Administration",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 23, column 44"
-      ],
-      "runId": 913,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-copyright",
@@ -2263,63 +2293,57 @@
     },
     {
       "connector": "federal-sites-coronavirus",
+      "indexedPages": 0,
       "domain": "coronavirus.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 248, column 39"
-      ],
-      "runId": 791,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-councils",
+      "indexedPages": 0,
       "domain": "councils.gov",
-      "pagesIndexed": 0,
+      "publisher": "General Services Administration",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 68"
-      ],
-      "runId": 916,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-covid",
+      "indexedPages": 0,
       "domain": "covid.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 248, column 39"
-      ],
-      "runId": 793,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-covidtest",
+      "indexedPages": 0,
       "domain": "covidtest.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 248, column 39"
-      ],
-      "runId": 800,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-covidtests",
+      "indexedPages": 0,
       "domain": "covidtests.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 248, column 39"
-      ],
-      "runId": 792,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-cpars",
+      "indexedPages": 0,
       "domain": "cpars.gov",
-      "pagesIndexed": 0,
+      "publisher": "General Services Administration",
       "warnings": [
-        "No same-domain sitemap found for cpars.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1205,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 2, column 39"
+      ]
     },
     {
       "connector": "federal-sites-cpnireporting",
@@ -2353,12 +2377,11 @@
     {
       "connector": "federal-sites-creators",
       "domain": "creators.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for creators.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 774,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-crimesolutions",
@@ -2390,13 +2413,12 @@
     },
     {
       "connector": "federal-sites-crypto",
+      "indexedPages": 0,
       "domain": "crypto.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 223, column 39"
-      ],
-      "runId": 803,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-csb",
@@ -2559,11 +2581,18 @@
     },
     {
       "connector": "federal-sites-data",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 293,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "data.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 906,
-      "status": "completed"
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-dataprivacyframework",
@@ -2636,12 +2665,11 @@
     {
       "connector": "federal-sites-dei",
       "domain": "dei.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dei.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 770,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-democraticleader",
@@ -2694,12 +2722,11 @@
     {
       "connector": "federal-sites-deregulation",
       "domain": "deregulation.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for deregulation.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 796,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-devcftc",
@@ -2788,11 +2815,18 @@
     },
     {
       "connector": "federal-sites-digital",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "digital.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 909,
-      "status": "completed"
+      "publisher": "General Services Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-digitalgov",
@@ -2826,13 +2860,12 @@
     },
     {
       "connector": "federal-sites-directoasucuenta",
+      "indexedPages": 0,
       "domain": "directoasucuenta.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
-        "No same-domain sitemap found for directoasucuenta.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 666,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: syntax error: line 6, column 0"
+      ]
     },
     {
       "connector": "federal-sites-disasterassistance",
@@ -2861,12 +2894,11 @@
     {
       "connector": "federal-sites-distraction",
       "domain": "distraction.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for distraction.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 713,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dnfsb",
@@ -2950,12 +2982,11 @@
     {
       "connector": "federal-sites-doge",
       "domain": "doge.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for doge.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 779,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-doi",
@@ -3043,33 +3074,30 @@
     },
     {
       "connector": "federal-sites-donotcall",
+      "indexedPages": 0,
       "domain": "donotcall.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Trade Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 872,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dontserveteens",
       "domain": "dontserveteens.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 48"
-      ],
-      "runId": 878,
-      "status": "partial"
+        "No same-domain sitemap found for dontserveteens.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-dot",
       "domain": "dot.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dot.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 733,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dotgov",
@@ -3082,12 +3110,11 @@
     {
       "connector": "federal-sites-dotideahub",
       "domain": "dotideahub.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for dotideahub.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 993,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-dra",
@@ -3170,41 +3197,45 @@
     },
     {
       "connector": "federal-sites-eac",
-      "domain": "eac.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 1,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 776,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "eac.gov",
+      "publisher": "Election Assistance Commission",
+      "warnings": []
     },
     {
       "connector": "federal-sites-eaglecash",
       "domain": "eaglecash.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for eaglecash.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 643,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-earlycareers",
       "domain": "earlycareers.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for earlycareers.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 798,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-earmarks",
+      "indexedPages": 0,
       "domain": "earmarks.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for earmarks.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1047,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 201, column 39"
+      ]
     },
     {
       "connector": "federal-sites-earth",
@@ -3245,13 +3276,12 @@
     },
     {
       "connector": "federal-sites-econsumer",
+      "indexedPages": 0,
       "domain": "econsumer.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Trade Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: mismatched tag: line 13, column 2"
-      ],
-      "runId": 869,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ecpic",
@@ -3315,21 +3345,27 @@
     },
     {
       "connector": "federal-sites-eeoc",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "eeoc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 801,
-      "status": "completed"
+      "publisher": "Equal Employment Opportunity Commission",
+      "warnings": []
     },
     {
       "connector": "federal-sites-eftps",
+      "indexedPages": 0,
       "domain": "eftps.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 28, column 16"
-      ],
-      "runId": 1904,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ehr",
@@ -3418,11 +3454,18 @@
     },
     {
       "connector": "federal-sites-ems",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 206,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ems.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 757,
-      "status": "completed"
+      "publisher": "Department of Transportation",
+      "warnings": []
     },
     {
       "connector": "federal-sites-encuentraapoyo",
@@ -3475,39 +3518,53 @@
     },
     {
       "connector": "federal-sites-energystar",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 0,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "energystar.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 772,
-      "status": "completed"
+      "publisher": "Environmental Protection Agency",
+      "warnings": [
+        "https://www.energystar.gov/sites/default/files/asset/document/ENERGY%2520STAR%2520Version%25208.1%2520Clothes%2520Washer%2520Final%2520Specificaiton%2520-%2520Partner%2520Commitments%2520and%2520Eligibility%2520Criteria.pdf: 404 Client Error: Not Found for url: https://www.energystar.gov/sites/default/files/asset/document/ENERGY%2520STAR%2520Version%25208.1%2520Clothes%2520Washer%2520Final%2520Specificaiton%2520-%2520Partner%2520Commitments%2520and%2520Eligibility%2520Criteria.pdf"
+      ]
     },
     {
       "connector": "federal-sites-eop",
+      "indexedPages": 0,
       "domain": "eop.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 221, column 39"
-      ],
-      "runId": 812,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-epa",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "epa.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 780,
-      "status": "completed"
+      "publisher": "Environmental Protection Agency",
+      "warnings": []
     },
     {
       "connector": "federal-sites-epaoig",
+      "indexedPages": 0,
       "domain": "epaoig.gov",
-      "pagesIndexed": 0,
+      "publisher": "Environmental Protection Agency",
       "warnings": [
-        "No same-domain sitemap found for epaoig.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 744,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 96, column 185"
+      ]
     },
     {
       "connector": "federal-sites-epic",
@@ -3531,12 +3588,11 @@
     {
       "connector": "federal-sites-esc",
       "domain": "esc.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for esc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 746,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-eseclab",
@@ -3561,12 +3617,11 @@
     {
       "connector": "federal-sites-eta-find",
       "domain": "eta-find.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for eta-find.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 645,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-evaluation",
@@ -3657,31 +3712,36 @@
     },
     {
       "connector": "federal-sites-exim",
-      "domain": "exim.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 852,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "exim.gov",
+      "publisher": "Export-Import Bank of the United States",
+      "warnings": []
     },
     {
       "connector": "federal-sites-explore",
       "domain": "explore.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for explore.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 778,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-exploretsp",
       "domain": "exploretsp.gov",
+      "publisher": "Federal Retirement Thrift Investment Board",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for exploretsp.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 859,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-export",
@@ -3696,30 +3756,35 @@
     {
       "connector": "federal-sites-eyenote",
       "domain": "eyenote.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 674,
-      "status": "partial"
+        "No same-domain sitemap found for eyenote.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-faa",
-      "domain": "faa.gov",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 759,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "faa.gov",
+      "publisher": "Department of Transportation",
+      "warnings": []
     },
     {
       "connector": "federal-sites-faasafety",
       "domain": "faasafety.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for faasafety.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 749,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fac",
@@ -3890,21 +3955,27 @@
     },
     {
       "connector": "federal-sites-fca",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 159,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fca.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 861,
-      "status": "completed"
+      "publisher": "Farm Credit Administration",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fcc",
       "domain": "fcc.gov",
+      "publisher": "Federal Communications Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fcc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 836,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fcic",
@@ -3919,12 +3990,11 @@
     {
       "connector": "federal-sites-fcsic",
       "domain": "fcsic.gov",
+      "publisher": "Farm Credit System Insurance Corporation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fcsic.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 851,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fcsm",
@@ -3957,29 +4027,42 @@
     },
     {
       "connector": "federal-sites-fdic",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 1.0,
+      "workers": 1,
       "domain": "fdic.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 858,
-      "status": "completed"
+      "publisher": "Federal Deposit Insurance Corporation",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fdicconnect",
       "domain": "fdicconnect.gov",
+      "publisher": "Federal Deposit Insurance Corporation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fdicconnect.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 828,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fdicoig",
-      "domain": "fdicoig.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 855,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "fdicoig.gov",
+      "publisher": "Federal Deposit Insurance Corporation",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fdlp",
@@ -4023,23 +4106,21 @@
     },
     {
       "connector": "federal-sites-fec",
+      "indexedPages": 0,
       "domain": "fec.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Election Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 54, column 107"
-      ],
-      "runId": 863,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fedcenter",
       "domain": "fedcenter.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fedcenter.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 763,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-federalcourts",
@@ -4053,11 +4134,18 @@
     },
     {
       "connector": "federal-sites-federalinvestments",
-      "domain": "federalinvestments.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 660,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "federalinvestments.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-federaljobs",
@@ -4141,13 +4229,12 @@
     },
     {
       "connector": "federal-sites-fedinvest",
+      "indexedPages": 0,
       "domain": "fedinvest.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 51, column 64"
-      ],
-      "runId": 672,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fedpartnership",
@@ -4256,20 +4343,20 @@
     {
       "connector": "federal-sites-ferc",
       "domain": "ferc.gov",
+      "publisher": "Federal Energy Regulatory Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ferc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 850,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ffb",
       "domain": "ffb.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 664,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ffb.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-ffiec",
@@ -4301,19 +4388,33 @@
     },
     {
       "connector": "federal-sites-fhfa",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fhfa.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 873,
-      "status": "completed"
+      "publisher": "Federal Housing Finance Agency",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fhfaoig",
-      "domain": "fhfaoig.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 870,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "fhfaoig.gov",
+      "publisher": "Federal Housing Finance Agency",
+      "warnings": []
     },
     {
       "connector": "federal-sites-ficor",
@@ -4326,21 +4427,27 @@
     },
     {
       "connector": "federal-sites-financialresearch",
-      "domain": "financialresearch.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 668,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "financialresearch.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fincen",
       "domain": "fincen.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fincen.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 678,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-findsupport",
@@ -4495,12 +4602,11 @@
     {
       "connector": "federal-sites-flightrights",
       "domain": "flightrights.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for flightrights.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 730,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-floodsmart",
@@ -4514,12 +4620,11 @@
     {
       "connector": "federal-sites-flra",
       "domain": "flra.gov",
+      "publisher": "Federal Labor Relations Authority",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for flra.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 846,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-flu",
@@ -4532,19 +4637,33 @@
     },
     {
       "connector": "federal-sites-fmc",
+      "sitemapsRead": 5,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fmc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 862,
-      "status": "completed"
+      "publisher": "Federal Maritime Commission",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fmcs",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fmcs.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 874,
-      "status": "completed"
+      "publisher": "Federal Mediation and Conciliation Service",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fmi",
@@ -4559,12 +4678,11 @@
     {
       "connector": "federal-sites-fmshrc",
       "domain": "fmshrc.gov",
+      "publisher": "Federal Mine Safety and Health Review Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for fmshrc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 856,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fnal",
@@ -4661,13 +4779,12 @@
     },
     {
       "connector": "federal-sites-fosteringthefuturetogether",
+      "indexedPages": 0,
       "domain": "fosteringthefuturetogether.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for fosteringthefuturetogether.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 807,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 253, column 39"
+      ]
     },
     {
       "connector": "federal-sites-fpc",
@@ -4691,11 +4808,18 @@
     },
     {
       "connector": "federal-sites-fpisc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 356,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "fpisc.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 875,
-      "status": "completed"
+      "publisher": "Federal Permitting Improvement Council",
+      "warnings": []
     },
     {
       "connector": "federal-sites-fpki",
@@ -4729,13 +4853,12 @@
     },
     {
       "connector": "federal-sites-fraud",
+      "indexedPages": 0,
       "domain": "fraud.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 194, column 39"
-      ],
-      "runId": 817,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-frb",
@@ -4760,12 +4883,11 @@
     {
       "connector": "federal-sites-freedom",
       "domain": "freedom.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for freedom.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 795,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-frs",
@@ -4780,32 +4902,29 @@
     {
       "connector": "federal-sites-frtib",
       "domain": "frtib.gov",
+      "publisher": "Federal Retirement Thrift Investment Board",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for frtib.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 860,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-frtibtest",
       "domain": "frtibtest.gov",
+      "publisher": "Federal Retirement Thrift Investment Board",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for frtibtest.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 847,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-frtr",
       "domain": "frtr.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for frtr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 764,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fruitsandveggiesmatter",
@@ -4857,12 +4976,11 @@
     {
       "connector": "federal-sites-fsoc",
       "domain": "fsoc.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 688,
-      "status": "partial"
+        "No same-domain sitemap found for fsoc.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-fsrs",
@@ -4877,12 +4995,11 @@
     {
       "connector": "federal-sites-ftc",
       "domain": "ftc.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ftc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 877,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-fueleconomy",
@@ -5042,12 +5159,11 @@
     {
       "connector": "federal-sites-getinternet",
       "domain": "getinternet.gov",
+      "publisher": "Federal Communications Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for getinternet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 837,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-getsmartaboutdrugs",
@@ -5095,12 +5211,11 @@
     {
       "connector": "federal-sites-glnpo",
       "domain": "glnpo.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for glnpo.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 747,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-globalentry",
@@ -5133,12 +5248,11 @@
     {
       "connector": "federal-sites-glri",
       "domain": "glri.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for glri.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 752,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-gmta",
@@ -5169,13 +5283,12 @@
     },
     {
       "connector": "federal-sites-godirect",
+      "indexedPages": 0,
       "domain": "godirect.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
-        "No same-domain sitemap found for godirect.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 680,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: syntax error: line 6, column 0"
+      ]
     },
     {
       "connector": "federal-sites-goes-r",
@@ -5322,13 +5435,12 @@
     },
     {
       "connector": "federal-sites-greathealthcare",
+      "indexedPages": 0,
       "domain": "greathealthcare.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 230, column 39"
-      ],
-      "runId": 820,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-gsa",
@@ -5535,71 +5647,72 @@
     },
     {
       "connector": "federal-sites-helpamericavote",
+      "indexedPages": 0,
       "domain": "helpamericavote.gov",
-      "pagesIndexed": 0,
+      "publisher": "Election Assistance Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 60, column 72"
-      ],
-      "runId": 767,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-helpwithmybank",
-      "domain": "helpwithmybank.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 663,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "helpwithmybank.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-helpwithmycheckingaccount",
+      "indexedPages": 0,
       "domain": "helpwithmycheckingaccount.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 683,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-helpwithmycreditcard",
+      "indexedPages": 0,
       "domain": "helpwithmycreditcard.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 686,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-helpwithmycreditcardbank",
+      "indexedPages": 0,
       "domain": "helpwithmycreditcardbank.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 684,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-helpwithmymortgage",
+      "indexedPages": 0,
       "domain": "helpwithmymortgage.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 687,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-helpwithmymortgagebank",
+      "indexedPages": 0,
       "domain": "helpwithmymortgagebank.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 685,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-heritageabroad",
@@ -5810,12 +5923,11 @@
     {
       "connector": "federal-sites-hsr",
       "domain": "hsr.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 8, column 48"
-      ],
-      "runId": 881,
-      "status": "partial"
+        "No same-domain sitemap found for hsr.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-hstf",
@@ -6073,13 +6185,12 @@
     },
     {
       "connector": "federal-sites-identitytheft",
+      "indexedPages": 0,
       "domain": "identitytheft.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Trade Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 879,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-idfc",
@@ -6152,11 +6263,18 @@
     },
     {
       "connector": "federal-sites-indianaffairs",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "indianaffairs.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 620,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-inel",
@@ -6264,12 +6382,11 @@
     {
       "connector": "federal-sites-interior",
       "domain": "interior.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for interior.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 625,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-interpol",
@@ -6283,12 +6400,11 @@
     {
       "connector": "federal-sites-invasivespecies",
       "domain": "invasivespecies.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for invasivespecies.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 629,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-invasivespeciesinfo",
@@ -6318,11 +6434,18 @@
     },
     {
       "connector": "federal-sites-ipp",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 52,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ipp.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 677,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-iprcenter",
@@ -6335,49 +6458,54 @@
     },
     {
       "connector": "federal-sites-irs",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "irs.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 682,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-irsauctions",
       "domain": "irsauctions.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 691,
-      "status": "completed"
+      "warnings": [
+        "No same-domain sitemap found for irsauctions.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-irsnet",
       "domain": "irsnet.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for irsnet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 659,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-irssales",
       "domain": "irssales.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 699,
-      "status": "partial"
+        "No same-domain sitemap found for irssales.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-irsvideos",
       "domain": "irsvideos.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for irsvideos.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 695,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ise",
@@ -6442,12 +6570,11 @@
     {
       "connector": "federal-sites-its",
       "domain": "its.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for its.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 670,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-iwtsd",
@@ -6472,12 +6599,11 @@
     {
       "connector": "federal-sites-jccbi",
       "domain": "jccbi.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for jccbi.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 722,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-jccs",
@@ -6511,12 +6637,11 @@
     {
       "connector": "federal-sites-jem",
       "domain": "jem.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for jem.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 615,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-jewishheritage",
@@ -6683,33 +6808,30 @@
     },
     {
       "connector": "federal-sites-lacoast",
+      "indexedPages": 0,
       "domain": "lacoast.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 34, column 67"
-      ],
-      "runId": 624,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-landfire",
       "domain": "landfire.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for landfire.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 606,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-landimaging",
       "domain": "landimaging.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for landimaging.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 631,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lanl",
@@ -6724,12 +6846,11 @@
     {
       "connector": "federal-sites-launch",
       "domain": "launch.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for launch.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 794,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-law",
@@ -6771,13 +6892,12 @@
     },
     {
       "connector": "federal-sites-lcrmscp",
+      "indexedPages": 0,
       "domain": "lcrmscp.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 13, column 71"
-      ],
-      "runId": 612,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-lctl",
@@ -6890,13 +7010,12 @@
     },
     {
       "connector": "federal-sites-live",
+      "indexedPages": 0,
       "domain": "live.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for live.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 811,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 381"
+      ]
     },
     {
       "connector": "federal-sites-llnl",
@@ -6909,12 +7028,11 @@
     {
       "connector": "federal-sites-lmvsci",
       "domain": "lmvsci.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for lmvsci.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 595,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-loc",
@@ -7024,13 +7142,12 @@
     },
     {
       "connector": "federal-sites-maha",
+      "indexedPages": 0,
       "domain": "maha.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for maha.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 809,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 195, column 39"
+      ]
     },
     {
       "connector": "federal-sites-mail",
@@ -7085,12 +7202,11 @@
     {
       "connector": "federal-sites-max",
       "domain": "max.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for max.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 1060,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mbda",
@@ -7238,12 +7354,11 @@
     {
       "connector": "federal-sites-merrychristmas",
       "domain": "merrychristmas.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for merrychristmas.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 805,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mesh",
@@ -7276,10 +7391,11 @@
     {
       "connector": "federal-sites-militaryconsumer",
       "domain": "militaryconsumer.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 894,
-      "status": "completed"
+      "publisher": "Federal Trade Commission",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for militaryconsumer.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-mimm",
@@ -7304,12 +7420,11 @@
     {
       "connector": "federal-sites-mitigationcommission",
       "domain": "mitigationcommission.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mitigationcommission.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 601,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mlkday",
@@ -7324,12 +7439,11 @@
     {
       "connector": "federal-sites-mma",
       "domain": "mma.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mma.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 597,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mmc",
@@ -7342,12 +7456,11 @@
     {
       "connector": "federal-sites-mms",
       "domain": "mms.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 598,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-moms",
@@ -7361,52 +7474,47 @@
     {
       "connector": "federal-sites-moneyfactory",
       "domain": "moneyfactory.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 702,
-      "status": "partial"
+        "No same-domain sitemap found for moneyfactory.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-moneyfactorystore",
       "domain": "moneyfactorystore.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for moneyfactorystore.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 694,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mortgagetranslations",
       "domain": "mortgagetranslations.gov",
+      "publisher": "Federal Housing Finance Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mortgagetranslations.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 839,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mrlc",
       "domain": "mrlc.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mrlc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 623,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-msb",
       "domain": "msb.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for msb.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 673,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-msha",
@@ -7428,12 +7536,11 @@
     {
       "connector": "federal-sites-mtbs",
       "domain": "mtbs.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mtbs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 613,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mtmc",
@@ -7455,31 +7562,30 @@
     },
     {
       "connector": "federal-sites-myfdic",
+      "indexedPages": 0,
       "domain": "myfdic.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Deposit Insurance Corporation",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 854,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-myira",
       "domain": "myira.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for myira.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 703,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-mymoney",
       "domain": "mymoney.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 693,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for mymoney.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-myplate",
@@ -7494,12 +7600,11 @@
     {
       "connector": "federal-sites-mytreasury",
       "domain": "mytreasury.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for mytreasury.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 700,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-myusps",
@@ -7540,11 +7645,18 @@
     },
     {
       "connector": "federal-sites-nano",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nano.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 825,
-      "status": "completed"
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nara",
@@ -7565,52 +7677,47 @@
     {
       "connector": "federal-sites-nasaforce",
       "domain": "nasaforce.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nasaforce.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 808,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nationalbank",
       "domain": "nationalbank.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nationalbank.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 669,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nationalbankhelp",
+      "indexedPages": 0,
       "domain": "nationalbankhelp.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 701,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nationalbanknet",
       "domain": "nationalbanknet.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nationalbanknet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 671,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nationalmap",
+      "indexedPages": 0,
       "domain": "nationalmap.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 48"
-      ],
-      "runId": 621,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nationalresourcedirectory",
@@ -7653,22 +7760,20 @@
     {
       "connector": "federal-sites-navycash",
       "domain": "navycash.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for navycash.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 681,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nbc",
       "domain": "nbc.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nbc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 603,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nbrc",
@@ -7748,12 +7853,11 @@
     {
       "connector": "federal-sites-nco",
       "domain": "nco.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nco.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 789,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ncpc",
@@ -7804,22 +7908,20 @@
     {
       "connector": "federal-sites-nds",
       "domain": "nds.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nds.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 790,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ndstudio",
       "domain": "ndstudio.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ndstudio.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 810,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nea",
@@ -7861,22 +7963,20 @@
     {
       "connector": "federal-sites-nemi",
       "domain": "nemi.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nemi.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 636,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nepa",
       "domain": "nepa.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nepa.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 804,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nersc",
@@ -7910,12 +8010,11 @@
     {
       "connector": "federal-sites-nfpors",
       "domain": "nfpors.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nfpors.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 604,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nga",
@@ -7930,12 +8029,11 @@
     {
       "connector": "federal-sites-nhtsa",
       "domain": "nhtsa.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for nhtsa.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 742,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-nic",
@@ -7973,19 +8071,33 @@
     },
     {
       "connector": "federal-sites-nifc",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 314,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nifc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 630,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nigc",
+      "sitemapsRead": 4,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nigc.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 638,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nih",
@@ -8030,11 +8142,18 @@
     },
     {
       "connector": "federal-sites-nitrd",
+      "sitemapsRead": 6,
+      "urlsDiscovered": 366,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nitrd.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 834,
-      "status": "completed"
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nixonlibrary",
@@ -8132,11 +8251,18 @@
     },
     {
       "connector": "federal-sites-nps",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "nps.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 627,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-nrc",
@@ -8392,33 +8518,38 @@
     },
     {
       "connector": "federal-sites-occ",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "occ.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
-        "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2015/scl2015-03.pdf: 406 Client Error: Not Acceptable for url: https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2015/scl2015-03.pdf"
-      ],
-      "runId": 697,
-      "status": "partial"
+        "https://www.occ.gov/publications-and-resources/publications/shared-national-credit-report/files/shared-national-credit-report-2025.pdf: 406 Client Error: Not Acceptable for url: https://www.occ.gov/publications-and-resources/publications/shared-national-credit-report/files/shared-national-credit-report-2025.pdf"
+      ]
     },
     {
       "connector": "federal-sites-occhelps",
+      "indexedPages": 0,
       "domain": "occhelps.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 50, column 107"
-      ],
-      "runId": 707,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-occnet",
       "domain": "occnet.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for occnet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 675,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ocwr",
@@ -8462,11 +8593,18 @@
     },
     {
       "connector": "federal-sites-ofia",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 128,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 10.0,
+      "workers": 1,
       "domain": "ofia.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 853,
-      "status": "completed"
+      "publisher": "Federal Deposit Insurance Corporation",
+      "warnings": []
     },
     {
       "connector": "federal-sites-ofr",
@@ -8524,23 +8662,21 @@
     },
     {
       "connector": "federal-sites-omb",
+      "indexedPages": 0,
       "domain": "omb.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 201, column 39"
-      ],
-      "runId": 829,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ondcp",
+      "indexedPages": 0,
       "domain": "ondcp.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for ondcp.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 813,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: undefined entity: line 12, column 1"
+      ]
     },
     {
       "connector": "federal-sites-oneaftac",
@@ -8555,40 +8691,44 @@
     {
       "connector": "federal-sites-onguardonline",
       "domain": "onguardonline.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
       "warnings": [
-        "https://www.consumer.ftc.gov/consumer-alerts/2018/03/military-consumers-sentinel-deeper-dive: redirected outside the configured government origin"
-      ],
-      "runId": 918,
-      "status": "partial"
+        "No same-domain sitemap found for onguardonline.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-onhir",
+      "indexedPages": 0,
       "domain": "onhir.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
-        "No same-domain sitemap found for onhir.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 617,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
+      ]
     },
     {
       "connector": "federal-sites-onlyfarms",
+      "indexedPages": 0,
       "domain": "onlyfarms.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for onlyfarms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 821,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 310, column 39"
+      ]
     },
     {
       "connector": "federal-sites-onrr",
-      "domain": "onrr.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 173,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 622,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "onrr.gov",
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-opensource",
@@ -8749,11 +8889,18 @@
     },
     {
       "connector": "federal-sites-osmre",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 155,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "osmre.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 639,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-osti",
@@ -8767,23 +8914,29 @@
     },
     {
       "connector": "federal-sites-ostp",
+      "indexedPages": 0,
       "domain": "ostp.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/ostp/"
-      ],
-      "runId": 826,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: undefined entity: line 12, column 1"
+      ]
     },
     {
       "connector": "federal-sites-ots",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 2,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "ots.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Treasury",
       "warnings": [
-        "https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2015/scl2015-03.pdf: 406 Client Error: Not Acceptable for url: https://www.occ.gov/topics/charters-and-licensing/interpretations-and-decisions/2015/scl2015-03.pdf"
-      ],
-      "runId": 719,
-      "status": "partial"
+        "https://www.occ.gov/publications-and-resources/publications/shared-national-credit-report/files/shared-national-credit-report-2025.pdf: 406 Client Error: Not Acceptable for url: https://www.occ.gov/publications-and-resources/publications/shared-national-credit-report/files/shared-national-credit-report-2025.pdf"
+      ]
     },
     {
       "connector": "federal-sites-ourdocuments",
@@ -8895,22 +9048,20 @@
     {
       "connector": "federal-sites-patriotbonds",
       "domain": "patriotbonds.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for patriotbonds.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 690,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pay",
       "domain": "pay.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pay.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 696,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-paymentaccuracy",
@@ -8961,12 +9112,11 @@
     {
       "connector": "federal-sites-pci",
       "domain": "pci.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pci.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 797,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pclob",
@@ -9013,11 +9163,18 @@
     },
     {
       "connector": "federal-sites-permitting",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 356,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "permitting.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 876,
-      "status": "completed"
+      "publisher": "Federal Permitting Improvement Council",
+      "warnings": []
     },
     {
       "connector": "federal-sites-persuader-reports",
@@ -9050,12 +9207,11 @@
     {
       "connector": "federal-sites-piedrasblancas",
       "domain": "piedrasblancas.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for piedrasblancas.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 641,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pif",
@@ -9068,22 +9224,20 @@
     {
       "connector": "federal-sites-pitc",
       "domain": "pitc.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pitc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 802,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pitctestdomain",
       "domain": "pitctestdomain.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for pitctestdomain.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 799,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-pki",
@@ -9395,12 +9549,11 @@
     {
       "connector": "federal-sites-protectyourmove",
       "domain": "protectyourmove.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for protectyourmove.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 723,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-psa",
@@ -9510,20 +9663,26 @@
     {
       "connector": "federal-sites-qatesttwai",
       "domain": "qatesttwai.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for qatesttwai.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 679,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-quantum",
+      "sitemapsRead": 9,
+      "urlsDiscovered": 385,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "quantum.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 831,
-      "status": "completed"
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-rcfl",
@@ -9537,12 +9696,11 @@
     {
       "connector": "federal-sites-reach",
       "domain": "reach.gov",
+      "publisher": "Department of Veterans Affairs",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for reach.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 755,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-read",
@@ -9600,11 +9758,18 @@
     },
     {
       "connector": "federal-sites-realfood",
-      "domain": "realfood.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 1,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 1,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 1,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 830,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "realfood.gov",
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-realpropertyprofile",
@@ -9697,22 +9862,20 @@
     {
       "connector": "federal-sites-relocatefeds",
       "domain": "relocatefeds.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for relocatefeds.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 773,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-reportband",
+      "indexedPages": 0,
       "domain": "reportband.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 14"
-      ],
-      "runId": 648,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-reporting",
@@ -9795,11 +9958,18 @@
     },
     {
       "connector": "federal-sites-rivers",
-      "domain": "rivers.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 633,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "rivers.gov",
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-rl",
@@ -9813,13 +9983,12 @@
     },
     {
       "connector": "federal-sites-robodeidentidad",
+      "indexedPages": 0,
       "domain": "robodeidentidad.gov",
-      "pagesIndexed": 0,
+      "publisher": "Federal Trade Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 886,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-rocis",
@@ -9883,43 +10052,39 @@
     },
     {
       "connector": "federal-sites-safecom",
+      "indexedPages": 0,
       "domain": "safecom.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 626,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-safedc",
       "domain": "safedc.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for safedc.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 818,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-safeocs",
       "domain": "safeocs.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for safeocs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 735,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-safercar",
       "domain": "safercar.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for safercar.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 758,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-saferproduct",
@@ -9944,12 +10109,11 @@
     {
       "connector": "federal-sites-safertruck",
       "domain": "safertruck.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for safertruck.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 761,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-safetyact",
@@ -9983,12 +10147,11 @@
     {
       "connector": "federal-sites-salmonrecovery",
       "domain": "salmonrecovery.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for salmonrecovery.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 644,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-sam",
@@ -10025,37 +10188,57 @@
     },
     {
       "connector": "federal-sites-saveamerica",
+      "indexedPages": 0,
       "domain": "saveamerica.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 24, column 755"
-      ],
-      "runId": 838,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-savingsbond",
-      "domain": "savingsbond.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 705,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "savingsbond.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-savingsbonds",
-      "domain": "savingsbonds.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 704,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "savingsbonds.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-savingsbondwizard",
-      "domain": "savingsbondwizard.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 706,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "savingsbondwizard.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-sba",
@@ -10132,13 +10315,12 @@
     },
     {
       "connector": "federal-sites-sciencebase",
+      "indexedPages": 0,
       "domain": "sciencebase.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: 404 Client Error: Not Found for url: https://www.sciencebase.gov/sitemaps/sitemap-index.xml"
-      ],
-      "runId": 628,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-scinet",
@@ -10359,12 +10541,11 @@
     {
       "connector": "federal-sites-sentinel",
       "domain": "sentinel.gov",
+      "publisher": "Federal Trade Commission",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 8, column 48"
-      ],
-      "runId": 890,
-      "status": "partial"
+        "No same-domain sitemap found for sentinel.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-serve",
@@ -10398,30 +10579,35 @@
     {
       "connector": "federal-sites-sharetheroadsafely",
       "domain": "sharetheroadsafely.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for sharetheroadsafely.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 765,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-sierrawild",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 51,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "sierrawild.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 1899,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": []
     },
     {
       "connector": "federal-sites-sigpr",
       "domain": "sigpr.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 725,
-      "status": "partial"
+        "No same-domain sitemap found for sigpr.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-simplereport",
@@ -10450,11 +10636,18 @@
     },
     {
       "connector": "federal-sites-slgs",
-      "domain": "slgs.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 708,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "slgs.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-smart",
@@ -10542,13 +10735,12 @@
     },
     {
       "connector": "federal-sites-sotu",
+      "indexedPages": 0,
       "domain": "sotu.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for sotu.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 827,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 203, column 39"
+      ]
     },
     {
       "connector": "federal-sites-spaceweather",
@@ -10802,12 +10994,11 @@
     {
       "connector": "federal-sites-sustainability",
       "domain": "sustainability.gov",
+      "publisher": "Environmental Protection Agency",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for sustainability.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 766,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-sworm",
@@ -10839,11 +11030,18 @@
     },
     {
       "connector": "federal-sites-taaps",
-      "domain": "taaps.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 711,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "taaps.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-tak",
@@ -10868,12 +11066,11 @@
     {
       "connector": "federal-sites-tax",
       "domain": "tax.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tax.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 721,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-taxreform",
@@ -10888,22 +11085,20 @@
     {
       "connector": "federal-sites-tcis",
       "domain": "tcis.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tcis.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 720,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-techforce",
       "domain": "techforce.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for techforce.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 822,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-techhubs",
@@ -10981,22 +11176,20 @@
     {
       "connector": "federal-sites-tigta",
       "domain": "tigta.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 15, column 766"
-      ],
-      "runId": 731,
-      "status": "partial"
+        "No same-domain sitemap found for tigta.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-tigtanet",
       "domain": "tigtanet.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tigtanet.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 689,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-time",
@@ -11081,12 +11274,11 @@
     {
       "connector": "federal-sites-trafficsafetymarketing",
       "domain": "trafficsafetymarketing.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for trafficsafetymarketing.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 743,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-trainingproviderresults",
@@ -11100,104 +11292,125 @@
     {
       "connector": "federal-sites-transparency",
       "domain": "transparency.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for transparency.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 806,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-transportation",
       "domain": "transportation.gov",
+      "publisher": "Department of Transportation",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for transportation.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 748,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-treas",
       "domain": "treas.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 726,
-      "status": "partial"
+        "No same-domain sitemap found for treas.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-treaslockbox",
       "domain": "treaslockbox.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for treaslockbox.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 698,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-treasury",
       "domain": "treasury.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 736,
-      "status": "partial"
+        "No same-domain sitemap found for treasury.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-treasuryauction",
       "domain": "treasuryauction.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for treasuryauction.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 692,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-treasuryauctions",
-      "domain": "treasuryauctions.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 715,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "treasuryauctions.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-treasurydirect",
-      "domain": "treasurydirect.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 714,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "treasurydirect.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-treasuryecm",
       "domain": "treasuryecm.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for treasuryecm.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 732,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-treasuryhunt",
-      "domain": "treasuryhunt.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 724,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "treasuryhunt.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-treasuryscams",
-      "domain": "treasuryscams.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 727,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "treasuryscams.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-tribaljusticeandsafety",
@@ -11227,22 +11440,20 @@
     {
       "connector": "federal-sites-trumpaccounts",
       "domain": "trumpaccounts.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for trumpaccounts.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 709,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-trumpcard",
       "domain": "trumpcard.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for trumpcard.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 823,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-trumpgoldcard",
@@ -11257,12 +11468,11 @@
     {
       "connector": "federal-sites-trumpira",
       "domain": "trumpira.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for trumpira.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 832,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-trumpjobs",
@@ -11285,23 +11495,21 @@
     },
     {
       "connector": "federal-sites-trumprx",
+      "indexedPages": 0,
       "domain": "trumprx.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
         "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://trumprx.gov/sitemap.xml"
-      ],
-      "runId": 833,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-trumptv",
+      "indexedPages": 0,
       "domain": "trumptv.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 5, column 381"
-      ],
-      "runId": 843,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 194, column 39"
+      ]
     },
     {
       "connector": "federal-sites-trumpwhitehouse",
@@ -11340,22 +11548,20 @@
     {
       "connector": "federal-sites-tsp",
       "domain": "tsp.gov",
+      "publisher": "Federal Retirement Thrift Investment Board",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tsp.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 865,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-tsptest",
       "domain": "tsptest.gov",
+      "publisher": "Federal Retirement Thrift Investment Board",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for tsptest.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 849,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-tsunami",
@@ -11380,30 +11586,29 @@
     {
       "connector": "federal-sites-ttb",
       "domain": "ttb.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 739,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "pagesIndexed": 0,
+      "warnings": [
+        "No same-domain sitemap found for ttb.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-ttbonline",
       "domain": "ttbonline.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ttbonline.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 716,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ttlplus",
       "domain": "ttlplus.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ttlplus.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 717,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-tva",
@@ -11428,12 +11633,11 @@
     {
       "connector": "federal-sites-twai",
       "domain": "twai.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for twai.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 738,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ucia",
@@ -11549,13 +11753,12 @@
     },
     {
       "connector": "federal-sites-urbanwaters",
+      "indexedPages": 0,
       "domain": "urbanwaters.gov",
-      "pagesIndexed": 0,
+      "publisher": "Environmental Protection Agency",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 96, column 185"
-      ],
-      "runId": 788,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-us-cert",
@@ -11687,11 +11890,18 @@
     },
     {
       "connector": "federal-sites-usaspending",
+      "sitemapsRead": 3,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "usaspending.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 737,
-      "status": "completed"
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-usastaffing",
@@ -11734,13 +11944,12 @@
     },
     {
       "connector": "federal-sites-usbr",
+      "indexedPages": 0,
       "domain": "usbr.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 1, column 2"
-      ],
-      "runId": 632,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usc",
@@ -11948,12 +12157,11 @@
     {
       "connector": "federal-sites-usdebitcard",
       "domain": "usdebitcard.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usdebitcard.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 729,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usdfc",
@@ -11967,11 +12175,18 @@
     },
     {
       "connector": "federal-sites-usdigitalservice",
-      "domain": "usdigitalservice.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 101,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 857,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "usdigitalservice.gov",
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-usdoj",
@@ -11993,11 +12208,18 @@
     },
     {
       "connector": "federal-sites-usds",
-      "domain": "usds.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 101,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 845,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "usds.gov",
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-usembassy",
@@ -12041,12 +12263,11 @@
     {
       "connector": "federal-sites-usgs",
       "domain": "usgs.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usgs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 619,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ushmm",
@@ -12146,12 +12367,11 @@
     {
       "connector": "federal-sites-usmint",
       "domain": "usmint.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usmint.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 718,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usmission",
@@ -12293,32 +12513,29 @@
     {
       "connector": "federal-sites-ustr",
       "domain": "ustr.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for ustr.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 824,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-ustreas",
       "domain": "ustreas.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
-        "sitemap unavailable; fail-closed: syntax error: line 1, column 0"
-      ],
-      "runId": 745,
-      "status": "partial"
+        "No same-domain sitemap found for ustreas.gov; catalog entry retained without page crawl."
+      ]
     },
     {
       "connector": "federal-sites-usvisabond",
       "domain": "usvisabond.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for usvisabond.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 728,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-usxports",
@@ -12331,21 +12548,27 @@
     },
     {
       "connector": "federal-sites-utahfireinfo",
+      "indexedPages": 0,
       "domain": "utahfireinfo.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 13, column 49"
-      ],
-      "runId": 642,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-va",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "va.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 768,
-      "status": "completed"
+      "publisher": "Department of Veterans Affairs",
+      "warnings": []
     },
     {
       "connector": "federal-sites-vaccine",
@@ -12403,13 +12626,12 @@
     },
     {
       "connector": "federal-sites-vaoig",
+      "indexedPages": 0,
       "domain": "vaoig.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of Veterans Affairs",
       "warnings": [
-        "sitemap unavailable; fail-closed: HTTPSConnectionPool(host='vaoig.gov%20', port=443): Max retries exceeded with url: /sitemap.xml?page=1 (Caused by NameResolutionError(\"HTTPSConnection(host='vaoig.gov%20', port=443): Failed to resolve 'vaoig.gov%20' ([Errno 8] nodename nor servname provided, or not known)\"))"
-      ],
-      "runId": 760,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: Failed to parse: Host 'vaoig.gov ' contains invalid character ' '"
+      ]
     },
     {
       "connector": "federal-sites-vcf",
@@ -12446,11 +12668,18 @@
     },
     {
       "connector": "federal-sites-vets",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "vets.gov",
-      "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 782,
-      "status": "completed"
+      "publisher": "Department of Veterans Affairs",
+      "warnings": []
     },
     {
       "connector": "federal-sites-visas",
@@ -12501,23 +12730,21 @@
     },
     {
       "connector": "federal-sites-volcano",
+      "indexedPages": 0,
       "domain": "volcano.gov",
-      "pagesIndexed": 0,
+      "publisher": "Department of the Interior",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 7, column 48"
-      ],
-      "runId": 640,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-volunteer",
       "domain": "volunteer.gov",
+      "publisher": "Department of the Interior",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for volunteer.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 649,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-volunteeringinamerica",
@@ -12532,30 +12759,38 @@
     {
       "connector": "federal-sites-vote",
       "domain": "vote.gov",
+      "publisher": "Election Assistance Commission",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for vote.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 750,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-votebymail",
+      "indexedPages": 0,
       "domain": "votebymail.gov",
-      "pagesIndexed": 0,
+      "publisher": "Election Assistance Commission",
       "warnings": [
         "sitemap unavailable; fail-closed: not well-formed (invalid token): line 58, column 72"
-      ],
-      "runId": 771,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-vsafe",
-      "domain": "vsafe.gov",
+      "sitemapsRead": 7,
+      "urlsDiscovered": 125,
+      "urlsAlreadyIndexed": 1,
+      "newPagesSelected": 2,
+      "refreshPagesSelected": 1,
+      "urlsEligible": 3,
       "pagesIndexed": 1,
-      "warnings": [],
-      "runId": 762,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "vsafe.gov",
+      "publisher": "Department of Veterans Affairs",
+      "warnings": [
+        "https://vsafe.gov/vsafe-resource/submit-a-student-loan-complaint/: 404 Client Error: Not Found for url: https://vsafe.gov/vsafe-resource/submit-a-student-loan-complaint/",
+        "https://vsafe.gov/vsafe-resource/submit-a-complaint-about-a-financial-product-or-service/: 404 Client Error: Not Found for url: https://vsafe.gov/vsafe-resource/submit-a-complaint-about-a-financial-product-or-service/"
+      ]
     },
     {
       "connector": "federal-sites-wapa",
@@ -12590,12 +12825,11 @@
     {
       "connector": "federal-sites-waste",
       "domain": "waste.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for waste.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 814,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-weather",
@@ -12617,13 +12851,18 @@
     },
     {
       "connector": "federal-sites-wh",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "wh.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/sitemap_index.xml"
-      ],
-      "runId": 848,
-      "status": "partial"
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-whaging",
@@ -12646,22 +12885,20 @@
     {
       "connector": "federal-sites-whcs",
       "domain": "whcs.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whcs.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 815,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-whes",
       "domain": "whes.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whes.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 816,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-whistleblower",
@@ -12684,13 +12921,18 @@
     },
     {
       "connector": "federal-sites-whitehouse",
+      "sitemapsRead": 2,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 3,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 3,
+      "pagesIndexed": 3,
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
       "domain": "whitehouse.gov",
-      "pagesIndexed": 0,
-      "warnings": [
-        "sitemap unavailable; fail-closed: 403 Client Error: Forbidden for url: https://www.whitehouse.gov/sitemap_index.xml"
-      ],
-      "runId": 841,
-      "status": "partial"
+      "publisher": "Executive Office of the President",
+      "warnings": []
     },
     {
       "connector": "federal-sites-whitehouseconferenceonaging",
@@ -12704,22 +12946,20 @@
     {
       "connector": "federal-sites-whms",
       "domain": "whms.gov",
+      "publisher": "Executive Office of the President",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for whms.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 819,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-why",
+      "indexedPages": 0,
       "domain": "why.gov",
-      "pagesIndexed": 0,
+      "publisher": "Executive Office of the President",
       "warnings": [
-        "No same-domain sitemap found for why.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 842,
-      "status": "partial"
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 230, column 39"
+      ]
     },
     {
       "connector": "federal-sites-wildfire",
@@ -12731,19 +12971,27 @@
     },
     {
       "connector": "federal-sites-wizard",
-      "domain": "wizard.gov",
+      "sitemapsRead": 1,
+      "urlsDiscovered": 400,
+      "urlsAlreadyIndexed": 0,
+      "newPagesSelected": 0,
+      "refreshPagesSelected": 0,
+      "urlsEligible": 0,
       "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 734,
-      "status": "completed"
+      "requestDelaySeconds": 0.25,
+      "workers": 1,
+      "domain": "wizard.gov",
+      "publisher": "Department of the Treasury",
+      "warnings": []
     },
     {
       "connector": "federal-sites-wlci",
+      "indexedPages": 0,
       "domain": "wlci.gov",
-      "pagesIndexed": 0,
-      "warnings": [],
-      "runId": 637,
-      "status": "completed"
+      "publisher": "Department of the Interior",
+      "warnings": [
+        "sitemap unavailable; fail-closed: not well-formed (invalid token): line 13, column 49"
+      ]
     },
     {
       "connector": "federal-sites-womenshealth",
@@ -12803,12 +13051,11 @@
     {
       "connector": "federal-sites-workplace",
       "domain": "workplace.gov",
+      "publisher": "Department of the Treasury",
       "pagesIndexed": 0,
       "warnings": [
         "No same-domain sitemap found for workplace.gov; catalog entry retained without page crawl."
-      ],
-      "runId": 710,
-      "status": "partial"
+      ]
     },
     {
       "connector": "federal-sites-wrp",

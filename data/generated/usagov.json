@@ -1,132 +1,67 @@
 {
   "connector": "usagov",
-  "started_at": "2026-09-29T16:47:28.825222+00:00",
-  "finished_at": "2026-09-29T16:53:59.286800+00:00",
+  "started_at": "2026-10-01T13:31:57.649685+00:00",
+  "finished_at": "2026-10-01T13:38:28.040162+00:00",
   "nodes": [
     {
-      "id": "source:crawl:35e5acb1a878dfa5",
+      "id": "source:crawl:041eba8851678b96",
       "kind": "source",
-      "label": "Absentee voting and voting by mail",
-      "description": "Learn how to get an absentee ballot if you live in the U.S., live abroad, or are in the military. Find out how to cast your vote, and meet voting deadlines.",
+      "label": "Transitioning to adulthood",
+      "description": "Turning 18? Get ready for adulting. Learn to register to vote, get financial aid, register for selective service, find a job, get a passport, and pay taxes.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/absentee-voting",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/adulthood",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/absentee-voting",
-        "contentHash": "747eb4edc118c2697125e635384e13ead0712c69e2e8c1124c37e0942c1b5b68",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/adulthood",
+        "contentHash": "69844989d7e3c69ae38754fc0cb01fe12cd4600204e2f5430ddb4cc00cc98787",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "What is the difference between absentee voting and vote-by-mail?",
-          "Absentee voting",
-          "Vote-by-mail",
-          "How to vote absentee or by mail if you live in the U.S.",
-          "How to vote absentee if you are in the military or outside of the U.S.",
-          "You received an absentee or vote-by-mail ballot but want to vote in person on Election Day",
+          "How to register to vote",
+          "Register for Selective Service (the draft)",
+          "Financial aid and student loans",
+          "How to find jobs and free training",
+          "Requirements to join the U.S. military",
+          "How to file your federal income tax return",
+          "Apply for a new adult passport",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:53:49.140796+00:00",
+        "retrievedAt": "2026-10-01T13:38:18.124955+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:bec07dfe9eacab0d",
+      "id": "source:crawl:0c29c4cc6c9f089c",
       "kind": "source",
-      "label": "Adjustment of status: Get a Green Card if you are in the United States",
-      "description": "Find out if you are eligible to change your visa to a Green Card, and how to apply. Use the USCIS fee calculator to find out how much it will cost.",
+      "label": "Administration for Children and Families (ACF)",
+      "description": "The Administration for Children and Families (ACF) funds state, territory, local, and tribal organizations to provide family assistance (welfare), child support, child care, Head Start, child welfare, and other programs relating to children and families.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/adjustment-of-status",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/agencies/administration-for-children-and-families",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/adjustment-of-status",
-        "contentHash": "b7f92ef17669c00b7e0438a2f2140eb87c746373d7f1953d8854c55998deebac",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "How adjustment of status works",
-          "Find out the cost of getting a Green Card",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:53:59.284816+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:d5247903c9eca34f",
-      "kind": "source",
-      "label": "Federal Voting Assistance Program",
-      "description": "The Federal Voting Assistance Program helps uniformed services and voters outside of the U.S. exercise their right to vote.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/agencies/federal-voting-assistance-program",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/agencies/federal-voting-assistance-program",
-        "contentHash": "77880f656e74becf38aba1319f566fded24fe7e42a7cbd0b6a87ebf85549738e",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/agencies/administration-for-children-and-families",
+        "contentHash": "5f6b0890e7683fc96244ac61c4d3af6caa268a5adde8418688e9820477a85066",
         "sourceIds": [],
         "tags": [
           "USA.gov",
           "Website",
           "Contact",
-          "Phone number",
-          "Email",
+          "Find an office near you",
           "Main address"
         ],
-        "retrievedAt": "2026-09-29T16:50:08.962400+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:dd02f897ce9669bb",
-      "kind": "source",
-      "label": "Apply for a new adult passport",
-      "description": "Know what form, IDs, photo, and fees you need to apply for a U.S. passport. Learn how to get a passport in an emergency. Check a passport application status.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/apply-adult-passport",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/apply-adult-passport",
-        "contentHash": "3026cb80507b61a1ad1e07d9d209239aed2e44213d85b579ee167e321c4b8c1c",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Eligibility to get a passport",
-          "What do you need to get a passport?",
-          "Find more help when applying for a new passport",
-          "Check the status of your passport application",
-          "If you need to change your name or correct your new passport",
-          "If you are outside the U.S.",
-          "How to get a passport quickly",
-          "If you need help with your passport application",
-          "Understand legal matters that could affect you getting a passport",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:49:58.966608+00:00",
+        "retrievedAt": "2026-10-01T13:38:28.038085+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -140,19 +75,19 @@
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
+      "reviewed_at": "2026-10-01",
       "source_url": "https://www.usa.gov/benefit-finder",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
+        "reviewedAt": "2026-10-01",
         "sourceUrl": "https://www.usa.gov/benefit-finder",
         "contentHash": "b95df15a70b4f36f5236668e02fd72dbfbca1a238efde1f288a4d97e82d5d7e8",
         "sourceIds": [],
         "tags": [
           "USA.gov"
         ],
-        "retrievedAt": "2026-09-29T16:52:48.964302+00:00",
+        "retrievedAt": "2026-10-01T13:37:17.859884+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -166,12 +101,12 @@
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
+      "reviewed_at": "2026-10-01",
       "source_url": "https://www.usa.gov/change-address",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
+        "reviewedAt": "2026-10-01",
         "sourceUrl": "https://www.usa.gov/change-address",
         "contentHash": "e76d1757c4b7116c7480fb80c80917e5c7bea5f3f72f968ee05d8abaaae88946",
         "sourceIds": [],
@@ -181,277 +116,7 @@
           "How to change your address with other government services",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:53:28.968839+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:efafeca38abc5be5",
-      "kind": "source",
-      "label": "How to file a complaint about a company\u2019s products or services",
-      "description": "Learn how to file a complaint about a product or service. Or get consumer or legal help to resolve your complaint.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/company-product-service-complaints",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/company-product-service-complaints",
-        "contentHash": "5b5376b1761ef5a207f90d68e6e7ca9f85a8ebe6ea56d2afae5d199446b54a33",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Collect documents related to your purchase",
-          "Contact the company about your complaint",
-          "Find help if the company does not solve your complaint",
-          "File a complaint with government or consumer programs",
-          "Seek legal help for your complaint about a company",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:49:49.081891+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:6a70f31a0a14bea2",
-      "kind": "source",
-      "label": "How to get an export license or permit",
-      "description": "Find out if you need a license or permit to sell or ship your products outside of the U.S., and learn what export documents to use.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/export-license-permit",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/export-license-permit",
-        "contentHash": "dc195f21b5cb7c604230a357f889808fe329b1d90f560411794fc8b4a345796e",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "How to know if you need an export license",
-          "Find out what export documents you need",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:49:39.129447+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:e157a6f9b0d4226f",
-      "kind": "source",
-      "label": "What programs and services are available for veterans?",
-      "description": "Find programs and services for veterans that help with child care expenses, careers, housing, food assistance, and health care.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/features/programs-and-services-for-veterans",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/features/programs-and-services-for-veterans",
-        "contentHash": "a9141590c42583f0c64ef7ab2f0135b46676b08defd0ce6d777d3aa09be7d8e0",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Looking for career help?",
-          "In search of housing?",
-          "Looking for food assistance?",
-          "Exploring your health care options?",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:49:29.293922+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:c05696d36909a78f",
-      "kind": "source",
-      "label": "File federal taxes",
-      "description": "Find out if you need to file a federal tax return. Learn the steps of filing your taxes. See if your tax return was received and check your tax refund status.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/file-federal-taxes",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/file-federal-taxes",
-        "contentHash": "11f8ff13ec0a2b95e849a074eee737cb7ec65f99df532c7e9ab93db1bb1fdadf",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Find out if you need to file a federal tax return",
-          "How to file your federal income tax return",
-          "Find out if your federal or state tax return was received",
-          "Get an Individual Taxpayer Identification Number (ITIN) to file your tax return",
-          "Filing a federal tax return if you are a nonresident alien",
-          "How to file a federal tax return if you live outside the U.S."
-        ],
-        "retrievedAt": "2026-09-29T16:49:19.321805+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:2f6938a489d9c79f",
-      "kind": "source",
-      "label": "How to file your federal income tax return",
-      "description": "Learn the basic steps to file your federal taxes and how to contact the IRS for help. Find out what documents you will need and how to pay if you owe money.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/file-taxes",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/file-taxes",
-        "contentHash": "b02dc7206dfcfb856fdf2d11e516c8ec90f67d17e168a0ac224333068e97dc9a",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Steps to file your federal tax return",
-          "Contact the IRS for help filing your tax return",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:49:09.158908+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:afefa7ee4f55ad0a",
-      "kind": "source",
-      "label": "Filing a federal tax return if you are a nonresident alien",
-      "description": "If you are living and working or studying in the U.S. as a nonresident alien, you may be required to file a federal tax return.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/file-taxes-not-citizen",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/file-taxes-not-citizen",
-        "contentHash": "ec5ef3dcb03e2e5ea813dab2b19e866ecd6b20a571ae4a2f4c342cb7d38e5ee7",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:48:59.137086+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:8a8c92eab888773b",
-      "kind": "source",
-      "label": "How to file a federal tax return if you live outside the U.S.",
-      "description": "If you live abroad and are a U.S. citizen or Green Card holder, find out which tax forms to file, what income to report, and where to send your return.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/file-taxes-outside-us",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/file-taxes-outside-us",
-        "contentHash": "4508e2fe80e9f53c4389c1c504bda0adffd0e8548c9be613c351d97923d68e89",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:48:49.124662+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:57ae80eacbe30c3b",
-      "kind": "source",
-      "label": "Government grants and loans",
-      "description": "Find out if you qualify for a federal loan for education, your small business, and more. Learn how to spot \"free money from the government\" scams.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/government-grants-and-loans",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/government-grants-and-loans",
-        "contentHash": "3b98ac6ac57188a7470c5bc443e2ce66c7b7fee53c827c70fb26bdad8884a8b8",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Avoid \u201cfree money\u201d from the government scams",
-          "How to get a government loan or grant",
-          "Home buying assistance",
-          "How to start and fund your own business",
-          "Financial assistance after a disaster",
-          "Financial aid and student loans"
-        ],
-        "retrievedAt": "2026-09-29T16:48:39.019438+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:63c848fa75daffe6",
-      "kind": "source",
-      "label": "How to get an import license or permit",
-      "description": "Find out if you need a license or permit to import products into the U.S. See guidelines and more from the U.S. Customs and Border Protection (CBP).",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/import-license-permit",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/import-license-permit",
-        "contentHash": "0fcfbc0d33dea19dc9a1ee39267a4e86eca1b30e3d987459d326d3df238f57c5",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Find out if you need an import license or permit",
-          "How to get an import license or permit",
-          "Contact the port of entry",
-          "Find required entry forms",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:48:29.332903+00:00",
+        "retrievedAt": "2026-10-01T13:37:58.139736+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -465,12 +130,12 @@
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
+      "reviewed_at": "2026-10-01",
       "source_url": "https://www.usa.gov/lost-stolen-passport",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
+        "reviewedAt": "2026-10-01",
         "sourceUrl": "https://www.usa.gov/lost-stolen-passport",
         "contentHash": "4ba03c42588fd600841eed44b1b6f7a5f95e6284cc4d2113873f26c8d83e25d4",
         "sourceIds": [],
@@ -483,7 +148,7 @@
           "What to do if you find someone else\u2019s lost passport",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:52:59.079802+00:00",
+        "retrievedAt": "2026-10-01T13:37:28.092506+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -497,12 +162,12 @@
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
+      "reviewed_at": "2026-10-01",
       "source_url": "https://www.usa.gov/passport",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
+        "reviewedAt": "2026-10-01",
         "sourceUrl": "https://www.usa.gov/passport",
         "contentHash": "012602666ab2121648bed89f334338d72bde948b93e83a360cc92d6bcafa6d1f",
         "sourceIds": [],
@@ -513,141 +178,7 @@
           "Get a passport for a minor under 18",
           "Lost or stolen passports"
         ],
-        "retrievedAt": "2026-09-29T16:53:08.991396+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:9dc7f5098998aae1",
-      "kind": "source",
-      "label": "How to file a U.S. Postal Service complaint",
-      "description": "See how to complain to the U.S. Postal Service about lost or stolen mail or mail fraud. Learn where to file a complaint about postal employees or facilities.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/postal-service-complaints",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/postal-service-complaints",
-        "contentHash": "66fd307d0e63200187d70b48357a6c19d629c0bd2f590249ba83549baa60a698",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Where to file a complaint about mail services",
-          "Where to file a complaint about theft, fraud, or waste by USPS employees",
-          "Report mail fraud or theft by a person or company outside USPS",
-          "Complain about a USPS policy change",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:48:19.318181+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:56d47ceaa38449f2",
-      "kind": "source",
-      "label": "Register for Selective Service (the draft)",
-      "description": "Learn about the registration process for Selective Service (the draft), which sets up a way to register eligible men for military service.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/register-selective-service",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/register-selective-service",
-        "contentHash": "963bbd2b7f16a4ada62bf5acb00210d61ab4d40a1a20f25f1300d5e375b182b4",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Register with Selective Service",
-          "Who must register for Selective Service",
-          "Penalties for not registering",
-          "Getting called for duty",
-          "Transitioning to adulthood",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:48:08.964335+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:b30a4dfe8f16ab0f",
-      "kind": "source",
-      "label": "How to register to vote",
-      "description": "Use vote.gov to register to vote in federal, state, and local elections. If you\u2019re a U.S. citizen living abroad, see how you can register and vote absentee.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/register-to-vote",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/register-to-vote",
-        "contentHash": "847b3b0c4c4ff23eae1f602f02f22fcf20d22d4a02fe65ed92bf67377c8500d5",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Register through vote.gov",
-          "Other ways to register to vote",
-          "Abroad and military voters",
-          "What documents do you need to register to vote?",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:47:59.102258+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:f47ea47dea6de21f",
-      "kind": "source",
-      "label": "Renew an adult passport",
-      "description": "Find out if you can renew your passport or if you have to get a new one. Learn how to renew your passport by mail, online, or in person in an emergency.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/renew-adult-passport",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/renew-adult-passport",
-        "contentHash": "1156d6923bbfcb61d92b0f5d2138a17bf7dba47a292f4228dcd4755d48688f94",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Warning",
-          "Determine if you can renew your passport",
-          "Can you renew an expired passport?",
-          "How to renew your passport and what documents you will need",
-          "Renewing your passport by mail",
-          "Renewing your passport online",
-          "Find more help when renewing your passport",
-          "If you need your passport quickly",
-          "Check the status of your passport renewal",
-          "If you need to change your name or correct your passport",
-          "If you are outside the U.S.",
-          "If you need help with your passport application",
-          "Be aware of passport expiration rules for your destination",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:47:49.078933+00:00",
+        "retrievedAt": "2026-10-01T13:37:37.862113+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -661,12 +192,12 @@
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
+      "reviewed_at": "2026-10-01",
       "source_url": "https://www.usa.gov/renew-green-card",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
+        "reviewedAt": "2026-10-01",
         "sourceUrl": "https://www.usa.gov/renew-green-card",
         "contentHash": "209b7c9613c2b1eabede563e397bdf0f764ce28d904b74da58ca2235da144510",
         "sourceIds": [],
@@ -677,38 +208,392 @@
           "How to notify USCIS of a change of address",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:53:19.153256+00:00",
+        "retrievedAt": "2026-10-01T13:37:48.194030+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:fa3799a3b621cdb5",
+      "id": "source:crawl:107bd85ff8e8890c",
       "kind": "source",
-      "label": "Where to report incorrect benefit payments",
-      "description": "Know who to contact if you are having trouble with a federal benefit payment such as Social Security, SNAP (food stamps), or TANF (welfare).",
+      "label": "Rental assistance",
+      "description": "Learn about affordable rental housing including Section 8 for people with low incomes. See how these programs work, who is eligible, and how to apply.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/report-incorrect-benefit-payments",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/rental-housing-programs",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/report-incorrect-benefit-payments",
-        "contentHash": "717acb2ae0fa3e10cc73358f004cd7e8269ec9a571bf25588b7bd73840c0db11",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/rental-housing-programs",
+        "contentHash": "e9105934f5e9049c49c6d5cd7ef511d36b414584819201086fa71b9a6ba975cf",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "Social Security",
-          "Veteran benefits",
-          "Supplemental Nutrition Assistance Program (SNAP)",
-          "Temporary Assistance for Needy Families (TANF)",
+          "Section 8 housing",
+          "Find rental assistance for veterans, people with disabilities, and seniors",
+          "Get subsidized housing",
+          "Public housing"
+        ],
+        "retrievedAt": "2026-10-01T13:37:07.967568+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:970abc1c9b4a4493",
+      "kind": "source",
+      "label": "Get started repaying your federal student loan",
+      "description": "Find out how to make your student loan payments on time while keeping the cost manageable. Learn about repayment programs, forgiveness plans, and more.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/repaying-student-loan",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/repaying-student-loan",
+        "contentHash": "d628a0026907a44b4dfb531d51cef7751cfb3bef735167ee98d3171e25ef5190",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Make a plan and begin repaying your loan",
+          "Learn about student loan forgiveness programs",
+          "Public service loan forgiveness",
+          "Teacher loan forgiveness",
+          "Health care provider loan forgiveness",
+          "Other situations for loan forgiveness",
+          "Consolidating student loans",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:47:28.963066+00:00",
+        "retrievedAt": "2026-10-01T13:36:58.062502+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:cde79bef13b839cf",
+      "kind": "source",
+      "label": "How to replace lost or stolen ID cards",
+      "description": "Learn how to replace lost or stolen vital documents including birth certificate, driver's license, and other IDs that prove who you are or your citizenship.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/replace-vital-documents",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/replace-vital-documents",
+        "contentHash": "64f7a99724de92e8a5e2ed935fbbca14be69b3887d4e12881a86143cb7c56c48",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:36:47.852444+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:511c3b2a1e937c32",
+      "kind": "source",
+      "label": "Agencies to notify when someone dies",
+      "description": "Get an executor checklist to help with settling an estate. Learn what government programs to notify when a loved one dies. Cancel benefits and close accounts.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/report-a-death",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/report-a-death",
+        "contentHash": "6090c637de0a78a5c9ee760cc41e9a58b94be506a3ff4f84db869ff9a3ed58ce",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Government agencies and programs to notify of a death",
+          "Social Security and Medicare",
+          "Motor vehicles office",
+          "Internal Revenue Service (IRS)",
+          "U.S. passport",
+          "State social services benefits",
+          "Voter registration",
+          "Veterans benefits",
+          "Military retiree benefits",
+          "Federal employee benefits",
+          "Death of a U.S. citizen abroad",
+          "Financial institutions and other organizations to notify of a death",
+          "Death benefits from the government",
+          "Dealing with the death of a loved one",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:36:38.195305+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:63bc13a20d7a3c0e",
+      "kind": "source",
+      "label": "Report a crime",
+      "description": "Find out who to contact to get immediate help in an emergency and file a police report. Understand and report different types of crime.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/report-crime",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/report-crime",
+        "contentHash": "5fb06d1833364e445b94855c3fca9bc38da67e8e4ea4c808192944791b3c3713",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "What to do in an emergency",
+          "Alert",
+          "How to file a police report or report crime anonymously",
+          "How to report a crime",
+          "Crimes involving children",
+          "Domestic abuse",
+          "Internet crime",
+          "Human trafficking",
+          "Sexual assault",
+          "Restraining orders",
+          "Stalking",
+          "Hate crimes",
+          "Bomb threat",
+          "Organized crime",
+          "Whistleblower protection",
+          "Report international crimes",
+          "Theft and property crime",
+          "Scams and fraud",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:36:28.033981+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:172375f55a2d2a9b",
+      "kind": "source",
+      "label": "How to report an immigration violation",
+      "description": "Find out how to report immigration violations including crimes, visa violations, and public safety threats to U.S. Immigration and Customs Enforcement (ICE).",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/report-immigration-violation",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/report-immigration-violation",
+        "contentHash": "fa6bc69d4c32bcc20aee8d58086e04a260a9842fa4a421473f9deaba54fc3849",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:36:18.184864+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:498896cd199e0c35",
+      "kind": "source",
+      "label": "Where to report workplace safety violations",
+      "description": "If your workplace is unsafe, review your rights as a worker. Learn how to file a complaint, and report your employer if they retaliate against you.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/report-safety-violations",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/report-safety-violations",
+        "contentHash": "c3b6be1d255b1c43ef9efb6c49a7c0f75efbe4a93bb28f381087373f38802ba6",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Worker rights and safety",
+          "File a complaint with the federal government",
+          "File a complaint with a state agency",
+          "Report retaliation",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:36:07.973666+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:268fbfc96b06c90d",
+      "kind": "source",
+      "label": "Get copies of vital records and ID cards",
+      "description": "Find out how to replace vital documents such as birth and death certificates, Social Security cards, marriage and divorce certificates, and more.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/request-documents",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/request-documents",
+        "contentHash": "ea19f2bbd6ae760aac985f90b976b00ce634b5c85d4fa8a45f4af1f8ca7ad533",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How to get a certified copy of a U.S. birth certificate",
+          "How to replace lost or stolen ID cards",
+          "How to get a copy of a marriage certificate or a marriage license",
+          "How to get a copy of a divorce decree or certificate",
+          "How to get a certified copy of a death certificate"
+        ],
+        "retrievedAt": "2026-10-01T13:35:58.017281+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:2acb1ed78414829d",
+      "kind": "source",
+      "label": "Resolve tax disputes",
+      "description": "Resolve tax problems with free or low-cost services such as the Taxpayer Advocate Service, Low-Income Taxpayer Clinics, and the IRS Office of Appeals.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/resolve-tax-disputes",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/resolve-tax-disputes",
+        "contentHash": "61dfa590418c2fbd11bb60a15911fc0d5e6be5da628babbca12344fb1b543a41",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Who to contact to dispute an IRS tax bill",
+          "What to do if you receive a CP14 notice from the IRS",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:35:47.972352+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:bd0e16dbc16a44eb",
+      "kind": "source",
+      "label": "Selective Service",
+      "description": "Learn how to register and check your registration for the Selective Service (the draft). Almost all 18 to 25-year-old men who live in the U.S. must register.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/selective-service",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/selective-service",
+        "contentHash": "10025716201ce221794cc0224957ca84f456131d79cb24e8b49f8dba133e1b2c",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Register for Selective Service (the draft)",
+          "Find your Selective Service number"
+        ],
+        "retrievedAt": "2026-10-01T13:35:37.961450+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:275595c747ec3e2e",
+      "kind": "source",
+      "label": "Find your Selective Service number",
+      "description": "Learn how to check your Selective Service registration (the draft), and get proof that you registered. Replace your card or update your address.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/selective-service-card",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/selective-service-card",
+        "contentHash": "4a747c69a4cb7cff64c7e62fa153bc6ee40255076ed2ffe866f333d05bdf65e7",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Find your registration number",
+          "Replace a Selective Service card",
+          "Correct your information with Selective Service",
+          "Change of address",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:35:27.982757+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:e085b6fe468bad9f",
+      "kind": "source",
+      "label": "Food assistance programs for older adults",
+      "description": "If you are 60 or older and have limited income, find out if you qualify for food assistance programs and learn how to apply.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/senior-food-programs",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/senior-food-programs",
+        "contentHash": "a128ec2044adb3865dd9826912da7bd259baa00b4122eb483119fc735a0adb84",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Learn what food assistance is available for older adults and if you are eligible",
+          "Get food assistance through government benefits",
+          "Get food assistance through Medicare",
+          "Approaching retirement",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:35:18.089017+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -722,12 +607,12 @@
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
+      "reviewed_at": "2026-10-01",
       "source_url": "https://www.usa.gov/social-security-card",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
+        "reviewedAt": "2026-10-01",
         "sourceUrl": "https://www.usa.gov/social-security-card",
         "contentHash": "e786289a9452f7c6355404a9e562fd222419c0cf542236b10dfc7eb9d7147798",
         "sourceIds": [],
@@ -740,482 +625,614 @@
           "Having a child and early childhood",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:53:39.089690+00:00",
+        "retrievedAt": "2026-10-01T13:38:08.163683+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:e63f67eb511a4713",
+      "id": "source:crawl:2ffbbdc6c41d7959",
       "kind": "source",
-      "label": "Voter accessibility laws",
-      "description": "Voter accessibility laws ensure that people with disabilities or language barriers are able to vote. Learn about the laws and the accommodations they provide.",
+      "label": "Report the death of a Social Security or Medicare beneficiary",
+      "description": "Find out how to cancel Social Security Administration (SSA) benefits when someone who receives Social Security or Medicare dies.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-accessibility-laws",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/social-security-report-a-death",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-accessibility-laws",
-        "contentHash": "897d9e84f7de4d8892f30bbe4ef3e3895356f2773eeefea48319e65f0bbe5b7e",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/social-security-report-a-death",
+        "contentHash": "011c13be2d8d47baa4dd21c30f29aa8ddc4a1daa178ab50e4f1583bb6ccc14a0",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "Who to contact about voter accommodations",
-          "Laws and accommodations for voters with disabilities",
-          "Voting accessibility for voters needing language assistance",
+          "How to report a death to Social Security and Medicare",
+          "How to return a Social Security payment after someone dies",
+          "Social Security survivor benefits",
+          "Dealing with the death of a loved one",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:52:39.312870+00:00",
+        "retrievedAt": "2026-10-01T13:35:07.858185+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:00deedfced067093",
+      "id": "source:crawl:a98ebb49a61b48ec",
       "kind": "source",
-      "label": "Voter fraud, voter suppression, and other election crimes",
-      "description": "Learn where to report voter fraud, campaign finance crime, and voting rights violations such as voter intimidation and suppression.",
+      "label": "State motor vehicle services",
+      "description": "Contact your state DMV to get or renew your driver's license, Real ID, license plates, car registration and titles, and more.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-fraud",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/state-motor-vehicle-services",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-fraud",
-        "contentHash": "9ddbde6f4695285216ae5b5972e1dc4a0863b67a98629157cc8b2e5013b7dd65",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/state-motor-vehicle-services",
+        "contentHash": "8cab3291dfecd720e5acdba71041cfd9d9ac3ebe62c1185c3f7c8e2e94f21a51",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "How to report a violation of your voting rights, intimidation, or suppression",
-          "How to report voter fraud",
-          "What are the types of voter and election crimes?",
+          "Select or type your state or territory:"
+        ],
+        "retrievedAt": "2026-10-01T13:34:57.853690+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:3da29bd1c509e63e",
+      "kind": "source",
+      "label": "State social service agencies",
+      "description": "Contact your state social services for food, housing, and unemployment benefits. Get help with child support, adult care, Medicare, and more.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/state-social-services",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/state-social-services",
+        "contentHash": "e6730d974bfd90b2b9f5f406511137e5c610c76f3199e883ac657e1be676cc57",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Select or type your state or territory:"
+        ],
+        "retrievedAt": "2026-10-01T13:34:47.979669+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:2862e500cf5bef02",
+      "kind": "source",
+      "label": "How to pay and get help with state and local taxes",
+      "description": "Find out from your state and local tax agencies how much you owe in taxes, how to pay, and when they are due. Get help with tax problems and complaints.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/state-taxes",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/state-taxes",
+        "contentHash": "5cb9281ac67ce496ae0ed7a6b34434a5aeae851bda611e1f957cf5365bd6ec89",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "File your state and local taxes",
+          "Learn what state and local taxes you may have to pay",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:52:29.285626+00:00",
+        "retrievedAt": "2026-10-01T13:34:38.121117+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:051197ebe380cbe4",
+      "id": "source:crawl:6f3b7b09c8723c0f",
       "kind": "source",
-      "label": "Voter ID requirements",
-      "description": "Each state sets its own voter ID rules. Most require you to bring identification to vote in person. Know your state\u2019s voter ID laws before going to the polls.",
+      "label": "Resolve student loan payment problems",
+      "description": "Contact your loan servicer if you are struggling to repay your student loan. Get the facts about programs that suspend loan payments.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-id",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/student-loan-problems",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-id",
-        "contentHash": "57f9cd40f792a67fa073f9df4ee3fd63e0c73931f70a0ed250f6301288d0499e",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/student-loan-problems",
+        "contentHash": "d12caf4f6221419dfa776d8d4d70997eb4480aeca67517c194bf99eb589e9fad",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "Find out if you need to bring an ID to vote",
-          "How to vote without ID if you are eligible",
-          "Provisional ballots for name or address mismatch",
-          "Special ID rules for some first-time voters",
+          "Student loan deferment and forbearance",
+          "Student loan delinquency and default",
+          "Consolidating student loans",
+          "Student loan disputes",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:52:19.143683+00:00",
+        "retrievedAt": "2026-10-01T13:34:28.129640+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:2a2542b4f0c91901",
+      "id": "source:crawl:5da4e803a3c9121a",
       "kind": "source",
-      "label": "Voter registration",
-      "description": "Learn how to register to vote and get a voter registration card. Find your state's registration deadline and how to confirm or change your registration.",
+      "label": "Tax relief for federally declared disaster areas",
+      "description": "See if you qualify for a tax filing extension or fast tax refund after a federally declared disaster. Learn how to get tax records if they were destroyed.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-registration",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/tax-disaster-relief",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-registration",
-        "contentHash": "b81a5ce549f3ccc13fe5c08c06415496694190dafc2e1b5fd28da6e874e9b1fe",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/tax-disaster-relief",
+        "contentHash": "e5dc7205949841733a8243d8c304412f94309310049775559a758bea91956694",
         "sourceIds": [],
         "tags": [
           "USA.gov",
-          "How to register to vote",
-          "How to update or change your voter registration",
-          "How to confirm your voter registration status",
-          "How to get a voter registration card",
-          "Voter registration deadlines"
-        ],
-        "retrievedAt": "2026-09-29T16:52:09.089366+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:88cff027767d596f",
-      "kind": "source",
-      "label": "How to get a voter registration card",
-      "description": "After you register to vote, you will get a voter registration card by mail. Find out how to replace a lost card. You will not need to show your card to vote.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-registration-card",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-registration-card",
-        "contentHash": "f8bcd2d20fa751cdf7384a280bfb39d90f1fa965c70ab84b67478be8c8458ac1",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "How to replace your voter registration card",
-          "Register or change your registration to get a voter registration card",
-          "How long it takes to get a voter registration card",
-          "If your voter registration card was lost in the mail",
-          "Can you print your voter registration online?",
-          "What form of ID do you need to vote on Election Day?",
+          "Get more time to file and pay your taxes after a disaster",
+          "Get a refund faster by claiming your losses after a disaster",
+          "Learn more about disaster tax relief",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:51:59.276082+00:00",
+        "retrievedAt": "2026-10-01T13:34:17.985218+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
       }
     },
     {
-      "id": "source:crawl:8be8363f0b81304b",
+      "id": "source:crawl:a7ecdfc375d0d8a1",
       "kind": "source",
-      "label": "Voter registration deadlines",
-      "description": "Every state has its own voter registration deadline. Find your state's deadline and register to make sure you can vote in the next election.",
+      "label": "Set up direct deposit to receive your tax refund",
+      "description": "Receive your tax refund faster through direct deposit instead of by mail. Learn how direct deposit works and how to set it up.",
       "status": "machine-indexed",
       "jurisdiction": null,
       "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-registration-deadlines",
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/tax-refund-direct-deposit",
       "params": {
         "audience": [],
         "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-registration-deadlines",
-        "contentHash": "c1175f00c63a8c9b81a2fe5dc5cc9e01899b8bacc645bcb8a29e470403aabfc1",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/tax-refund-direct-deposit",
+        "contentHash": "000f94792bd90bf2abe9545156440a0cc8a0dda0b82ee9effae202da3adaaedb",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "How to set up a direct deposit for your tax refund",
+          "How to recover your refund if your direct deposit information is incorrect"
+        ],
+        "retrievedAt": "2026-10-01T13:34:08.083044+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:f0b351a98a3c2a0f",
+      "kind": "source",
+      "label": "Why your tax refund may be lower than expected",
+      "description": "Learn about tax refund offsets, when part or all of your federal tax refund goes to repay a state or federal debt such as child support.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/tax-refund-offset",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/tax-refund-offset",
+        "contentHash": "d79a2f994c744d2f9a33726bf8a1befe8874b0f75d27728d428843bb74b92a9e",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Refunds lower because of tax refund offsets",
+          "Refunds lower because of mathematical errors"
+        ],
+        "retrievedAt": "2026-10-01T13:33:58.023844+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:b73a593990c14e69",
+      "kind": "source",
+      "label": "Tax refunds",
+      "description": "Check the status of your tax refund. Learn about unclaimed tax refunds and what to do if your refund is lower than expected.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/tax-refunds",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/tax-refunds",
+        "contentHash": "5709a5eae6f3531c93b535bbd067aa9c5762bbb878a3db95a15245c05cd78b8b",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Check your federal or state tax refund status",
+          "Set up direct deposit to receive your tax refund",
+          "Why your tax refund may be lower than expected",
+          "Undelivered and unclaimed tax refund checks"
+        ],
+        "retrievedAt": "2026-10-01T13:33:48.008941+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:44968eab71d7063c",
+      "kind": "source",
+      "label": "Get transcripts and copies of tax returns",
+      "description": "Learn how to get a transcript or a copy of a tax return from the IRS to prove your income for a loan, housing, or benefits.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/tax-return-transcripts",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/tax-return-transcripts",
+        "contentHash": "657907ffb47c0a93df9732ed2327e0ef033ea7e546671e35fc8b5b68bca6cbb0",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Get a federal tax transcript",
+          "Get a copy of your federal tax return",
+          "Get copies of a state tax return",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:33:37.975364+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:ffb35e61e0b4edeb",
+      "kind": "source",
+      "label": "Taxes",
+      "description": "Learn about filing federal income tax. Check the status of your tax refund, find help filing your taxes, and get federal tax forms.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/taxes",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/taxes",
+        "contentHash": "2ce8b81e37727edb9a8e98bb328bd7c6194579f12d7f75d7bc6aba1d91cb1088",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Most popular",
+          "File federal taxes",
+          "Get help filing taxes",
+          "How to pay and get help with state and local taxes",
+          "Tax refunds",
+          "Federal tax forms",
+          "Federal tax return extensions",
+          "Tax credits and disaster relief",
+          "Get transcripts and copies of tax returns",
+          "Resolve tax disputes",
+          "How to check and change your tax withholding"
+        ],
+        "retrievedAt": "2026-10-01T13:33:27.966225+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:cb8d0b7a93c7db8f",
+      "kind": "source",
+      "label": "Complain about phone and text scams, robocalls, and telemarketers",
+      "description": "Find out how to file complaints about scam calls and texts and telemarketers. Learn how to reduce sales calls through the National Do Not Call Registry.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/telemarketer-scam-call-complaints",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/telemarketer-scam-call-complaints",
+        "contentHash": "e0317a550d335c49dd483cb6ac5d45ec76143f25891f73ca5c47e5936e08ca42",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Report scam calls and texts",
+          "Text scams",
+          "Stop robocalls and robotexts",
+          "Reduce telemarketer calls with the National Do Not Call Registry",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:33:18.239381+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:a20000ec21df3372",
+      "kind": "source",
+      "label": "Complaints about travel",
+      "description": "Complain about travel by air, land, or sea, with the company first. If you need more help, learn how to file a travel complaint with the government.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/travel-complaints",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/travel-complaints",
+        "contentHash": "7bb59df390a609587518810c6753ea1fa425727493f123cd51f2d9652f40cc8d",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Complaints about an airline or TSA",
+          "Complaints about a hotel or motel",
+          "Complaints about travel agents and travel agencies",
+          "Complaints about cruises",
+          "Car rental complaints",
+          "Vacation rental scams",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:33:07.975130+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:cde50207f4ecc417",
+      "kind": "source",
+      "label": "Save time getting through airport security with Trusted Traveler Programs",
+      "description": "Save time at airport security and border crossings with the Trusted Traveler Programs, which offer members expedited lines.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/trusted-traveler-program",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/trusted-traveler-program",
+        "contentHash": "10c7659bf625cf2b70618e5275f47403f20cb8eff01fffa2dfb0da015b16c949",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "What are the Trusted Traveler Programs, and how do you apply?",
+          "Manage your Trusted Traveler Program account",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:32:58.158590+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:5849a3fca3533d26",
+      "kind": "source",
+      "label": "Where to file a complaint about cable or satellite television",
+      "description": "To complain about your cable or satellite TV billing, rates, or service, contact the company directly. Then, learn how to get more help from the government.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/tv-complaints",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/tv-complaints",
+        "contentHash": "eb24b57921be0faffcd2462244e98a1a5913bc4eb54146743e64acfeb6f8a5c1",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Complain to your cable or satellite provider",
+          "Write a complaint letter to your cable or satellite company",
+          "Submit a complaint to the government about cable or satellite problems",
+          "Complain to your local cable franchise authority",
+          "Complain to the FCC",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:32:48.014396+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:0cccb9a85421c26a",
+      "kind": "source",
+      "label": "Undelivered and unclaimed tax refund checks",
+      "description": "Know how to claim your tax refund if you are owed one but didn't receive it. If you moved after filing your return, fill out a change of address form.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/unclaimed-tax-refunds",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/unclaimed-tax-refunds",
+        "contentHash": "2b0459708d1977d0cc681a570b70f74033669343e59a4a83737f7c3137794779",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Undelivered federal tax refunds",
+          "If you never received your tax refund",
+          "If you cannot get your refund status after checking online",
+          "If you moved after filing your return",
+          "If you received a CP237A notice from the IRS",
+          "You may be entitled to an unclaimed federal tax refund",
+          "State tax refunds"
+        ],
+        "retrievedAt": "2026-10-01T13:32:38.117676+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:a38cd35464c5f448",
+      "kind": "source",
+      "label": "Unemployment benefits",
+      "description": "Unemployment insurance pays you money if you lose your job through no fault of your own. Learn how to apply and where to find eligibility rules.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/unemployment-benefits",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/unemployment-benefits",
+        "contentHash": "ff4e5f3ed10c0e37c83e963dfd6c8f95711509b790ee0c091c3d007ce41fa681",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Find out if you are eligible for unemployment benefits",
+          "How to apply for unemployment benefits",
+          "Learn how to keep your health coverage if you lose your job",
+          "Protect yourself from unemployment scams",
+          "Facing financial hardship",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:32:28.037625+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:3cc9b5babd4cd119",
+      "kind": "source",
+      "label": "Job programs for veterans",
+      "description": "Visit CareerOneStop to help you and your spouse transition from military to civilian jobs. Get job training and counseling, find a job, or start a business.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/veteran-job-programs",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/veteran-job-programs",
+        "contentHash": "1e35856734f49f5cd9537c7f4377afbc73912e6d2dce48f5fde1ef700751b0e7",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Prepare for a civilian job",
+          "Get career counseling",
+          "Start a veteran-owned business",
+          "Find resources for specific groups",
+          "Veterans with disabilities",
+          "Military spouses",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:32:17.981015+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:064ebf6884eb9c33",
+      "kind": "source",
+      "label": "Veterans death benefits",
+      "description": "Learn about the veterans burial allowance, which helps pay for transportation, funeral, and burial costs for an eligible veteran.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/veterans-death-benefits",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/veterans-death-benefits",
+        "contentHash": "71dfc7527a8219e627e24ed68997dec98bc2dda48de82fe8786dc7f65e1adfb8",
+        "sourceIds": [],
+        "tags": [
+          "USA.gov",
+          "Eligibility for a veterans burial allowance",
+          "How to apply for veteran death benefits",
+          "Have a question?"
+        ],
+        "retrievedAt": "2026-10-01T13:32:07.966078+00:00",
+        "httpStatus": 200,
+        "etag": null,
+        "lastModified": null
+      }
+    },
+    {
+      "id": "source:crawl:f2b3abe174700e4d",
+      "kind": "source",
+      "label": "What happens if your visa application is rejected",
+      "description": "Find out what to do if your visa is denied. Learn if you are eligible for a waiver of grounds of inadmissibility.",
+      "status": "machine-indexed",
+      "jurisdiction": null,
+      "category": null,
+      "reviewed_at": "2026-10-01",
+      "source_url": "https://www.usa.gov/visa-application-rejected",
+      "params": {
+        "audience": [],
+        "status": "machine-indexed",
+        "reviewedAt": "2026-10-01",
+        "sourceUrl": "https://www.usa.gov/visa-application-rejected",
+        "contentHash": "bc642fc36a2f0beb9bb2db1dd5cc8560512d6e8c40a8584dfa1bac1ed935f727",
         "sourceIds": [],
         "tags": [
           "USA.gov",
           "Have a question?"
         ],
-        "retrievedAt": "2026-09-29T16:51:49.149181+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:262ea6b3e01a9b35",
-      "kind": "source",
-      "label": "Decide who to vote for",
-      "description": "Learn how to use voter guides and sample ballots to research candidates. Know the facts about write in votes, and if they count.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/voter-research",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/voter-research",
-        "contentHash": "6e58eba627d25642a42b799fec24ca8efb1cca4e5a1692bbd5845bc17b1e04dc",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Use sample ballots and voter guides to learn about candidates",
-          "Write-in candidates for federal and state elections"
-        ],
-        "retrievedAt": "2026-09-29T16:51:39.276070+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:b6408916f1bb0cb2",
-      "kind": "source",
-      "label": "Find out if your federal or state tax return was received",
-      "description": "See if your federal or state tax return was received. You can check regardless of how you filed or whether you owe taxes or will receive a refund.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/was-tax-return-received",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/was-tax-return-received",
-        "contentHash": "6475088abfc0a4d603b4e8e60fb7e75e4db958d58d7f76a0352a8c8be772ae99",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Check your federal tax return status online",
-          "Other ways to check if your federal taxes were filed",
-          "Check your state tax return status",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:51:29.091123+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:101fe82b74e88f61",
-      "kind": "source",
-      "label": "Home weatherization and energy efficiency assistance",
-      "description": "See if you can save on heating and cooling costs through the Weatherization Assistance Program (WAP), loans, financing programs, tax credits, and more.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/weatherization-energy-programs",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/weatherization-energy-programs",
-        "contentHash": "230fabba18e8c756c936aaa71ba8943329bbb1e362c83725c6e10c03be45ea06",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Important",
-          "The Weatherization Assistance Program",
-          "Loan programs for energy-efficient homes",
-          "Tax credits and rebates for energy-efficient products and home improvements",
-          "Help with home energy bills",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:51:18.965027+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:b859cfa0feca4e66",
-      "kind": "source",
-      "label": "Welfare and financial assistance",
-      "description": "Find financial assistance and services for families in need. Discover welfare benefits, housing support, and help for Native Americans.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/welfare-and-financial-assistance",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/welfare-and-financial-assistance",
-        "contentHash": "9ae6b64f14f6d6cfe67c3fb06525a2da934258049db6812d44c92c98155658c0",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Welfare benefits or Temporary Assistance for Needy Families (TANF)",
-          "Financial assistance and services for Native Americans"
-        ],
-        "retrievedAt": "2026-09-29T16:51:09.085976+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:4cc17c31eef0731c",
-      "kind": "source",
-      "label": "Welfare benefits or Temporary Assistance for Needy Families (TANF)",
-      "description": "Learn how to apply for welfare, known as TANF or Temporary Assistance for Needy Families. It pays eligible families a monthly benefit for basic needs.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/welfare-benefits",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/welfare-benefits",
-        "contentHash": "6d11a04a0b53ddbf009d62272304d09e8592f2610e96660bc2aa868af85ba2d7",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "What is TANF?",
-          "Find out if you are eligible for TANF benefits and apply",
-          "Check your TANF balance",
-          "Report TANF fraud, ask a question, or file a complaint",
-          "Having a child and early childhood",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:50:58.963580+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:cb25357ef3672fcd",
-      "kind": "source",
-      "label": "Find out when to vote",
-      "description": "The dates of elections can vary. Learn when you can vote for your federal, state, and local representatives.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/when-to-vote",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/when-to-vote",
-        "contentHash": "b5295e883b7a54103284651e9adb488473e8b78b3b94bb543b315c8ac9077f26",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:50:49.332701+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:1fa68ab220f153f4",
-      "kind": "source",
-      "label": "Who can and cannot vote",
-      "description": "Can you vote in federal, state, and local elections? Learn about qualifications such as citizenship, minimum age, registration, and more.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/who-can-vote",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/who-can-vote",
-        "contentHash": "df463b2cfb2ac6c8bb903d9c1aa491990a97abdac95d2154783531715c886ec2",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Who can vote?",
-          "Who cannot vote?",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:50:39.228079+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:e9661caab3effb0e",
-      "kind": "source",
-      "label": "Find out if you need to file a federal tax return",
-      "description": "Do you need to file a federal tax return? Use the online tool from the IRS to find out, based on your filing status and income.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/who-needs-to-file-taxes",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/who-needs-to-file-taxes",
-        "contentHash": "bb308639013dc62055d55a54b55e7e73670433566011c738abd989fabba1513f",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:47:38.963196+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:5c911175b3b333a7",
-      "kind": "source",
-      "label": "Use sample ballots and voter guides to learn about candidates",
-      "description": "Before going to the polls, review voter guides and sample ballots. They can help you decide which candidates and state or local issues to vote for.",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/who-you-can-vote-for",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/who-you-can-vote-for",
-        "contentHash": "1dbca19f853b775faf2f3884a11ac379dd5925676ea51d13f128d0a13ac2575e",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Sample ballots",
-          "Voter guides",
-          "Can you bring sample ballots and voter guides into the voting booth?",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:50:29.135878+00:00",
-        "httpStatus": 200,
-        "etag": null,
-        "lastModified": null
-      }
-    },
-    {
-      "id": "source:crawl:1a63080499f700aa",
-      "kind": "source",
-      "label": "Work in the U.S. with a work permit (EAD)",
-      "description": "As a nonimmigrant visa holder, learn if you qualify to work in the U.S. temporarily with a work permit (Employment Authorization Document or EAD).",
-      "status": "machine-indexed",
-      "jurisdiction": null,
-      "category": null,
-      "reviewed_at": "2026-09-29",
-      "source_url": "https://www.usa.gov/work-permit-ead",
-      "params": {
-        "audience": [],
-        "status": "machine-indexed",
-        "reviewedAt": "2026-09-29",
-        "sourceUrl": "https://www.usa.gov/work-permit-ead",
-        "contentHash": "236bf6d7ca67293102aae2644934eca104315026a41d98ef6153c89b7a560c65",
-        "sourceIds": [],
-        "tags": [
-          "USA.gov",
-          "Changes to work permit extension",
-          "Learn about work permits (EADs)",
-          "How to get a work permit (EAD)",
-          "Have a question?"
-        ],
-        "retrievedAt": "2026-09-29T16:50:19.319534+00:00",
+        "retrievedAt": "2026-10-01T13:31:57.975535+00:00",
         "httpStatus": 200,
         "etag": null,
         "lastModified": null
@@ -1243,25 +1260,13 @@
   ],
   "edges": [
     {
-      "source": "source:crawl:35e5acb1a878dfa5",
+      "source": "source:crawl:041eba8851678b96",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:bec07dfe9eacab0d",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:d5247903c9eca34f",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:dd02f897ce9669bb",
+      "source": "source:crawl:0c29c4cc6c9f089c",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
@@ -1279,60 +1284,6 @@
       "order": null
     },
     {
-      "source": "source:crawl:efafeca38abc5be5",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:6a70f31a0a14bea2",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:e157a6f9b0d4226f",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:c05696d36909a78f",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:2f6938a489d9c79f",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:afefa7ee4f55ad0a",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:8a8c92eab888773b",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:57ae80eacbe30c3b",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:63c848fa75daffe6",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
       "source": "source:crawl:32653fbd82137ff8",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
@@ -1345,37 +1296,79 @@
       "order": null
     },
     {
-      "source": "source:crawl:9dc7f5098998aae1",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:56d47ceaa38449f2",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:b30a4dfe8f16ab0f",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
-      "source": "source:crawl:f47ea47dea6de21f",
-      "target": "agency:crawl:usa-gov",
-      "relation": "published-by",
-      "order": null
-    },
-    {
       "source": "source:crawl:5f4c2e2b2565bef5",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:fa3799a3b621cdb5",
+      "source": "source:crawl:107bd85ff8e8890c",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:970abc1c9b4a4493",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:cde79bef13b839cf",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:511c3b2a1e937c32",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:63bc13a20d7a3c0e",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:172375f55a2d2a9b",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:498896cd199e0c35",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:268fbfc96b06c90d",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:2acb1ed78414829d",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:bd0e16dbc16a44eb",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:275595c747ec3e2e",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:e085b6fe468bad9f",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
@@ -1387,97 +1380,121 @@
       "order": null
     },
     {
-      "source": "source:crawl:e63f67eb511a4713",
+      "source": "source:crawl:2ffbbdc6c41d7959",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:00deedfced067093",
+      "source": "source:crawl:a98ebb49a61b48ec",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:051197ebe380cbe4",
+      "source": "source:crawl:3da29bd1c509e63e",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:2a2542b4f0c91901",
+      "source": "source:crawl:2862e500cf5bef02",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:88cff027767d596f",
+      "source": "source:crawl:6f3b7b09c8723c0f",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:8be8363f0b81304b",
+      "source": "source:crawl:5da4e803a3c9121a",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:262ea6b3e01a9b35",
+      "source": "source:crawl:a7ecdfc375d0d8a1",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:b6408916f1bb0cb2",
+      "source": "source:crawl:f0b351a98a3c2a0f",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:101fe82b74e88f61",
+      "source": "source:crawl:b73a593990c14e69",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:b859cfa0feca4e66",
+      "source": "source:crawl:44968eab71d7063c",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:4cc17c31eef0731c",
+      "source": "source:crawl:ffb35e61e0b4edeb",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:cb25357ef3672fcd",
+      "source": "source:crawl:cb8d0b7a93c7db8f",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:1fa68ab220f153f4",
+      "source": "source:crawl:a20000ec21df3372",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:e9661caab3effb0e",
+      "source": "source:crawl:cde50207f4ecc417",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:5c911175b3b333a7",
+      "source": "source:crawl:5849a3fca3533d26",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
     },
     {
-      "source": "source:crawl:1a63080499f700aa",
+      "source": "source:crawl:0cccb9a85421c26a",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:a38cd35464c5f448",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:3cc9b5babd4cd119",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:064ebf6884eb9c33",
+      "target": "agency:crawl:usa-gov",
+      "relation": "published-by",
+      "order": null
+    },
+    {
+      "source": "source:crawl:f2b3abe174700e4d",
       "target": "agency:crawl:usa-gov",
       "relation": "published-by",
       "order": null
@@ -1487,7 +1504,7 @@
   "metadata": {
     "sitemapsRead": 1,
     "urlsDiscovered": 1526,
-    "urlsAlreadyIndexed": 16,
+    "urlsAlreadyIndexed": 48,
     "newPagesSelected": 32,
     "refreshPagesSelected": 8,
     "urlsEligible": 40,
