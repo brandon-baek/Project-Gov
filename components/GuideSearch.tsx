@@ -2,6 +2,7 @@
 
 import { FormEvent, useRef, useState } from "react";
 import Link from "next/link";
+import { states } from "@/lib/jurisdictions";
 import type { Journey } from "@/lib/schema";
 import { ArrowIcon, ExternalIcon } from "@/components/icons";
 import { GuideResult } from "@/components/GuideResult";
@@ -10,17 +11,19 @@ import type { DiscoveredGuide } from "@/lib/discovered-guides";
 
 type ApiResponse =
   | { status: "matched"; message: string; journey: Journey; provenance: { router: string; storage: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string }[] }
-  | { status: "discovered"; message: string; guide: DiscoveredGuide; provenance: { router: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string; summary?: string }[] }
-  | { status: "clarify" | "unsupported" | "blocked" | "error"; message: string; alternatives: { id: string; slug: string; title: string; summary?: string }[]; officialSearchUrl?: string };
+  | { status: "discovered"; message: string; guide: DiscoveredGuide; provenance: { router: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string; summary?: string; href?: string }[] }
+  | { status: "clarify" | "unsupported" | "blocked" | "error"; message: string; alternatives: { id: string; slug: string; title: string; summary?: string; href?: string }[]; officialSearchUrl?: string };
 
 const examples = [
-  "I lost my passport",
+  "I need to transfer my license after moving",
   "I was laid off in California",
-  "Someone used my identity",
+  "How do I register to vote?",
   "I’m starting a business"
 ];
 
 export function GuideSearch() {
+  const [state, setState] = useState("");
+  const [locality, setLocality] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState("");
   const [result, setResult] = useState<ApiResponse | null>(null);
@@ -37,13 +40,13 @@ export function GuideSearch() {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: clean, history: [] })
+        body: JSON.stringify({ message: clean, state: state || undefined, locality: locality || undefined, history: [] })
       });
       const data = (await response.json()) as ApiResponse;
       setResult(data);
       window.setTimeout(() => resultRef.current?.focus(), 50);
     } catch {
-      setResult({ status: "error", message: "GovRoute could not connect. Check your connection and try again.", alternatives: [] });
+      setResult({ status: "error", message: "GovGuide could not connect. Check your connection and try again.", alternatives: [] });
     } finally {
       setLoading(false);
     }
@@ -57,7 +60,11 @@ export function GuideSearch() {
   return (
     <div className="search-experience">
       <form className="guide-search" onSubmit={submit}>
-        <label htmlFor="goal">What are you trying to do?</label>
+        <label htmlFor="goal">What do you need to do?</label>
+        <div className="location-fields search-location">
+          <label htmlFor="search-state">State or territory<select id="search-state" value={state} onChange={(event) => { setState(event.target.value); setResult(null); }}><option value="">Choose a location</option>{states.map((item) => <option key={item.code} value={item.code}>{item.name}</option>)}</select></label>
+          <label htmlFor="search-locality">City or county (optional)<input id="search-locality" value={locality} onChange={(event) => { setLocality(event.target.value); setResult(null); }} placeholder="Jurisdiction name" maxLength={80} /></label>
+        </div>
         <div className="guide-search__control">
           <textarea id="goal" name="goal" value={message} onChange={(event) => setMessage(event.target.value)} placeholder="Describe the situation in your own words" rows={2} maxLength={600} />
           <button type="submit" disabled={loading || message.trim().length < 3} aria-label={loading ? "Finding guidance" : "Find guidance"}><ArrowIcon /></button>
@@ -82,7 +89,7 @@ export function GuideSearch() {
             <GuideResult journey={result.journey} />
             <details className="trace-details">
               <summary>How this answer was assembled</summary>
-              <p>The request was matched to <code>{result.journey.id}</code> in the {result.provenance.storage === "sqlite" ? "SQL knowledge graph" : "bundled graph fallback"}. Every step was traversed from that journey node to {result.provenance.assembledFrom.length} supporting source node{result.provenance.assembledFrom.length === 1 ? "" : "s"}. The router used {result.provenance.router === "graph+ai" ? "AI-assisted intent selection plus graph validation" : "deterministic graph retrieval"}.</p>
+              <p>The request was matched to <code>{result.journey.id}</code> in the {result.provenance.storage === "sqlite" ? "SQL knowledge graph" : "bundled graph fallback"}. The guide links its steps to {result.provenance.assembledFrom.length} supporting source node{result.provenance.assembledFrom.length === 1 ? "" : "s"}. The router used {result.provenance.router === "graph+ai" ? "AI-assisted intent selection plus graph validation" : "deterministic graph retrieval"}.</p>
               <Link href={`/graph?focus=${result.journey.id}`}>See it in the graph</Link>
             </details>
           </>
@@ -95,7 +102,7 @@ export function GuideSearch() {
         {result && result.status !== "matched" && result.status !== "discovered" && (
           <div className={`notice notice--${result.status}`} role={result.status === "error" || result.status === "blocked" ? "alert" : undefined}>
             <p>{result.message}</p>
-            {result.alternatives.length > 0 && <div className="notice-options">{result.alternatives.map((item) => <Link key={item.id} href={`/guides/${item.slug}`}><strong>{item.title}</strong>{item.summary && <span>{item.summary}</span>}</Link>)}</div>}
+            {result.alternatives.length > 0 && <div className="notice-options">{result.alternatives.map((item) => <Link key={item.id} href={item.href ?? `/guides/${item.slug}`}><strong>{item.title}</strong>{item.summary && <span>{item.summary}</span>}</Link>)}</div>}
             {result.officialSearchUrl && <a className="text-action" href={result.officialSearchUrl} target="_blank" rel="noreferrer">Search USA.gov<ExternalIcon /></a>}
           </div>
         )}

@@ -1,11 +1,12 @@
 import Link from "next/link";
+import { jurisdictionLabel } from "@/lib/jurisdictions";
 import type { DiscoveredGuide } from "@/lib/discovered-guides";
 import { CheckIcon, ExternalIcon } from "@/components/icons";
 
 export function DiscoveredGuideResult({ guide, compact = false }: { guide: DiscoveredGuide; compact?: boolean }) {
   const date = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" }).format(new Date(guide.reviewedAt));
   return <article className={compact ? "guide-result guide-result--compact" : "guide-result"}>
-    <header className="guide-result__header"><div><p className="eyebrow">{guide.category} · {guide.jurisdiction.replaceAll("-", " ")}</p><h2>{guide.title}</h2><p className="guide-summary">{guide.summary}</p></div><div className="verified-stamp"><CheckIcon /> Source checked automatically {date}</div></header>
+    <header className="guide-result__header"><div><p className="eyebrow">{guide.category} · {jurisdictionLabel(guide)}</p><h2>{guide.title}</h2><p className="guide-summary">{guide.summary}</p></div><div className="verified-stamp"><CheckIcon /> Source checked automatically {date}</div></header>
     <section className="discovered-route">
       <p className="route-label">Official starting point</p>
       <h3>Complete this task with {guide.publisher}</h3>

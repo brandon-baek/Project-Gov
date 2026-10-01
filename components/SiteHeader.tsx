@@ -9,7 +9,8 @@ export function SiteHeader() {
             GovGuide
           </Link>
           <nav aria-label="Main navigation">
-            <Link href="/guides">Guides</Link>
+            <Link href="/guides">Local guides</Link>
+            <Link href="/moving">Moving states</Link>
             <Link href="/graph">Knowledge graph</Link>
             <Link href="/data">Data</Link>
             <Link href="/about">About</Link>

@@ -1,10 +1,10 @@
 export const GUIDE_GROUPS = [
-  { id: "identity-civic", title: "Identity, immigration, and civic life", description: "Documents, records, immigration, voting, and public participation." },
+  { id: "identity-civic", title: "Identity, records, and civic life", description: "Identity documents, vital records, voting, and public participation." },
   { id: "money-benefits", title: "Money, benefits, and taxes", description: "Financial help, taxes, retirement, and household support." },
   { id: "work-learning", title: "Work, business, and education", description: "Jobs, training, student aid, licenses, and starting a business." },
   { id: "family-health", title: "Family and health", description: "Health coverage, children, caregiving, and family services." },
   { id: "safety-legal", title: "Safety, legal help, and emergencies", description: "Courts, fraud, disasters, consumer protection, and recovery." },
-  { id: "travel-moving", title: "Travel, vehicles, and moving", description: "Passports, driving, transportation, and address changes." },
+  { id: "travel-moving", title: "Driving, vehicles, and moving", description: "License transfers, vehicle registration, transportation, and address changes." },
   { id: "military", title: "Military and veterans", description: "Benefits, records, and support for service members and families." },
 ] as const;
 

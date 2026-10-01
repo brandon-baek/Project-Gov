@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "ingest": "python3 -m pipeline.run --source all",
+    "ingest": "python3 -m pipeline.run --source local",
     "graph:export": "tsx scripts/export-graph.ts",
     "pathways:export": "python3 -m pipeline.pathways",
     "gnn:train": "python3 ml/train_gnn.py",

@@ -8,7 +8,7 @@ import { siteUrl } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { default: "GovGuide", template: "%s · GovGuide" },
-  description: "Discover source-linked routes through federal, state, and local government services.",
+  description: "Find state and local government services and build cross-state moving checklists with official sources.",
   metadataBase: new URL(siteUrl),
   robots: { index: true, follow: true }
 };

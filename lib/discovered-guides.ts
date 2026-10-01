@@ -1,4 +1,7 @@
 import raw from "@/data/generated/discovered-guides.json";
+import { journeys } from "@/data/curated/journeys";
+import { canonicalUrl, guideIdentity } from "@/lib/guide-identity";
+import { matchesLocation, statesInText } from "@/lib/jurisdictions";
 
 export type DiscoveredGuide = {
   id: string;
@@ -8,6 +11,9 @@ export type DiscoveredGuide = {
   summary: string;
   category: string;
   jurisdiction: string;
+  state?: string;
+  locality?: string;
+  aliasSlugs?: string[];
   publisher: string;
   agency: string;
   agencyId: string | null;
@@ -24,10 +30,17 @@ export type DiscoveredGuide = {
   status: "published";
 };
 
-export const discoveredGuides = raw.guides as DiscoveredGuide[];
+const reviewedUrls = new Set(journeys.flatMap((journey) => journey.sources.map((source) => canonicalUrl(source.url))));
+const seen = new Set<string>();
+export const discoveredGuides = (raw.guides as DiscoveredGuide[]).filter((guide) => {
+  const key = guideIdentity(guide);
+  if (reviewedUrls.has(canonicalUrl(guide.officialUrl)) || seen.has(key)) return false;
+  seen.add(key);
+  return true;
+});
 
 export function getDiscoveredGuideBySlug(slug: string) {
-  return discoveredGuides.find((guide) => guide.slug === slug);
+  return (raw.guides as DiscoveredGuide[]).find((guide) => guide.slug === slug || guide.aliasSlugs?.includes(slug));
 }
 
 export function getDiscoveredGuideById(id: string) {
@@ -40,9 +53,10 @@ function tokens(value: string) {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, " ").split(/\s+/).filter((word) => word.length > 1 && !stopwords.has(word));
 }
 
-export function retrieveDiscoveredGuides(query: string, limit = 6) {
+export function retrieveDiscoveredGuides(query: string, limit = 6, state?: string, locality?: string) {
+  const location = state ?? statesInText(query)[0]?.code;
   const terms = [...new Set(tokens(query))];
-  return discoveredGuides.map((guide) => {
+  return discoveredGuides.filter((guide) => matchesLocation(guide, location, locality)).map((guide) => {
     const title = guide.title.toLowerCase();
     const category = guide.category.toLowerCase();
     const summary = guide.summary.toLowerCase();
@@ -53,5 +67,5 @@ export function retrieveDiscoveredGuides(query: string, limit = 6) {
       + (summary.includes(term) ? 2 : 0)
       + (publisher.includes(term) ? 1 : 0), 0);
     return { guide, score };
-  }).filter((match) => match.score > 0).sort((a, b) => b.score - a.score || a.guide.title.localeCompare(b.guide.title)).slice(0, limit);
+  }).filter((match) => match.score >= 12).sort((a, b) => b.score - a.score || a.guide.title.localeCompare(b.guide.title)).slice(0, limit);
 }
