@@ -61,6 +61,12 @@ Procedure indexing is measured separately from geographic import. Unavailable so
 retain explicit failure records and are never represented as indexed content. The
 workflow warns and preserves the usable geographic snapshot and coverage report.
 Registry runtime checks use the actual national artifact, which is retained for 90 days.
+The first full snapshot is approximately 449 MB. Use a persistent Node backend with
+a read-only mounted registry (set GOVROUTE_REGISTRY_PATH), or migrate the normalized
+tables into a managed spatial/database service. Do not bundle the national snapshot
+into a serverless function. Tracing excludes it by default; GOVROUTE_BUNDLE_REGISTRY=true
+is an explicit opt-in for hosts with sufficient bundle capacity. A serverless frontend
+needs a separately deployed registry service before local lookup can go live.
 The workflow does not merge, deploy, or commit data to main. Without a published registry,
 the app reports that location coverage is not imported; existing pathways still work.
 

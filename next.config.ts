@@ -1,17 +1,21 @@
 import type { NextConfig } from "next";
 
+// The national snapshot is hundreds of MB. Mount it in a persistent backend
+// through GOVROUTE_REGISTRY_PATH; serverless bundles must not include it by default.
+const registryFiles = process.env.GOVROUTE_BUNDLE_REGISTRY === "true"
+  ? ["./data/govroute-locations.db"] : [];
 const nextConfig: NextConfig = {
   // Vercel's Next.js adapter handles deployment output itself. Keeping
   // standalone enabled there triggers a Next.js 16.3 build-finalization bug.
   output: process.env.VERCEL ? undefined : "standalone",
   serverExternalPackages: ["better-sqlite3"],
   outputFileTracingIncludes: {
-    "/api/chat": ["./database/migrations/**/*", "./data/govguide.db", "./data/govroute-locations.db"],
-    "/api/places": ["./data/govroute-locations.db"],
-    "/api/location/resolve": ["./data/govroute-locations.db"],
+    "/api/chat": ["./database/migrations/**/*", "./data/govguide.db", ...registryFiles],
+    "/api/places": registryFiles,
+    "/api/location/resolve": registryFiles,
     "/api/catalog": ["./data/govguide.db"],
     "/graph": ["./data/govguide.db"],
-    "/data": ["./data/govroute-locations.db"]
+    "/data": registryFiles
   },
   poweredByHeader: false,
   reactStrictMode: true,
