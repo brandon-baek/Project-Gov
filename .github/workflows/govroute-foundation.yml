@@ -82,3 +82,9 @@ jobs:
       - run: npm ci
       - name: Check actual national registry search and jurisdiction semantics
         run: npx tsx scripts/check-registry.ts
+      - name: Build with the full registry present
+        run: npm run build
+        env:
+          VERCEL: '1'
+      - name: Verify the national registry stays outside serverless traces
+        run: python scripts/check-registry-traces.py

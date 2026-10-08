@@ -22,7 +22,8 @@ let registry: Database.Database | null = null;
 export function openRegistry(): Database.Database | null {
   if (registry) return registry;
   const filename = process.env.GOVROUTE_REGISTRY_PATH ?? path.join(process.cwd(), "data/govroute-locations.db");
-  if (!existsSync(filename)) return null;
+  // This file is a separately mounted backend snapshot; includes/excludes are explicit.
+  if (!existsSync(/* turbopackIgnore: true */ filename)) return null;
   registry = new Database(filename, { readonly: true, fileMustExist: true });
   if (registry.pragma("user_version", { simple: true }) !== 1) {
     registry.close(); registry = null;

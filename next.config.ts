@@ -17,6 +17,8 @@ const nextConfig: NextConfig = {
     "/graph": ["./data/govguide.db"],
     "/data": registryFiles
   },
+  outputFileTracingExcludes: process.env.GOVROUTE_BUNDLE_REGISTRY === "true"
+    ? {} : { "/**": ["./data/govroute-locations.db"] },
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {
