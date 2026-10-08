@@ -8,22 +8,25 @@ import { ArrowIcon, ExternalIcon } from "@/components/icons";
 import { GuideResult } from "@/components/GuideResult";
 import { DiscoveredGuideResult } from "@/components/DiscoveredGuideResult";
 import type { DiscoveredGuide } from "@/lib/discovered-guides";
+import { LocationPicker } from "@/components/LocationPicker";
 
 type ApiResponse =
+  | { status: "coverage_gap"; message: string; steps: string[]; sources: { id: string; title: string; url: string; publisher: string }[]; missing: string[]; scopeNote: string; alternatives: [] }
   | { status: "matched"; message: string; journey: Journey; provenance: { router: string; storage: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string }[] }
   | { status: "discovered"; message: string; guide: DiscoveredGuide; provenance: { router: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string; summary?: string; href?: string }[] }
   | { status: "clarify" | "unsupported" | "blocked" | "error"; message: string; alternatives: { id: string; slug: string; title: string; summary?: string; href?: string }[]; officialSearchUrl?: string };
 
 const examples = [
-  "I need to transfer my license after moving",
-  "I was laid off in California",
+  "How do I renew my passport?",
+  "I need a driver's license in a new state",
   "How do I register to vote?",
-  "I’m starting a business"
+  "How do I check the rules for my property?"
 ];
 
 export function GuideSearch() {
   const [state, setState] = useState("");
-  const [locality, setLocality] = useState("");
+  const [placeIds, setPlaceIds] = useState<string[]>([]);
+  const [locationLabel, setLocationLabel] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState("");
   const [result, setResult] = useState<ApiResponse | null>(null);
@@ -40,13 +43,13 @@ export function GuideSearch() {
       const response = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: clean, state: state || undefined, locality: locality || undefined, history: [] })
+        body: JSON.stringify({ message: clean, state: state || undefined, placeIds: placeIds.length ? placeIds : undefined, history: [] })
       });
       const data = (await response.json()) as ApiResponse;
       setResult(data);
       window.setTimeout(() => resultRef.current?.focus(), 50);
     } catch {
-      setResult({ status: "error", message: "GovGuide could not connect. Check your connection and try again.", alternatives: [] });
+      setResult({ status: "error", message: "govroute could not connect. Check your connection and try again.", alternatives: [] });
     } finally {
       setLoading(false);
     }
@@ -61,15 +64,16 @@ export function GuideSearch() {
     <div className="search-experience">
       <form className="guide-search" onSubmit={submit}>
         <label htmlFor="goal">What do you need to do?</label>
-        <div className="location-fields search-location">
-          <label htmlFor="search-state">State or territory<select id="search-state" value={state} onChange={(event) => { setState(event.target.value); setResult(null); }}><option value="">Choose a location</option>{states.map((item) => <option key={item.code} value={item.code}>{item.name}</option>)}</select></label>
-          <label htmlFor="search-locality">City or county (optional)<input id="search-locality" value={locality} onChange={(event) => { setLocality(event.target.value); setResult(null); }} placeholder="Jurisdiction name" maxLength={80} /></label>
-        </div>
         <div className="guide-search__control">
           <textarea id="goal" name="goal" value={message} onChange={(event) => setMessage(event.target.value)} placeholder="Describe the situation in your own words" rows={2} maxLength={600} />
           <button type="submit" disabled={loading || message.trim().length < 3} aria-label={loading ? "Finding guidance" : "Find guidance"}><ArrowIcon /></button>
         </div>
         <p className="privacy-note">Do not include Social Security, account, passport, or license numbers.</p>
+        <div className="location-fields search-location">
+          <label htmlFor="search-state">Where should we look?<select id="search-state" value={state} onChange={(event) => { setState(event.target.value); setPlaceIds([]); setLocationLabel(""); setResult(null); }}><option value="">Choose a state when needed</option>{states.map((item) => <option key={item.code} value={item.code}>{item.name}</option>)}</select></label>
+        </div>
+        <LocationPicker key={state} state={state} onChange={(ids, label, code) => { setPlaceIds(ids); setLocationLabel(label); if (code) setState(code); setResult(null); }} />
+        {locationLabel && <p className="selected-location">Selected area: {locationLabel}</p>}
       </form>
 
       {!submitted && (
@@ -99,7 +103,8 @@ export function GuideSearch() {
           <DiscoveredGuideResult guide={result.guide} compact />
           <details className="trace-details"><summary>Why this result was selected</summary><p>Your request matched a published government task whose source, task title, page content, and crawl record passed the automated publication checks.</p><Link href={`/guides/${result.guide.slug}`}>Open the permanent guide</Link></details>
         </>}
-        {result && result.status !== "matched" && result.status !== "discovered" && (
+        {result?.status === "coverage_gap" && <section className="pathway-gap"><p className="section-label">Find the rules for your property</p><h2>Start with the right records.</h2><p>{result.message}</p><ol>{result.steps.map((step) => <li key={step}>{step}</li>)}</ol><p>{result.scopeNote}</p>{result.sources.length > 0 && <ul>{result.sources.map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer">{source.title} · {source.publisher}</a></li>)}</ul>}</section>}
+        {result && result.status !== "matched" && result.status !== "discovered" && result.status !== "coverage_gap" && (
           <div className={`notice notice--${result.status}`} role={result.status === "error" || result.status === "blocked" ? "alert" : undefined}>
             <p>{result.message}</p>
             {result.alternatives.length > 0 && <div className="notice-options">{result.alternatives.map((item) => <Link key={item.id} href={item.href ?? `/guides/${item.slug}`}><strong>{item.title}</strong>{item.summary && <span>{item.summary}</span>}</Link>)}</div>}

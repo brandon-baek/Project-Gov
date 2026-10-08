@@ -1,0 +1,61 @@
+name: Govroute foundation
+
+on:
+  pull_request:
+    paths:
+      - 'app/**'
+      - 'components/**'
+      - 'lib/**'
+      - 'pipeline/**'
+      - 'database/registry/**'
+      - 'data/registry/**'
+      - 'next.config.ts'
+      - 'docs/GOVROUTE_FOUNDATION.md'
+      - '.github/workflows/govroute-foundation.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m unittest pipeline.test_locations -v
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run lint
+      - run: npm run build
+        env:
+          VERCEL: '1'
+
+  national-registry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Import complete Census layers and GNIS populated places and names
+        run: python -m pipeline.locations --output data/govroute-locations.db
+      - name: Preserve registry and measured coverage for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: govroute-national-registry
+          path: |
+            data/govroute-locations.db
+            data/govroute-locations.coverage.json
+          retention-days: 14
+      - name: Index the explicitly scoped official procedure sources
+        run: python -m pipeline.legal_sources --database data/govroute-locations.db

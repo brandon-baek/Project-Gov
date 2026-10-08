@@ -21,7 +21,7 @@ export function jurisdictionLabel(guide: LocationGuide) {
 export function matchesLocation(guide: LocationGuide, state?: string, locality?: string) {
   if (!state) return true;
   if (guide.jurisdiction === "federal") return true;
-  const guideState = guide.state ?? (guide.jurisdiction === "california" ? "CA" : undefined);
+  const guideState = guide.state ?? (["california", "federal-and-state"].includes(guide.jurisdiction) ? "CA" : undefined);
   if (guideState !== state.toUpperCase()) return false;
   // Do not treat a town's guide as a statewide service.
   if (guide.jurisdiction === "local") return Boolean(locality?.trim())

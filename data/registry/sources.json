@@ -1,0 +1,12 @@
+{
+  "authorities": [
+    { "id": "authority:state-department", "name": "U.S. Department of State", "level": "federal", "evidence_url": "https://travel.state.gov/en/passports.html" }
+  ],
+  "scopes": [
+    { "authority_id": "authority:state-department", "territory_id": "country:US", "topic": "passport", "role": "service_provider", "evidence_url": "https://travel.state.gov/en/passports/renew-replace/mail.html", "reviewed_at": "2026-10-08" }
+  ],
+  "sources": [
+    { "id": "passport-mail", "authority_id": "authority:state-department", "topic": "passport", "title": "Renew your passport by mail", "url": "https://travel.state.gov/en/passports/renew-replace/mail.html", "kind": "procedure", "reviewed_at": "2026-10-08" },
+    { "id": "passport-online", "authority_id": "authority:state-department", "topic": "passport", "title": "Renew your passport online", "url": "https://travel.state.gov/en/passports/renew-replace/online.html", "kind": "procedure", "reviewed_at": "2026-10-08" }
+  ]
+}

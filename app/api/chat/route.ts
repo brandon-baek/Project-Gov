@@ -9,6 +9,8 @@ import { getStoredJourneys } from "@/lib/database";
 import { retrieveDiscoveredGuides } from "@/lib/discovered-guides";
 import { consumeRequest, consumeAIRoute } from "@/lib/request-limits";
 import { stateByCode, statesInText } from "@/lib/jurisdictions";
+import { contextForPlaces, relevantLegalSources } from "@/lib/place-registry";
+import { parcelRequirements, requiresParcelEvidence } from "@/lib/place-context";
 
 export const runtime = "nodejs";
 
@@ -46,7 +48,7 @@ export async function POST(request: NextRequest) {
     if (sensitive.length > 0) {
       return NextResponse.json({
         status: "blocked",
-        message: `Please remove the ${sensitive.join(" and ")} before continuing. GovGuide does not need sensitive identification or account numbers.`,
+        message: `Please remove the ${sensitive.join(" and ")} before continuing. govroute does not need sensitive identification or account numbers.`,
         alternatives: []
       });
     }
@@ -54,21 +56,38 @@ export async function POST(request: NextRequest) {
     if (isLikelyEmergency(body.message)) {
       return NextResponse.json({
         status: "blocked",
-        message: "If someone is in immediate danger, call 911 or your local emergency number now. GovGuide is not an emergency service.",
+        message: "If someone is in immediate danger, call 911 or your local emergency number now. govroute is not an emergency service.",
         alternatives: []
       });
     }
 
+    const context = body.placeIds?.length ? contextForPlaces(body.placeIds) : undefined;
+    if (body.placeIds?.length && !context?.places.length) return NextResponse.json({ status: "clarify", message: "Your selected place is unavailable. Search for the location again or choose a state.", alternatives: [] });
+    const contextStates = [...new Set(context?.places.map((place) => place.state_code).filter((code): code is string => Boolean(code)) ?? [])];
+    if (contextStates.length > 1 || (body.state && contextStates.length === 1 && body.state !== contextStates[0])) return NextResponse.json({ status: "clarify", message: "Your location crosses state boundaries or differs from the selected state. Choose the state whose process you need.", alternatives: [] });
     const locations = statesInText(body.message);
-    if (/\b(mov(?:e|ed|ing)|relocat(?:e|ing)|another state|out.of.state)\b/i.test(body.message)) {
+    // Moving is a specific multi-state pathway, not the default route for any
+    // request mentioning a move (e.g. passport renewal after moving).
+    if (/\b(mov(?:e|ed|ing)|relocat(?:e|ing)|another state|out.of.state)\b/i.test(body.message)
+      && /\b(driver|driving|license|vehicle|registration|car|moving checklist)\b/i.test(body.message)) {
       return NextResponse.json({ status: "clarify", message: "Moving between states? Choose your origin and destination in the moving planner to combine both jurisdictions into one checklist.", alternatives: [{ id: "moving", slug: "", title: "Build my moving checklist", href: "/moving" }] });
     }
     if (!body.state && locations.length > 1) return NextResponse.json({ status: "clarify", message: "Which state's rules should I use? Choose a state above or use the moving planner for a cross-state process.", alternatives: [] });
     if (body.state && locations.length === 1 && body.state !== locations[0].code) return NextResponse.json({ status: "clarify", message: "Your request names a different state from the selected location. Choose the state whose rules you need, then try again.", alternatives: [] });
-    const location = body.state ?? locations[0]?.code;
+    const location = body.state ?? contextStates[0] ?? locations[0]?.code;
+    if (requiresParcelEvidence(body.message)) {
+      const sources = relevantLegalSources(context?.places.map((place) => place.id) ?? [], "property");
+      return NextResponse.json({ status: "coverage_gap", message: "To find what you can do on a particular property, start with its parcel, zoning, and recorded restrictions. A community name or address-range match does not establish your land rights.",
+        alternatives: [], steps: parcelRequirements, sources,
+        missing: ["Parcel and boundary verification", "Current zoning and overlays", "Recorded deeds, easements, and covenants"],
+        scopeNote: sources.length ? "These are potentially relevant official sources. A property-specific pathway still requires the listed records." : "Property-specific sources have not been connected for this location yet." });
+    }
     const stored = getStoredJourneys();
     let matches = retrieveJourneys(body.message, 8, stored.journeys, location);
-    const discoveredMatches = retrieveDiscoveredGuides(body.message, 6, location, body.locality);
+    // Legacy local guides use names rather than stable jurisdiction IDs. Until
+    // migrated, they must not be certified by a free-text postal/community name.
+    const confirmedLocality = context?.places.find((place) => place.kind === "municipality" && place.government_status === "active")?.name;
+    const discoveredMatches = retrieveDiscoveredGuides(body.message, 6, location, confirmedLocality);
     let router: "graph" | "graph+ai" = "graph";
     if (classifyRetrieval(matches) === "clarify" && consumeAIRoute()) {
       try {
@@ -136,6 +155,6 @@ export async function POST(request: NextRequest) {
     if (error instanceof ZodError || error instanceof SyntaxError) {
       return NextResponse.json({ status: "error", message: "Please enter a request between 3 and 600 characters." }, { status: 400 });
     }
-    return NextResponse.json({ status: "error", message: "GovGuide could not process that request. Please try again." }, { status: 500 });
+    return NextResponse.json({ status: "error", message: "govroute could not process that request. Please try again." }, { status: 500 });
   }
 }

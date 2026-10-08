@@ -79,6 +79,7 @@ export type GraphNode = z.infer<typeof graphNodeSchema>;
 export type GraphEdge = z.infer<typeof graphEdgeSchema>;
 
 export const chatRequestSchema = z.object({
+  placeIds: z.array(z.string().min(1).max(150)).max(60).optional(),
   message: z.string().trim().min(3).max(600),
   state: z.string().regex(/^[A-Z]{2}$/).optional(),
   locality: z.string().trim().max(80).optional(),
