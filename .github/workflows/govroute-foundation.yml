@@ -49,6 +49,13 @@ jobs:
           python-version: '3.11'
       - name: Import complete Census layers and GNIS populated places and names
         run: python -m pipeline.locations --output data/govroute-locations.db
+      - name: Attempt the separately measured procedure-source index
+        id: sources
+        continue-on-error: true
+        run: python -m pipeline.legal_sources --database data/govroute-locations.db
+      - name: Report source indexing gaps explicitly
+        if: steps.sources.outcome == 'failure'
+        run: echo '::warning::Some procedure pages could not be indexed. The coverage report records these failures; no missing content is published as indexed.'
       - name: Preserve registry and measured coverage for review
         uses: actions/upload-artifact@v4
         with:
@@ -56,6 +63,22 @@ jobs:
           path: |
             data/govroute-locations.db
             data/govroute-locations.coverage.json
-          retention-days: 14
-      - name: Index the explicitly scoped official procedure sources
-        run: python -m pipeline.legal_sources --database data/govroute-locations.db
+          retention-days: 90
+
+  registry-runtime:
+    needs: national-registry
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/download-artifact@v4
+        with:
+          name: govroute-national-registry
+          path: data
+      - run: npm ci
+      - name: Check actual national registry search and jurisdiction semantics
+        run: npx tsx scripts/check-registry.ts

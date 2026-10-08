@@ -98,7 +98,8 @@ export function relevantLegalSources(ids: string[], topic: string) {
   // Geographic parents alone do not authorize a source. Require a reviewed topic scope.
   return db.prepare(`SELECT DISTINCT s.id,s.title,s.url,s.topic,s.source_kind,s.reviewed_at,
     a.name AS publisher,scope.role,scope.territory_id,
-    (SELECT max(retrieved_at) FROM legal_snapshots WHERE source_id=s.id) AS last_indexed
+    (SELECT max(retrieved_at) FROM legal_snapshots WHERE source_id=s.id) AS last_indexed,
+    (SELECT status FROM legal_source_checks WHERE source_id=s.id ORDER BY id DESC LIMIT 1) AS last_check_status
     FROM legal_sources s JOIN authorities a ON a.id=s.authority_id
     JOIN authority_scopes scope ON scope.authority_id=a.id AND scope.topic=s.topic
     WHERE s.active=1 AND s.topic=? AND scope.territory_id IN (${slots.map(() => "?").join(",")})

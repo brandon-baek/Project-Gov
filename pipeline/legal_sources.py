@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 from urllib.request import Request, urlopen
 from urllib.robotparser import RobotFileParser
 from datetime import datetime, timezone
+from pipeline.locations import coverage
 
 USER_AGENT = "Govroute"
 MAX_BYTES = 4 * 1024 * 1024
@@ -104,10 +105,16 @@ def main():
             text, final_url = fetch_source(url)
             with db:
                 changed = store_snapshot(db, source_id, text, final_url)
+                db.execute("INSERT INTO legal_source_checks(source_id,checked_at,status) VALUES(?,?,?)", (source_id, datetime.now(timezone.utc).isoformat(), "indexed" if changed else "unchanged"))
             print(json.dumps({"source": source_id, "changed": changed, "status": "machine_indexed"}))
         except Exception as error:
             failures.append(source_id)
+            with db:
+                db.execute("INSERT INTO legal_source_checks(source_id,checked_at,status,error) VALUES(?,?,'unavailable',?)", (source_id, datetime.now(timezone.utc).isoformat(), str(error)))
             print(json.dumps({"source": source_id, "status": "failed", "error": str(error)}))
+    report = coverage(db)
+    report["databaseBytes"] = args.database.stat().st_size
+    args.database.with_suffix(".coverage.json").write_text(json.dumps(report, indent=2) + "\n")
     db.close()
     if failures:
         raise SystemExit(f"Source index incomplete: {', '.join(failures)}. Previous snapshots retained.")

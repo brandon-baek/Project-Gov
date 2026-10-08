@@ -57,6 +57,10 @@ The `Govroute foundation` workflow runs the application checks and national impo
 relevant pull requests. Its artifact contains `govroute-locations.db` and a measured
 coverage report. Review that report and place the database in `data/` before deploying
 location features, or set `GOVROUTE_REGISTRY_PATH` to a published, immutable snapshot.
+Procedure indexing is measured separately from geographic import. Unavailable sources
+retain explicit failure records and are never represented as indexed content. The
+workflow warns and preserves the usable geographic snapshot and coverage report.
+Registry runtime checks use the actual national artifact, which is retained for 90 days.
 The workflow does not merge, deploy, or commit data to main. Without a published registry,
 the app reports that location coverage is not imported; existing pathways still work.
 

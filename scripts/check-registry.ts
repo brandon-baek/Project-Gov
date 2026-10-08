@@ -1,0 +1,20 @@
+import assert from "node:assert/strict";
+import { statSync } from "node:fs";
+import { openRegistry, registryCoverage, searchPlaces, contextForPlaces, relevantLegalSources } from "../lib/place-registry";
+
+const db = openRegistry();
+assert.ok(db, "Publish the national registry before checking its runtime");
+const coverage = registryCoverage();
+assert.equal(coverage.status, "available");
+assert.ok(coverage.placeCount > 200000, "National place completeness gate");
+const unofficial = db.prepare("SELECT n.place_id,n.name FROM place_names n WHERE n.status='unofficial' AND (SELECT count(*) FROM place_names other WHERE other.search_name=n.search_name)=1 LIMIT 1").get() as { place_id: string; name: string };
+assert.ok(unofficial);
+assert.ok(searchPlaces(unofficial.name).some((place) => place.id === unofficial.place_id && place.matched_name_status === "unofficial"));
+const statistical = db.prepare("SELECT id FROM places WHERE kind='cdp' LIMIT 1").get() as { id: string };
+const context = contextForPlaces([statistical.id]);
+assert.ok(context.places.some((place) => place.id === statistical.id && place.government_status === "none"));
+assert.equal((db.prepare("SELECT count(*) AS count FROM authorities WHERE place_id=?").get(statistical.id) as { count: number }).count, 0);
+assert.equal(relevantLegalSources([statistical.id], "property").length, 0);
+assert.equal(relevantLegalSources([statistical.id], "passport").length, 2);
+assert.equal(db.pragma("integrity_check", { simple: true }), "ok");
+console.log(JSON.stringify({ placeCount: coverage.placeCount, sourceCount: coverage.sourceCount, bytes: statSync("data/govroute-locations.db").size, tests: "search, unofficial labels, statistical government gate, topic-scoped sources, integrity" }));

@@ -65,6 +65,11 @@ CREATE TABLE legal_snapshots (
     CHECK(review_status IN ('machine_indexed','reviewed','superseded')),
   UNIQUE(source_id,sha256)
 );
+CREATE TABLE legal_source_checks (
+  id INTEGER PRIMARY KEY, source_id TEXT NOT NULL REFERENCES legal_sources(id),
+  checked_at TEXT NOT NULL, status TEXT NOT NULL CHECK(status IN ('indexed','unchanged','unavailable')),
+  error TEXT
+);
 CREATE TABLE legal_chunks (
   id INTEGER PRIMARY KEY, snapshot_id INTEGER NOT NULL REFERENCES legal_snapshots(id),
   ordinal INTEGER NOT NULL, heading TEXT, text TEXT NOT NULL,

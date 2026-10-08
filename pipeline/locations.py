@@ -375,6 +375,8 @@ def coverage(db):
         "unofficialNames": db.execute("SELECT count(*) FROM place_names WHERE status='unofficial'").fetchone()[0],
         "sourceCount": db.execute("SELECT count(*) FROM legal_sources").fetchone()[0],
         "reviewedProcesses": db.execute("SELECT count(*) FROM process_definitions WHERE review_status='reviewed'").fetchone()[0],
+        "indexedSources": db.execute("SELECT count(DISTINCT source_id) FROM legal_snapshots").fetchone()[0],
+        "sourceChecks": [dict(zip(["sourceId", "checkedAt", "status", "error"], row)) for row in db.execute("SELECT source_id,checked_at,status,error FROM legal_source_checks ORDER BY id")],
         "datasets": [dict(zip(["id", "publisher", "url", "vintage", "retrievedAt", "records", "complete"], row))
                      for row in db.execute("SELECT id,publisher,url,vintage,retrieved_at,records_seen,complete FROM datasets")],
         "limitations": ["Coverage is measured against imported datasets, not every community that exists.",
@@ -412,6 +414,7 @@ def main():
                 db.execute("INSERT INTO legal_snapshots SELECT p.* FROM previous.legal_snapshots p JOIN legal_sources s ON s.id=p.source_id")
                 db.execute("INSERT INTO legal_chunks SELECT p.* FROM previous.legal_chunks p JOIN legal_snapshots s ON s.id=p.snapshot_id")
         report = coverage(db)
+        report["databaseBytes"] = staging.stat().st_size
         if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok" or db.execute("PRAGMA foreign_key_check").fetchall():
             raise RuntimeError("Registry integrity failed")
         db.close()
