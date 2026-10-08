@@ -31,6 +31,7 @@ CREATE TABLE place_names (
   PRIMARY KEY(place_id, name, dataset_id)
 );
 CREATE INDEX names_search ON place_names(search_name);
+CREATE INDEX names_prefix ON place_names(search_name COLLATE NOCASE);
 CREATE TABLE place_relations (
   child_id TEXT NOT NULL REFERENCES places(id), parent_id TEXT NOT NULL REFERENCES places(id),
   relation TEXT NOT NULL CHECK(relation IN ('contained_by','primary_point_in','overlaps','served_by')),
@@ -57,6 +58,8 @@ CREATE TABLE legal_sources (
   freshness_days INTEGER NOT NULL DEFAULT 30 CHECK(freshness_days > 0),
   active INTEGER NOT NULL DEFAULT 1 CHECK(active IN (0,1))
 );
+CREATE INDEX scopes_lookup ON authority_scopes(territory_id,topic,authority_id);
+CREATE INDEX sources_topic ON legal_sources(topic,authority_id);
 CREATE TABLE legal_snapshots (
   id INTEGER PRIMARY KEY, source_id TEXT NOT NULL REFERENCES legal_sources(id),
   retrieved_at TEXT NOT NULL, effective_from TEXT, effective_to TEXT,
@@ -70,6 +73,8 @@ CREATE TABLE legal_source_checks (
   checked_at TEXT NOT NULL, status TEXT NOT NULL CHECK(status IN ('indexed','unchanged','unavailable')),
   error TEXT
 );
+CREATE INDEX checks_source ON legal_source_checks(source_id,id);
+CREATE INDEX snapshots_source ON legal_snapshots(source_id,retrieved_at);
 CREATE TABLE legal_chunks (
   id INTEGER PRIMARY KEY, snapshot_id INTEGER NOT NULL REFERENCES legal_snapshots(id),
   ordinal INTEGER NOT NULL, heading TEXT, text TEXT NOT NULL,

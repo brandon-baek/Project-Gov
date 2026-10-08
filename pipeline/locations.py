@@ -413,6 +413,8 @@ def main():
                 # Preserve historical versions for unchanged sources across registry refreshes.
                 db.execute("INSERT INTO legal_snapshots SELECT p.* FROM previous.legal_snapshots p JOIN legal_sources s ON s.id=p.source_id")
                 db.execute("INSERT INTO legal_chunks SELECT p.* FROM previous.legal_chunks p JOIN legal_snapshots s ON s.id=p.snapshot_id")
+                if db.execute("SELECT 1 FROM previous.sqlite_master WHERE name='legal_source_checks'").fetchone():
+                    db.execute("INSERT INTO legal_source_checks SELECT p.* FROM previous.legal_source_checks p JOIN legal_sources s ON s.id=p.source_id")
         report = coverage(db)
         report["databaseBytes"] = staging.stat().st_size
         if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok" or db.execute("PRAGMA foreign_key_check").fetchall():

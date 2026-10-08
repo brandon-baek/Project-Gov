@@ -7,6 +7,8 @@ assert.ok(db, "Publish the national registry before checking its runtime");
 const coverage = registryCoverage();
 assert.equal(coverage.status, "available");
 assert.ok(coverage.placeCount > 200000, "National place completeness gate");
+const plan = db.prepare("EXPLAIN QUERY PLAN SELECT * FROM place_names WHERE search_name LIKE ? ESCAPE '\\'").all("spring%") as { detail: string }[];
+assert.ok(plan.some((row) => row.detail.includes("names_prefix")), "Prefix lookups must use the national name index");
 const unofficial = db.prepare("SELECT n.place_id,n.name FROM place_names n WHERE n.status='unofficial' AND (SELECT count(*) FROM place_names other WHERE other.search_name=n.search_name)=1 LIMIT 1").get() as { place_id: string; name: string };
 assert.ok(unofficial);
 assert.ok(searchPlaces(unofficial.name).some((place) => place.id === unofficial.place_id && place.matched_name_status === "unofficial"));
