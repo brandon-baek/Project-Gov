@@ -51,3 +51,8 @@ textarea:focus-visible{outline:3px solid var(--green);outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.hub-starts>a{transition:none}}
 
 body{font-size:16px}.steps-list li .step-number,.source-list span,.result-actions span,.notice p,.trace-details summary{color:var(--muted);font-size:14px}.source-list a{font-size:15px}
+.process-eligibility{margin:24px 0;padding:18px 20px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
+.process-eligibility summary{font-weight:600;cursor:pointer}.process-eligibility p{margin:12px 0 0;font-size:16px;line-height:1.6}
+.step-facts:empty{display:none}.step-facts{margin:18px 0;color:var(--ink)}.step-facts>div{display:grid;grid-template-columns:76px 1fr;gap:16px;margin-top:12px}.step-facts dt{font-weight:600;font-size:15px}.step-facts dd{margin:0}.step-facts dd p{margin:0 0 8px;font-size:16px;line-height:1.6}
+.step-citations{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:18px;font-size:14px;line-height:1.5;color:var(--muted)}.step-citations span{flex-basis:100%;font-weight:600}.step-citations a{color:var(--green-deep);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:600px){.step-facts>div{grid-template-columns:1fr;gap:6px}}

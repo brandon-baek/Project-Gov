@@ -22,15 +22,35 @@ browse government hierarchies to renew a passport.
   than an unsupported determination of an owner's rights.
 - CI tests the application and creates a national-registry artifact and coverage report.
 
-The existing curated and discovered pathway catalogs remain the public pathway source.
-The new process tables are a migration target, not a claim that every jurisdiction's
-procedures have been collected. The initial new source manifest contains two federal
-passport procedure pages. Adding a city to the registry does not publish its laws.
+The existing curated and discovered catalogs serve public pathways. Two source-checked
+process publications now also feed the same browsing, retrieval, permanent-page, and
+graph interfaces: passport applications/renewals, and adult California licensing after
+a move with a valid out-of-state license. Their ten official source entries were read
+on October 8, 2026. The remaining processes still need migration. Adding a city to the
+registry does not publish its laws or procedures.
+
+`data/registry/processes.json` is the authored publication input. It includes route
+eligibility, documents, costs, timing, dependencies, and per-step citations. The importer
+requires a reviewed authority/topic/service-provider scope for each territory, validates
+all source identities and review dates, and rejects missing citations, duplicate IDs,
+conflicting territories, and forward/cyclic dependencies. It stores normalized steps,
+all supporting source links, and a hashed publication document in the atomic snapshot.
+Public retrieval selects only reviewed publications with the matching explicit scope.
+State selectors resolve by an unambiguous Census state code rather than hard-coded
+TIGER layer IDs. Geographic context alone never grants the agency topic competence.
+
+The small authored catalog is also bundled with the app. Passport guidance works without
+a location or registry mount; California-specific publications require California.
+Existing SQL journey snapshots receive the newer authored records by stable ID. Registry
+lookup uses the normalized publication tables when present, with a labeled bundled
+fallback for a missing registry or an older snapshot without publication tables. Neither
+path invents legal snapshots or successful fetches. Failed automated source indexing
+and authored source review are measured separately.
 
 ## Build and validate
 
 ```sh
-python3 -m unittest pipeline.test_locations -v
+python3 -m unittest pipeline.test_locations pipeline.test_processes -v
 python3 -m pipeline.locations --output data/govroute-locations.db
 python3 -m pipeline.legal_sources --database data/govroute-locations.db
 npm ci
@@ -111,6 +131,7 @@ source discovery and review are still required before those records are publishe
 | `GET /api/places?coverage=true` | Current imported counts and dataset provenance | Returns `not_imported` when no snapshot exists |
 | `POST /api/location/resolve` | Address-range geographies from the official Census API | Zero/multiple candidates stay explicit; uncached response |
 | `POST /api/chat` | Task-first pathway matching with optional state/place IDs | Property evidence gaps are explicit; unsupported local guides are not selected by free text alone |
+| `GET /api/processes?q=passport&state=CA` | Published sourced processes for an explicit service area | Federal scope works without location; storage identifies registry or bundled publication data |
 
 The public location picker stores neither the typed address nor a parcel identity. It
 passes registry place IDs into pathway retrieval. Census coordinates are interpolated

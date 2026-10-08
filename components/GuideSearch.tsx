@@ -12,7 +12,7 @@ import { LocationPicker } from "@/components/LocationPicker";
 
 type ApiResponse =
   | { status: "coverage_gap"; message: string; steps: string[]; sources: { id: string; title: string; url: string; publisher: string }[]; missing: string[]; scopeNote: string; alternatives: [] }
-  | { status: "matched"; message: string; journey: Journey; provenance: { router: string; storage: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string }[] }
+  | { status: "matched"; message: string; journey: Journey; provenance: { router: string; storage: string; processStorage?: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string }[] }
   | { status: "discovered"; message: string; guide: DiscoveredGuide; provenance: { router: string; assembledFrom: string[] }; alternatives: { id: string; slug: string; title: string; summary?: string; href?: string }[] }
   | { status: "clarify" | "unsupported" | "blocked" | "error"; message: string; alternatives: { id: string; slug: string; title: string; summary?: string; href?: string }[]; officialSearchUrl?: string };
 
@@ -93,7 +93,7 @@ export function GuideSearch() {
             <GuideResult journey={result.journey} />
             <details className="trace-details">
               <summary>How this answer was assembled</summary>
-              <p>The request was matched to <code>{result.journey.id}</code> in the {result.provenance.storage === "sqlite" ? "SQL knowledge graph" : "bundled graph fallback"}. The guide links its steps to {result.provenance.assembledFrom.length} supporting source node{result.provenance.assembledFrom.length === 1 ? "" : "s"}. The router used {result.provenance.router === "graph+ai" ? "AI-assisted intent selection plus graph validation" : "deterministic graph retrieval"}.</p>
+              <p>This pathway was selected for your task{state && result.journey.jurisdiction !== "federal" ? ` and ${states.find((item) => item.code === state)?.name ?? state}` : ""}. Its steps link to {result.provenance.assembledFrom.length} official source{result.provenance.assembledFrom.length === 1 ? "" : "s"}. Source links show where to check the current requirements before you act.</p>
               <Link href={`/graph?focus=${result.journey.id}`}>See it in the graph</Link>
             </details>
           </>

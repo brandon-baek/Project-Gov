@@ -359,12 +359,26 @@ def load_manifest(db, path):
     for item in manifest.get("authorities", []):
         db.execute("INSERT OR REPLACE INTO authorities VALUES(?,?,?,?,?,?)", (item["id"], item.get("place_id"), item["name"], item["level"], item["evidence_url"], "reviewed"))
     for item in manifest.get("scopes", []):
-        db.execute("INSERT INTO authority_scopes VALUES(?,?,?,?,?,?)", (item["authority_id"], item["territory_id"], item["topic"], item["role"], item["evidence_url"], item["reviewed_at"]))
+        db.execute("INSERT INTO authority_scopes VALUES(?,?,?,?,?,?)", (item["authority_id"], resolve_territory(db, item), item["topic"], item["role"], item["evidence_url"], item["reviewed_at"]))
     for item in manifest.get("sources", []):
         if urllib.parse.urlparse(item["url"]).scheme != "https":
             raise ValueError("Legal source URLs must use HTTPS")
         db.execute("INSERT INTO legal_sources(id,authority_id,topic,title,url,source_kind,adapter,reviewed_at,freshness_days) VALUES(?,?,?,?,?,?,?,?,?)",
                    (item["id"], item["authority_id"], item["topic"], item["title"], item["url"], item["kind"], item.get("adapter", "html"), item.get("reviewed_at"), item.get("freshness_days", 30)))
+
+
+def resolve_territory(db, selector):
+    """Resolve an explicit ID or an unambiguous state; no name/centroid inference."""
+    if selector.get("territory_id") or selector.get("id"):
+        key = selector.get("territory_id") or selector["id"]
+        rows = db.execute("SELECT id FROM places WHERE id=?", (key,)).fetchall()
+    elif selector.get("state_code"):
+        rows = db.execute("SELECT id FROM places WHERE kind='state' AND state_code=?", (selector["state_code"],)).fetchall()
+    else:
+        raise ValueError("Missing explicit territory selector")
+    if len(rows) != 1:
+        raise ValueError("Territory selector is missing or ambiguous")
+    return rows[0][0]
 
 
 def coverage(db):
@@ -392,6 +406,7 @@ def main():
     parser.add_argument("--populated", type=Path, help="Official GNIS populated-place TXT or ZIP (offline import)")
     parser.add_argument("--names", type=Path, help="Official GNIS All Names TXT or ZIP (offline import)")
     parser.add_argument("--manifest", type=Path, default=ROOT / "data/registry/sources.json")
+    parser.add_argument("--processes", type=Path, default=ROOT / "data/registry/processes.json")
     args = parser.parse_args()
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix="govroute-registry-", dir=args.output.parent) as directory:
@@ -408,6 +423,8 @@ def main():
                 products = download_products(Path(directory))
                 import_gnis(db, products["Populated Places"][0], products["All Names"][0], products["Populated Places"][1], products["All Names"][1])
             load_manifest(db, args.manifest)
+            from pipeline.processes import load_processes
+            load_processes(db, args.processes)
             if args.output.exists():
                 db.execute("ATTACH DATABASE ? AS previous", (str(args.output),))
                 # Preserve historical versions for unchanged sources across registry refreshes.

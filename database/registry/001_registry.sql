@@ -103,4 +103,17 @@ CREATE TABLE coverage_gaps (
   id INTEGER PRIMARY KEY, territory_id TEXT REFERENCES places(id), topic TEXT NOT NULL,
   reason TEXT NOT NULL, recorded_at TEXT NOT NULL, resolved_at TEXT
 );
+-- One reviewed publication powers retrieval and permanent pages. Source snapshots
+-- remain independent: an authored process is not a successful automated crawl.
+CREATE TABLE process_publications (
+  process_id TEXT PRIMARY KEY REFERENCES process_definitions(id),
+  territory_id TEXT NOT NULL REFERENCES places(id),
+  slug TEXT NOT NULL UNIQUE, document_json TEXT NOT NULL, sha256 TEXT NOT NULL
+);
+CREATE INDEX publications_territory ON process_publications(territory_id);
+CREATE TABLE process_step_sources (
+  step_id TEXT NOT NULL REFERENCES process_steps(id),
+  source_id TEXT NOT NULL REFERENCES legal_sources(id),
+  PRIMARY KEY(step_id, source_id)
+);
 PRAGMA user_version = 1;

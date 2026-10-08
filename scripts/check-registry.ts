@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { statSync } from "node:fs";
 import { openRegistry, registryCoverage, searchPlaces, contextForPlaces, relevantLegalSources } from "../lib/place-registry";
+import { publishedProcesses } from "../lib/process-registry";
 
 const db = openRegistry();
 assert.ok(db, "Publish the national registry before checking its runtime");
@@ -17,6 +18,12 @@ const context = contextForPlaces([statistical.id]);
 assert.ok(context.places.some((place) => place.id === statistical.id && place.government_status === "none"));
 assert.equal((db.prepare("SELECT count(*) AS count FROM authorities WHERE place_id=?").get(statistical.id) as { count: number }).count, 0);
 assert.equal(relevantLegalSources([statistical.id], "property").length, 0);
-assert.equal(relevantLegalSources([statistical.id], "passport").length, 2);
+assert.equal(relevantLegalSources([statistical.id], "passport").length, 7);
+const federalProcesses = publishedProcesses("TX");
+assert.equal(federalProcesses.storage, "registry-process-catalog");
+assert.deepEqual(federalProcesses.journeys.map((journey) => journey.id), ["journey-passport-apply"]);
+assert.equal(publishedProcesses("CA").journeys.length, 2);
+assert.equal((db.prepare("SELECT count(*) AS count FROM process_definitions WHERE review_status='reviewed'").get() as { count: number }).count, 2);
+assert.ok((db.prepare("SELECT count(*) AS count FROM process_step_sources").get() as { count: number }).count > 9);
 assert.equal(db.pragma("integrity_check", { simple: true }), "ok");
 console.log(JSON.stringify({ placeCount: coverage.placeCount, sourceCount: coverage.sourceCount, bytes: statSync("data/govroute-locations.db").size, tests: "search, unofficial labels, statistical government gate, topic-scoped sources, integrity" }));

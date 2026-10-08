@@ -9,6 +9,8 @@ on:
       - 'pipeline/**'
       - 'database/registry/**'
       - 'data/registry/**'
+      - 'data/curated/**'
+      - 'scripts/check-registry*'
       - 'next.config.ts'
       - 'docs/GOVROUTE_FOUNDATION.md'
       - '.github/workflows/govroute-foundation.yml'
@@ -30,7 +32,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m unittest pipeline.test_locations -v
+      - run: python -m unittest pipeline.test_locations pipeline.test_processes -v
       - run: npm ci
       - run: npm run typecheck
       - run: npm test

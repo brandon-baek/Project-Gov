@@ -11,6 +11,8 @@ import { consumeRequest, consumeAIRoute } from "@/lib/request-limits";
 import { stateByCode, statesInText } from "@/lib/jurisdictions";
 import { contextForPlaces, relevantLegalSources } from "@/lib/place-registry";
 import { parcelRequirements, requiresParcelEvidence } from "@/lib/place-context";
+import { processJourneys } from "@/lib/process-catalog";
+import { publishedProcesses } from "@/lib/process-registry";
 
 export const runtime = "nodejs";
 
@@ -85,7 +87,10 @@ export async function POST(request: NextRequest) {
         scopeNote: sources.length ? "These are potentially relevant official sources. A property-specific pathway still requires the listed records." : "Property-specific sources have not been connected for this location yet." });
     }
     const stored = getStoredJourneys();
-    let matches = retrieveJourneys(body.message, 8, stored.journeys, location);
+    const processes = publishedProcesses(location, context?.places.map((place) => place.id) ?? []);
+    const processIds = new Set(processJourneys.map((journey) => journey.id));
+    const records = [...stored.journeys.filter((journey) => !processIds.has(journey.id)), ...processes.journeys];
+    let matches = retrieveJourneys(body.message, 8, records, location);
     // Legacy local guides use names rather than stable jurisdiction IDs. Until
     // migrated, they must not be certified by a free-text postal/community name.
     const confirmedLocality = context?.places.find((place) => place.kind === "municipality" && place.government_status === "active")?.name;
@@ -147,6 +152,7 @@ export async function POST(request: NextRequest) {
       provenance: {
         router,
         storage: stored.storage,
+        processStorage: processIds.has(journey.id) ? processes.storage : undefined,
         journeyNodeId: journey.id,
         matchedTerms: matches[0].matchedTerms,
         assembledFrom: journey.steps.flatMap((step) => step.sourceIds).filter((id, index, values) => values.indexOf(id) === index),

@@ -18,6 +18,10 @@ export const journeyStepSchema = z.object({
   title: z.string(),
   detail: z.string(),
   sourceIds: z.array(z.string()).min(1),
+  requirements: z.array(z.string()).optional(),
+  fees: z.array(z.string()).optional(),
+  deadlines: z.array(z.string()).optional(),
+  dependsOn: z.array(z.string()).optional(),
   action: z.object({ label: z.string(), url: z.string().url() }).optional(),
   caution: z.string().optional()
 });
@@ -34,6 +38,7 @@ export const journeySchema = z.object({
   reviewStatus: reviewStatusSchema,
   reviewedAt: z.string(),
   estimatedTime: z.string().optional(),
+  eligibility: z.array(z.string()).optional(),
   officialAction: z.object({ label: z.string(), url: z.string().url() }).optional(),
   steps: z.array(journeyStepSchema).min(1),
   sources: z.array(sourceSchema).min(1)

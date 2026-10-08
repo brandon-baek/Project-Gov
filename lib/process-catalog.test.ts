@@ -1,0 +1,27 @@
+import { describe, expect, it } from "vitest";
+import { bundledProcessesForState, mergeProcessJourneys, processJourneys } from "@/lib/process-catalog";
+import { retrieveJourneys } from "@/lib/retrieval";
+
+describe("published process routing", () => {
+  it("offers federal passport steps without a location or national registry", () => {
+    const records = bundledProcessesForState();
+    expect(records.map((journey) => journey.id)).toEqual(["journey-passport-apply"]);
+    const passport = retrieveJourneys("renew passport", 1, records)[0].journey;
+    expect(passport.steps.some((step) => step.requirements?.length)).toBe(true);
+    expect(passport.steps.some((step) => step.fees?.length)).toBe(true);
+    expect(passport.steps.some((step) => step.deadlines?.length)).toBe(true);
+  });
+
+  it("does not present California's new-resident process as a Texas process", () => {
+    expect(bundledProcessesForState("TX").some((journey) => journey.id === "journey-ca-new-resident")).toBe(false);
+    expect(bundledProcessesForState("CA").some((journey) => journey.id === "journey-ca-new-resident")).toBe(true);
+  });
+
+  it("updates an older SQL passport document without duplicate identities", () => {
+    const updated = processJourneys.find((journey) => journey.id === "journey-passport-apply")!;
+    const old = { ...updated, reviewedAt: "2020-01-01", steps: [updated.steps[0]] };
+    const records = mergeProcessJourneys([old]);
+    expect(records.filter((journey) => journey.id === old.id)).toHaveLength(1);
+    expect(records.find((journey) => journey.id === old.id)?.steps).toHaveLength(5);
+  });
+});

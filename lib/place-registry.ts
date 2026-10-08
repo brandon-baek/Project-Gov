@@ -83,11 +83,12 @@ export function contextForAddress(match: CensusMatch): PlaceContext {
 
 export function registryCoverage() {
   const db = openRegistry();
-  if (!db) return { status: "not_imported" as const, placeCount: 0, sourceCount: 0, datasets: [] };
+  if (!db) return { status: "not_imported" as const, placeCount: 0, sourceCount: 0, reviewedProcessCount: 0, datasets: [] };
   return {
     status: "available" as const,
     placeCount: (db.prepare("SELECT count(*) AS count FROM places").get() as { count: number }).count,
     sourceCount: (db.prepare("SELECT count(*) AS count FROM legal_sources WHERE active=1").get() as { count: number }).count,
+    reviewedProcessCount: (db.prepare("SELECT count(*) AS count FROM process_definitions WHERE review_status='reviewed'").get() as { count: number }).count,
     datasets: db.prepare("SELECT id,publisher,url,vintage,retrieved_at,records_seen,complete FROM datasets").all()
   };
 }
