@@ -4,7 +4,7 @@ import sqlite3
 import tempfile
 import unittest
 
-from pipeline.locations import ROOT, add_census, census_rows, dataset, import_gnis, point, government_status, load_manifest
+from pipeline.locations import ROOT, add_census, census_rows, dataset, import_gnis, point, government_status, staged_products
 from pipeline.legal_sources import store_snapshot
 
 
@@ -101,6 +101,12 @@ class RegistryTests(unittest.TestCase):
     def test_census_existence_does_not_grant_topic_authority(self):
         self.assertGreater(self.db.execute("SELECT count(*) FROM authorities").fetchone()[0], 0)
         self.assertEqual(self.db.execute("SELECT count(*) FROM authority_scopes").fetchone()[0], 0)
+
+    def test_staged_gnis_discovery_requires_both_unambiguous_products(self):
+        xml = '<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><IsTruncated>false</IsTruncated><Contents><Key>StagedProducts/GeographicNames/Topical/Populated_Places.zip</Key></Contents><Contents><Key>StagedProducts/GeographicNames/Topical/All_Names.zip</Key></Contents></ListBucketResult>'
+        self.assertEqual(set(staged_products(xml)), {"Populated Places", "All Names"})
+        with self.assertRaisesRegex(RuntimeError, "truncated"):
+            staged_products(xml.replace("false", "true"))
 
 
 if __name__ == "__main__":

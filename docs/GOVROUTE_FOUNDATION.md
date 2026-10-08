@@ -43,7 +43,7 @@ npm run build
 The place importer uses Python's standard library. Census layers are discovered by exact
 names, paginated with unique object IDs, and checked against counts before and after the
 download. National minimum-count gates catch empty or truncated core layers. GNIS ZIP
-links are discovered from the official USGS page. Local official GNIS files can be passed
+names are discovered from USGS's documented public staged-products directory. Local official GNIS files can be passed
 with `--populated` and `--names`; Census still requires its API. Missing/changing schemas
 fail the build rather than publishing guessed records.
 

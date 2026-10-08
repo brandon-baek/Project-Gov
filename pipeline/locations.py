@@ -20,6 +20,7 @@ import tempfile
 import unicodedata
 import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 import zipfile
 from datetime import datetime, timezone
 
@@ -227,17 +228,36 @@ class DownloadLinks(html.parser.HTMLParser):
             self.href = None
 
 
+def staged_products(xml):
+    """Discover current ZIP names from USGS's documented public staged directory."""
+    root = ET.fromstring(xml)
+    ns = {"s3": "http://s3.amazonaws.com/doc/2006-03-01/"}
+    if root.findtext("s3:IsTruncated", namespaces=ns) == "true":
+        raise RuntimeError("GNIS staged listing is truncated")
+    products = {}
+    for entry in root.findall("s3:Contents", ns):
+        key = entry.findtext("s3:Key", namespaces=ns) or ""
+        filename = Path(key).name.lower()
+        if not filename.endswith(".zip"):
+            continue
+        label = "Populated Places" if "populated" in filename else "All Names" if "allnames" in filename.replace("_", "").replace("-", "") else None
+        if label:
+            if label in products:
+                raise RuntimeError(f"Ambiguous current GNIS product: {label}")
+            products[label] = "https://prd-tnm.s3.amazonaws.com/" + urllib.parse.quote(key, safe="/")
+    if set(products) != {"Populated Places", "All Names"}:
+        raise RuntimeError("GNIS staged product schema changed; specify official local files")
+    return products
+
+
 def download_products(directory):
-    request = urllib.request.Request(GNIS, headers={"User-Agent": "Govroute/1.0"})
+    listing = "https://prd-tnm.s3.amazonaws.com/?" + urllib.parse.urlencode({"list-type": "2", "prefix": "StagedProducts/GeographicNames/Topical/"})
+    request = urllib.request.Request(listing, headers={"User-Agent": "Govroute/1.0"})
     with urllib.request.urlopen(request, timeout=60) as response:
-        parser = DownloadLinks()
-        parser.feed(response.read().decode("utf-8"))
+        urls = staged_products(response.read())
     products = {}
     for label in ("Populated Places", "All Names"):
-        urls = {url for text, url in parser.links if text == label and urllib.parse.urlparse(url).hostname == "prd-tnm.s3.amazonaws.com" and url.lower().endswith(".zip")}
-        if len(urls) != 1:
-            raise RuntimeError(f"GNIS {label} download link changed; use --populated/--names with official files")
-        url = urls.pop()
+        url = urls[label]
         path = directory / ("populated.zip" if label == "Populated Places" else "names.zip")
         with urllib.request.urlopen(url, timeout=60) as response, path.open("wb") as target:
             size = 0
