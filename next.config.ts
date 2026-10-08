@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/api/chat": ["./database/migrations/**/*", "./data/govguide.db", ...registryFiles],
     "/api/places": registryFiles,
+    "/api/processes": registryFiles,
     "/api/location/resolve": registryFiles,
     "/api/catalog": ["./data/govguide.db"],
     "/graph": ["./data/govguide.db"],

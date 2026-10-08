@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { ZodError } from "zod";
 import { chatRequestSchema } from "@/lib/schema";
-import { classifyRetrieval, getJourneyById, retrieveJourneys } from "@/lib/retrieval";
+import { classifyRetrieval, retrieveJourneys } from "@/lib/retrieval";
 import { findSensitiveData, isLikelyEmergency } from "@/lib/safety";
 import { routeWithAI } from "@/lib/ai-router";
 import { traceJourney } from "@/lib/graph";
@@ -99,7 +99,7 @@ export async function POST(request: NextRequest) {
     if (classifyRetrieval(matches) === "clarify" && consumeAIRoute()) {
       try {
         const aiRoute = await routeWithAI(body.message, matches.map((match) => match.journey.id));
-        const selected = aiRoute?.journeyId ? getJourneyById(aiRoute.journeyId) : undefined;
+        const selected = aiRoute?.journeyId ? records.find((journey) => journey.id === aiRoute.journeyId) : undefined;
         if (selected) {
           matches = [
             { journey: selected, score: Math.max(matches.find((match) => match.journey.id === selected.id)?.score ?? 0, 30), matchedTerms: ["semantic match"] },
@@ -113,11 +113,15 @@ export async function POST(request: NextRequest) {
     }
 
     const classification = classifyRetrieval(matches);
-    if (!location && (matches[0]?.journey.jurisdiction === "california" || (discoveredMatches[0] && discoveredMatches[0].guide.jurisdiction !== "federal"))) {
+    const bestDiscovered = discoveredMatches[0];
+    const useDiscovered = Boolean(bestDiscovered && (classification !== "matched" || bestDiscovered.score > (matches[0]?.score ?? 0)));
+    // Only the selected route can require location. A weaker state discovery
+    // must not interrupt a well-matched federal passport pathway.
+    const selectedJurisdiction = useDiscovered ? bestDiscovered.guide.jurisdiction : matches[0]?.journey.jurisdiction;
+    if (!location && selectedJurisdiction && selectedJurisdiction !== "federal") {
       return NextResponse.json({ status: "clarify", message: "Choose your state above so I can find the right jurisdiction. For a city or county service, also enter its jurisdiction name.", alternatives: [] });
     }
-    const bestDiscovered = discoveredMatches[0];
-    if (bestDiscovered && (classification !== "matched" || bestDiscovered.score > (matches[0]?.score ?? 0))) {
+    if (bestDiscovered && useDiscovered) {
       return NextResponse.json({
         status: "discovered",
         message: bestDiscovered.guide.summary,
