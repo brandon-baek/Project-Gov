@@ -1,3 +1,11 @@
 {
-  "status": "pending"
+  "schemaVersion": 1,
+  "sha256": "a07135f5216f4c612f073a36c9abcf26c7f888b796793612a440c25aa824eec7",
+  "bytes": 287916032,
+  "compressedBytes": 48253500,
+  "placeCount": 277669,
+  "sourceCount": 10,
+  "reviewedProcesses": 2,
+  "generatedAt": "2026-10-09T17:22:03.880049+00:00",
+  "url": "https://github.com/brandon-baek/Project-Gov/releases/download/registry-24a647ffca5411c4627376b6de87e1d32f301d2d/govroute-runtime.db.gz"
 }
