@@ -40,6 +40,7 @@ jobs:
           python-version: '3.11'
       - run: python -m unittest pipeline.test_locations pipeline.test_processes pipeline.test_national_backend -v
       - run: npm ci
+      - run: npm audit --omit=dev --audit-level=high
       - run: npm run typecheck
       - run: npm test
       - run: npm run lint

@@ -6,6 +6,12 @@ on:
       - 'package.json'
       - 'package-lock.json'
       - '.github/workflows/dependency-audit.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/dependency-audit.yml'
   workflow_dispatch:
 
 permissions:
@@ -20,10 +26,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Prepare compatible dependency lock
-        run: |
-          npm install --package-lock-only --ignore-scripts
-          npm audit fix --package-lock-only --ignore-scripts || true
-          node -e "const fs=require('node:fs'),z=require('node:zlib');console.log('GOVROUTE_LOCK_'+z.gzipSync(fs.readFileSync('package-lock.json')).toString('base64'))"
+          cache: npm
       - run: npm ci
-      - run: npm audit --omit=dev --audit-level=high
+      - name: Record the complete dependency audit, including development tools
+        run: npm audit --json > dependency-audit.json || true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: govroute-dependency-audit
+          path: dependency-audit.json
+      - name: Reject known high or critical vulnerabilities in production dependencies
+        run: npm audit --omit=dev --audit-level=high
