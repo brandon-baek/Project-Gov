@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
     "/data": registryFiles
   },
   outputFileTracingExcludes: process.env.GOVROUTE_BUNDLE_REGISTRY === "true"
-    ? { "/**": ["./data/govroute-runtime.db"] } : { "/**": ["./data/govroute-locations.db", "./data/govroute-runtime.db"] },
+    ? { "/**": ["./data/govroute-runtime.db", "./data/govroute-locations.db.gz"] } : { "/**": ["./data/govroute-locations.db", "./data/govroute-locations.db.gz", "./data/govroute-runtime.db"] },
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {

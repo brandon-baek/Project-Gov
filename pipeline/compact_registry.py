@@ -40,11 +40,19 @@ def compact(source, output):
         if size>MAX_RUNTIME_BYTES: raise ValueError(f"Serving projection exceeds deployment budget: {size}")
         os.replace(staging,output)
     compressed=output.with_suffix(".db.gz")
-    with output.open("rb") as src,compressed.open("wb") as dst:
-        with gzip.GzipFile(filename="",mode="wb",fileobj=dst,mtime=0) as zipped:
-            while chunk:=src.read(1024*1024): zipped.write(chunk)
-    manifest={"schemaVersion":1,"sha256":hashlib.sha256(output.read_bytes()).hexdigest(),
+    archive=source.with_suffix(".db.gz")
+    for original,zipped_path in [(output,compressed),(source,archive)]:
+        with original.open("rb") as src,zipped_path.open("wb") as dst:
+            with gzip.GzipFile(filename="",mode="wb",fileobj=dst,mtime=0) as zipped:
+                while chunk:=src.read(1024*1024): zipped.write(chunk)
+    def digest_file(path):
+        digest=hashlib.sha256()
+        with path.open("rb") as file:
+            while chunk:=file.read(1024*1024): digest.update(chunk)
+        return digest.hexdigest()
+    manifest={"schemaVersion":1,"sha256":digest_file(output),
               "bytes":size,"compressedBytes":compressed.stat().st_size,
+              "archiveBytes":source.stat().st_size,"archiveCompressedBytes":archive.stat().st_size,"archiveSha256":digest_file(source),
               "placeCount":report["placeCount"],"sourceCount":report["sourceCount"],
               "reviewedProcesses":report["reviewedProcesses"],"generatedAt":report["generatedAt"]}
     output.with_suffix(".manifest.json").write_text(json.dumps(manifest,indent=2)+"\n")

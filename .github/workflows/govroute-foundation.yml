@@ -80,9 +80,8 @@ jobs:
         with:
           name: govroute-national-registry
           path: |
-            data/govroute-locations.db
+            data/govroute-locations.db.gz
             data/govroute-locations.coverage.json
-            data/govroute-runtime.db
             data/govroute-runtime.db.gz
             data/govroute-runtime.manifest.json
             data/govroute-runtime.coverage.json
@@ -102,6 +101,15 @@ jobs:
         with:
           name: govroute-national-registry
           path: data
+      - name: Materialize archived databases for runtime checks
+        run: |
+          python - <<'PY'
+          import gzip, shutil
+          from pathlib import Path
+          for name in ("govroute-locations", "govroute-runtime"):
+              with gzip.open(Path("data")/(name+".db.gz"),"rb") as source,open(Path("data")/(name+".db"),"wb") as destination:
+                  shutil.copyfileobj(source,destination)
+          PY
       - run: npm ci
       - name: Check actual national registry search and jurisdiction semantics
         run: npx tsx scripts/check-registry.ts
@@ -145,7 +153,7 @@ jobs:
           if gh release view "$REGISTRY_TAG" >/dev/null 2>&1; then
             gh release download "$REGISTRY_TAG" --pattern govroute-runtime.manifest.json --dir data --clobber
           else
-            gh release create "$REGISTRY_TAG" data/govroute-runtime.db.gz data/govroute-runtime.manifest.json data/govroute-runtime.coverage.json --target "$EXPECTED_HEAD" --prerelease --title "Govroute national backend dataset" --notes-file docs/REGISTRY_RELEASE.md
+            gh release create "$REGISTRY_TAG" data/govroute-runtime.db.gz data/govroute-locations.db.gz data/govroute-runtime.manifest.json data/govroute-runtime.coverage.json --target "$EXPECTED_HEAD" --prerelease --title "Govroute national backend dataset" --notes-file docs/REGISTRY_RELEASE.md
           fi
           python - <<'PY'
           import json, os

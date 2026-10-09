@@ -184,3 +184,7 @@ The CISA current-full.csv importer loads all registered .gov organizations, with
 See BACKEND_USER_SCENARIOS.md for the scenario matrix. The coverage report separately records registered domains, linked places, indexed directory pages, reviewed processes, and crawl failures. Coverage is not complete across every local government, and non-.gov websites require further officially evidenced connectors.
 
 Human review expires separately from crawl freshness: after 30 days, a previously verified guide carries review-due status, and a successful link check cannot reset that review date.
+
+Successful serving releases also include a compressed complete archive with a separate raw SHA-256. Raw feature provenance remains available beyond the 90-day Actions retention window. The full archive stays outside the website bundle.
+
+Refreshes seed legal snapshots, chunks, and checks from the pinned previous serving release only when the source ID, canonical URL, topic, and authority still match. Local crawls retain prior pages and check history, advance to unvisited service links, and expose the date and availability of the latest crawl independently of procedure review.

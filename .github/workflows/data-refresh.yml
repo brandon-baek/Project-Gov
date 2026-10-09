@@ -145,7 +145,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           REGISTRY_TAG="registry-$GITHUB_SHA-$GITHUB_RUN_ID"
-          gh release create "$REGISTRY_TAG" data/govroute-runtime.db.gz data/govroute-runtime.manifest.json data/govroute-runtime.coverage.json --target "$GITHUB_SHA" --prerelease --title "Govroute scheduled national backend refresh" --notes-file docs/REGISTRY_RELEASE.md
+          gh release create "$REGISTRY_TAG" data/govroute-runtime.db.gz data/govroute-locations.db.gz data/govroute-runtime.manifest.json data/govroute-runtime.coverage.json --target "$GITHUB_SHA" --prerelease --title "Govroute scheduled national backend refresh" --notes-file docs/REGISTRY_RELEASE.md
           python - <<'PY'
           import json, os
           from pathlib import Path
