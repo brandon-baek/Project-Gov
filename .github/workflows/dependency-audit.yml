@@ -27,11 +27,6 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - name: Prepare the explicit test-runner peer dependency
-        run: |
-          npm install --package-lock-only --ignore-scripts
-          npm audit fix --package-lock-only --ignore-scripts || true
-          node -e "const fs=require('node:fs'),z=require('node:zlib');console.log('GOVROUTE_LOCK_'+z.gzipSync(fs.readFileSync('package-lock.json')).toString('base64'))"
       - run: npm ci
       - name: Record the complete dependency audit, including development tools
         run: npm audit --json > dependency-audit.json || true

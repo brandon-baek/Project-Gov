@@ -49,6 +49,7 @@ jobs:
           VERCEL: '1'
 
   national-registry:
+    needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 45
     steps:
