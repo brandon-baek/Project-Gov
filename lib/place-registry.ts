@@ -29,7 +29,7 @@ async function initializeRegistry(): Promise<Database.Database | null> {
   if (!filename && process.env.GOVROUTE_REGISTRY_COMPRESSED!=="true" && existsSync(/* turbopackIgnore: true */ serving)) filename=serving;
   if (!filename && existsSync(/* turbopackIgnore: true */ compressed)) {
     const manifestPath=process.env.GOVROUTE_REGISTRY_MANIFEST_PATH ?? path.join(process.cwd(),"data/registry/runtime-release.json");
-    const manifest=JSON.parse(await readFile(manifestPath,"utf8")) as SnapshotManifest;
+    const manifest=JSON.parse(await readFile(/* turbopackIgnore: true */ manifestPath,"utf8")) as SnapshotManifest;
     filename=await extractSnapshot(compressed,path.join(tmpdir(),"govroute-"+manifest.sha256+".db"),manifest);
   }
   filename ??= path.join(process.cwd(),"data/govroute-locations.db");
