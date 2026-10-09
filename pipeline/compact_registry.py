@@ -12,7 +12,7 @@ def compact(source, output):
     output.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(dir=output.parent) as folder:
         staging=Path(folder)/"runtime.db"
-        db=sqlite3.connect(staging)
+        db=sqlite3.connect(staging,uri=True)
         schema=(ROOT/"database/registry/001_registry.sql").read_text()
         def smaller(match):
             value=match.group(0)
@@ -32,7 +32,7 @@ def compact(source, output):
                 db.execute(f'INSERT INTO "{table}" SELECT {select} FROM archive."{table}"')
         if db.execute("PRAGMA integrity_check").fetchone()[0]!="ok" or db.execute("PRAGMA foreign_key_check").fetchall():
             raise ValueError("Serving projection integrity failed")
-        db.execute("ANALYZE")
+        db.execute("ANALYZE main")
         db.commit()
         report=coverage(db)
         db.close()

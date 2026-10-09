@@ -112,11 +112,11 @@ def crawl_queue(db,limit):
       FROM government_domains d JOIN domain_places binding ON binding.domain=d.domain
       LEFT JOIN directory_checks c ON c.domain=d.domain
       GROUP BY d.domain ORDER BY last_checked,d.domain""").fetchall()
-    for domain,state,_ in rows: by_state[state or "unknown"].append(domain)
+    for domain,state,last_checked in rows: by_state[state or "unknown"].append((domain,last_checked))
     chosen=[]
     while by_state and len(chosen)<limit:
-        for state in sorted(list(by_state)):
-            chosen.append(by_state[state].pop(0))
+        for state in sorted(list(by_state),key=lambda key:(by_state[key][0][1],key)):
+            chosen.append(by_state[state].pop(0)[0])
             if not by_state[state]: del by_state[state]
             if len(chosen)==limit: break
     return chosen
