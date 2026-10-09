@@ -3,7 +3,7 @@ import { NextRequest } from "next/server";
 import { processJourneys } from "@/lib/process-catalog";
 const fixtures=vi.hoisted(()=>({local:"census:municipality:4812345"}));
 vi.mock("@/lib/database",()=>({getStoredJourneys:()=>({journeys:[],storage:"fixture"})}));
-vi.mock("@/lib/discovered-guides",()=>({retrieveDiscoveredGuides:()=>[]}));
+vi.mock("@/lib/discovered-guides",()=>({discoveredGuides:[],retrieveDiscoveredGuides:()=>[]}));
 vi.mock("@/lib/ai-router",()=>({routeWithAI:vi.fn()}));
 vi.mock("@/lib/local-resources",()=>({localResources:async()=>[]}));
 vi.mock("@/lib/place-registry",()=>({
