@@ -25,3 +25,7 @@ The production HTTP suite runs against the real national serving database, with 
 Importer tests reject truncated Census pagination, duplicate domain records, changed inventory headers, ambiguous government-name matches, external redirects, and inferred topic competence. Projection tests compare stable IDs, names, foreign keys, source types, and search behavior with the full archive.
 
 The HTTP suite also requests the homepage, data page, passport guide, and moving page from the production build. Rendered layout still needs browser verification; these tests verify successful HTML responses and API behavior.
+
+The interstate matrix also checks every supported origin/destination pair with and without a vehicle. Texas license applications depend on registration when a vehicle is brought; New York plate/insurance instructions remain tied to the origin. Unknown destinations receive official-directory planning questions without fabricated deadlines. Source review expires after 30 days.
+
+The production suite checks government-catalog paging, guide-group browsing, and invalid catalog input as well. Success on these scenarios measures the implemented behavior; it does not establish complete local-law coverage.

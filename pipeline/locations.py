@@ -405,12 +405,28 @@ def coverage(db):
     }
 
 
+def preserve_legal_history(db, previous):
+    """Retain versions only for the same authority, topic, and canonical source URL."""
+    db.execute("ATTACH DATABASE ? AS previous", (str(previous),))
+    db.execute("""INSERT INTO legal_snapshots SELECT p.* FROM previous.legal_snapshots p
+      JOIN previous.legal_sources old ON old.id=p.source_id
+      JOIN legal_sources s ON s.id=old.id AND s.url=old.url
+        AND s.authority_id=old.authority_id AND s.topic=old.topic""")
+    db.execute("INSERT INTO legal_chunks SELECT p.* FROM previous.legal_chunks p JOIN legal_snapshots s ON s.id=p.snapshot_id")
+    if db.execute("SELECT 1 FROM previous.sqlite_master WHERE name='legal_source_checks'").fetchone():
+        db.execute("""INSERT INTO legal_source_checks SELECT p.* FROM previous.legal_source_checks p
+          JOIN previous.legal_sources old ON old.id=p.source_id
+          JOIN legal_sources s ON s.id=old.id AND s.url=old.url
+            AND s.authority_id=old.authority_id AND s.topic=old.topic""")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "data/govroute-locations.db")
     parser.add_argument("--populated", type=Path, help="Official GNIS populated-place TXT or ZIP (offline import)")
     parser.add_argument("--names", type=Path, help="Official GNIS All Names TXT or ZIP (offline import)")
     parser.add_argument("--manifest", type=Path, default=ROOT / "data/registry/sources.json")
+    parser.add_argument("--previous", type=Path, default=ROOT / "data/govroute-runtime.db", help="Seed legal-source history from a verified prior serving release")
     parser.add_argument("--processes", type=Path, default=ROOT / "data/registry/processes.json")
     args = parser.parse_args()
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -430,13 +446,9 @@ def main():
             load_manifest(db, args.manifest)
             from pipeline.processes import load_processes
             load_processes(db, args.processes)
-            if args.output.exists():
-                db.execute("ATTACH DATABASE ? AS previous", (str(args.output),))
-                # Preserve historical versions for unchanged sources across registry refreshes.
-                db.execute("INSERT INTO legal_snapshots SELECT p.* FROM previous.legal_snapshots p JOIN legal_sources s ON s.id=p.source_id")
-                db.execute("INSERT INTO legal_chunks SELECT p.* FROM previous.legal_chunks p JOIN legal_snapshots s ON s.id=p.snapshot_id")
-                if db.execute("SELECT 1 FROM previous.sqlite_master WHERE name='legal_source_checks'").fetchone():
-                    db.execute("INSERT INTO legal_source_checks SELECT p.* FROM previous.legal_source_checks p JOIN legal_sources s ON s.id=p.source_id")
+            previous = args.output if args.output.exists() else args.previous
+            if previous.is_file():
+                preserve_legal_history(db, previous)
         report = coverage(db)
         report["databaseBytes"] = staging.stat().st_size
         if db.execute("PRAGMA integrity_check").fetchone()[0] != "ok" or db.execute("PRAGMA foreign_key_check").fetchall():

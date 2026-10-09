@@ -51,6 +51,13 @@ try {
       for(const step of data.journey.steps) assert.ok(step.sourceIds.every((id:string)=>sources.has(id)));
     });
   }
+  await record("indexed government catalog","/api/catalog?collection=domains",undefined,(data,response)=>{
+    assert.equal(response.status,200);assert.ok(data.total>10000);assert.ok(data.items.length>0 && data.items.length<=20);
+  });
+  await record("guide group browsing","/api/guides?group=identity-civic",undefined,(data,response)=>{
+    assert.equal(response.status,200);assert.ok(Array.isArray(data.guides));assert.ok(data.guides.length);
+  });
+  await record("invalid catalog collection","/api/catalog?collection=unknown",undefined,(_,response)=>assert.equal(response.status,400));
   await record("ambiguous Springfield","/api/places?q=Springfield",undefined,data=>{
     assert.equal(data.status,"results");assert.ok(new Set(data.places.map((place:{state_code:string})=>place.state_code)).size>1);
   });

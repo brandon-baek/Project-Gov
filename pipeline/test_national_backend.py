@@ -1,6 +1,9 @@
 import csv, io, json, sqlite3, tempfile, unittest
 from pathlib import Path
-from pipeline.locations import ROOT, add_census, dataset
+from pipeline.locations import ROOT, add_census, dataset, preserve_legal_history
+from pipeline.legal_sources import store_snapshot
+from unittest.mock import patch
+from pipeline.local_sources import crawl_domain
 from pipeline.government_directory import import_directory, load_rows
 from pipeline.local_sources import crawl_queue, store_page, validate_url, Links
 from pipeline.compact_registry import compact
@@ -69,5 +72,35 @@ class NationalBackendTests(unittest.TestCase):
             self.assertEqual(runtime.execute("SELECT count(*) FROM directory_search WHERE directory_search MATCH 'Permit'").fetchone()[0],1)
             self.assertEqual(manifest["schemaVersion"],1)
             runtime.close()
+
+    def test_crawler_advances_to_unvisited_action_pages(self):
+        root="https://oakland.gov/"
+        content="<title>City services</title><p>"+("Government service information. "*20)+"</p>"
+        content+='<a href="/permits">Permits</a><a href="/water">Water service</a><a href="/zoning">Zoning</a>'
+        def download(url,domain,limit=0):
+            return ("",url,"text/plain") if url.endswith("robots.txt") else (content,url,"text/html")
+        with patch("pipeline.local_sources.download",side_effect=download),patch("pipeline.local_sources.time.sleep"):
+            pages=crawl_domain("oakland.gov",2,{root+"permits":"2026-10-01"})
+        self.assertEqual({row["url"] for row in pages},{root,root+"water",root+"zoning"})
+
+    def test_prior_source_history_survives_only_an_unchanged_source_identity(self):
+        self.db.execute("INSERT INTO authorities VALUES('source-a',NULL,'Agency','federal','https://agency.gov','reviewed')")
+        self.db.execute("INSERT INTO legal_sources(id,authority_id,topic,title,url,source_kind) VALUES('source-s','source-a','passport','Procedure','https://agency.gov/old','procedure')")
+        with self.db:
+            store_snapshot(self.db,"source-s","Checked procedure text","https://agency.gov/old")
+            self.db.execute("INSERT INTO legal_source_checks(source_id,checked_at,status) VALUES('source-s','2026-10-08','indexed')")
+        with tempfile.TemporaryDirectory() as folder:
+            previous=Path(folder)/"previous.db"
+            saved=sqlite3.connect(previous);self.db.backup(saved);saved.close()
+            for url,expected in [("https://agency.gov/old",1),("https://agency.gov/new",0)]:
+                current=sqlite3.connect(":memory:")
+                current.executescript((ROOT/"database/registry/001_registry.sql").read_text())
+                current.execute("INSERT INTO authorities VALUES('source-a',NULL,'Agency','federal','https://agency.gov','reviewed')")
+                current.execute("INSERT INTO legal_sources(id,authority_id,topic,title,url,source_kind) VALUES('source-s','source-a','passport','Procedure',?,'procedure')",(url,))
+                with current: preserve_legal_history(current,previous)
+                self.assertEqual(current.execute("SELECT count(*) FROM legal_snapshots").fetchone()[0],expected)
+                self.assertEqual(current.execute("SELECT count(*) FROM legal_chunks").fetchone()[0],expected)
+                self.assertEqual(current.execute("SELECT count(*) FROM legal_source_checks").fetchone()[0],expected)
+                current.close()
 
 if __name__=="__main__": unittest.main()

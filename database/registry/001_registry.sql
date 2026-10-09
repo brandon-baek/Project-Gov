@@ -154,3 +154,4 @@ CREATE TABLE directory_checks (
     CHECK(status IN ('indexed','unchanged','unavailable','blocked')), error TEXT
 );
 CREATE INDEX directory_check_lookup ON directory_checks(domain,id);
+CREATE INDEX directory_check_url ON directory_checks(url,id);

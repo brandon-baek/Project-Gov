@@ -70,7 +70,8 @@ class Links(html.parser.HTMLParser):
             except ValueError: pass
             self.href=None
 
-def crawl_domain(domain,pages=2):
+def crawl_domain(domain,pages=2,visited=None):
+    visited=visited or {}
     root="https://"+domain+"/"
     results=[]
     robots=RobotFileParser(root+"robots.txt")
@@ -105,7 +106,7 @@ def crawl_domain(domain,pages=2):
                 results.append({"domain":domain,"url":final,"title":" ".join(links.title.split())[:240] or domain,
                     "summary":content[:500],"content":content[:120000],"status":"indexed"})
                 if index==0:
-                    queue.extend(url for url,_ in sorted(links.links.items(),key=lambda item:(-item[1][0],item[0])) if url not in queue)
+                    queue.extend(url for url,_ in sorted(links.links.items(),key=lambda item:(item[0] in visited,visited.get(item[0],""),-item[1][0],item[0])) if url not in queue)
             except Exception as error:
                 results.append({"domain":domain,"url":url,"status":"unavailable","error":str(error)[:500]})
     except Exception as error:
@@ -153,7 +154,8 @@ def main():
     domains=crawl_queue(db,args.sites)
     totals=defaultdict(int)
     with ThreadPoolExecutor(max_workers=8) as workers:
-        futures=[workers.submit(crawl_domain,domain) for domain in domains]
+        visited={domain:dict(db.execute("SELECT url,max(checked_at) FROM directory_checks WHERE domain=? GROUP BY url",(domain,))) for domain in domains}
+        futures=[workers.submit(crawl_domain,domain,2,visited[domain]) for domain in domains]
         for future in as_completed(futures):
             for item in future.result():
                 with db: totals[store_page(db,item)]+=1
