@@ -13,6 +13,7 @@ import { contextForPlaces, relevantLegalSources } from "@/lib/place-registry";
 import { parcelRequirements, requiresParcelEvidence } from "@/lib/place-context";
 import { processJourneys } from "@/lib/process-catalog";
 import { publishedProcesses } from "@/lib/process-registry";
+import { publicationPlaceIds } from "@/lib/scope-context";
 import { localResources } from "@/lib/local-resources";
 
 export const runtime = "nodejs";
@@ -88,19 +89,12 @@ export async function POST(request: NextRequest) {
         missing: ["Parcel and boundary verification", "Current zoning and overlays", "Recorded deeds, easements, and covenants"],
         scopeNote: sources.length ? "These are potentially relevant official sources. A property-specific pathway still requires the listed records." : "Property-specific sources have not been connected for this location yet." });
     }
-    if (/\b(building permit|construction permit|trash collection|garbage collection|sewer service|water service|local ordinance)\b/i.test(body.message)) {
-      if (!location && !context?.places.length) return NextResponse.json({status:"clarify",message:"Choose a community or address area so I can find official local starting points.",alternatives:[]});
-      const directoryResources=await localResources(context,body.message);
-      return NextResponse.json({status:"coverage_gap",title:"Find your local service",message:"This local procedure has not been verified for your selected area yet.",alternatives:[],
-        steps:["Confirm the city, county, or service district responsible for the request.","Use the official starting points below to locate the department and current application.","Confirm requirements, costs, deadlines, and service boundaries with that department before applying."],
-        sources:[],directoryResources,missing:["Reviewed local procedure","Confirmed topic authority and service area"],
-        scopeNote:directoryResources.length ? "Official registrations and crawled pages identify starting points. They do not certify that a department handles this particular task." : "No local website has been linked confidently for this area yet. Try the full street address or contact the state government directory."});
-    }
     const stored = getStoredJourneys();
-    const processes = await publishedProcesses(location, context?.places.map((place) => place.id) ?? []);
+    const scopedIds=publicationPlaceIds(context,body.placeIds??[]);
+    const processes = await publishedProcesses(location, scopedIds);
     const processIds = new Set(processJourneys.map((journey) => journey.id));
     const records = [...stored.journeys.filter((journey) => !processIds.has(journey.id)), ...processes.journeys];
-    let matches = retrieveJourneys(body.message, 8, records, location);
+    let matches = retrieveJourneys(body.message, 8, records, location, scopedIds);
     // Legacy local guides use names rather than stable jurisdiction IDs. Until
     // migrated, they must not be certified by a free-text postal/community name.
     const confirmedLocality = context?.places.find((place) => place.kind === "municipality" && place.government_status === "active")?.name;
@@ -139,6 +133,14 @@ export async function POST(request: NextRequest) {
         alternatives: discoveredMatches.slice(1, 4).map(({ guide }) => ({ id: guide.id, slug: guide.slug, title: guide.title, summary: guide.summary })),
         provenance: { router: "discovered-guide-index", assembledFrom: [bestDiscovered.guide.sourceId] }
       });
+    }
+    if (classification !== "matched" && /\b(building permit|construction permit|trash collection|garbage collection|sewer service|water service|local ordinance)\b/i.test(body.message)) {
+      if (!location && !context?.places.length) return NextResponse.json({status:"clarify",message:"Choose a community or address area so I can find official local starting points.",alternatives:[]});
+      const directoryResources=await localResources(context,body.message);
+      return NextResponse.json({status:"coverage_gap",title:"Find your local service",message:"This local procedure has not been verified for your selected area yet.",alternatives:[],
+        steps:["Confirm the city, county, or service district responsible for the request.","Use the official starting points below to locate the department and current application.","Confirm requirements, costs, deadlines, and service boundaries with that department before applying."],
+        sources:[],directoryResources,missing:["Reviewed local procedure","Confirmed topic authority and service area"],
+        scopeNote:directoryResources.length ? "Official registrations and crawled pages identify starting points. They do not certify that a department handles this particular task." : "No local website has been linked confidently for this area yet. Try the full street address or contact the state government directory."});
     }
     if (classification === "unsupported") {
       const state=stateByCode(location);

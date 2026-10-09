@@ -12,13 +12,16 @@ export function statesInText(text: string) {
     || new RegExp(`\\b${state.code}\\b`).test(text));
 }
 
-export type LocationGuide = { jurisdiction: string; state?: string; locality?: string; publisher?: string };
+export type LocationGuide = { jurisdiction: string; state?: string; locality?: string; publisher?: string; territoryIds?: string[] };
 export function jurisdictionLabel(guide: LocationGuide) {
   return [guide.locality, stateByCode(guide.state)?.name ?? (guide.jurisdiction === "california" ? "California" : undefined)]
     .filter(Boolean).join(", ") || (guide.jurisdiction === "federal" ? "Federal" : guide.publisher ?? "Location not confirmed");
 }
 
-export function matchesLocation(guide: LocationGuide, state?: string, locality?: string) {
+export function matchesLocation(guide: LocationGuide, state?: string, locality?: string, placeIds: string[] = []) {
+  if (guide.jurisdiction === "local" && guide.territoryIds?.length) {
+    return (!state || !guide.state || guide.state === state.toUpperCase()) && guide.territoryIds.some(id=>placeIds.includes(id));
+  }
   if (!state) return true;
   if (guide.jurisdiction === "federal") return true;
   const guideState = guide.state ?? (["california", "federal-and-state"].includes(guide.jurisdiction) ? "CA" : undefined);

@@ -86,5 +86,54 @@ class ProcessPublicationTests(unittest.TestCase):
             self.publish(bad)
 
 
+    def scoped_fixture(self, kind):
+        tx=add_census(self.db,{"GEOID":"48","NAME":"Texas","STUSAB":"TX","STATE":"48","FUNCSTAT":"A"},"state","fixture",80)
+        town=add_census(self.db,{"GEOID":"4812345","NAME":"Fixture city","STUSAB":"TX","STATE":"48","FUNCSTAT":"A"},"municipality","fixture",28)
+        self.db.execute("INSERT INTO authorities VALUES('fixture-office',NULL,'Fixture office','state','https://fixture.gov','reviewed')")
+        self.db.execute("INSERT INTO legal_sources(id,authority_id,topic,title,url,source_kind,reviewed_at) VALUES('fixture-source','fixture-office','test_service','Fixture service','https://fixture.gov/service','procedure','2026-10-09')")
+        for territory in (tx,town):
+            self.db.execute("INSERT INTO authority_scopes VALUES('fixture-office',?,'test_service','service_provider','https://fixture.gov/service','2026-10-09')",(territory,))
+        self.db.commit()
+        guide={"id":"fixture-process","slug":"fixture-process","title":"Fixture service","summary":"Fixture service instructions","category":"Fixture","jurisdiction":kind,"state":"TX","audience":[],"aliases":[],"reviewStatus":"verified","reviewedAt":"2026-10-09",
+            "steps":[{"id":"apply","title":"Apply","detail":"Follow the official instructions.","sourceIds":["fixture-source"]}],
+            "sources":[{"id":"fixture-source","title":"Fixture service","url":"https://fixture.gov/service","publisher":"Fixture office","lastChecked":"2026-10-09"}]}
+        selector={"state_code":"TX"} if kind=="state" else {"geoid":"4812345","kind":"municipality"}
+        return {"processes":[{"authority_id":"fixture-office","topic":"test_service","territory":selector,"journey":guide}]},tx,town
+
+    def assert_scoped_publication(self, kind):
+        manifest, tx, town = self.scoped_fixture(kind)
+        self.assertEqual(self.publish(manifest), 1)
+        document = json.loads(self.db.execute(
+            "SELECT document_json FROM process_publications WHERE process_id='fixture-process'"
+        ).fetchone()[0])
+        self.assertEqual(document["territoryIds"], [tx if kind == "state" else town])
+        self.assertFalse(self.db.execute("PRAGMA foreign_key_check").fetchall())
+
+    def test_generic_state_publication_keeps_exact_territory_id(self):
+        self.assert_scoped_publication("state")
+
+    def test_local_publication_keeps_exact_territory_id(self):
+        self.assert_scoped_publication("local")
+
+    def test_generic_state_rejects_wrong_state_and_local_territories(self):
+        manifest, tx, town = self.scoped_fixture("state")
+        bad = copy.deepcopy(manifest)
+        bad["processes"][0]["journey"]["state"] = "CA"
+        with self.assertRaisesRegex(ValueError, "territory"):
+            self.publish(bad)
+        for selector in ({"id": "country:US"}, {"id": town}):
+            bad = copy.deepcopy(manifest)
+            bad["processes"][0]["territory"] = selector
+            with self.assertRaisesRegex(ValueError, "territory"):
+                self.publish(bad)
+
+    def test_wrong_state_or_local_country_scope_cannot_publish(self):
+        manifest,tx,town=self.scoped_fixture("local")
+        for modify in (lambda guide:guide.update(state="CA"),lambda guide:guide.update(territoryIds=["country:US"])):
+            bad=copy.deepcopy(manifest);modify(bad["processes"][0]["journey"])
+            with self.assertRaisesRegex(ValueError,"territory"): self.publish(bad)
+        bad=copy.deepcopy(manifest);bad["processes"][0]["territory"]={"id":"country:US"}
+        with self.assertRaisesRegex(ValueError,"territory"): self.publish(bad)
+
 if __name__ == "__main__":
     unittest.main()

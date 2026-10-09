@@ -372,6 +372,8 @@ def resolve_territory(db, selector):
     if selector.get("territory_id") or selector.get("id"):
         key = selector.get("territory_id") or selector["id"]
         rows = db.execute("SELECT id FROM places WHERE id=?", (key,)).fetchall()
+    elif selector.get("geoid") and selector.get("kind"):
+        rows = db.execute("SELECT id FROM places WHERE geoid=? AND kind=?", (selector["geoid"],selector["kind"])).fetchall()
     elif selector.get("state_code"):
         rows = db.execute("SELECT id FROM places WHERE kind='state' AND state_code=?", (selector["state_code"],)).fetchall()
     else:

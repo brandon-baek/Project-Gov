@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const jurisdictionSchema = z.enum(["federal", "california", "federal-and-state"]);
+export const jurisdictionSchema = z.enum(["federal", "california", "federal-and-state", "state", "local"]);
 export const reviewStatusSchema = z.enum(["verified", "review-due", "machine-indexed"]);
 
 export const sourceSchema = z.object({
@@ -33,6 +33,9 @@ export const journeySchema = z.object({
   summary: z.string(),
   category: z.string(),
   jurisdiction: jurisdictionSchema,
+  state: z.string().regex(/^[A-Z]{2}$/).optional(),
+  locality: z.string().max(120).optional(),
+  territoryIds: z.array(z.string().min(1).max(150)).max(60).optional(),
   audience: z.array(z.string()),
   aliases: z.array(z.string()),
   reviewStatus: reviewStatusSchema,

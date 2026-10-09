@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { Journey } from "@/lib/schema";
+import { jurisdictionLabel } from "@/lib/jurisdictions";
 import { CheckIcon, ExternalIcon } from "@/components/icons";
 
 export function GuideResult({ journey, compact = false }: { journey: Journey; compact?: boolean }) {
@@ -8,7 +9,7 @@ export function GuideResult({ journey, compact = false }: { journey: Journey; co
     <article className={compact ? "guide-result guide-result--compact" : "guide-result"}>
       <header className="guide-result__header">
         <div>
-          <p className="eyebrow">{journey.category} · {journey.jurisdiction.replaceAll("-", " ")}</p>
+          <p className="eyebrow">{journey.category} · {jurisdictionLabel(journey)}</p>
           <h2>{journey.title}</h2>
           <p className="guide-summary">{journey.summary}</p>
         </div>

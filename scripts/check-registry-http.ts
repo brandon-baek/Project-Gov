@@ -89,6 +89,12 @@ try {
   await record("cross-state moving flow","/api/chat",{message:"moving from New York to Texas"},data=>{assert.equal(data.status,"clarify");assert.equal(data.alternatives[0].href,"/moving");});
   await record("CA scoped process catalog","/api/processes?state=CA",undefined,data=>assert.equal(data.processes.length,2));
   await record("TX scoped process catalog","/api/processes?state=TX",undefined,data=>{assert.equal(data.processes.length,1);assert.equal(data.processes[0].jurisdiction,"federal");});
+  await record("process catalog derives state from selected place","/api/processes?id="+encodeURIComponent(cdp.id),undefined,data=>assert.equal(data.processes.length,2));
+  await record("process catalog rejects state-place conflict","/api/processes?state=TX&id="+encodeURIComponent(cdp.id),undefined,(_,response)=>assert.equal(response.status,400));
+  await record("process catalog rejects unknown place","/api/processes?id=missing-place",undefined,(_,response)=>assert.equal(response.status,404));
+  await record("country process catalog stays federal","/api/processes?id=country%3AUS",undefined,data=>{
+    assert.equal(data.processes.length,1);assert.equal(data.processes[0].jurisdiction,"federal");
+  });
   const unofficial=db.prepare("SELECT n.name,n.place_id,p.state_code FROM place_names n JOIN places p ON p.id=n.place_id WHERE n.status='unofficial' AND length(n.name)>3 AND length(n.name)<80 AND (SELECT count(*) FROM place_names other WHERE other.search_name=n.search_name)=1 LIMIT 1").get() as {name:string;place_id:string;state_code:string};
   await record("unofficial name labeling","/api/places?"+new URLSearchParams({q:unofficial.name,...(unofficial.state_code?{state:unofficial.state_code}:{})}),undefined,data=>{
     assert.ok(data.places.some((place:{id:string;matched_name_status:string})=>place.id===unofficial.place_id && place.matched_name_status==="unofficial"));

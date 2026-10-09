@@ -35,6 +35,17 @@ def load_processes(db, path):
             raise ValueError("Federal process has a conflicting territory")
         if journey["jurisdiction"] == "california" and item["territory"] != {"state_code": "CA"}:
             raise ValueError("California process has a conflicting territory")
+        region = db.execute("SELECT kind,state_code FROM places WHERE id=?", (territory,)).fetchone()
+        if journey["jurisdiction"] == "state" and (region[0] != "state" or journey.get("state") != region[1]):
+            raise ValueError("State process has a conflicting territory")
+        if journey["jurisdiction"] == "local" and (region[0] in {"country","state"} or (region[1] and journey.get("state") != region[1])):
+            raise ValueError("Local process has a conflicting territory")
+        if journey["jurisdiction"] not in {"federal","california","state","local","federal-and-state"}:
+            raise ValueError("Unknown process jurisdiction")
+        if journey["jurisdiction"] in {"state","local"}:
+            if journey.get("territoryIds") and journey["territoryIds"] != [territory]:
+                raise ValueError("Publication has conflicting territory IDs")
+            journey["territoryIds"] = [territory]
         scope = db.execute("""SELECT 1 FROM authority_scopes WHERE authority_id=?
             AND territory_id=? AND topic=? AND role='service_provider'""",
             (item["authority_id"], territory, item["topic"])).fetchone()

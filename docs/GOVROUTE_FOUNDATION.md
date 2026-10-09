@@ -188,3 +188,11 @@ Human review expires separately from crawl freshness: after 30 days, a previousl
 Successful serving releases also include a compressed complete archive with a separate raw SHA-256. Raw feature provenance remains available beyond the 90-day Actions retention window. The full archive stays outside the website bundle.
 
 Refreshes seed legal snapshots, chunks, and checks from the pinned previous serving release only when the source ID, canonical URL, topic, and authority still match. Local crawls retain prior pages and check history, advance to unvisited service links, and expose the date and availability of the latest crawl independently of procedure review.
+
+## Publishing additional states and local procedures
+
+The process and journey models support federal, California legacy, generic state, and local publications. Generic state publications must identify their state. Local publications must identify an exact reviewed territory; a GEOID plus geography kind may resolve it unambiguously, or an explicit stable place ID may be supplied. Imported publications retain the resolved territory ID and still require a reviewed agency/topic/service-provider scope and matching reviewed source identities.
+
+Retrieval accepts local publications only through matching scope IDs. Explicit location selections and complete geographic containment support those IDs. GNIS primary-point relations, overlaps, service labels, and a typed locality name cannot certify a county or municipal process. The directory may still show such contextual starting points with its unreviewed labels.
+
+The process endpoint accepts an optional place ID alongside state and task query, rejects conflicting state selections, and applies the same publication-scope checks as chat. These capabilities enable additional reviewed jurisdictions; they do not increase the current reviewed publication count by themselves.

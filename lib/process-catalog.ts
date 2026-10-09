@@ -6,7 +6,7 @@ import { withSourceFreshness } from "@/lib/source-freshness";
 export const processPublicationSchema = z.object({
   authority_id: z.string().min(1),
   topic: z.string().min(1),
-  territory: z.union([z.object({ id: z.string().min(1) }), z.object({ state_code: z.string().regex(/^[A-Z]{2}$/) })]),
+  territory: z.union([z.object({ id: z.string().min(1) }), z.object({ state_code: z.string().regex(/^[A-Z]{2}$/) }), z.object({geoid:z.string().regex(/^[0-9]{2,12}$/),kind:z.string().min(1)})]),
   journey: journeySchema
 });
 
@@ -21,7 +21,10 @@ export function mergeProcessJourneys(records: Journey[]): Journey[] {
 }
 
 export function bundledProcessesForState(state?: string): Journey[] {
-  return processPublications.filter((item) => "id" in item.territory
-    ? item.territory.id === "country:US"
-    : item.territory.state_code === state?.toUpperCase()).map((item) => item.journey);
+  return processPublications.filter(item=>{
+    if(item.journey.jurisdiction==="local") return false;
+    if("id" in item.territory && item.territory.id==="country:US") return item.journey.jurisdiction==="federal";
+    if("state_code" in item.territory) return item.territory.state_code===state?.toUpperCase();
+    return item.journey.jurisdiction==="state" && item.journey.state===state?.toUpperCase();
+  }).map(item=>withSourceFreshness(item.journey));
 }
