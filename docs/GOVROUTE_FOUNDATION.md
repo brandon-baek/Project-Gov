@@ -168,3 +168,17 @@ pipeline can truthfully settle every person's exact rights.
 - USGS GNIS downloads: https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data
 - GNIS format documentation: https://prd-tnm.s3.amazonaws.com/StagedProducts/GeographicNames/GNIS_file_format.pdf
 - Census geocoder API and limitations: https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html
+
+## National backend serving and local directories
+
+The complete registry remains the provenance archive. `pipeline.compact_registry` projects it into a separate `govroute-runtime.db`, retaining identity, relationships, names, government status, reviewed scope, publications, directory pages, and source evidence. Only unused raw feature attributes are removed; the Census layer name remains for address geography matching. The projection uses smaller primary-key tables, has a 190 MiB database gate, and production traces have a 230 MiB gate.
+
+After unit, importer, actual-dataset runtime, build, trace, and production HTTP scenario checks pass, CI publishes a public prerelease dataset asset and pins `data/registry/runtime-release.json` on the same review branch. The Vercel prebuild step downloads that immutable asset and checks SHA-256, schema, compressed bytes, and decompressed bytes. No new paid database service or AI calls are required. A failed refresh cannot advance the pinned manifest. The complete archive is excluded from function output.
+
+The CISA current-full.csv importer loads all registered .gov organizations, with inventory hashes and duplicate/schema/count gates. A city or county domain links only when its registered organization and state identify one active Census government. The mailing city alone cannot authorize a link. Ambiguous registrations remain unlinked. This is an automatically established directory match, not a reviewed topic scope.
+
+`pipeline.local_sources` rotates through unvisited and oldest-checked matched websites in state-balanced batches. It checks robots rules, limits content and time, follows only same-registered-domain HTTPS redirects, rejects private-address hosts, and indexes the homepage plus two relevant service pages. Crawl status, successful content hashes, indexing dates, and unavailable/blocked checks remain distinct. Later batches retain previous successful pages.
+
+`GET /api/local-resources?id=<place-id>&q=<task>` returns official directory starting points and relevant machine-indexed pages. Chat property and local-service gaps expose the same resources. These results never turn into verified steps through keywords or geographic parentage alone.
+
+See BACKEND_USER_SCENARIOS.md for the scenario matrix. The coverage report separately records registered domains, linked places, indexed directory pages, reviewed processes, and crawl failures. Coverage is not complete across every local government, and non-.gov websites require further officially evidenced connectors.

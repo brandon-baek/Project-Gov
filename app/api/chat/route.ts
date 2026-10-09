@@ -13,6 +13,7 @@ import { contextForPlaces, relevantLegalSources } from "@/lib/place-registry";
 import { parcelRequirements, requiresParcelEvidence } from "@/lib/place-context";
 import { processJourneys } from "@/lib/process-catalog";
 import { publishedProcesses } from "@/lib/process-registry";
+import { localResources } from "@/lib/local-resources";
 
 export const runtime = "nodejs";
 
@@ -24,14 +25,14 @@ function rateLimited(request: NextRequest) {
 export async function POST(request: NextRequest) {
   if (rateLimited(request)) {
     return NextResponse.json(
-      { status: "error", message: "Too many requests. Please wait a minute and try again." },
+      { status: "error", message: "Too many requests. Please wait a minute and try again.", alternatives: [] },
       { status: 429, headers: { "Retry-After": "60" } }
     );
   }
 
   try {
     const reader = request.body?.getReader();
-    if (!reader) return NextResponse.json({ status: "error", message: "A request is required." }, { status: 400 });
+    if (!reader) return NextResponse.json({ status: "error", message: "A request is required.", alternatives: [] }, { status: 400 });
     const chunks: Uint8Array[] = [];
     let size = 0;
     while (true) {
@@ -40,12 +41,12 @@ export async function POST(request: NextRequest) {
       size += value.byteLength;
       if (size > 8192) {
         await reader.cancel();
-        return NextResponse.json({ status: "error", message: "Request too large." }, { status: 413 });
+        return NextResponse.json({ status: "error", message: "Request too large.", alternatives: [] }, { status: 413 });
       }
       chunks.push(value);
     }
     const body = chatRequestSchema.parse(JSON.parse(Buffer.concat(chunks).toString("utf8")));
-    if (body.state && !stateByCode(body.state)) return NextResponse.json({ status: "error", message: "Choose a supported state or territory." }, { status: 400 });
+    if (body.state && !stateByCode(body.state)) return NextResponse.json({ status: "error", message: "Choose a supported state or territory.", alternatives: [] }, { status: 400 });
     const sensitive = findSensitiveData(body.message);
     if (sensitive.length > 0) {
       return NextResponse.json({
@@ -64,7 +65,7 @@ export async function POST(request: NextRequest) {
     }
 
     const context = body.placeIds?.length ? contextForPlaces(body.placeIds) : undefined;
-    if (body.placeIds?.length && !context?.places.length) return NextResponse.json({ status: "clarify", message: "Your selected place is unavailable. Search for the location again or choose a state.", alternatives: [] });
+    if (body.placeIds?.length && body.placeIds.some(id => !context?.places.some(place => place.id === id))) return NextResponse.json({ status: "clarify", message: "Your selected place is unavailable. Search for the location again or choose a state.", alternatives: [] });
     const contextStates = [...new Set(context?.places.map((place) => place.state_code).filter((code): code is string => Boolean(code)) ?? [])];
     if (contextStates.length > 1 || (body.state && contextStates.length === 1 && body.state !== contextStates[0])) return NextResponse.json({ status: "clarify", message: "Your location crosses state boundaries or differs from the selected state. Choose the state whose process you need.", alternatives: [] });
     const locations = statesInText(body.message);
@@ -81,10 +82,19 @@ export async function POST(request: NextRequest) {
     const location = body.state ?? contextStates[0] ?? locations[0]?.code;
     if (requiresParcelEvidence(body.message)) {
       const sources = relevantLegalSources(context?.places.map((place) => place.id) ?? [], "property");
+      const directoryResources = localResources(context, body.message);
       return NextResponse.json({ status: "coverage_gap", message: "To find what you can do on a particular property, start with its parcel, zoning, and recorded restrictions. A community name or address-range match does not establish your land rights.",
-        alternatives: [], steps: parcelRequirements, sources,
+        alternatives: [], steps: parcelRequirements, sources, directoryResources, title: "Find the rules for your property",
         missing: ["Parcel and boundary verification", "Current zoning and overlays", "Recorded deeds, easements, and covenants"],
         scopeNote: sources.length ? "These are potentially relevant official sources. A property-specific pathway still requires the listed records." : "Property-specific sources have not been connected for this location yet." });
+    }
+    if (/\b(building permit|construction permit|trash collection|garbage collection|sewer service|water service|local ordinance)\b/i.test(body.message)) {
+      if (!location && !context?.places.length) return NextResponse.json({status:"clarify",message:"Choose a community or address area so I can find official local starting points.",alternatives:[]});
+      const directoryResources=localResources(context,body.message);
+      return NextResponse.json({status:"coverage_gap",title:"Find your local service",message:"This local procedure has not been verified for your selected area yet.",alternatives:[],
+        steps:["Confirm the city, county, or service district responsible for the request.","Use the official starting points below to locate the department and current application.","Confirm requirements, costs, deadlines, and service boundaries with that department before applying."],
+        sources:[],directoryResources,missing:["Reviewed local procedure","Confirmed topic authority and service area"],
+        scopeNote:directoryResources.length ? "Official registrations and crawled pages identify starting points. They do not certify that a department handles this particular task." : "No local website has been linked confidently for this area yet. Try the full street address or contact the state government directory."});
     }
     const stored = getStoredJourneys();
     const processes = publishedProcesses(location, context?.places.map((place) => place.id) ?? []);
@@ -131,6 +141,13 @@ export async function POST(request: NextRequest) {
       });
     }
     if (classification === "unsupported") {
+      const state=stateByCode(location);
+      if (state) return NextResponse.json({status:"coverage_gap",title:"Find the official next step",message:"I do not have a verified step-by-step procedure for this task in "+state.name+" yet.",alternatives:[],
+        steps:["Open the official state directory or agency website.","Find the department handling your request and check which local office serves your address.","Confirm the current application, documents, fees, and timing on that department's page."],
+        sources:[{id:"state-directory:"+state.code,title:state.name+" government directory",url:state.directoryUrl,publisher:"USA.gov"}],
+        directoryResources:localResources(context,body.message),missing:["Reviewed procedure for this task and area"],
+        scopeNote:"These are official starting points; they are not a verified local procedure."});
+
       return NextResponse.json({
         status: "unsupported",
         message: "I could not match that request to a published guide yet. Try describing the outcome, document, benefit, notice, or agency in different words.",
@@ -165,8 +182,8 @@ export async function POST(request: NextRequest) {
     });
   } catch (error) {
     if (error instanceof ZodError || error instanceof SyntaxError) {
-      return NextResponse.json({ status: "error", message: "Please enter a request between 3 and 600 characters." }, { status: 400 });
+      return NextResponse.json({ status: "error", message: "Please enter a request between 3 and 600 characters.", alternatives: [] }, { status: 400 });
     }
-    return NextResponse.json({ status: "error", message: "govroute could not process that request. Please try again." }, { status: 500 });
+    return NextResponse.json({ status: "error", message: "govroute could not process that request. Please try again.", alternatives: [] }, { status: 500 });
   }
 }

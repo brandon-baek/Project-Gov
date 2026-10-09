@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { contextForPlaces, registryCoverage, searchPlaces } from "@/lib/place-registry";
+import { stateByCode } from "@/lib/jurisdictions";
 import { consumeRequest } from "@/lib/request-limits";
 
 export const runtime = "nodejs";
@@ -22,7 +23,7 @@ export function GET(request: NextRequest) {
     }
     const query = params.get("q")?.trim() ?? "";
     const state = params.get("state") ?? undefined;
-    if (query.length < 2 || query.length > 100 || (state && !/^[A-Z]{2}$/.test(state))) return NextResponse.json({ status: "error", message: "Enter a place name between 2 and 100 characters." }, { status: 400, headers });
+    if (query.length < 2 || query.length > 100 || (state && (!/^[A-Z]{2}$/.test(state) || !stateByCode(state)))) return NextResponse.json({ status: "error", message: "Enter a place name between 2 and 100 characters." }, { status: 400, headers });
     return NextResponse.json({ status: "results", places: searchPlaces(query, state) }, { headers });
   } catch {
     return NextResponse.json({ status: "error", message: "The location registry is unavailable. Try again later." }, { status: 503, headers });

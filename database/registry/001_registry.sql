@@ -117,3 +117,39 @@ CREATE TABLE process_step_sources (
   PRIMARY KEY(step_id, source_id)
 );
 PRAGMA user_version = 1;
+
+-- Official registrants are directory evidence, independent of reviewed topic competence.
+CREATE TABLE government_domains (
+  domain TEXT PRIMARY KEY, organization TEXT NOT NULL, suborganization TEXT NOT NULL,
+  domain_type TEXT NOT NULL, city TEXT NOT NULL, state_code TEXT,
+  dataset_id TEXT NOT NULL REFERENCES datasets(id),
+  match_status TEXT NOT NULL CHECK(match_status IN ('linked','ambiguous','unmatched')),
+  retrieved_at TEXT NOT NULL
+);
+CREATE INDEX domains_state ON government_domains(state_code,domain_type);
+CREATE TABLE domain_places (
+  domain TEXT NOT NULL REFERENCES government_domains(domain),
+  place_id TEXT NOT NULL REFERENCES places(id), match_method TEXT NOT NULL,
+  PRIMARY KEY(domain,place_id)
+);
+CREATE INDEX domain_place_lookup ON domain_places(place_id,domain);
+CREATE TABLE directory_pages (
+  id INTEGER PRIMARY KEY, domain TEXT NOT NULL REFERENCES government_domains(domain),
+  url TEXT NOT NULL UNIQUE, title TEXT NOT NULL, summary TEXT NOT NULL, content TEXT NOT NULL,
+  sha256 TEXT NOT NULL, retrieved_at TEXT NOT NULL,
+  review_status TEXT NOT NULL DEFAULT 'machine_indexed' CHECK(review_status='machine_indexed')
+);
+CREATE VIRTUAL TABLE directory_search USING fts5(title,content, content='directory_pages', content_rowid='id');
+CREATE TRIGGER directory_page_insert AFTER INSERT ON directory_pages BEGIN
+  INSERT INTO directory_search(rowid,title,content) VALUES(new.id,new.title,new.content);
+END;
+CREATE TRIGGER directory_page_update AFTER UPDATE ON directory_pages BEGIN
+  INSERT INTO directory_search(directory_search,rowid,title,content) VALUES('delete',old.id,old.title,old.content);
+  INSERT INTO directory_search(rowid,title,content) VALUES(new.id,new.title,new.content);
+END;
+CREATE TABLE directory_checks (
+  id INTEGER PRIMARY KEY, domain TEXT NOT NULL REFERENCES government_domains(domain),
+  url TEXT NOT NULL, checked_at TEXT NOT NULL, status TEXT NOT NULL
+    CHECK(status IN ('indexed','unchanged','unavailable','blocked')), error TEXT
+);
+CREATE INDEX directory_check_lookup ON directory_checks(domain,id);

@@ -21,7 +21,8 @@ export type PlaceContext = {
 let registry: Database.Database | null = null;
 export function openRegistry(): Database.Database | null {
   if (registry) return registry;
-  const filename = process.env.GOVROUTE_REGISTRY_PATH ?? path.join(process.cwd(), "data/govroute-locations.db");
+  const serving = path.join(process.cwd(), "data/govroute-runtime.db");
+  const filename = process.env.GOVROUTE_REGISTRY_PATH ?? (existsSync(/* turbopackIgnore: true */ serving) ? serving : path.join(process.cwd(), "data/govroute-locations.db"));
   // This file is a separately mounted backend snapshot; includes/excludes are explicit.
   if (!existsSync(/* turbopackIgnore: true */ filename)) return null;
   registry = new Database(filename, { readonly: true, fileMustExist: true });
@@ -81,13 +82,16 @@ export function contextForAddress(match: CensusMatch): PlaceContext {
   return contextForPlaces(ids, "address_range", unresolved);
 }
 
-export function registryCoverage() {
+function readCoverage() {
   const db = openRegistry();
-  if (!db) return { status: "not_imported" as const, placeCount: 0, sourceCount: 0, reviewedProcessCount: 0, datasets: [] };
+  if (!db) return { status: "not_imported" as const, placeCount: 0, sourceCount: 0, reviewedProcessCount: 0, registeredDomainCount: 0, linkedDirectoryPlaceCount: 0, indexedDirectoryPageCount: 0, datasets: [] };
   return {
     status: "available" as const,
     placeCount: (db.prepare("SELECT count(*) AS count FROM places").get() as { count: number }).count,
     sourceCount: (db.prepare("SELECT count(*) AS count FROM legal_sources WHERE active=1").get() as { count: number }).count,
+    registeredDomainCount: db.prepare("SELECT 1 FROM sqlite_master WHERE name='government_domains'").get() ? (db.prepare("SELECT count(*) AS count FROM government_domains").get() as {count:number}).count : 0,
+    linkedDirectoryPlaceCount: db.prepare("SELECT 1 FROM sqlite_master WHERE name='domain_places'").get() ? (db.prepare("SELECT count(DISTINCT place_id) AS count FROM domain_places").get() as {count:number}).count : 0,
+    indexedDirectoryPageCount: db.prepare("SELECT 1 FROM sqlite_master WHERE name='directory_pages'").get() ? (db.prepare("SELECT count(*) AS count FROM directory_pages").get() as {count:number}).count : 0,
     reviewedProcessCount: (db.prepare("SELECT count(*) AS count FROM process_definitions WHERE review_status='reviewed'").get() as { count: number }).count,
     datasets: db.prepare("SELECT id,publisher,url,vintage,retrieved_at,records_seen,complete FROM datasets").all()
   };
@@ -106,4 +110,10 @@ export function relevantLegalSources(ids: string[], topic: string) {
     JOIN authority_scopes scope ON scope.authority_id=a.id AND scope.topic=s.topic
     WHERE s.active=1 AND s.topic=? AND scope.territory_id IN (${slots.map(() => "?").join(",")})
     ORDER BY s.title`).all(topic, ...slots);
+}
+
+let coverageSnapshot: ReturnType<typeof readCoverage> | undefined;
+export function registryCoverage() {
+  // A serving release is immutable for this process; avoid scanning counts per keystroke.
+  return coverageSnapshot ??= readCoverage();
 }

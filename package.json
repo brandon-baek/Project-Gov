@@ -24,7 +24,8 @@
     "ingest:government-sites": "python3 -m pipeline.run --source government-sites",
     "ingest:state-directory": "python3 -m pipeline.run --source state-directory",
     "ingest:state-sites": "python3 -m pipeline.run --source state-sites",
-    "check:sources": "tsx scripts/check-sources.ts"
+    "check:sources": "tsx scripts/check-sources.ts",
+    "prebuild": "node scripts/prepare-registry.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
