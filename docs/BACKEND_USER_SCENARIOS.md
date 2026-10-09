@@ -10,11 +10,13 @@ The production HTTP suite runs against the real national serving database, with 
 | Find an informal community name | GNIS name crosswalk | Matching record explicitly labels the unofficial name |
 | Choose a Census-designated place | Statistical versus functioning government | No fabricated municipal authority |
 | Ask whether an ADU is legal on a property | Location context, property guard, source scopes | Parcel, zoning, and recorded restrictions remain explicit gaps |
+| Request a reviewed local procedure | Exact territory IDs, reviewed source scope, chat routing | Reviewed steps appear only in the matching municipality; a coverage gap does not override a published route |
 | Request a local building permit | CISA inventory, government-name matching, local crawl, chat response | Official local starting points with unreviewed procedure labels |
 | Supply a postal locality as free text | Stable jurisdiction IDs, scope safety | Free text cannot certify a municipal service area |
 | Select a California community while choosing Texas | Location validation | Clarification; no other-state instructions |
 | Mix a valid place and an invalid ID | Input and context completeness | Clarification; invalid places are not silently ignored |
 | Move from New York to Texas | Multi-state detection, moving checklist | Moving planner route |
+| Browse procedures using a selected place ID | Derived state, exact scopes, input validation | Correct catalog; unknown IDs and conflicting state selections are rejected |
 | Apply for a California license versus a Texas license | Explicit process scopes | California publication appears only in the California catalog |
 | Submit a sensitive identifier or oversized request | Privacy guard, bounded input, website response contract | Blocked/413 response with safe, renderable alternatives |
 | Resolve one or several street addresses | Census API adapter, candidate confirmation, no address persistence | Address-range precision remains distinct from parcel certainty |

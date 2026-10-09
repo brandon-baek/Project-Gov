@@ -50,7 +50,7 @@ and authored source review are measured separately.
 ## Build and validate
 
 ```sh
-python3 -m unittest pipeline.test_locations pipeline.test_processes -v
+python3 -m unittest pipeline.test_locations pipeline.test_processes pipeline.test_national_backend -v
 python3 -m pipeline.locations --output data/govroute-locations.db
 python3 -m pipeline.legal_sources --database data/govroute-locations.db
 npm ci
@@ -73,24 +73,29 @@ IDs that remain in the manifest. Interrupted or failed imports leave the previou
 database intact. A failed legal-source refresh retains its last successful snapshot and
 returns a failure status. It never upgrades machine-indexed content to reviewed.
 
-The `Govroute foundation` workflow runs the application checks and national import on
-relevant pull requests. Its artifact contains `govroute-locations.db` and a measured
-coverage report. Review that report and place the database in `data/` before deploying
-location features, or set `GOVROUTE_REGISTRY_PATH` to a published, immutable snapshot.
-Procedure indexing is measured separately from geographic import. Unavailable sources
-retain explicit failure records and are never represented as indexed content. The
-workflow warns and preserves the usable geographic snapshot and coverage report.
-Registry runtime checks use the actual national artifact, which is retained for 90 days.
-The workflow also builds with that artifact present and checks every emitted file trace
-to ensure the default serverless output excludes the national registry.
-The indexed snapshot is approximately 466 MB. Use a persistent Node backend with
-a read-only mounted registry (set GOVROUTE_REGISTRY_PATH), or migrate the normalized
-tables into a managed spatial/database service. Do not bundle the national snapshot
-into a serverless function. Tracing excludes it by default; GOVROUTE_BUNDLE_REGISTRY=true
-is an explicit opt-in for hosts with sufficient bundle capacity. A serverless frontend
-needs a separately deployed registry service before local lookup can go live.
-The workflow does not merge, deploy, or commit data to main. Without a published registry,
-the app reports that location coverage is not imported; existing pathways still work.
+The `Govroute foundation` workflow runs application checks, the complete national
+import, runtime SQL assertions, serverless file-trace checks, and production HTTP
+scenarios on relevant pull requests. Its coverage report distinguishes geographic
+records, linked websites, indexed pages, reviewed procedures, and unavailable sources.
+
+After all checks pass, the workflow publishes both the compressed serving projection
+and the compressed complete archive as immutable GitHub release assets. It pins the
+serving manifest on the review branch. The website prebuild verifies and downloads that
+asset; serverless functions bundle only its compressed form and extract it through a
+bounded asynchronous stream. The complete archive stays outside function bundles.
+A persistent Node host may instead use a read-only database mounted through
+`GOVROUTE_REGISTRY_PATH`.
+
+Procedure indexing is measured separately from geographic import. Failed source
+fetches retain explicit failure records and the last successful content; they do not
+invalidate a usable geographic snapshot or invent successful indexing. Failed imports,
+runtime checks, or bundle budgets cannot advance the serving manifest.
+
+The workflow neither merges the pull request nor changes main. The scheduled expansion
+and refresh pipeline runs on main after the code is merged. Without a prepared registry,
+the app reports that location coverage is not imported and keeps bundled pathways
+available. Release assets preserve the full archive independently of the 90-day Actions
+artifact retention window.
 
 ## Geographic identity and authority
 
