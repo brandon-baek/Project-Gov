@@ -1,0 +1,136 @@
+{
+  "authorities": [
+    {
+      "id": "authority:state-department",
+      "name": "U.S. Department of State",
+      "level": "federal",
+      "evidence_url": "https://travel.state.gov/en/passports.html"
+    },
+    {
+      "id": "authority:ca-dmv",
+      "name": "California Department of Motor Vehicles",
+      "level": "state",
+      "evidence_url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/driver-licenses-dl/"
+    }
+  ],
+  "scopes": [
+    {
+      "authority_id": "authority:state-department",
+      "territory_id": "country:US",
+      "topic": "passport",
+      "role": "service_provider",
+      "evidence_url": "https://travel.state.gov/en/passports/renew-replace/mail.html",
+      "reviewed_at": "2026-10-08"
+    },
+    {
+      "authority_id": "authority:ca-dmv",
+      "state_code": "CA",
+      "topic": "driver_license",
+      "role": "service_provider",
+      "evidence_url": "https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/new-to-california/",
+      "reviewed_at": "2026-10-08"
+    }
+  ],
+  "sources": [
+    {
+      "id": "passport-mail",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Renew your passport by mail",
+      "url": "https://travel.state.gov/en/passports/renew-replace/mail.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "passport-online",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Renew your passport online",
+      "url": "https://travel.state.gov/en/passports/renew-replace/online.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "passport-adult",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Apply for an adult passport",
+      "url": "https://travel.state.gov/en/passports/apply/adults.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "passport-ages-16-17",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Passport applications for ages 16–17",
+      "url": "https://travel.state.gov/en/passports/apply/child/16-17-year-old.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "passport-apply",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Apply for a passport",
+      "url": "https://travel.state.gov/en/passports/apply.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "passport-fees",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Passport fees",
+      "url": "https://travel.state.gov/en/passports/apply/help/fees.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "passport-timing",
+      "authority_id": "authority:state-department",
+      "topic": "passport",
+      "title": "Passport processing times",
+      "url": "https://travel.state.gov/en/passports/apply/help/processing-time.html",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "ca-new-resident",
+      "authority_id": "authority:ca-dmv",
+      "topic": "driver_license",
+      "title": "New California resident portal",
+      "url": "https://www.dmv.ca.gov/portal/driver-education-and-safety/special-interest-driver-guides/new-to-california/",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "ca-dl-requirements",
+      "authority_id": "authority:ca-dmv",
+      "topic": "driver_license",
+      "title": "Driver's license requirements",
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/driver-licenses-dl/",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    },
+    {
+      "id": "ca-dl-application",
+      "authority_id": "authority:ca-dmv",
+      "topic": "driver_license",
+      "title": "Driver's license application",
+      "url": "https://www.dmv.ca.gov/portal/driver-licenses-identification-cards/dl-id-online-app-edl-44/",
+      "kind": "procedure",
+      "reviewed_at": "2026-10-08",
+      "freshness_days": 30
+    }
+  ]
+}
