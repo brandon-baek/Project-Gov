@@ -122,7 +122,8 @@ export async function POST(request: NextRequest) {
     // Only the selected route can require location. A weaker state discovery
     // must not interrupt a well-matched federal passport pathway.
     const selectedJurisdiction = useDiscovered ? bestDiscovered.guide.jurisdiction : matches[0]?.journey.jurisdiction;
-    if (!location && selectedJurisdiction && selectedJurisdiction !== "federal") {
+    const hasLocalPublicationScope = !useDiscovered && selectedJurisdiction === "local" && Boolean(matches[0]?.journey.territoryIds?.some(id => scopedIds.includes(id)));
+    if (!location && !hasLocalPublicationScope && selectedJurisdiction && selectedJurisdiction !== "federal") {
       return NextResponse.json({ status: "clarify", message: "Choose your state above so I can find the right jurisdiction. For a city or county service, also enter its jurisdiction name.", alternatives: [] });
     }
     if (bestDiscovered && useDiscovered) {
