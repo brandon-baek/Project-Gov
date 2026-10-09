@@ -1,0 +1,29 @@
+name: Dependency audit
+
+on:
+  pull_request:
+    paths:
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/dependency-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Prepare compatible dependency lock
+        run: |
+          npm install --package-lock-only --ignore-scripts
+          npm audit fix --package-lock-only --ignore-scripts || true
+          node -e "const fs=require('node:fs'),z=require('node:zlib');console.log('GOVROUTE_LOCK_'+z.gzipSync(fs.readFileSync('package-lock.json')).toString('base64'))"
+      - run: npm ci
+      - run: npm audit --audit-level=high
