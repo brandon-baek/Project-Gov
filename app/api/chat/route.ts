@@ -92,7 +92,7 @@ export async function POST(request: NextRequest) {
     const stored = getStoredJourneys();
     const scopedIds=publicationPlaceIds(context,body.placeIds??[]);
     const processes = await publishedProcesses(location, scopedIds);
-    const processIds = new Set(processJourneys.map((journey) => journey.id));
+    const processIds = new Set([...processJourneys, ...processes.journeys].map((journey) => journey.id));
     const records = [...stored.journeys.filter((journey) => !processIds.has(journey.id)), ...processes.journeys];
     let matches = retrieveJourneys(body.message, 8, records, location, scopedIds);
     // Legacy local guides use names rather than stable jurisdiction IDs. Until
@@ -134,7 +134,7 @@ export async function POST(request: NextRequest) {
         provenance: { router: "discovered-guide-index", assembledFrom: [bestDiscovered.guide.sourceId] }
       });
     }
-    if (classification !== "matched" && /\b(building permit|construction permit|trash collection|garbage collection|sewer service|water service|local ordinance)\b/i.test(body.message)) {
+    if ((classification !== "matched" || matches[0]?.journey.jurisdiction !== "local" || !processIds.has(matches[0].journey.id)) && /\b(building permit|construction permit|trash collection|garbage collection|sewer service|water service|local ordinance)\b/i.test(body.message)) {
       if (!location && !context?.places.length) return NextResponse.json({status:"clarify",message:"Choose a community or address area so I can find official local starting points.",alternatives:[]});
       const directoryResources=await localResources(context,body.message);
       return NextResponse.json({status:"coverage_gap",title:"Find your local service",message:"This local procedure has not been verified for your selected area yet.",alternatives:[],
