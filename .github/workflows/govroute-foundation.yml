@@ -110,7 +110,7 @@ jobs:
         env:
           VERCEL: '1'
           GOVROUTE_PREPARE_REGISTRY_SKIP: 'true'
-      - name: Verify serving inclusion, archive exclusion, and function size budgets
+      - name: Verify compressed serving inclusion, archive exclusion, and function size budgets
         run: python scripts/check-registry-traces.py
       - name: Exercise realistic user flows over production HTTP APIs
         run: npx tsx scripts/check-registry-http.ts

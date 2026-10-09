@@ -4,7 +4,7 @@ import argparse, gzip, hashlib, json, os, re, sqlite3, tempfile
 from pathlib import Path
 from pipeline.locations import ROOT, coverage
 
-MAX_RUNTIME_BYTES=190*1024*1024
+MAX_RUNTIME_BYTES=350*1024*1024
 
 def compact(source, output):
     source,output=Path(source),Path(output)

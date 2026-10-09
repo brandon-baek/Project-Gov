@@ -16,6 +16,7 @@ CREATE TABLE places (
   dataset_id TEXT NOT NULL REFERENCES datasets(id),
   attributes_json TEXT NOT NULL DEFAULT '{}'
 );
+CREATE INDEX places_geoid ON places(geoid,kind);
 CREATE INDEX places_search ON places(search_name, state_code);
 CREATE INDEX places_state ON places(state_fips, kind);
 CREATE TABLE place_identifiers (

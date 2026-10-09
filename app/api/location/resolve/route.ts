@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
     const response = await fetch(url, { cache: "no-store", signal: AbortSignal.timeout(12000) });
     if (!response.ok) throw new Error("upstream");
     const matches = censusMatches(await response.json());
-    const candidates = matches.map((match) => ({ matchedAddress: match.matchedAddress, context: contextForAddress(match) }));
+    const candidates = await Promise.all(matches.map(async (match) => ({ matchedAddress: match.matchedAddress, context: await contextForAddress(match) })));
     return NextResponse.json({
       status: matches.length === 1 ? "matched" : matches.length ? "ambiguous" : "not_found",
       candidates,

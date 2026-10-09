@@ -1,6 +1,7 @@
 import { z } from "zod";
 import manifest from "@/data/registry/processes.json";
 import { journeySchema, type Journey } from "@/lib/schema";
+import { withSourceFreshness } from "@/lib/source-freshness";
 
 export const processPublicationSchema = z.object({
   authority_id: z.string().min(1),
@@ -10,13 +11,13 @@ export const processPublicationSchema = z.object({
 });
 
 export const processPublications = z.array(processPublicationSchema).parse(manifest.processes);
-export const processJourneys = processPublications.map((item) => item.journey);
+export const processJourneys = processPublications.map((item) => withSourceFreshness(item.journey));
 
 export function mergeProcessJourneys(records: Journey[]): Journey[] {
   const published = new Map(records.map((journey) => [journey.id, journey]));
   // Deploying a reviewed process updates both the bundled and older SQL catalog.
   for (const journey of processJourneys) published.set(journey.id, journey);
-  return [...published.values()];
+  return [...published.values()].map(journey=>withSourceFreshness(journey));
 }
 
 export function bundledProcessesForState(state?: string): Journey[] {

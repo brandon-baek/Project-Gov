@@ -1,5 +1,8 @@
 import Database from "better-sqlite3";
 import { existsSync } from "node:fs";
+import { readFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { extractSnapshot, type SnapshotManifest } from "@/lib/registry-snapshot";
 import path from "node:path";
 import type { CensusMatch } from "@/lib/place-context";
 import { geographyReferences } from "@/lib/place-context";
@@ -18,26 +21,34 @@ export type PlaceContext = {
   precision: "community" | "address_range";
 };
 
-let registry: Database.Database | null = null;
-export function openRegistry(): Database.Database | null {
-  if (registry) return registry;
-  const serving = path.join(process.cwd(), "data/govroute-runtime.db");
-  const filename = process.env.GOVROUTE_REGISTRY_PATH ?? (existsSync(/* turbopackIgnore: true */ serving) ? serving : path.join(process.cwd(), "data/govroute-locations.db"));
-  // This file is a separately mounted backend snapshot; includes/excludes are explicit.
+let registryInitialization: Promise<Database.Database | null> | null=null;
+async function initializeRegistry(): Promise<Database.Database | null> {
+  let filename=process.env.GOVROUTE_REGISTRY_PATH;
+  const serving=path.join(process.cwd(),"data/govroute-runtime.db");
+  const compressed=path.join(process.cwd(),"data/govroute-runtime.db.gz");
+  if (!filename && process.env.GOVROUTE_REGISTRY_COMPRESSED!=="true" && existsSync(/* turbopackIgnore: true */ serving)) filename=serving;
+  if (!filename && existsSync(/* turbopackIgnore: true */ compressed)) {
+    const manifestPath=process.env.GOVROUTE_REGISTRY_MANIFEST_PATH ?? path.join(process.cwd(),"data/registry/runtime-release.json");
+    const manifest=JSON.parse(await readFile(manifestPath,"utf8")) as SnapshotManifest;
+    filename=await extractSnapshot(compressed,path.join(tmpdir(),"govroute-"+manifest.sha256+".db"),manifest);
+  }
+  filename ??= path.join(process.cwd(),"data/govroute-locations.db");
   if (!existsSync(/* turbopackIgnore: true */ filename)) return null;
-  registry = new Database(filename, { readonly: true, fileMustExist: true });
-  if (registry.pragma("user_version", { simple: true }) !== 1) {
-    registry.close(); registry = null;
-    throw new Error("Unsupported registry schema");
+  const registry=new Database(filename,{readonly:true,fileMustExist:true});
+  if (registry.pragma("user_version",{simple:true})!==1) {
+    registry.close(); throw new Error("Unsupported registry schema");
   }
   return registry;
+}
+export function openRegistry(): Promise<Database.Database | null> {
+  return registryInitialization ??= initializeRegistry().catch(error=>{registryInitialization=null;throw error;});
 }
 
 const placeColumns = "p.id,p.name,p.kind,p.state_code,p.state_fips,p.name_status,p.government_status";
 const normalize = (value: string) => value.normalize("NFKD").toLowerCase().trim().replace(/\s+/g, " ");
 
-export function searchPlaces(query: string, state?: string): Place[] {
-  const db = openRegistry();
+export async function searchPlaces(query: string, state?: string): Promise<Place[]> {
+  const db = await openRegistry();
   if (!db) return [];
   // Literal prefix query; no wildcard or FTS-query injection.
   const clean = normalize(query).replace(/[\\%_]/g, "\\$&");
@@ -49,8 +60,8 @@ export function searchPlaces(query: string, state?: string): Place[] {
     .all(...[clean + "%", ...(state ? [state.toUpperCase()] : []), normalize(query)]) as Place[];
 }
 
-export function contextForPlaces(ids: string[], precision: PlaceContext["precision"] = "community", unresolved: PlaceContext["unresolved"] = []): PlaceContext {
-  const db = openRegistry();
+export async function contextForPlaces(ids: string[], precision: PlaceContext["precision"] = "community", unresolved: PlaceContext["unresolved"] = []): Promise<PlaceContext> {
+  const db = await openRegistry();
   if (!db || !ids.length) return { places: [], relations: [], authorities: [], unresolved, precision };
   const keys = [...new Set(ids)].slice(0, 60);
   const placeholders = keys.map(() => "?").join(",");
@@ -68,8 +79,8 @@ export function contextForPlaces(ids: string[], precision: PlaceContext["precisi
   return { places: all, relations, authorities, unresolved, precision };
 }
 
-export function contextForAddress(match: CensusMatch): PlaceContext {
-  const db = openRegistry();
+export async function contextForAddress(match: CensusMatch): Promise<PlaceContext> {
+  const db = await openRegistry();
   const ids: string[] = [];
   const unresolved: PlaceContext["unresolved"] = [];
   for (const ref of geographyReferences(match)) {
@@ -82,8 +93,8 @@ export function contextForAddress(match: CensusMatch): PlaceContext {
   return contextForPlaces(ids, "address_range", unresolved);
 }
 
-function readCoverage() {
-  const db = openRegistry();
+async function readCoverage() {
+  const db = await openRegistry();
   if (!db) return { status: "not_imported" as const, placeCount: 0, sourceCount: 0, reviewedProcessCount: 0, registeredDomainCount: 0, linkedDirectoryPlaceCount: 0, indexedDirectoryPageCount: 0, datasets: [] };
   return {
     status: "available" as const,
@@ -97,8 +108,8 @@ function readCoverage() {
   };
 }
 
-export function relevantLegalSources(ids: string[], topic: string) {
-  const db = openRegistry();
+export async function relevantLegalSources(ids: string[], topic: string) {
+  const db = await openRegistry();
   if (!db) return [];
   const slots = [...new Set([...ids, "country:US"])].slice(0, 61);
   // Geographic parents alone do not authorize a source. Require a reviewed topic scope.

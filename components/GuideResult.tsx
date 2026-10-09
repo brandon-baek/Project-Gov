@@ -12,7 +12,7 @@ export function GuideResult({ journey, compact = false }: { journey: Journey; co
           <h2>{journey.title}</h2>
           <p className="guide-summary">{journey.summary}</p>
         </div>
-        <div className="verified-stamp"><CheckIcon /> Sources checked {formatted}</div>
+        <div className="verified-stamp"><CheckIcon /> {journey.reviewStatus === "review-due" ? "Review due · Last checked" : "Sources checked"} {formatted}</div>
       </header>
 
       {journey.eligibility?.length ? <details className="process-eligibility"><summary>Does this route fit my situation?</summary>{journey.eligibility.map((item) => <p key={item}>{item}</p>)}</details> : null}

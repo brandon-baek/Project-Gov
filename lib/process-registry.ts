@@ -1,9 +1,10 @@
 import { bundledProcessesForState } from "@/lib/process-catalog";
 import { openRegistry } from "@/lib/place-registry";
+import { withSourceFreshness } from "@/lib/source-freshness";
 import { journeySchema } from "@/lib/schema";
 
-export function publishedProcesses(state?: string, placeIds: string[] = []) {
-  const db = openRegistry();
+export async function publishedProcesses(state?: string, placeIds: string[] = []) {
+  const db = await openRegistry();
   if (!db || !db.prepare("SELECT 1 FROM sqlite_master WHERE name='process_publications'").get()) {
     return { journeys: bundledProcessesForState(state), storage: "bundled-process-catalog" as const };
   }
@@ -20,5 +21,5 @@ export function publishedProcesses(state?: string, placeIds: string[] = []) {
       AND s.territory_id=pub.territory_id AND s.role='service_provider'
     WHERE p.review_status='reviewed' AND pub.territory_id IN (${[...territories].map(() => "?").join(",")})
     ORDER BY p.title`).all(...territories) as { document_json: string }[];
-  return { journeys: rows.map((row) => journeySchema.parse(JSON.parse(row.document_json))), storage: "registry-process-catalog" as const };
+  return { journeys: rows.map((row) => withSourceFreshness(journeySchema.parse(JSON.parse(row.document_json)))), storage: "registry-process-catalog" as const };
 }

@@ -7,8 +7,8 @@ export type LocalResource = {
   retrievedAt: string;
 };
 
-export function localResources(context?: PlaceContext, query = ""): LocalResource[] {
-  const db=openRegistry();
+export async function localResources(context?: PlaceContext, query = ""): Promise<LocalResource[]> {
+  const db=await openRegistry();
   if (!db || !context?.places.length || !db.prepare("SELECT 1 FROM sqlite_master WHERE name='domain_places'").get()) return [];
   const ids=context.places.map(place=>place.id).slice(0,60);
   const domains=db.prepare(`SELECT d.domain,d.organization,d.retrieved_at,b.place_id,p.name AS place_name

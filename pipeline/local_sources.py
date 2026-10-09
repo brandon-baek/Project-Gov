@@ -2,7 +2,7 @@
 Pages stay machine indexed; neither registration nor keywords certify a procedure.
 """
 from __future__ import annotations
-import argparse, hashlib, html.parser, ipaddress, json, socket, sqlite3
+import argparse, hashlib, html.parser, ipaddress, json, socket, sqlite3, time
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -81,10 +81,17 @@ def crawl_domain(domain,pages=2):
         except HTTPError as error:
             if error.code not in (404,410): raise
             robots.parse([])  # Robots standard: missing file imposes no rules.
+        delay=robots.crawl_delay(AGENT) or robots.crawl_delay("*") or 1
+        rate=robots.request_rate(AGENT) or robots.request_rate("*")
+        if rate: delay=max(delay,rate.seconds/rate.requests)
         queue=[root]
         for index in range(pages+1):
             if index>=len(queue): break
             url=queue[index]
+            if index and delay>30:
+                results.append({"domain":domain,"url":url,"status":"blocked","error":"Robots delay exceeds this batch budget"})
+                break
+            if index: time.sleep(delay)
             try:
                 if not robots.can_fetch(AGENT,url):
                     results.append({"domain":domain,"url":url,"status":"blocked","error":"robots.txt disallows indexing"})

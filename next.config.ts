@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 // Keep the complete archive outside serverless output. A bounded, hash-verified
 // serving projection supports national lookup in the website's Node functions.
-const registryFiles = ["./data/govroute-runtime.db", ...(process.env.GOVROUTE_BUNDLE_REGISTRY === "true" ? ["./data/govroute-locations.db"] : [])];
+const registryFiles = ["./data/govroute-runtime.db.gz", "./data/registry/runtime-release.json", ...(process.env.GOVROUTE_BUNDLE_REGISTRY === "true" ? ["./data/govroute-locations.db"] : [])];
 const nextConfig: NextConfig = {
   // Vercel's Next.js adapter handles deployment output itself. Keeping
   // standalone enabled there triggers a Next.js 16.3 build-finalization bug.
@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
     "/data": registryFiles
   },
   outputFileTracingExcludes: process.env.GOVROUTE_BUNDLE_REGISTRY === "true"
-    ? {} : { "/**": ["./data/govroute-locations.db"] },
+    ? { "/**": ["./data/govroute-runtime.db"] } : { "/**": ["./data/govroute-locations.db", "./data/govroute-runtime.db"] },
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {

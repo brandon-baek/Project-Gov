@@ -171,7 +171,7 @@ pipeline can truthfully settle every person's exact rights.
 
 ## National backend serving and local directories
 
-The complete registry remains the provenance archive. `pipeline.compact_registry` projects it into a separate `govroute-runtime.db`, retaining identity, relationships, names, government status, reviewed scope, publications, directory pages, and source evidence. Only unused raw feature attributes are removed; the Census layer name remains for address geography matching. The projection uses smaller primary-key tables, has a 190 MiB database gate, and production traces have a 230 MiB gate.
+The complete registry remains the provenance archive. `pipeline.compact_registry` projects it into a separate `govroute-runtime.db`, retaining identity, relationships, names, government status, reviewed scope, publications, directory pages, and source evidence. Only unused raw feature attributes are removed; the Census layer name remains for address geography matching. Serverless output includes the compressed asset, and a single asynchronous initialization stream verifies and extracts it into ephemeral storage with bounded memory. Raw copies remain outside function bundles. The projection uses smaller primary-key tables, has a 350 MiB extraction gate, and production traces have a 230 MiB gate.
 
 After unit, importer, actual-dataset runtime, build, trace, and production HTTP scenario checks pass, CI publishes a public prerelease dataset asset and pins `data/registry/runtime-release.json` on the same review branch. The Vercel prebuild step downloads that immutable asset and checks SHA-256, schema, compressed bytes, and decompressed bytes. No new paid database service or AI calls are required. A failed refresh cannot advance the pinned manifest. The complete archive is excluded from function output.
 
@@ -182,3 +182,5 @@ The CISA current-full.csv importer loads all registered .gov organizations, with
 `GET /api/local-resources?id=<place-id>&q=<task>` returns official directory starting points and relevant machine-indexed pages. Chat property and local-service gaps expose the same resources. These results never turn into verified steps through keywords or geographic parentage alone.
 
 See BACKEND_USER_SCENARIOS.md for the scenario matrix. The coverage report separately records registered domains, linked places, indexed directory pages, reviewed processes, and crawl failures. Coverage is not complete across every local government, and non-.gov websites require further officially evidenced connectors.
+
+Human review expires separately from crawl freshness: after 30 days, a previously verified guide carries review-due status, and a successful link check cannot reset that review date.
